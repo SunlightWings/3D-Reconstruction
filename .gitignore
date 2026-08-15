@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+.ruff_cache/
+.vscode/
+.DS_Store
+
+# Heavy ML artifacts
+*.npz
+*.pt
+*.pth
+*.ckpt
+
+# Raw/local experiment data
+data/
+test_data/
+outputs/
+3dgs_site/
+
+# Old local working directories are not part of this evidence branch
+scripts/
+docs/
+
+# Old local pilot evidence, superseded by dataset-wide results
+results/disagreement_analysis/
+
+# Old local README
+Readme.md
