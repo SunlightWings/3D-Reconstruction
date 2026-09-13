@@ -8,6 +8,7 @@ import os
 from functools import lru_cache
 from io import BytesIO
 from pathlib import Path
+from urllib.parse import urlparse
 
 import gradio as gr
 from PIL import Image
@@ -187,6 +188,43 @@ def render_slider(scene_id, view, arm_a, arm_b):
     return (img_a, img_b)
 
 TURN_ROOT = DATA.root / "turntable"
+
+
+def reconstruction_app_html() -> str:
+    """Embed the separately deployed React client without duplicating its state/API code.
+
+    The Vite app owns uploads, localStorage job recovery, Modal polling, and the future
+    Spark viewer. This Gradio app only provides the surrounding research explorer.
+    """
+    url = os.environ.get("QUANTSPLAT_RECONSTRUCTION_URL", "").strip()
+    parsed = urlparse(url)
+
+    if parsed.scheme not in {"http", "https"} or not parsed.netloc:
+        return """
+        <div class="notice">
+            <b>Interactive reconstruction is not configured for this deployment.</b><br>
+            Set <code>QUANTSPLAT_RECONSTRUCTION_URL</code> to the HTTPS URL of the
+            deployed QuantSplat React/Vite frontend, then restart the Space.
+        </div>
+        """
+
+    safe_url = html.escape(url, quote=True)
+    return f"""
+    <div class="qs-embed-toolbar">
+        <span>The reconstruction client runs as a separate browser app.</span>
+        <a href="{safe_url}" target="_blank" rel="noopener noreferrer">
+            Open in a new tab ↗
+        </a>
+    </div>
+    <iframe
+        class="qs-reconstruction-embed"
+        src="{safe_url}"
+        title="QuantSplat interactive reconstruction"
+        allow="fullscreen"
+        loading="eager"
+        referrerpolicy="strict-origin-when-cross-origin"
+    ></iframe>
+    """
 
 
 def available_turntable_scenes():
@@ -450,6 +488,26 @@ def build_demo():
         with gr.Tabs(elem_id="main-tabs"):
 
             # ---------------------------------------------------------
+            # Interactive reconstruction (separate React/Vite client)
+            # ---------------------------------------------------------
+
+            with gr.Tab("Create reconstruction", id="create"):
+                gr.HTML("""
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow small">
+                            01 / INTERACTIVE RECONSTRUCTION
+                        </span>
+                        <h2>Turn six photos into an explorable scene.</h2>
+                    </div>
+                    <span>
+                        Uploads and job progress are handled by the live reconstruction client.
+                    </span>
+                </div>
+                """)
+                gr.HTML(reconstruction_app_html())
+
+            # ---------------------------------------------------------
             # Compare views
             # ---------------------------------------------------------
 
@@ -458,7 +516,7 @@ def build_demo():
                 <div class="section-heading">
                     <div>
                         <span class="eyebrow small">
-                            01 / VISUAL EXPLORER
+                            02 / VISUAL EXPLORER
                         </span>
                         <h2>Same camera. Different precision.</h2>
                     </div>
@@ -574,7 +632,7 @@ def build_demo():
                 <div class="section-heading">
                     <div>
                         <span class="eyebrow small">
-                            02 / 3D RECONSTRUCTION
+                            03 / PRECOMPUTED 3D RECONSTRUCTION
                         </span>
                         <h2>Rotate the reconstructed scene.</h2>
                     </div>
@@ -646,7 +704,7 @@ def build_demo():
                 <div class="section-heading">
                     <div>
                         <span class="eyebrow small">
-                            03 / MEASURED RESULTS
+                            04 / MEASURED RESULTS
                         </span>
                         <h2>Look beyond a single view.</h2>
                     </div>
@@ -752,7 +810,7 @@ def build_demo():
                 <div class="section-heading">
                     <div>
                         <span class="eyebrow small">
-                            04 / UPSTREAM DIAGNOSTICS
+                            05 / UPSTREAM DIAGNOSTICS
                         </span>
                         <h2>What changed before splatting?</h2>
                     </div>
@@ -790,7 +848,7 @@ def build_demo():
                 <div class="section-heading">
                     <div>
                         <span class="eyebrow small">
-                            05 / EXPERIMENT PROTOCOL
+                            06 / EXPERIMENT PROTOCOL
                         </span>
                         <h2>One downstream pipeline.</h2>
                     </div>

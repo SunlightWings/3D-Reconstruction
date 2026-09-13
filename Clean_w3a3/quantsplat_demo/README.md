@@ -111,6 +111,23 @@ It excludes virtual environments, caches, and old data backups. Unzip the result
 
 The app reads its catalog at startup; restart/rebuild the Space after changing data. There are deliberately no public upload/admin controls.
 
+## Interactive reconstruction tab
+
+The **Create reconstruction** tab embeds the separately deployed React/Vite client from
+`quantsplat_frontend/`. It is deliberately an iframe: that client owns user uploads, Modal job
+polling, browser-side job recovery, and the future Spark Gaussian viewer. The Gradio research
+explorer does not duplicate or proxy those operations.
+
+Set this Space/server environment variable to its deployed HTTPS URL, then restart the app:
+
+```text
+QUANTSPLAT_RECONSTRUCTION_URL=https://your-frontend.pages.dev
+```
+
+The tab displays a clear configuration notice until this variable is set. The Vite frontend must
+remain frameable (do not send a restrictive `X-Frame-Options` or `frame-ancestors` policy), and
+its Modal backend must continue to allow the Vite frontend's origin through CORS.
+
 ## Add W3A3 + confidence later
 
 Keep the same six input views, nine held-out camera IDs, preprocessing, and iteration budget. Place its artifacts in the same downstream convention:
