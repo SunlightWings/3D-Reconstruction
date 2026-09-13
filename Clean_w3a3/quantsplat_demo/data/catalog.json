@@ -1,0 +1,687 @@
+{
+  "schema_version": 1,
+  "iterations": 7000,
+  "input_views": 6,
+  "models": [
+    {
+      "id": "full",
+      "label": "Full VGGT",
+      "description": "Unquantized VGGT reference."
+    },
+    {
+      "id": "w4a4",
+      "label": "W4A4",
+      "description": "4-bit weight / activation quantization configuration."
+    },
+    {
+      "id": "w3a3",
+      "label": "W3A3",
+      "description": "Locally calibrated 3-bit weight / activation configuration."
+    },
+    {
+      "id": "w3a3_conf",
+      "label": "W3A3 + confidence",
+      "description": "Proposed lightweight confidence predictor; pending until results are supplied."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "apple/110_13051_23361",
+      "label": "Apple",
+      "frames": [
+        2,
+        24,
+        52,
+        75,
+        102,
+        125,
+        153,
+        175,
+        202
+      ],
+      "gt": [
+        "images/apple/110_13051_23361/gt/frame000002.png",
+        "images/apple/110_13051_23361/gt/frame000024.png",
+        "images/apple/110_13051_23361/gt/frame000052.png",
+        "images/apple/110_13051_23361/gt/frame000075.png",
+        "images/apple/110_13051_23361/gt/frame000102.png",
+        "images/apple/110_13051_23361/gt/frame000125.png",
+        "images/apple/110_13051_23361/gt/frame000153.png",
+        "images/apple/110_13051_23361/gt/frame000175.png",
+        "images/apple/110_13051_23361/gt/frame000202.png"
+      ],
+      "renders": {
+        "full": [
+          "images/apple/110_13051_23361/full/00000.png",
+          "images/apple/110_13051_23361/full/00001.png",
+          "images/apple/110_13051_23361/full/00002.png",
+          "images/apple/110_13051_23361/full/00003.png",
+          "images/apple/110_13051_23361/full/00004.png",
+          "images/apple/110_13051_23361/full/00005.png",
+          "images/apple/110_13051_23361/full/00006.png",
+          "images/apple/110_13051_23361/full/00007.png",
+          "images/apple/110_13051_23361/full/00008.png"
+        ],
+        "w4a4": [
+          "images/apple/110_13051_23361/w4a4/00000.png",
+          "images/apple/110_13051_23361/w4a4/00001.png",
+          "images/apple/110_13051_23361/w4a4/00002.png",
+          "images/apple/110_13051_23361/w4a4/00003.png",
+          "images/apple/110_13051_23361/w4a4/00004.png",
+          "images/apple/110_13051_23361/w4a4/00005.png",
+          "images/apple/110_13051_23361/w4a4/00006.png",
+          "images/apple/110_13051_23361/w4a4/00007.png",
+          "images/apple/110_13051_23361/w4a4/00008.png"
+        ],
+        "w3a3": [
+          "images/apple/110_13051_23361/w3a3/00000.png",
+          "images/apple/110_13051_23361/w3a3/00001.png",
+          "images/apple/110_13051_23361/w3a3/00002.png",
+          "images/apple/110_13051_23361/w3a3/00003.png",
+          "images/apple/110_13051_23361/w3a3/00004.png",
+          "images/apple/110_13051_23361/w3a3/00005.png",
+          "images/apple/110_13051_23361/w3a3/00006.png",
+          "images/apple/110_13051_23361/w3a3/00007.png",
+          "images/apple/110_13051_23361/w3a3/00008.png"
+        ]
+      },
+      "pairing": {
+        "full": "Provided archive contract: sorted GT frame names correspond to sorted render indices.",
+        "w4a4": "Provided archive contract: sorted GT frame names correspond to sorted render indices.",
+        "w3a3": "COLMAP held-out image names checked; sorted index pairing"
+      },
+      "inputs": [
+        "images/apple/110_13051_23361/inputs/image_1.png",
+        "images/apple/110_13051_23361/inputs/image_2.png",
+        "images/apple/110_13051_23361/inputs/image_3.png",
+        "images/apple/110_13051_23361/inputs/image_4.png",
+        "images/apple/110_13051_23361/inputs/image_5.png",
+        "images/apple/110_13051_23361/inputs/image_6.png"
+      ],
+      "input_frames": [
+        1,
+        35,
+        69,
+        103,
+        137,
+        170
+      ]
+    },
+    {
+      "id": "ball/123_14363_28981",
+      "label": "Ball",
+      "frames": [
+        2,
+        24,
+        52,
+        75,
+        102,
+        125,
+        153,
+        175,
+        202
+      ],
+      "gt": [
+        "images/ball/123_14363_28981/gt/frame000002.png",
+        "images/ball/123_14363_28981/gt/frame000024.png",
+        "images/ball/123_14363_28981/gt/frame000052.png",
+        "images/ball/123_14363_28981/gt/frame000075.png",
+        "images/ball/123_14363_28981/gt/frame000102.png",
+        "images/ball/123_14363_28981/gt/frame000125.png",
+        "images/ball/123_14363_28981/gt/frame000153.png",
+        "images/ball/123_14363_28981/gt/frame000175.png",
+        "images/ball/123_14363_28981/gt/frame000202.png"
+      ],
+      "renders": {
+        "full": [
+          "images/ball/123_14363_28981/full/00000.png",
+          "images/ball/123_14363_28981/full/00001.png",
+          "images/ball/123_14363_28981/full/00002.png",
+          "images/ball/123_14363_28981/full/00003.png",
+          "images/ball/123_14363_28981/full/00004.png",
+          "images/ball/123_14363_28981/full/00005.png",
+          "images/ball/123_14363_28981/full/00006.png",
+          "images/ball/123_14363_28981/full/00007.png",
+          "images/ball/123_14363_28981/full/00008.png"
+        ],
+        "w4a4": [
+          "images/ball/123_14363_28981/w4a4/00000.png",
+          "images/ball/123_14363_28981/w4a4/00001.png",
+          "images/ball/123_14363_28981/w4a4/00002.png",
+          "images/ball/123_14363_28981/w4a4/00003.png",
+          "images/ball/123_14363_28981/w4a4/00004.png",
+          "images/ball/123_14363_28981/w4a4/00005.png",
+          "images/ball/123_14363_28981/w4a4/00006.png",
+          "images/ball/123_14363_28981/w4a4/00007.png",
+          "images/ball/123_14363_28981/w4a4/00008.png"
+        ],
+        "w3a3": [
+          "images/ball/123_14363_28981/w3a3/00000.png",
+          "images/ball/123_14363_28981/w3a3/00001.png",
+          "images/ball/123_14363_28981/w3a3/00002.png",
+          "images/ball/123_14363_28981/w3a3/00003.png",
+          "images/ball/123_14363_28981/w3a3/00004.png",
+          "images/ball/123_14363_28981/w3a3/00005.png",
+          "images/ball/123_14363_28981/w3a3/00006.png",
+          "images/ball/123_14363_28981/w3a3/00007.png",
+          "images/ball/123_14363_28981/w3a3/00008.png"
+        ]
+      },
+      "pairing": {
+        "full": "Provided archive contract: sorted GT frame names correspond to sorted render indices.",
+        "w4a4": "Provided archive contract: sorted GT frame names correspond to sorted render indices.",
+        "w3a3": "COLMAP held-out image names checked; sorted index pairing"
+      },
+      "inputs": [
+        "images/ball/123_14363_28981/inputs/image_1.png",
+        "images/ball/123_14363_28981/inputs/image_2.png",
+        "images/ball/123_14363_28981/inputs/image_3.png",
+        "images/ball/123_14363_28981/inputs/image_4.png",
+        "images/ball/123_14363_28981/inputs/image_5.png",
+        "images/ball/123_14363_28981/inputs/image_6.png"
+      ],
+      "input_frames": [
+        1,
+        35,
+        69,
+        103,
+        137,
+        170
+      ]
+    },
+    {
+      "id": "bowl/70_5792_13401",
+      "label": "Bowl",
+      "frames": [
+        2,
+        24,
+        52,
+        75,
+        102,
+        125,
+        153,
+        175,
+        202
+      ],
+      "gt": [
+        "images/bowl/70_5792_13401/gt/frame000002.png",
+        "images/bowl/70_5792_13401/gt/frame000024.png",
+        "images/bowl/70_5792_13401/gt/frame000052.png",
+        "images/bowl/70_5792_13401/gt/frame000075.png",
+        "images/bowl/70_5792_13401/gt/frame000102.png",
+        "images/bowl/70_5792_13401/gt/frame000125.png",
+        "images/bowl/70_5792_13401/gt/frame000153.png",
+        "images/bowl/70_5792_13401/gt/frame000175.png",
+        "images/bowl/70_5792_13401/gt/frame000202.png"
+      ],
+      "renders": {
+        "full": [
+          "images/bowl/70_5792_13401/full/00000.png",
+          "images/bowl/70_5792_13401/full/00001.png",
+          "images/bowl/70_5792_13401/full/00002.png",
+          "images/bowl/70_5792_13401/full/00003.png",
+          "images/bowl/70_5792_13401/full/00004.png",
+          "images/bowl/70_5792_13401/full/00005.png",
+          "images/bowl/70_5792_13401/full/00006.png",
+          "images/bowl/70_5792_13401/full/00007.png",
+          "images/bowl/70_5792_13401/full/00008.png"
+        ],
+        "w4a4": [
+          "images/bowl/70_5792_13401/w4a4/00000.png",
+          "images/bowl/70_5792_13401/w4a4/00001.png",
+          "images/bowl/70_5792_13401/w4a4/00002.png",
+          "images/bowl/70_5792_13401/w4a4/00003.png",
+          "images/bowl/70_5792_13401/w4a4/00004.png",
+          "images/bowl/70_5792_13401/w4a4/00005.png",
+          "images/bowl/70_5792_13401/w4a4/00006.png",
+          "images/bowl/70_5792_13401/w4a4/00007.png",
+          "images/bowl/70_5792_13401/w4a4/00008.png"
+        ],
+        "w3a3": [
+          "images/bowl/70_5792_13401/w3a3/00000.png",
+          "images/bowl/70_5792_13401/w3a3/00001.png",
+          "images/bowl/70_5792_13401/w3a3/00002.png",
+          "images/bowl/70_5792_13401/w3a3/00003.png",
+          "images/bowl/70_5792_13401/w3a3/00004.png",
+          "images/bowl/70_5792_13401/w3a3/00005.png",
+          "images/bowl/70_5792_13401/w3a3/00006.png",
+          "images/bowl/70_5792_13401/w3a3/00007.png",
+          "images/bowl/70_5792_13401/w3a3/00008.png"
+        ]
+      },
+      "pairing": {
+        "full": "Provided archive contract: sorted GT frame names correspond to sorted render indices.",
+        "w4a4": "Provided archive contract: sorted GT frame names correspond to sorted render indices.",
+        "w3a3": "COLMAP held-out image names checked; sorted index pairing"
+      },
+      "inputs": [
+        "images/bowl/70_5792_13401/inputs/image_1.png",
+        "images/bowl/70_5792_13401/inputs/image_2.png",
+        "images/bowl/70_5792_13401/inputs/image_3.png",
+        "images/bowl/70_5792_13401/inputs/image_4.png",
+        "images/bowl/70_5792_13401/inputs/image_5.png",
+        "images/bowl/70_5792_13401/inputs/image_6.png"
+      ],
+      "input_frames": [
+        1,
+        35,
+        69,
+        103,
+        137,
+        170
+      ]
+    },
+    {
+      "id": "broccoli/412_56288_108844",
+      "label": "Broccoli",
+      "frames": [
+        2,
+        24,
+        52,
+        75,
+        102,
+        125,
+        153,
+        175,
+        202
+      ],
+      "gt": [
+        "images/broccoli/412_56288_108844/gt/frame000002.png",
+        "images/broccoli/412_56288_108844/gt/frame000024.png",
+        "images/broccoli/412_56288_108844/gt/frame000052.png",
+        "images/broccoli/412_56288_108844/gt/frame000075.png",
+        "images/broccoli/412_56288_108844/gt/frame000102.png",
+        "images/broccoli/412_56288_108844/gt/frame000125.png",
+        "images/broccoli/412_56288_108844/gt/frame000153.png",
+        "images/broccoli/412_56288_108844/gt/frame000175.png",
+        "images/broccoli/412_56288_108844/gt/frame000202.png"
+      ],
+      "renders": {
+        "full": [
+          "images/broccoli/412_56288_108844/full/00000.png",
+          "images/broccoli/412_56288_108844/full/00001.png",
+          "images/broccoli/412_56288_108844/full/00002.png",
+          "images/broccoli/412_56288_108844/full/00003.png",
+          "images/broccoli/412_56288_108844/full/00004.png",
+          "images/broccoli/412_56288_108844/full/00005.png",
+          "images/broccoli/412_56288_108844/full/00006.png",
+          "images/broccoli/412_56288_108844/full/00007.png",
+          "images/broccoli/412_56288_108844/full/00008.png"
+        ],
+        "w4a4": [
+          "images/broccoli/412_56288_108844/w4a4/00000.png",
+          "images/broccoli/412_56288_108844/w4a4/00001.png",
+          "images/broccoli/412_56288_108844/w4a4/00002.png",
+          "images/broccoli/412_56288_108844/w4a4/00003.png",
+          "images/broccoli/412_56288_108844/w4a4/00004.png",
+          "images/broccoli/412_56288_108844/w4a4/00005.png",
+          "images/broccoli/412_56288_108844/w4a4/00006.png",
+          "images/broccoli/412_56288_108844/w4a4/00007.png",
+          "images/broccoli/412_56288_108844/w4a4/00008.png"
+        ],
+        "w3a3": [
+          "images/broccoli/412_56288_108844/w3a3/00000.png",
+          "images/broccoli/412_56288_108844/w3a3/00001.png",
+          "images/broccoli/412_56288_108844/w3a3/00002.png",
+          "images/broccoli/412_56288_108844/w3a3/00003.png",
+          "images/broccoli/412_56288_108844/w3a3/00004.png",
+          "images/broccoli/412_56288_108844/w3a3/00005.png",
+          "images/broccoli/412_56288_108844/w3a3/00006.png",
+          "images/broccoli/412_56288_108844/w3a3/00007.png",
+          "images/broccoli/412_56288_108844/w3a3/00008.png"
+        ]
+      },
+      "pairing": {
+        "full": "Provided archive contract: sorted GT frame names correspond to sorted render indices.",
+        "w4a4": "Provided archive contract: sorted GT frame names correspond to sorted render indices.",
+        "w3a3": "COLMAP held-out image names checked; sorted index pairing"
+      },
+      "inputs": [
+        "images/broccoli/412_56288_108844/inputs/image_1.png",
+        "images/broccoli/412_56288_108844/inputs/image_2.png",
+        "images/broccoli/412_56288_108844/inputs/image_3.png",
+        "images/broccoli/412_56288_108844/inputs/image_4.png",
+        "images/broccoli/412_56288_108844/inputs/image_5.png",
+        "images/broccoli/412_56288_108844/inputs/image_6.png"
+      ],
+      "input_frames": [
+        1,
+        35,
+        69,
+        103,
+        137,
+        170
+      ]
+    },
+    {
+      "id": "hydrant/167_18184_34441",
+      "label": "Hydrant",
+      "frames": [
+        2,
+        24,
+        52,
+        74,
+        101,
+        125,
+        153,
+        175,
+        202
+      ],
+      "gt": [
+        "images/hydrant/167_18184_34441/gt/frame000002.png",
+        "images/hydrant/167_18184_34441/gt/frame000024.png",
+        "images/hydrant/167_18184_34441/gt/frame000052.png",
+        "images/hydrant/167_18184_34441/gt/frame000074.png",
+        "images/hydrant/167_18184_34441/gt/frame000101.png",
+        "images/hydrant/167_18184_34441/gt/frame000125.png",
+        "images/hydrant/167_18184_34441/gt/frame000153.png",
+        "images/hydrant/167_18184_34441/gt/frame000175.png",
+        "images/hydrant/167_18184_34441/gt/frame000202.png"
+      ],
+      "renders": {
+        "full": [
+          "images/hydrant/167_18184_34441/full/00000.png",
+          "images/hydrant/167_18184_34441/full/00001.png",
+          "images/hydrant/167_18184_34441/full/00002.png",
+          "images/hydrant/167_18184_34441/full/00003.png",
+          "images/hydrant/167_18184_34441/full/00004.png",
+          "images/hydrant/167_18184_34441/full/00005.png",
+          "images/hydrant/167_18184_34441/full/00006.png",
+          "images/hydrant/167_18184_34441/full/00007.png",
+          "images/hydrant/167_18184_34441/full/00008.png"
+        ],
+        "w4a4": [
+          "images/hydrant/167_18184_34441/w4a4/00000.png",
+          "images/hydrant/167_18184_34441/w4a4/00001.png",
+          "images/hydrant/167_18184_34441/w4a4/00002.png",
+          "images/hydrant/167_18184_34441/w4a4/00003.png",
+          "images/hydrant/167_18184_34441/w4a4/00004.png",
+          "images/hydrant/167_18184_34441/w4a4/00005.png",
+          "images/hydrant/167_18184_34441/w4a4/00006.png",
+          "images/hydrant/167_18184_34441/w4a4/00007.png",
+          "images/hydrant/167_18184_34441/w4a4/00008.png"
+        ],
+        "w3a3": [
+          "images/hydrant/167_18184_34441/w3a3/00000.png",
+          "images/hydrant/167_18184_34441/w3a3/00001.png",
+          "images/hydrant/167_18184_34441/w3a3/00002.png",
+          "images/hydrant/167_18184_34441/w3a3/00003.png",
+          "images/hydrant/167_18184_34441/w3a3/00004.png",
+          "images/hydrant/167_18184_34441/w3a3/00005.png",
+          "images/hydrant/167_18184_34441/w3a3/00006.png",
+          "images/hydrant/167_18184_34441/w3a3/00007.png",
+          "images/hydrant/167_18184_34441/w3a3/00008.png"
+        ]
+      },
+      "pairing": {
+        "full": "Provided archive contract: sorted GT frame names correspond to sorted render indices.",
+        "w4a4": "Provided archive contract: sorted GT frame names correspond to sorted render indices.",
+        "w3a3": "COLMAP held-out image names checked; sorted index pairing"
+      },
+      "inputs": [
+        "images/hydrant/167_18184_34441/inputs/image_1.png",
+        "images/hydrant/167_18184_34441/inputs/image_2.png",
+        "images/hydrant/167_18184_34441/inputs/image_3.png",
+        "images/hydrant/167_18184_34441/inputs/image_4.png",
+        "images/hydrant/167_18184_34441/inputs/image_5.png",
+        "images/hydrant/167_18184_34441/inputs/image_6.png"
+      ],
+      "input_frames": [
+        1,
+        35,
+        69,
+        102,
+        135,
+        168
+      ]
+    },
+    {
+      "id": "remote/350_36761_68623",
+      "label": "Remote",
+      "frames": [
+        2,
+        24,
+        52,
+        75,
+        102,
+        125,
+        153,
+        175,
+        202
+      ],
+      "gt": [
+        "images/remote/350_36761_68623/gt/frame000002.png",
+        "images/remote/350_36761_68623/gt/frame000024.png",
+        "images/remote/350_36761_68623/gt/frame000052.png",
+        "images/remote/350_36761_68623/gt/frame000075.png",
+        "images/remote/350_36761_68623/gt/frame000102.png",
+        "images/remote/350_36761_68623/gt/frame000125.png",
+        "images/remote/350_36761_68623/gt/frame000153.png",
+        "images/remote/350_36761_68623/gt/frame000175.png",
+        "images/remote/350_36761_68623/gt/frame000202.png"
+      ],
+      "renders": {
+        "full": [
+          "images/remote/350_36761_68623/full/00000.png",
+          "images/remote/350_36761_68623/full/00001.png",
+          "images/remote/350_36761_68623/full/00002.png",
+          "images/remote/350_36761_68623/full/00003.png",
+          "images/remote/350_36761_68623/full/00004.png",
+          "images/remote/350_36761_68623/full/00005.png",
+          "images/remote/350_36761_68623/full/00006.png",
+          "images/remote/350_36761_68623/full/00007.png",
+          "images/remote/350_36761_68623/full/00008.png"
+        ],
+        "w4a4": [
+          "images/remote/350_36761_68623/w4a4/00000.png",
+          "images/remote/350_36761_68623/w4a4/00001.png",
+          "images/remote/350_36761_68623/w4a4/00002.png",
+          "images/remote/350_36761_68623/w4a4/00003.png",
+          "images/remote/350_36761_68623/w4a4/00004.png",
+          "images/remote/350_36761_68623/w4a4/00005.png",
+          "images/remote/350_36761_68623/w4a4/00006.png",
+          "images/remote/350_36761_68623/w4a4/00007.png",
+          "images/remote/350_36761_68623/w4a4/00008.png"
+        ],
+        "w3a3": [
+          "images/remote/350_36761_68623/w3a3/00000.png",
+          "images/remote/350_36761_68623/w3a3/00001.png",
+          "images/remote/350_36761_68623/w3a3/00002.png",
+          "images/remote/350_36761_68623/w3a3/00003.png",
+          "images/remote/350_36761_68623/w3a3/00004.png",
+          "images/remote/350_36761_68623/w3a3/00005.png",
+          "images/remote/350_36761_68623/w3a3/00006.png",
+          "images/remote/350_36761_68623/w3a3/00007.png",
+          "images/remote/350_36761_68623/w3a3/00008.png"
+        ]
+      },
+      "pairing": {
+        "full": "Provided archive contract: sorted GT frame names correspond to sorted render indices.",
+        "w4a4": "Provided archive contract: sorted GT frame names correspond to sorted render indices.",
+        "w3a3": "COLMAP held-out image names checked; sorted index pairing"
+      },
+      "inputs": [
+        "images/remote/350_36761_68623/inputs/image_1.png",
+        "images/remote/350_36761_68623/inputs/image_2.png",
+        "images/remote/350_36761_68623/inputs/image_3.png",
+        "images/remote/350_36761_68623/inputs/image_4.png",
+        "images/remote/350_36761_68623/inputs/image_5.png",
+        "images/remote/350_36761_68623/inputs/image_6.png"
+      ],
+      "input_frames": [
+        1,
+        35,
+        69,
+        103,
+        137,
+        170
+      ]
+    },
+    {
+      "id": "teddybear/187_20215_38541",
+      "label": "Teddybear",
+      "frames": [
+        2,
+        24,
+        52,
+        75,
+        102,
+        125,
+        153,
+        175,
+        202
+      ],
+      "gt": [
+        "images/teddybear/187_20215_38541/gt/frame000002.png",
+        "images/teddybear/187_20215_38541/gt/frame000024.png",
+        "images/teddybear/187_20215_38541/gt/frame000052.png",
+        "images/teddybear/187_20215_38541/gt/frame000075.png",
+        "images/teddybear/187_20215_38541/gt/frame000102.png",
+        "images/teddybear/187_20215_38541/gt/frame000125.png",
+        "images/teddybear/187_20215_38541/gt/frame000153.png",
+        "images/teddybear/187_20215_38541/gt/frame000175.png",
+        "images/teddybear/187_20215_38541/gt/frame000202.png"
+      ],
+      "renders": {
+        "full": [
+          "images/teddybear/187_20215_38541/full/00000.png",
+          "images/teddybear/187_20215_38541/full/00001.png",
+          "images/teddybear/187_20215_38541/full/00002.png",
+          "images/teddybear/187_20215_38541/full/00003.png",
+          "images/teddybear/187_20215_38541/full/00004.png",
+          "images/teddybear/187_20215_38541/full/00005.png",
+          "images/teddybear/187_20215_38541/full/00006.png",
+          "images/teddybear/187_20215_38541/full/00007.png",
+          "images/teddybear/187_20215_38541/full/00008.png"
+        ],
+        "w4a4": [
+          "images/teddybear/187_20215_38541/w4a4/00000.png",
+          "images/teddybear/187_20215_38541/w4a4/00001.png",
+          "images/teddybear/187_20215_38541/w4a4/00002.png",
+          "images/teddybear/187_20215_38541/w4a4/00003.png",
+          "images/teddybear/187_20215_38541/w4a4/00004.png",
+          "images/teddybear/187_20215_38541/w4a4/00005.png",
+          "images/teddybear/187_20215_38541/w4a4/00006.png",
+          "images/teddybear/187_20215_38541/w4a4/00007.png",
+          "images/teddybear/187_20215_38541/w4a4/00008.png"
+        ],
+        "w3a3": [
+          "images/teddybear/187_20215_38541/w3a3/00000.png",
+          "images/teddybear/187_20215_38541/w3a3/00001.png",
+          "images/teddybear/187_20215_38541/w3a3/00002.png",
+          "images/teddybear/187_20215_38541/w3a3/00003.png",
+          "images/teddybear/187_20215_38541/w3a3/00004.png",
+          "images/teddybear/187_20215_38541/w3a3/00005.png",
+          "images/teddybear/187_20215_38541/w3a3/00006.png",
+          "images/teddybear/187_20215_38541/w3a3/00007.png",
+          "images/teddybear/187_20215_38541/w3a3/00008.png"
+        ]
+      },
+      "pairing": {
+        "full": "Provided archive contract: sorted GT frame names correspond to sorted render indices.",
+        "w4a4": "Provided archive contract: sorted GT frame names correspond to sorted render indices.",
+        "w3a3": "COLMAP held-out image names checked; sorted index pairing"
+      },
+      "inputs": [
+        "images/teddybear/187_20215_38541/inputs/image_1.png",
+        "images/teddybear/187_20215_38541/inputs/image_2.png",
+        "images/teddybear/187_20215_38541/inputs/image_3.png",
+        "images/teddybear/187_20215_38541/inputs/image_4.png",
+        "images/teddybear/187_20215_38541/inputs/image_5.png",
+        "images/teddybear/187_20215_38541/inputs/image_6.png"
+      ],
+      "input_frames": [
+        1,
+        35,
+        69,
+        103,
+        137,
+        170
+      ]
+    },
+    {
+      "id": "toaster/372_41229_82130",
+      "label": "Toaster",
+      "frames": [
+        2,
+        24,
+        52,
+        75,
+        102,
+        125,
+        153,
+        175,
+        202
+      ],
+      "gt": [
+        "images/toaster/372_41229_82130/gt/frame000002.png",
+        "images/toaster/372_41229_82130/gt/frame000024.png",
+        "images/toaster/372_41229_82130/gt/frame000052.png",
+        "images/toaster/372_41229_82130/gt/frame000075.png",
+        "images/toaster/372_41229_82130/gt/frame000102.png",
+        "images/toaster/372_41229_82130/gt/frame000125.png",
+        "images/toaster/372_41229_82130/gt/frame000153.png",
+        "images/toaster/372_41229_82130/gt/frame000175.png",
+        "images/toaster/372_41229_82130/gt/frame000202.png"
+      ],
+      "renders": {
+        "full": [
+          "images/toaster/372_41229_82130/full/00000.png",
+          "images/toaster/372_41229_82130/full/00001.png",
+          "images/toaster/372_41229_82130/full/00002.png",
+          "images/toaster/372_41229_82130/full/00003.png",
+          "images/toaster/372_41229_82130/full/00004.png",
+          "images/toaster/372_41229_82130/full/00005.png",
+          "images/toaster/372_41229_82130/full/00006.png",
+          "images/toaster/372_41229_82130/full/00007.png",
+          "images/toaster/372_41229_82130/full/00008.png"
+        ],
+        "w4a4": [
+          "images/toaster/372_41229_82130/w4a4/00000.png",
+          "images/toaster/372_41229_82130/w4a4/00001.png",
+          "images/toaster/372_41229_82130/w4a4/00002.png",
+          "images/toaster/372_41229_82130/w4a4/00003.png",
+          "images/toaster/372_41229_82130/w4a4/00004.png",
+          "images/toaster/372_41229_82130/w4a4/00005.png",
+          "images/toaster/372_41229_82130/w4a4/00006.png",
+          "images/toaster/372_41229_82130/w4a4/00007.png",
+          "images/toaster/372_41229_82130/w4a4/00008.png"
+        ],
+        "w3a3": [
+          "images/toaster/372_41229_82130/w3a3/00000.png",
+          "images/toaster/372_41229_82130/w3a3/00001.png",
+          "images/toaster/372_41229_82130/w3a3/00002.png",
+          "images/toaster/372_41229_82130/w3a3/00003.png",
+          "images/toaster/372_41229_82130/w3a3/00004.png",
+          "images/toaster/372_41229_82130/w3a3/00005.png",
+          "images/toaster/372_41229_82130/w3a3/00006.png",
+          "images/toaster/372_41229_82130/w3a3/00007.png",
+          "images/toaster/372_41229_82130/w3a3/00008.png"
+        ]
+      },
+      "pairing": {
+        "full": "Provided archive contract: sorted GT frame names correspond to sorted render indices.",
+        "w4a4": "Provided archive contract: sorted GT frame names correspond to sorted render indices.",
+        "w3a3": "COLMAP held-out image names checked; sorted index pairing"
+      },
+      "inputs": [
+        "images/toaster/372_41229_82130/inputs/image_1.png",
+        "images/toaster/372_41229_82130/inputs/image_2.png",
+        "images/toaster/372_41229_82130/inputs/image_3.png",
+        "images/toaster/372_41229_82130/inputs/image_4.png",
+        "images/toaster/372_41229_82130/inputs/image_5.png",
+        "images/toaster/372_41229_82130/inputs/image_6.png"
+      ],
+      "input_frames": [
+        1,
+        35,
+        69,
+        103,
+        137,
+        170
+      ]
+    }
+  ],
+  "metric_policy": "Imported raw foreground primary; content secondary; no live scoring.",
+  "packaged_at": "2026-09-13T10:12:46.419445+00:00"
+}

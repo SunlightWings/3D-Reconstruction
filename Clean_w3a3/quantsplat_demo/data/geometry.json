@@ -1,0 +1,16 @@
+{
+  "w3a3": {
+    "mean": {
+      "n_scenes": 8,
+      "cam_rot_deg": 2.6887,
+      "cam_centre_err": 0.04248,
+      "cam_spread_ratio": 0.971,
+      "depth_rel_err": 0.03415,
+      "point_err": 0.10071
+    }
+  },
+  "_provenance": {
+    "kind": "rounded_console_transcription",
+    "description": "Printed eight-scene W3A3 diagnostic, not a new measurement."
+  }
+}

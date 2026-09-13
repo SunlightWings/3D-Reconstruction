@@ -1,0 +1,77 @@
+# ============================================================
+# Python / environments
+# ============================================================
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+
+# Conda / local environments
+.conda/
+
+# ============================================================
+# ML checkpoints / model weights
+# ============================================================
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+
+# Calibration / generated tensors
+*.npy
+*.npz
+
+# ============================================================
+# 3D outputs
+# ============================================================
+*.ply
+
+# ============================================================
+# Archives
+# ============================================================
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+# ============================================================
+# Raw datasets
+# ============================================================
+Clean_w3a3/datasets/*
+!Clean_w3a3/datasets/frozen_dataset_manifest.json
+
+# ============================================================
+# Model/calibration assets
+# ============================================================
+Clean_w3a3/models/
+
+# VGGT checkpoints
+Clean_w3a3/QuantVGGT/VGGT-1B/
+
+# Quantization calibration outputs
+Clean_w3a3/QuantVGGT/evaluation/outputs/
+
+# ============================================================
+# Generated training/output directories
+# ============================================================
+outputs/
+output/
+checkpoints/
+wandb/
+runs/
+build/
+dist/
+
+# ============================================================
+# OS/editor garbage
+# ============================================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
