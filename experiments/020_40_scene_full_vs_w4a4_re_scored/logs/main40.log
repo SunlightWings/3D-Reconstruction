@@ -1,0 +1,49 @@
+  apple/110_13051_23361              content +0.130  foreground -0.405  FLIP
+  apple/189_20393_38136              content +0.667  foreground +0.670  agree
+  ball/123_14363_28981               content +0.370  foreground +0.665  agree
+  ball/375_42693_85518               content +0.326  foreground +0.121  agree
+  bench/415_57112_110099             content +0.488  foreground +0.440  agree
+  bench/415_57121_110109             content +0.251  foreground +0.666  agree
+  book/119_13962_28926               content -0.529  foreground -0.213  agree
+  book/247_26469_51778               content +0.675  foreground +0.445  agree
+  bowl/69_5465_12831                 content +0.260  foreground +0.289  agree
+  bowl/70_5792_13401                 content -1.291  foreground -0.069  agree
+  broccoli/372_41112_81867           content +0.770  foreground -0.101  FLIP
+  broccoli/412_56288_108844          content +0.034  foreground -0.630  FLIP
+  cake/374_42274_84517               content +0.108  foreground +0.241  agree
+  cake/403_53094_103680              content +0.524  foreground -0.058  FLIP
+  donut/391_47032_93657              content +0.286  foreground -0.565  FLIP
+  donut/403_52964_103416             content -0.193  foreground -1.063  agree
+  hydrant/167_18184_34441            content +0.653  foreground +0.777  agree
+  hydrant/411_56064_108483           content -0.118  foreground +0.480  FLIP
+  mouse/107_12753_23606              content +0.602  foreground +0.700  agree
+  mouse/377_43416_86289              content +0.473  foreground -0.029  FLIP
+  orange/374_42196_84367             content +0.136  foreground -0.087  FLIP
+  orange/385_45386_90752             content +0.039  foreground -0.282  FLIP
+  plant/247_26441_50907              content +0.453  foreground +0.680  agree
+  plant/374_42005_84358              content +0.006  foreground -0.051  FLIP
+  remote/195_20989_41543             content +0.214  foreground +0.173  agree
+  remote/350_36761_68623             content +0.274  foreground +0.097  agree
+  skateboard/245_26182_52130         content +0.203  foreground -0.022  FLIP
+  skateboard/366_39266_76077         content +0.633  foreground -0.665  FLIP
+  suitcase/410_55734_107452          content -0.418  foreground -0.292  agree
+  suitcase/50_2928_8645              content +0.296  foreground +0.128  agree
+  teddybear/187_20215_38541          content +0.153  foreground +0.887  agree
+  teddybear/34_1479_4753             content -0.433  foreground -0.605  agree
+  toaster/372_41229_82130            content -0.559  foreground +0.173  FLIP
+  toaster/416_57389_110765           content +0.077  foreground -0.182  FLIP
+  toytrain/240_25394_51994           content +1.061  foreground +0.952  agree
+  toytrain/399_51323_100753          content -0.227  foreground -0.320  agree
+  toytruck/190_20494_39385           content +0.095  foreground -0.134  FLIP
+  toytruck/346_36113_66551           content -0.052  foreground -0.048  agree
+  vase/374_41862_83720               content +0.345  foreground +0.349  agree
+  vase/380_44863_89631               content +1.374  foreground +1.351  agree
+
+=== 40-scene means ===
+content     full= 9.9156  w4a4= 9.7117  delta=+0.2038 dB
+            D1: n=40 mean=+0.2038 sd=0.4700 t=2.743 p=0.009156 CI95=[+0.0535,+0.3542] MDE=0.2082 favouring_full=31/40
+foreground  full= 9.0279  w4a4= 8.9164  delta=+0.1115 dB
+            D1: n=40 mean=+0.1115 sd=0.5093 t=1.385 p=0.174 CI95=[-0.0514,+0.2744] MDE=0.2256 favouring_full=20/40
+
+sign agreement: 25/40 = 62.5%  (15 scenes flip)
+saved /var/tmp/luli38se/quantsplat/oracle_sweep/results/main40_both_masks.json

@@ -1,0 +1,45 @@
+variant=w4a4_no_smooth  scenes=40 (all)
+loading w4a4_no_smooth ...
+  loaded in 24.6s: calibrated locally by code/quantization/calibrate_w2a4.py
+  skip apple/110_13051_23361 (exists)
+  apple/189_20393_38136: 2.19s, peak 15381 MiB -> w4a4_no_smooth.npz
+  skip ball/123_14363_28981 (exists)
+  ball/375_42693_85518: 1.97s, peak 15382 MiB -> w4a4_no_smooth.npz
+  bench/415_57112_110099: 1.97s, peak 15382 MiB -> w4a4_no_smooth.npz
+  bench/415_57121_110109: 1.97s, peak 15382 MiB -> w4a4_no_smooth.npz
+  book/119_13962_28926: 1.97s, peak 15382 MiB -> w4a4_no_smooth.npz
+  book/247_26469_51778: 1.97s, peak 15382 MiB -> w4a4_no_smooth.npz
+  bowl/69_5465_12831: 1.97s, peak 15382 MiB -> w4a4_no_smooth.npz
+  skip bowl/70_5792_13401 (exists)
+  broccoli/372_41112_81867: 1.97s, peak 15382 MiB -> w4a4_no_smooth.npz
+  skip broccoli/412_56288_108844 (exists)
+  cake/374_42274_84517: 1.97s, peak 15382 MiB -> w4a4_no_smooth.npz
+  cake/403_53094_103680: 1.97s, peak 15382 MiB -> w4a4_no_smooth.npz
+  donut/391_47032_93657: 1.98s, peak 15382 MiB -> w4a4_no_smooth.npz
+  donut/403_52964_103416: 1.98s, peak 15382 MiB -> w4a4_no_smooth.npz
+  skip hydrant/167_18184_34441 (exists)
+  hydrant/411_56064_108483: 1.98s, peak 15382 MiB -> w4a4_no_smooth.npz
+  mouse/107_12753_23606: 1.98s, peak 15382 MiB -> w4a4_no_smooth.npz
+  mouse/377_43416_86289: 1.98s, peak 15382 MiB -> w4a4_no_smooth.npz
+  orange/374_42196_84367: 1.98s, peak 15382 MiB -> w4a4_no_smooth.npz
+  orange/385_45386_90752: 1.98s, peak 15382 MiB -> w4a4_no_smooth.npz
+  plant/247_26441_50907: 1.98s, peak 15382 MiB -> w4a4_no_smooth.npz
+  plant/374_42005_84358: 1.98s, peak 15382 MiB -> w4a4_no_smooth.npz
+  remote/195_20989_41543: 1.98s, peak 15382 MiB -> w4a4_no_smooth.npz
+  skip remote/350_36761_68623 (exists)
+  skateboard/245_26182_52130: 1.98s, peak 15382 MiB -> w4a4_no_smooth.npz
+  skateboard/366_39266_76077: 1.98s, peak 15382 MiB -> w4a4_no_smooth.npz
+  suitcase/410_55734_107452: 1.98s, peak 15382 MiB -> w4a4_no_smooth.npz
+  suitcase/50_2928_8645: 1.98s, peak 15382 MiB -> w4a4_no_smooth.npz
+  skip teddybear/187_20215_38541 (exists)
+  teddybear/34_1479_4753: 1.98s, peak 15382 MiB -> w4a4_no_smooth.npz
+  skip toaster/372_41229_82130 (exists)
+  toaster/416_57389_110765: 1.98s, peak 15382 MiB -> w4a4_no_smooth.npz
+  toytrain/240_25394_51994: 1.98s, peak 15382 MiB -> w4a4_no_smooth.npz
+  toytrain/399_51323_100753: 1.98s, peak 15382 MiB -> w4a4_no_smooth.npz
+  toytruck/190_20494_39385: 1.98s, peak 15382 MiB -> w4a4_no_smooth.npz
+  toytruck/346_36113_66551: 1.98s, peak 15382 MiB -> w4a4_no_smooth.npz
+  vase/374_41862_83720: 1.98s, peak 15382 MiB -> w4a4_no_smooth.npz
+  vase/380_44863_89631: 1.98s, peak 15382 MiB -> w4a4_no_smooth.npz
+
+40/40 scenes; mean inference 1.98s

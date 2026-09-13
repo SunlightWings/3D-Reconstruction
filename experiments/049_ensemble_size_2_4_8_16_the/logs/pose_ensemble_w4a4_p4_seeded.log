@@ -1,0 +1,51 @@
+loading w4a4 ...
+[1/40] apple/110_13051_23361  single 0.718 -> ensemble 0.856 deg  (8.8s/scene)
+[2/40] apple/189_20393_38136  single 1.208 -> ensemble 0.577 deg  (8.8s/scene)
+[3/40] ball/123_14363_28981  single 0.617 -> ensemble 0.547 deg  (8.8s/scene)
+[4/40] ball/375_42693_85518  single 1.708 -> ensemble 0.700 deg  (8.8s/scene)
+[5/40] bench/415_57112_110099  single 0.345 -> ensemble 0.283 deg  (8.8s/scene)
+[6/40] bench/415_57121_110109  single 0.613 -> ensemble 0.330 deg  (8.8s/scene)
+[7/40] book/119_13962_28926  single 1.442 -> ensemble 0.431 deg  (8.8s/scene)
+[8/40] book/247_26469_51778  single 0.752 -> ensemble 0.591 deg  (8.8s/scene)
+[9/40] bowl/69_5465_12831  single 0.688 -> ensemble 0.559 deg  (8.8s/scene)
+[10/40] bowl/70_5792_13401  single 4.779 -> ensemble 9.149 deg  (8.8s/scene)
+[11/40] broccoli/372_41112_81867  single 0.624 -> ensemble 0.331 deg  (8.8s/scene)
+[12/40] broccoli/412_56288_108844  single 0.681 -> ensemble 0.436 deg  (8.8s/scene)
+[13/40] cake/374_42274_84517  single 0.794 -> ensemble 0.573 deg  (8.8s/scene)
+[14/40] cake/403_53094_103680  single 2.250 -> ensemble 2.775 deg  (8.8s/scene)
+[15/40] donut/391_47032_93657  single 2.341 -> ensemble 3.131 deg  (8.8s/scene)
+[16/40] donut/403_52964_103416  single 0.742 -> ensemble 0.769 deg  (8.8s/scene)
+[17/40] hydrant/167_18184_34441  single 0.772 -> ensemble 0.589 deg  (8.8s/scene)
+[18/40] hydrant/411_56064_108483  single 0.522 -> ensemble 0.525 deg  (8.8s/scene)
+[19/40] mouse/107_12753_23606  single 1.175 -> ensemble 1.215 deg  (8.8s/scene)
+[20/40] mouse/377_43416_86289  single 1.541 -> ensemble 0.681 deg  (8.8s/scene)
+[21/40] orange/374_42196_84367  single 1.131 -> ensemble 0.997 deg  (8.8s/scene)
+[22/40] orange/385_45386_90752  single 2.634 -> ensemble 2.028 deg  (8.8s/scene)
+[23/40] plant/247_26441_50907  single 0.919 -> ensemble 1.001 deg  (8.8s/scene)
+[24/40] plant/374_42005_84358  single 1.537 -> ensemble 0.830 deg  (8.8s/scene)
+[25/40] remote/195_20989_41543  single 0.849 -> ensemble 0.684 deg  (8.8s/scene)
+[26/40] remote/350_36761_68623  single 1.335 -> ensemble 0.560 deg  (8.8s/scene)
+[27/40] skateboard/245_26182_52130  single 1.014 -> ensemble 0.964 deg  (8.8s/scene)
+[28/40] skateboard/366_39266_76077  single 1.994 -> ensemble 1.724 deg  (8.8s/scene)
+[29/40] suitcase/410_55734_107452  single 0.582 -> ensemble 0.518 deg  (8.9s/scene)
+[30/40] suitcase/50_2928_8645  single 3.937 -> ensemble 1.749 deg  (8.9s/scene)
+[31/40] teddybear/187_20215_38541  single 1.314 -> ensemble 1.156 deg  (8.9s/scene)
+[32/40] teddybear/34_1479_4753  single 0.498 -> ensemble 0.445 deg  (8.9s/scene)
+[33/40] toaster/372_41229_82130  single 1.167 -> ensemble 0.667 deg  (8.9s/scene)
+[34/40] toaster/416_57389_110765  single 1.633 -> ensemble 1.352 deg  (8.9s/scene)
+[35/40] toytrain/240_25394_51994  single 1.333 -> ensemble 1.025 deg  (8.9s/scene)
+[36/40] toytrain/399_51323_100753  single 0.485 -> ensemble 0.428 deg  (8.9s/scene)
+[37/40] toytruck/190_20494_39385  single 1.101 -> ensemble 1.239 deg  (8.9s/scene)
+[38/40] toytruck/346_36113_66551  single 0.529 -> ensemble 0.378 deg  (8.9s/scene)
+[39/40] vase/374_41862_83720  single 1.258 -> ensemble 1.426 deg  (8.9s/scene)
+[40/40] vase/380_44863_89631  single 1.452 -> ensemble 1.439 deg  (8.9s/scene)
+
+================================================================================================
+POSE ENSEMBLING, variant w4a4, 4 orderings, n = 40 scenes
+  focal error vs full: single median 0.02220 -> ensemble 0.01911  improved 25/40  Wilcoxon p=0.106
+  vs_full          n= 40  single median 1.1162 -> ensemble 0.6921 deg  improved 30/40  median reduction +17.6%  Wilcoxon p=0.00105
+  vs_full (no bowl) n= 39  single median 1.1010 -> ensemble 0.6843 deg  improved 30/39  median reduction +17.9%  Wilcoxon p=0.00018
+  vs_gt            n= 40  single median 1.7123 -> ensemble 1.3473 deg  improved 32/40  median reduction +10.6%  Wilcoxon p=0.000108
+  vs_gt (no bowl)  n= 39  single median 1.6581 -> ensemble 1.3366 deg  improved 32/39  median reduction +10.7%  Wilcoxon p=1.35e-05
+
+saved /var/tmp/luli38se/quantsplat/oracle_sweep/results/pose_ensemble_w4a4_p4.json

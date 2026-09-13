@@ -1,0 +1,12 @@
+/home/utn/luli38se/cv/3D-Reconstruction/code/quantization/cpu_probes.py:360: RuntimeWarning: All-NaN slice encountered
+  cons = np.nanmedian(rel, axis=0)
+trained on 32 W4A4 scenes, 57600 pixels; weights [0.312, 0.609, 0.303, 0.096, -0.046, -0.027, 0.017, 0.759, 0.358, -3.019]
+  apple/110_13051_23361: 101400 points  AUROC(top-decile W3A3 error) 0.916  Spearman(conf, -err) +0.708
+  ball/123_14363_28981: 101400 points  AUROC(top-decile W3A3 error) 0.842  Spearman(conf, -err) +0.711
+  bowl/70_5792_13401: 101400 points  AUROC(top-decile W3A3 error) 0.845  Spearman(conf, -err) +0.371
+  broccoli/412_56288_108844: 101400 points  AUROC(top-decile W3A3 error) 0.608  Spearman(conf, -err) +0.470
+  hydrant/167_18184_34441: 101400 points  AUROC(top-decile W3A3 error) 0.940  Spearman(conf, -err) +0.721
+  remote/350_36761_68623: 101400 points  AUROC(top-decile W3A3 error) 0.867  Spearman(conf, -err) +0.608
+  teddybear/187_20215_38541: 101400 points  AUROC(top-decile W3A3 error) 0.905  Spearman(conf, -err) +0.569
+  toaster/372_41229_82130: 101400 points  AUROC(top-decile W3A3 error) 0.824  Spearman(conf, -err) +0.697
+mean AUROC on W3A3 0.843

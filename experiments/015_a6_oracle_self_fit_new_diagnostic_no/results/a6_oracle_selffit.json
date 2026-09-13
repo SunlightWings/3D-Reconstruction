@@ -1,0 +1,62 @@
+{
+  "description": "Oracle self-fit: the oracle models rendered at their OWN training views, both masks.",
+  "expect": ">= 30 dB. Below that indicts the GT camera path (oracle COLMAP cameras / pad affine on intrinsics), not the reconstruction.",
+  "target_db": 30.0,
+  "scenes_tested": [
+    "apple/110_13051_23361",
+    "ball/123_14363_28981",
+    "bowl/70_5792_13401",
+    "broccoli/412_56288_108844",
+    "hydrant/167_18184_34441",
+    "remote/350_36761_68623",
+    "teddybear/187_20215_38541",
+    "toaster/372_41229_82130"
+  ],
+  "mean_self_fit_psnr_content": 47.80121742122922,
+  "mean_self_fit_psnr_foreground": 47.85931541770234,
+  "min_self_fit_psnr_foreground": 46.06849343272705,
+  "scenes_below_target": [],
+  "passed": true,
+  "per_scene": [
+    {
+      "scene": "apple/110_13051_23361",
+      "content_psnr": 50.16615140360607,
+      "foreground_psnr": 50.33852333692724
+    },
+    {
+      "scene": "ball/123_14363_28981",
+      "content_psnr": 47.04534737684759,
+      "foreground_psnr": 48.74233972767109
+    },
+    {
+      "scene": "bowl/70_5792_13401",
+      "content_psnr": 47.808977521886895,
+      "foreground_psnr": 46.63432997529684
+    },
+    {
+      "scene": "broccoli/412_56288_108844",
+      "content_psnr": 49.60406572976287,
+      "foreground_psnr": 46.27527658301025
+    },
+    {
+      "scene": "hydrant/167_18184_34441",
+      "content_psnr": 46.945321932484546,
+      "foreground_psnr": 48.51709252575558
+    },
+    {
+      "scene": "remote/350_36761_68623",
+      "content_psnr": 48.325796918829376,
+      "foreground_psnr": 47.73336364645889
+    },
+    {
+      "scene": "teddybear/187_20215_38541",
+      "content_psnr": 46.93344723154794,
+      "foreground_psnr": 46.06849343272705
+    },
+    {
+      "scene": "toaster/372_41229_82130",
+      "content_psnr": 45.58063125486846,
+      "foreground_psnr": 48.565104113771746
+    }
+  ]
+}

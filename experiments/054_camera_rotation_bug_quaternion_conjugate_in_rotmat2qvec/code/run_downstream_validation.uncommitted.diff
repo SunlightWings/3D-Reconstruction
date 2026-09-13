@@ -1,0 +1,25 @@
+diff --git a/code/downstream_3dgs/run_downstream_validation.py b/code/downstream_3dgs/run_downstream_validation.py
+index 1ea7dfd..47253b7 100755
+--- a/code/downstream_3dgs/run_downstream_validation.py
++++ b/code/downstream_3dgs/run_downstream_validation.py
+@@ -406,7 +406,8 @@ def rotmat2qvec(R: np.ndarray) -> np.ndarray:
+             [R[0, 0] - R[1, 1] - R[2, 2], 0, 0, 0],
+             [R[1, 0] + R[0, 1], R[1, 1] - R[0, 0] - R[2, 2], 0, 0],
+             [R[2, 0] + R[0, 2], R[2, 1] + R[1, 2], R[2, 2] - R[0, 0] - R[1, 1], 0],
+-            [R[1, 2] - R[2, 1], R[2, 0] - R[0, 2], R[0, 1] - R[1, 0], R[0, 0] + R[1, 1] + R[2, 2]],
++            # sign fixed 2026-09-13: this row was negated, which wrote the CONJUGATE quaternion (rotation R^T)
++            [R[2, 1] - R[1, 2], R[0, 2] - R[2, 0], R[1, 0] - R[0, 1], R[0, 0] + R[1, 1] + R[2, 2]],
+         ],
+         dtype=np.float64,
+     ) / 3.0
+@@ -1049,7 +1050,9 @@ def parse_args() -> argparse.Namespace:
+     p.add_argument("--scenes", nargs="+", default=DEFAULT_SCENES, help="category/sequence entries")
+     p.add_argument("--stride", type=int, default=4)
+     p.add_argument("--heldout-views", type=int, default=9)
+-    p.add_argument("--iterations", type=int, default=30000)
++    p.add_argument("--iterations", type=int, default=7000,
++                   help="7k is the project default: 7k->30k buys +0.095 dB (full) / +0.065 dB "
++                        "(quant) and costs SSIM -0.016. See convergence_7k_vs_30k.json.")
+     p.add_argument("--gpu-poll-seconds", type=int, default=60)
+     p.add_argument("--gpu-stable-checks", type=int, default=2)
+     p.add_argument("--prepare-only", action="store_true", help="CPU preparation/validation only; no GPU work")

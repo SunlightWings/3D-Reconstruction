@@ -1,0 +1,52 @@
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+/home/utn/luli38se/cv/.venv/lib/python3.12/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/utn/luli38se/cv/.venv/lib/python3.12/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/utn/luli38se/cv/.venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+  apple/110_13051_23361          full_qfix=18.121  w3a3_qfix=14.551  w3a3_qfix_oracle_prune=14.821  w3a3_qfix_oracle_weight=14.593  w3a3_qfix_rand_prune=14.603  w3a3_qfix_predictor_prune=14.448  w3a3_qfix_predictor_weight=14.752
+  ball/123_14363_28981           full_qfix=13.970  w3a3_qfix=13.235  w3a3_qfix_oracle_prune=12.975  w3a3_qfix_oracle_weight=13.264  w3a3_qfix_rand_prune=13.062  w3a3_qfix_predictor_prune=12.747  w3a3_qfix_predictor_weight=12.778
+  bowl/70_5792_13401             full_qfix=15.166  w3a3_qfix=12.678  w3a3_qfix_oracle_prune=12.646  w3a3_qfix_oracle_weight=12.603  w3a3_qfix_rand_prune=12.703  w3a3_qfix_predictor_prune=12.153  w3a3_qfix_predictor_weight=12.550
+  broccoli/412_56288_108844      full_qfix=15.411  w3a3_qfix=14.265  w3a3_qfix_oracle_prune=14.514  w3a3_qfix_oracle_weight=14.454  w3a3_qfix_rand_prune=14.392  w3a3_qfix_predictor_prune=14.905  w3a3_qfix_predictor_weight=14.510
+  hydrant/167_18184_34441        full_qfix=13.115  w3a3_qfix=12.299  w3a3_qfix_oracle_prune=12.454  w3a3_qfix_oracle_weight=12.648  w3a3_qfix_rand_prune=12.756  w3a3_qfix_predictor_prune=10.752  w3a3_qfix_predictor_weight=12.272
+  remote/350_36761_68623         full_qfix=14.370  w3a3_qfix=11.276  w3a3_qfix_oracle_prune=11.164  w3a3_qfix_oracle_weight=11.209  w3a3_qfix_rand_prune=11.256  w3a3_qfix_predictor_prune=11.022  w3a3_qfix_predictor_weight=11.265
+  teddybear/187_20215_38541      full_qfix=17.583  w3a3_qfix=16.358  w3a3_qfix_oracle_prune=16.306  w3a3_qfix_oracle_weight=16.399  w3a3_qfix_rand_prune=16.291  w3a3_qfix_predictor_prune=15.105  w3a3_qfix_predictor_weight=16.319
+  toaster/372_41229_82130        full_qfix=8.852  w3a3_qfix=9.204  w3a3_qfix_oracle_prune=10.258  w3a3_qfix_oracle_weight=8.978  w3a3_qfix_rand_prune=9.091  w3a3_qfix_predictor_prune=9.130  w3a3_qfix_predictor_weight=9.002
+
+====================================================================================================
+FOREGROUND means over scenes where each arm is complete
+  full_qfix                    n= 8  PSNR 14.5736  SSIM 0.3195  LPIPS 0.3464
+  w3a3_qfix                    n= 8  PSNR 12.9833  SSIM 0.2485  LPIPS 0.4390
+  w3a3_qfix_oracle_prune       n= 8  PSNR 13.1422  SSIM 0.2551  LPIPS 0.4407
+  w3a3_qfix_oracle_weight      n= 8  PSNR 13.0187  SSIM 0.2498  LPIPS 0.4376
+  w3a3_qfix_rand_prune         n= 8  PSNR 13.0191  SSIM 0.2480  LPIPS 0.4393
+  w3a3_qfix_predictor_prune    n= 8  PSNR 12.5328  SSIM 0.2477  LPIPS 0.4478
+  w3a3_qfix_predictor_weight   n= 8  PSNR 12.9310  SSIM 0.2491  LPIPS 0.4379
+
+paired, POSITIVE = first arm BETTER
+  full_qfix              vs w3a3_qfix              psnr  mean +1.5904  t p 0.0118  Wilcoxon p 0.0156  CI [+0.4768,+2.7039]  better 7/8
+  full_qfix              vs w3a3_qfix              ssim  mean +0.0710  t p 0.0070  Wilcoxon p 0.0156  CI [+0.0265,+0.1154]  better 7/8
+  full_qfix              vs w3a3_qfix              lpips mean +0.0926  t p 0.0038  Wilcoxon p 0.0078  CI [+0.0411,+0.1441]  better 8/8
+  w3a3_qfix_oracle_prune vs w3a3_qfix              psnr  mean +0.1589  t p 0.3045  Wilcoxon p 0.4609  CI [-0.1802,+0.4980]  better 4/8
+  w3a3_qfix_oracle_prune vs w3a3_qfix              ssim  mean +0.0065  t p 0.0598  Wilcoxon p 0.0547  CI [-0.0004,+0.0134]  better 7/8
+  w3a3_qfix_oracle_prune vs w3a3_qfix              lpips mean -0.0017  t p 0.8717  Wilcoxon p 0.8438  CI [-0.0250,+0.0217]  better 3/8
+  w3a3_qfix_oracle_weight vs w3a3_qfix              psnr  mean +0.0354  t p 0.5836  Wilcoxon p 0.8438  CI [-0.1103,+0.1811]  better 5/8
+  w3a3_qfix_oracle_weight vs w3a3_qfix              ssim  mean +0.0013  t p 0.3752  Wilcoxon p 0.1953  CI [-0.0019,+0.0045]  better 7/8
+  w3a3_qfix_oracle_weight vs w3a3_qfix              lpips mean +0.0014  t p 0.4175  Wilcoxon p 0.4609  CI [-0.0024,+0.0052]  better 5/8
+  w3a3_qfix_rand_prune   vs w3a3_qfix              psnr  mean +0.0358  t p 0.6188  Wilcoxon p 0.9453  CI [-0.1269,+0.1986]  better 4/8
+  w3a3_qfix_rand_prune   vs w3a3_qfix              ssim  mean -0.0006  t p 0.6845  Wilcoxon p 0.6406  CI [-0.0038,+0.0027]  better 4/8
+  w3a3_qfix_rand_prune   vs w3a3_qfix              lpips mean -0.0003  t p 0.8593  Wilcoxon p 0.7422  CI [-0.0043,+0.0036]  better 3/8
+  w3a3_qfix_oracle_prune vs w3a3_qfix_rand_prune   psnr  mean +0.1231  t p 0.4638  Wilcoxon p 0.8438  CI [-0.2525,+0.4987]  better 4/8
+  w3a3_qfix_oracle_prune vs w3a3_qfix_rand_prune   ssim  mean +0.0071  t p 0.0276  Wilcoxon p 0.0547  CI [+0.0010,+0.0131]  better 7/8
+  w3a3_qfix_oracle_prune vs w3a3_qfix_rand_prune   lpips mean -0.0013  t p 0.9015  Wilcoxon p 0.9453  CI [-0.0262,+0.0235]  better 5/8
+  w3a3_qfix_predictor_prune vs w3a3_qfix              psnr  mean -0.4505  t p 0.1078  Wilcoxon p 0.1094  CI [-1.0284,+0.1274]  better 1/8
+  w3a3_qfix_predictor_prune vs w3a3_qfix              ssim  mean -0.0008  t p 0.7463  Wilcoxon p 1.0000  CI [-0.0064,+0.0048]  better 4/8
+  w3a3_qfix_predictor_prune vs w3a3_qfix              lpips mean -0.0088  t p 0.5003  Wilcoxon p 0.5469  CI [-0.0379,+0.0204]  better 3/8
+  w3a3_qfix_predictor_weight vs w3a3_qfix              psnr  mean -0.0522  t p 0.5279  Wilcoxon p 0.4609  CI [-0.2382,+0.1338]  better 2/8
+  w3a3_qfix_predictor_weight vs w3a3_qfix              ssim  mean +0.0006  t p 0.7436  Wilcoxon p 0.7422  CI [-0.0035,+0.0047]  better 5/8
+  w3a3_qfix_predictor_weight vs w3a3_qfix              lpips mean +0.0011  t p 0.6281  Wilcoxon p 0.5469  CI [-0.0040,+0.0062]  better 4/8
+  w3a3_qfix_predictor_prune vs w3a3_qfix_rand_prune   psnr  mean -0.4863  t p 0.1217  Wilcoxon p 0.1094  CI [-1.1396,+0.1669]  better 2/8
+  w3a3_qfix_predictor_prune vs w3a3_qfix_rand_prune   ssim  mean -0.0002  t p 0.9182  Wilcoxon p 0.6406  CI [-0.0051,+0.0046]  better 3/8
+  w3a3_qfix_predictor_prune vs w3a3_qfix_rand_prune   lpips mean -0.0084  t p 0.5505  Wilcoxon p 0.8438  CI [-0.0403,+0.0234]  better 4/8
+
+saved /var/tmp/luli38se/quantsplat/oracle_sweep/results/score_confidence_w3a3_qfix.json

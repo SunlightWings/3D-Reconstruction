@@ -1,0 +1,58 @@
+{
+  "description": "Photometric vs geometric decomposition of the oracle's held-out score (foreground mask).",
+  "mean_oracle_raw": 14.82795450115718,
+  "mean_oracle_after_gain_bias": 18.369835557325825,
+  "photometric_headroom_db": 3.541881056168645,
+  "mean_nearest_pose_train_gt": 15.413680170268808,
+  "oracle_minus_nearest_gt_db": -0.5857256691116284,
+  "per_scene": [
+    {
+      "scene": "apple/110_13051_23361",
+      "oracle_raw": 17.33211627183921,
+      "oracle_gain_bias": 19.726637370916265,
+      "nearest_train_gt": 17.823997426517444
+    },
+    {
+      "scene": "ball/123_14363_28981",
+      "oracle_raw": 14.906709564350486,
+      "oracle_gain_bias": 17.91582620968077,
+      "nearest_train_gt": 15.809003832710639
+    },
+    {
+      "scene": "bowl/70_5792_13401",
+      "oracle_raw": 17.44894921881404,
+      "oracle_gain_bias": 19.18695985335509,
+      "nearest_train_gt": 16.980706380299864
+    },
+    {
+      "scene": "broccoli/412_56288_108844",
+      "oracle_raw": 15.086576757985824,
+      "oracle_gain_bias": 20.341036583458916,
+      "nearest_train_gt": 14.673779403273183
+    },
+    {
+      "scene": "hydrant/167_18184_34441",
+      "oracle_raw": 12.900348431110816,
+      "oracle_gain_bias": 18.331463564053152,
+      "nearest_train_gt": 16.59001293553536
+    },
+    {
+      "scene": "remote/350_36761_68623",
+      "oracle_raw": 11.794997221594453,
+      "oracle_gain_bias": 14.251464295147384,
+      "nearest_train_gt": 12.108621457389447
+    },
+    {
+      "scene": "teddybear/187_20215_38541",
+      "oracle_raw": 15.680327107150873,
+      "oracle_gain_bias": 20.76991046753524,
+      "nearest_train_gt": 15.500582333616812
+    },
+    {
+      "scene": "toaster/372_41229_82130",
+      "oracle_raw": 13.473611436411739,
+      "oracle_gain_bias": 16.43538611445978,
+      "nearest_train_gt": 13.82273759280771
+    }
+  ]
+}

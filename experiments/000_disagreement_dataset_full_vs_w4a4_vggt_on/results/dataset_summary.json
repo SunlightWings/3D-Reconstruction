@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "manifest_sha256": "1ce2f3f8d43cc17f61d84545b82f132a3b64d49d5acf70ff0fe0ac6aa9968e06",
+  "evaluated_scenes": 40,
+  "primary_frames": 7889,
+  "six_view_groups": 1330,
+  "full_predictions_valid": 1330,
+  "w4a4_predictions_valid": 1330,
+  "input_hash_pairs_matched": 1330,
+  "camera_alignment_warning_groups": 48,
+  "scenes_with_camera_alignment_warnings": 4,
+  "scene_positive_rho_excess": 39,
+  "scene_rho_excess_gt_0_2": 37,
+  "scene_rho_excess_gt_0_4": 24,
+  "fraction_scenes_positive_rho_excess": 0.975,
+  "median_scene_rho_excess": 0.4431655043490139,
+  "iqr_scene_rho_excess": [
+    0.3458267703714501,
+    0.5418838411404879
+  ],
+  "median_scene_rho_eQ": 0.3646315372097513,
+  "scene_auc_excess_gt_0_5": 40,
+  "scene_auc_excess_gt_0_75": 38,
+  "fraction_scenes_auc_excess_gt_0_5": 1.0,
+  "median_scene_auc_excess": 0.9056081575683796,
+  "iqr_scene_auc_excess": [
+    0.8794749309247138,
+    0.9411644733767561
+  ],
+  "median_scene_top10_precision_excess": 0.4427871287128713,
+  "median_scene_top10_quant_worse_fraction": 0.815035099009901,
+  "negative_control": {
+    "permutations_per_scene": 20,
+    "median_rho_excess": -4.908577792329973e-05,
+    "median_auc_excess": 0.5000008181469502,
+    "median_top10_precision_excess": 0.10006525964247795
+  },
+  "scene_bootstrap_95ci": {
+    "median_rho_excess": [
+      0.36581828745009837,
+      0.5196186988191345
+    ],
+    "median_auc_excess": [
+      0.8886934117238173,
+      0.9313122606641528
+    ],
+    "median_top10_precision_excess": [
+      0.39159755484684977,
+      0.5203737500615733
+    ],
+    "fraction_positive_rho_excess": [
+      0.925,
+      1.0
+    ],
+    "fraction_auc_excess_gt_0_5": [
+      1.0,
+      1.0
+    ]
+  },
+  "localization": {
+    "boundary_excess_enrichment": 1.0533853965370912,
+    "interior_excess_enrichment": 0.997479449386603,
+    "high_depth_gradient_excess_enrichment": 0.8845561938041061,
+    "smooth_excess_enrichment": 0.8696113741282901,
+    "counts": {
+      "boundary": 4235344,
+      "interior": 89704812,
+      "grad": 3332403,
+      "smooth": 29954470,
+      "global": 93940156
+    },
+    "definition": {
+      "boundary": "foreground minus 2-pixel-eroded foreground",
+      "high_depth_gradient": "top decile of finite log-depth gradient magnitude; gradients touching invalid depth become non-finite and are excluded"
+    }
+  },
+  "analysis_contract": {
+    "distance_normalization": "GT robust point-cloud radius (90th percentile distance from median point-cloud center)",
+    "sampling": "deterministic up to 5000 valid GT-foreground pixels per primary frame",
+    "top_decile": "exact top ceil(10% * N) by deterministic array order for tie resolution",
+    "alignment": "one proper Sim(3) per six-view group, independently GT camera centers -> Full and GT camera centers -> W4A4; score primary frames only",
+    "depth_decoder": "uint16 PNG bytes reinterpreted as float16, cast float32, multiplied by scale_adjustment",
+    "camera_alignment_warning": "A group is flagged, but not excluded, when Full or W4A4 median camera-center residual exceeds 0.25 normalized scene radius or median rotation residual exceeds 20 degrees. Nonfinite/degenerate Sim(3) remains fatal."
+  },
+  "decision": "STRONGLY SUPPORTED"
+}

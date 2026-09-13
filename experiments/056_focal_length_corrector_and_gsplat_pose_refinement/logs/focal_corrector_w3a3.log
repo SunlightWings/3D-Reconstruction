@@ -1,0 +1,16 @@
+w3a3: 8 scenes with a prediction
+  apple/110_13051_23361        bias 1.2815  err before 0.2909  oracle: 0.0000->0.0000  const: 1.0720->0.2041  iqr: 1.1074->0.1657
+  ball/123_14363_28981         bias 1.0550  err before 0.0547  oracle: 0.0000->0.0000  const: 1.1013->0.0423  iqr: 1.0561->0.0163
+  bowl/70_5792_13401           bias 1.1013  err before 0.0953  oracle: 0.0000->0.0000  const: 1.0720->0.0251  iqr: 1.1843->0.0751
+  broccoli/412_56288_108844    bias 1.1121  err before 0.1128  oracle: 0.0000->0.0000  const: 1.0720->0.0381  iqr: 1.1247->0.0106
+  hydrant/167_18184_34441      bias 1.0139  err before 0.0251  oracle: 0.0000->0.0000  const: 1.1013->0.0716  iqr: 0.9553->0.0702
+  remote/350_36761_68623       bias 1.1335  err before 0.1444  oracle: 0.0000->0.0000  const: 1.0720->0.0675  iqr: 1.1356->0.0200
+  teddybear/187_20215_38541    bias 1.0224  err before 0.0172  oracle: 0.0000->0.0000  const: 1.1013->0.0763  iqr: 1.1041->0.0786
+  toaster/372_41229_82130      bias 1.0720  err before 0.0715  oracle: 0.0000->0.0000  const: 1.1013->0.0270  iqr: 1.0760->0.0151
+
+median-over-cameras focal error, mean over scenes:
+  before  0.1015
+  oracle  0.0000
+  const   0.0690
+  iqr     0.0565
+saved /var/tmp/luli38se/quantsplat/oracle_sweep/results/focal_corrector_w3a3_subset.json

@@ -1,0 +1,12 @@
+=== robustness start (13:56) ===
+=== robustness done rc=0 (13:57) ===
+=== depthgt start (13:57) ===
+=== depthgt done rc=0 (13:57) ===
+=== predict start (13:57) ===
+=== predict done rc=0 (14:01) ===
+=== waiting for swap probe (14:01) ===
+=== gaussians start (15:09) ===
+=== gaussians done rc=0 (15:09) ===
+=== robustness start (15:09) ===
+=== robustness done rc=0 (15:10) ===
+CPU CHAIN COMPLETE (15:10)

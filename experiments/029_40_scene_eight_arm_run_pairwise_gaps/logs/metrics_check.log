@@ -1,0 +1,50 @@
+scenes=8 (subset)  iterations=30000
+
+[1/8] apple/110_13051_23361
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+/home/utn/luli38se/cv/.venv/lib/python3.12/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/utn/luli38se/cv/.venv/lib/python3.12/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/utn/luli38se/cv/.venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+    full  fg PSNR=12.606  (exp-corr 16.334)  SSIM=0.3374  LPIPS=0.5977
+    w4a4  fg PSNR=13.010  (exp-corr 16.241)  SSIM=0.3376  LPIPS=0.5939
+
+[2/8] ball/123_14363_28981
+    full  fg PSNR=11.010  (exp-corr 15.065)  SSIM=0.2370  LPIPS=0.5631
+    w4a4  fg PSNR=10.345  (exp-corr 15.071)  SSIM=0.2512  LPIPS=0.5737
+
+[3/8] bowl/70_5792_13401
+    full  fg PSNR=10.625  (exp-corr 17.274)  SSIM=0.1844  LPIPS=0.6441
+    w4a4  fg PSNR=10.695  (exp-corr 17.286)  SSIM=0.1845  LPIPS=0.6389
+
+[4/8] broccoli/412_56288_108844
+    full  fg PSNR= 9.277  (exp-corr 17.373)  SSIM=0.2148  LPIPS=0.6949
+    w4a4  fg PSNR= 9.908  (exp-corr 18.948)  SSIM=0.1839  LPIPS=0.6780
+
+[5/8] hydrant/167_18184_34441
+    full  fg PSNR= 8.109  (exp-corr 15.099)  SSIM=0.1961  LPIPS=0.7250
+    w4a4  fg PSNR= 7.331  (exp-corr 15.191)  SSIM=0.2040  LPIPS=0.7485
+
+[6/8] remote/350_36761_68623
+    full  fg PSNR= 9.777  (exp-corr 13.013)  SSIM=0.2255  LPIPS=0.6788
+    w4a4  fg PSNR= 9.680  (exp-corr 12.860)  SSIM=0.2315  LPIPS=0.6840
+
+[7/8] teddybear/187_20215_38541
+    full  fg PSNR= 9.296  (exp-corr 18.387)  SSIM=0.2790  LPIPS=0.5974
+    w4a4  fg PSNR= 8.409  (exp-corr 18.018)  SSIM=0.2636  LPIPS=0.6135
+
+[8/8] toaster/372_41229_82130
+    full  fg PSNR= 8.811  (exp-corr 13.632)  SSIM=0.1999  LPIPS=0.6817
+    w4a4  fg PSNR= 8.639  (exp-corr 13.386)  SSIM=0.2003  LPIPS=0.6874
+
+==============================================================================
+arm      fg PSNR  fg exp-corr   fg SSIM  fg LPIPS  content PSNR
+full      9.9389      15.7721    0.2343    0.6478        9.9908
+w4a4      9.7520      15.8752    0.2321    0.6522       10.0205
+
+paired tests (foreground, raw PSNR):
+  full_minus_w4a4__foreground__psnr      mean=+0.1869 p=0.373 CI=[-0.2775,+0.6513] 5/8
+  full_minus_w4a4__foreground__psnr_exposure_corrected mean=-0.1032 p=0.6488 CI=[-0.6160,+0.4097] 4/8
+
+saved /var/tmp/luli38se/quantsplat/oracle_sweep/results/three_arm_subset.json

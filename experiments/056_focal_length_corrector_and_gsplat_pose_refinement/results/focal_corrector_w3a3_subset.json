@@ -1,0 +1,115 @@
+{
+  "arm": "w3a3",
+  "scenes": "subset",
+  "methods": [
+    "oracle",
+    "const",
+    "iqr"
+  ],
+  "per_scene": [
+    {
+      "scene": "apple/110_13051_23361",
+      "true_bias": 1.2815499305725098,
+      "depth_iqr": 0.2293538898229599,
+      "focal_err_before": 0.2908623350204631,
+      "unproject_selfcheck_max_err": 1.2081893219217932e-07,
+      "oracle_predicted_bias": null,
+      "oracle_focal_err_after": 0.0,
+      "const_predicted_bias": 1.0720316171646118,
+      "const_focal_err_after": 0.20412711187999366,
+      "iqr_predicted_bias": 1.1073578658964471,
+      "iqr_focal_err_after": 0.1657137902528577
+    },
+    {
+      "scene": "ball/123_14363_28981",
+      "true_bias": 1.055009365081787,
+      "depth_iqr": 0.4828087240457535,
+      "focal_err_before": 0.05465184807863488,
+      "unproject_selfcheck_max_err": 1.5572835332378077e-07,
+      "oracle_predicted_bias": null,
+      "oracle_focal_err_after": 0.0,
+      "const_predicted_bias": 1.1012587547302246,
+      "const_focal_err_after": 0.04232148571023803,
+      "iqr_predicted_bias": 1.056065997871493,
+      "iqr_focal_err_after": 0.016255705174552992
+    },
+    {
+      "scene": "bowl/70_5792_13401",
+      "true_bias": 1.1012587547302246,
+      "depth_iqr": 0.19043561816215515,
+      "focal_err_before": 0.09530666088052897,
+      "unproject_selfcheck_max_err": 9.911813791951829e-08,
+      "oracle_predicted_bias": null,
+      "oracle_focal_err_after": 0.0,
+      "const_predicted_bias": 1.0720316171646118,
+      "const_focal_err_after": 0.02508794038389839,
+      "iqr_predicted_bias": 1.1843024267527664,
+      "iqr_focal_err_after": 0.07514614836706413
+    },
+    {
+      "scene": "broccoli/412_56288_108844",
+      "true_bias": 1.1121207475662231,
+      "depth_iqr": 0.29044148325920105,
+      "focal_err_before": 0.11283334163597747,
+      "unproject_selfcheck_max_err": 1.3203429105601572e-07,
+      "oracle_predicted_bias": null,
+      "oracle_focal_err_after": 0.0,
+      "const_predicted_bias": 1.0720316171646118,
+      "const_focal_err_after": 0.03806018760834784,
+      "iqr_predicted_bias": 1.1247022042712724,
+      "iqr_focal_err_after": 0.0105528935483728
+    },
+    {
+      "scene": "hydrant/167_18184_34441",
+      "true_bias": 1.0139459371566772,
+      "depth_iqr": 0.6737722754478455,
+      "focal_err_before": 0.025113300427423213,
+      "unproject_selfcheck_max_err": 1.9177155019534098e-07,
+      "oracle_predicted_bias": null,
+      "oracle_focal_err_after": 0.0,
+      "const_predicted_bias": 1.1012587547302246,
+      "const_focal_err_after": 0.07159143178857558,
+      "iqr_predicted_bias": 0.9553323995751143,
+      "iqr_focal_err_after": 0.07022232697656472
+    },
+    {
+      "scene": "remote/350_36761_68623",
+      "true_bias": 1.133548378944397,
+      "depth_iqr": 0.25582242012023926,
+      "focal_err_before": 0.14440077149308717,
+      "unproject_selfcheck_max_err": 1.0765166802428894e-07,
+      "oracle_predicted_bias": null,
+      "oracle_focal_err_after": 0.0,
+      "const_predicted_bias": 1.0720316171646118,
+      "const_focal_err_after": 0.0675065484727797,
+      "iqr_predicted_bias": 1.135599408772863,
+      "iqr_focal_err_after": 0.02004088971421636
+    },
+    {
+      "scene": "teddybear/187_20215_38541",
+      "true_bias": 1.0224472284317017,
+      "depth_iqr": 0.3731361925601959,
+      "focal_err_before": 0.01722603339017914,
+      "unproject_selfcheck_max_err": 1.2821593520229158e-07,
+      "oracle_predicted_bias": null,
+      "oracle_focal_err_after": 0.0,
+      "const_predicted_bias": 1.1012587547302246,
+      "const_focal_err_after": 0.07630606429152154,
+      "iqr_predicted_bias": 1.104052328926693,
+      "iqr_focal_err_after": 0.07864327918308206
+    },
+    {
+      "scene": "toaster/372_41229_82130",
+      "true_bias": 1.0720316171646118,
+      "depth_iqr": 0.42539501190185547,
+      "focal_err_before": 0.07153187211856049,
+      "unproject_selfcheck_max_err": 1.627166330564478e-07,
+      "oracle_predicted_bias": null,
+      "oracle_focal_err_after": 0.0,
+      "const_predicted_bias": 1.1012587547302246,
+      "const_focal_err_after": 0.026993549412414275,
+      "iqr_predicted_bias": 1.07595458345997,
+      "iqr_focal_err_after": 0.015086518864309839
+    }
+  ]
+}

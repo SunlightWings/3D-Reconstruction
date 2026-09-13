@@ -1,0 +1,155 @@
+{
+  "description": "PSNR ceilings for the downstream-3DGS held-out metric; see module docstring for derivation.",
+  "scenes": [
+    "apple/110_13051_23361",
+    "ball/123_14363_28981",
+    "bowl/70_5792_13401",
+    "broccoli/412_56288_108844",
+    "hydrant/167_18184_34441",
+    "remote/350_36761_68623",
+    "teddybear/187_20215_38541",
+    "toaster/372_41229_82130"
+  ],
+  "content_mask": {
+    "construction": "pixel-perfect foreground, background replaced by its own mean colour",
+    "mean_fg_fraction": 0.15317846089529763,
+    "mean_ceiling": 16.80907908479222,
+    "mean_ceiling_bg_black": 6.25565969681506,
+    "scenes_ceiling_ge_20db": 2,
+    "per_scene": [
+      {
+        "scene": "apple/110_13051_23361",
+        "fg_fraction": 0.185664162704979,
+        "ceiling_bg_optimal_constant": 17.68775719340901,
+        "ceiling_bg_black": 6.878605532000694
+      },
+      {
+        "scene": "ball/123_14363_28981",
+        "fg_fraction": 0.16269987188354537,
+        "ceiling_bg_optimal_constant": 15.360016861972477,
+        "ceiling_bg_black": 5.913944200791369
+      },
+      {
+        "scene": "bowl/70_5792_13401",
+        "fg_fraction": 0.23179739506270122,
+        "ceiling_bg_optimal_constant": 17.34496990093828,
+        "ceiling_bg_black": 7.504494330190493
+      },
+      {
+        "scene": "broccoli/412_56288_108844",
+        "fg_fraction": 0.08003849330379943,
+        "ceiling_bg_optimal_constant": 12.43822338613518,
+        "ceiling_bg_black": 4.838416266969004
+      },
+      {
+        "scene": "hydrant/167_18184_34441",
+        "fg_fraction": 0.13129383027342212,
+        "ceiling_bg_optimal_constant": 13.195721404377373,
+        "ceiling_bg_black": 5.819658592649774
+      },
+      {
+        "scene": "remote/350_36761_68623",
+        "fg_fraction": 0.10600761110965193,
+        "ceiling_bg_optimal_constant": 20.737538270017428,
+        "ceiling_bg_black": 7.217212267608043
+      },
+      {
+        "scene": "teddybear/187_20215_38541",
+        "fg_fraction": 0.19162675795328854,
+        "ceiling_bg_optimal_constant": 22.84339490530666,
+        "ceiling_bg_black": 5.606262265945763
+      },
+      {
+        "scene": "toaster/372_41229_82130",
+        "fg_fraction": 0.13629956487099343,
+        "ceiling_bg_optimal_constant": 14.86501075618135,
+        "ceiling_bg_black": 6.2666841183653474
+      }
+    ]
+  },
+  "foreground_mask": {
+    "construction": "z-buffered reprojection of the oracle GT point cloud through GT cameras, splat radius 1",
+    "mean_ceiling": 11.105019154177954,
+    "min_ceiling": 6.777030173925201,
+    "mean_gt_point_coverage_of_foreground": 0.6549154790912399,
+    "per_scene": [
+      {
+        "scene": "apple/110_13051_23361",
+        "ceiling_gt_reprojection": 11.754372832885075,
+        "gt_point_coverage_of_foreground": 0.6452118257899202
+      },
+      {
+        "scene": "ball/123_14363_28981",
+        "ceiling_gt_reprojection": 10.931752210126682,
+        "gt_point_coverage_of_foreground": 0.6793423564488663
+      },
+      {
+        "scene": "bowl/70_5792_13401",
+        "ceiling_gt_reprojection": 8.415415108287624,
+        "gt_point_coverage_of_foreground": 0.49245146016121943
+      },
+      {
+        "scene": "broccoli/412_56288_108844",
+        "ceiling_gt_reprojection": 11.885462558891541,
+        "gt_point_coverage_of_foreground": 0.681459221774969
+      },
+      {
+        "scene": "hydrant/167_18184_34441",
+        "ceiling_gt_reprojection": 12.921535532335135,
+        "gt_point_coverage_of_foreground": 0.8441383494007789
+      },
+      {
+        "scene": "remote/350_36761_68623",
+        "ceiling_gt_reprojection": 6.777030173925201,
+        "gt_point_coverage_of_foreground": 0.6989517183676502
+      },
+      {
+        "scene": "teddybear/187_20215_38541",
+        "ceiling_gt_reprojection": 15.05504508591315,
+        "gt_point_coverage_of_foreground": 0.5965772106431181
+      },
+      {
+        "scene": "toaster/372_41229_82130",
+        "ceiling_gt_reprojection": 11.099539731059231,
+        "gt_point_coverage_of_foreground": 0.601191690143398
+      }
+    ]
+  },
+  "noise_floor": {
+    "content": {
+      "mean_of_scene_medians": 12.533174807888802,
+      "per_scene_medians": [
+        13.450411324941008,
+        9.766065117501117,
+        14.720985425750346,
+        11.950388170386393,
+        9.667599147419898,
+        13.221705874518609,
+        16.30885642749997,
+        11.179386975093088
+      ]
+    },
+    "foreground": {
+      "mean_of_scene_medians": 11.963273481499014,
+      "per_scene_medians": [
+        12.032163162046071,
+        8.1843409213175,
+        14.330403701904437,
+        15.754557019016396,
+        12.411451357352382,
+        9.6289532995401,
+        14.345646630517372,
+        9.018671760297853
+      ]
+    }
+  },
+  "a3_target": {
+    "mask": "foreground",
+    "target_db": 19.43009867361021,
+    "derivation": "original A3 target 20.0 dB minus the content-mask noise floor 12.533 dB gives a margin of 7.467 dB above 'uninformative'; the same margin above the foreground-mask noise floor 11.963 dB gives 19.430 dB.",
+    "content_noise_floor_db": 12.533174807888802,
+    "foreground_noise_floor_db": 11.963273481499014,
+    "margin_db": 7.466825192111198,
+    "why_not_ceiling_minus_2db": "The GT-point reprojection 'ceiling' is not an upper bound -- the trained oracle exceeds it because Gaussians fill the gaps left by invalid CO3D depth. The foreground mask has no binding structural ceiling, unlike the content mask."
+  }
+}

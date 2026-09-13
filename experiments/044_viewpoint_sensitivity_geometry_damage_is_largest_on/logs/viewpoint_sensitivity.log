@@ -1,0 +1,85 @@
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+/home/utn/luli38se/cv/.venv/lib/python3.12/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/utn/luli38se/cv/.venv/lib/python3.12/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/utn/luli38se/cv/.venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+[1/40] apple/110_13051_23361  conditions: 8
+[2/40] apple/189_20393_38136  conditions: 8
+[3/40] ball/123_14363_28981  conditions: 8
+[4/40] ball/375_42693_85518  conditions: 8
+[5/40] bench/415_57112_110099  conditions: 8
+[6/40] bench/415_57121_110109  conditions: 8
+[7/40] book/119_13962_28926  conditions: 8
+[8/40] book/247_26469_51778  conditions: 8
+[9/40] bowl/69_5465_12831  conditions: 8
+[10/40] bowl/70_5792_13401  conditions: 8
+[11/40] broccoli/372_41112_81867  conditions: 8
+[12/40] broccoli/412_56288_108844  conditions: 8
+[13/40] cake/374_42274_84517  conditions: 8
+[14/40] cake/403_53094_103680  conditions: 8
+[15/40] donut/391_47032_93657  conditions: 8
+[16/40] donut/403_52964_103416  conditions: 8
+[17/40] hydrant/167_18184_34441  conditions: 8
+[18/40] hydrant/411_56064_108483  conditions: 8
+[19/40] mouse/107_12753_23606  conditions: 8
+[20/40] mouse/377_43416_86289  conditions: 8
+[21/40] orange/374_42196_84367  conditions: 8
+[22/40] orange/385_45386_90752  conditions: 8
+[23/40] plant/247_26441_50907  conditions: 8
+[24/40] plant/374_42005_84358  conditions: 8
+[25/40] remote/195_20989_41543  conditions: 8
+[26/40] remote/350_36761_68623  conditions: 8
+[27/40] skateboard/245_26182_52130  conditions: 8
+[28/40] skateboard/366_39266_76077  conditions: 8
+[29/40] suitcase/410_55734_107452  conditions: 8
+[30/40] suitcase/50_2928_8645  conditions: 8
+[31/40] teddybear/187_20215_38541  conditions: 8
+[32/40] teddybear/34_1479_4753  conditions: 8
+[33/40] toaster/372_41229_82130  conditions: 8
+[34/40] toaster/416_57389_110765  conditions: 8
+[35/40] toytrain/240_25394_51994  conditions: 8
+[36/40] toytrain/399_51323_100753  conditions: 8
+[37/40] toytruck/190_20494_39385  conditions: 8
+[38/40] toytruck/346_36113_66551  conditions: 8
+[39/40] vase/374_41862_83720  conditions: 8
+[40/40] vase/380_44863_89631  conditions: 8
+
+====================================================================================================
+VIEW DISTANCE vs DAMAGE. Per scene: Spearman(distance, per-view damage); then Wilcoxon over scenes.
+Positive rho = the condition hurts MORE on views further from the training cameras.
+held-out view distance to nearest training view: orbit angle median 16.43 deg, range 0.01-77.94; axis angle median 10.39 deg
+
+  distance = orbit_angle
+    w4a4               psnr   median rho -0.108  positive 15/40  Wilcoxon p=0.076
+   *w4a4               lpips  median rho -0.192  positive 13/40  Wilcoxon p=0.0252
+   *w4a4_rtn           psnr   median rho -0.342  positive  7/40  Wilcoxon p=4.25e-06
+   *w4a4_rtn           lpips  median rho -0.508  positive  6/40  Wilcoxon p=2.35e-06
+    swapP_w4a4_rtn     psnr   median rho +0.025  positive 21/40  Wilcoxon p=0.861
+    swapP_w4a4_rtn     lpips  median rho +0.042  positive 21/40  Wilcoxon p=0.534
+   *swapK_w4a4_rtn     psnr   median rho -0.425  positive  2/40  Wilcoxon p=7.02e-08
+   *swapK_w4a4_rtn     lpips  median rho -0.592  positive  4/40  Wilcoxon p=3.35e-07
+   *swapB_w4a4_rtn     psnr   median rho -0.367  positive  3/40  Wilcoxon p=3.63e-07
+   *swapB_w4a4_rtn     lpips  median rho -0.525  positive  6/40  Wilcoxon p=3.13e-07
+   *swapR_w4a4_rtn     psnr   median rho -0.408  positive  4/40  Wilcoxon p=3.59e-06
+   *swapR_w4a4_rtn     lpips  median rho -0.592  positive  4/40  Wilcoxon p=5.88e-07
+   *swapF_w4a4_rtn     psnr   median rho -0.283  positive 14/40  Wilcoxon p=0.00411
+   *swapF_w4a4_rtn     lpips  median rho -0.252  positive  8/40  Wilcoxon p=0.000189
+
+  distance = axis_angle
+    w4a4               psnr   median rho -0.042  positive 15/40  Wilcoxon p=0.0827
+   *w4a4               lpips  median rho -0.192  positive 14/40  Wilcoxon p=0.0193
+   *w4a4_rtn           psnr   median rho -0.358  positive  8/40  Wilcoxon p=1.87e-05
+   *w4a4_rtn           lpips  median rho -0.425  positive  5/40  Wilcoxon p=4.9e-06
+    swapP_w4a4_rtn     psnr   median rho +0.075  positive 20/40  Wilcoxon p=0.706
+    swapP_w4a4_rtn     lpips  median rho +0.142  positive 25/40  Wilcoxon p=0.279
+   *swapK_w4a4_rtn     psnr   median rho -0.458  positive  2/40  Wilcoxon p=8.45e-08
+   *swapK_w4a4_rtn     lpips  median rho -0.608  positive  5/40  Wilcoxon p=2.53e-07
+   *swapB_w4a4_rtn     psnr   median rho -0.436  positive  6/40  Wilcoxon p=5.61e-07
+   *swapB_w4a4_rtn     lpips  median rho -0.508  positive  6/40  Wilcoxon p=1.14e-06
+   *swapR_w4a4_rtn     psnr   median rho -0.365  positive  6/40  Wilcoxon p=7.69e-06
+   *swapR_w4a4_rtn     lpips  median rho -0.558  positive  5/40  Wilcoxon p=6.98e-07
+   *swapF_w4a4_rtn     psnr   median rho -0.225  positive 12/40  Wilcoxon p=0.00539
+   *swapF_w4a4_rtn     lpips  median rho -0.217  positive 11/40  Wilcoxon p=0.000962
+
+saved /var/tmp/luli38se/quantsplat/oracle_sweep/results/viewpoint_sensitivity.json

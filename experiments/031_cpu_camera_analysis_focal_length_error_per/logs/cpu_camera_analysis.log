@@ -1,0 +1,44 @@
+==========================================================================================
+1. FOCAL LENGTH vs POSE error, each arm against full precision (n = 40 scenes)
+arm               cam rot deg  centre radii  focal |ratio-1|
+w4a4                   1.2754       0.02063           2.614%
+w4a4_local             1.1014       0.01896           2.335%
+w4a4_no_lwc            1.0799       0.01662           2.875%
+w4a4_no_smooth         1.1390       0.02034           2.734%
+w4a4_no_lac            1.3160       0.02286           3.862%
+w4a4_no_rot            2.0323       0.03665           6.693%
+w4a4_rtn              14.6565       0.12093          18.652%
+
+==========================================================================================
+2. WHICH geometry error predicts a scene's rendering loss? Spearman rho
+
+  all arms (n = 280)
+    d_psnr    cam_rot=+0.199*(p=0.0008)  cam_centre=+0.216*(p=0.00028)  focal=+0.270*(p=4.5e-06)  depth_rel=+0.186*(p=0.0018)  point_err=+0.072 (p=0.23)
+    d_lpips   cam_rot=+0.399*(p=4e-12)  cam_centre=+0.348*(p=2.1e-09)  focal=+0.301*(p=3e-07)  depth_rel=+0.277*(p=2.6e-06)  point_err=+0.286*(p=1.2e-06)
+
+  w4a4 only (n = 40)
+    d_psnr    cam_rot=-0.067 (p=0.68)  cam_centre=-0.032 (p=0.85)  focal=-0.090 (p=0.58)  depth_rel=-0.022 (p=0.89)  point_err=-0.222 (p=0.17)
+    d_lpips   cam_rot=+0.409*(p=0.0088)  cam_centre=+0.192 (p=0.23)  focal=-0.098 (p=0.55)  depth_rel=+0.067 (p=0.68)  point_err=+0.106 (p=0.52)
+
+  mild arms, rtn and no_rot excluded (n = 200)
+    d_psnr    cam_rot=-0.048 (p=0.5)  cam_centre=-0.045 (p=0.53)  focal=+0.054 (p=0.45)  depth_rel=-0.044 (p=0.54)  point_err=-0.231*(p=0.00099)
+    d_lpips   cam_rot=+0.258*(p=0.00023)  cam_centre=+0.188*(p=0.0077)  focal=+0.057 (p=0.42)  depth_rel=+0.086 (p=0.23)  point_err=+0.062 (p=0.39)
+
+  * p < 0.05.  d_psnr, d_lpips: positive = arm renders WORSE than full on that scene
+
+==========================================================================================
+3. CONTEXT: quantization error next to VGGT's own error vs CO3D ground truth (1330 view-groups, 0 unreadable)
+  full_vs_gt_rot       mean   1.5905  median   1.0842  p90   2.5521  p99  10.2940  max  27.5783
+  w4a4_vs_gt_rot       mean   2.0784  median   1.4269  p90   3.1320  p99  11.6597  max 168.2326
+  w4a4_vs_full_rot     mean   1.3383  median   0.9149  p90   1.9233  p99   6.2651  max 149.0445
+  full_vs_gt_centre    mean   0.0229  median   0.0156  p90   0.0359  p99   0.1435  max   0.4196
+  w4a4_vs_gt_centre    mean   0.0302  median   0.0234  p90   0.0434  p99   0.1587  max   0.6451
+  full_vs_gt_focal     mean   0.0345  median   0.0237  p90   0.0781  p99   0.1742  max   0.2231
+  w4a4_vs_gt_focal     mean   0.0466  median   0.0287  p90   0.1058  p99   0.2191  max   0.2892
+
+  paired: w4a4 minus full, rotation error vs GT: mean +0.4879 deg, median +0.3113, t-test p=1.29e-05, Wilcoxon p=6.95e-115, w4a4 worse in 1073/1330
+  groups where w4a4 departs from full by >  2 deg: 124/1330
+  groups where w4a4 departs from full by >  5 deg: 23/1330
+  groups where w4a4 departs from full by > 10 deg: 6/1330
+
+saved /var/tmp/luli38se/quantsplat/oracle_sweep/results/cpu_camera_analysis.json

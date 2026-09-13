@@ -1,0 +1,55 @@
+++ date
+So 13. Sep 10:27:19 CEST 2026
+++ /home/utn/luli38se/cv/.venv/bin/python -m venv /var/tmp/luli38se/gsplat_venv
+++ /var/tmp/luli38se/gsplat_venv/bin/python -m pip install -q -U pip wheel
+++ /var/tmp/luli38se/gsplat_venv/bin/python -m pip install -q torch==2.3.1 --index-url https://download.pytorch.org/whl/cu121
+++ /var/tmp/luli38se/gsplat_venv/bin/python -m pip install -q 'numpy<2' pillow scipy scikit-image lpips tqdm
+++ /var/tmp/luli38se/gsplat_venv/bin/python -m pip install -q gsplat --index-url https://docs.gsplat.studio/whl/pt23cu121
+ERROR: Could not find a version that satisfies the requirement gsplat (from versions: none)
+ERROR: No matching distribution found for gsplat
+++ /var/tmp/luli38se/gsplat_venv/bin/python -m pip install -q ninja gsplat==1.5.3
+++ /var/tmp/luli38se/gsplat_venv/bin/python -
+torch 2.14.0+cu130 gsplat 1.5.3 cuda True
+Traceback (most recent call last):
+  File "/var/tmp/luli38se/gsplat_venv/lib/python3.12/site-packages/gsplat/cuda/_backend.py", line 166, in <module>
+    from gsplat import csrc as _C
+ImportError: cannot import name 'csrc' from 'gsplat' (/var/tmp/luli38se/gsplat_venv/lib/python3.12/site-packages/gsplat/__init__.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/tmp/luli38se/gsplat_venv/lib/python3.12/site-packages/gsplat/cuda/_backend.py", line 79, in load_extension
+    compiled = _jit_compile(
+               ^^^^^^^^^^^^^
+TypeError: _jit_compile() missing 2 required positional arguments: 'verbose' and 'with_sycl'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<stdin>", line 14, in <module>
+  File "/var/tmp/luli38se/gsplat_venv/lib/python3.12/site-packages/gsplat/rendering.py", line 409, in rasterization
+    proj_results = fully_fused_projection(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/tmp/luli38se/gsplat_venv/lib/python3.12/site-packages/gsplat/cuda/_wrapper.py", line 404, in fully_fused_projection
+    return _FullyFusedProjectionPacked.apply(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/tmp/luli38se/gsplat_venv/lib/python3.12/site-packages/gsplat/cuda/_wrapper.py", line 1606, in forward
+    camera_model_type = _make_lazy_cuda_obj(
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "/var/tmp/luli38se/gsplat_venv/lib/python3.12/site-packages/gsplat/cuda/_wrapper.py", line 24, in _make_lazy_cuda_obj
+    from ._backend import _C
+  File "/var/tmp/luli38se/gsplat_venv/lib/python3.12/site-packages/gsplat/cuda/_backend.py", line 217, in <module>
+    _C = load_extension(
+         ^^^^^^^^^^^^^^^
+  File "/var/tmp/luli38se/gsplat_venv/lib/python3.12/site-packages/gsplat/cuda/_backend.py", line 98, in load_extension
+    compiled = _jit_compile(
+               ^^^^^^^^^^^^^
+  File "/var/tmp/luli38se/gsplat_venv/lib/python3.12/site-packages/torch/utils/cpp_extension.py", line 2398, in _jit_compile
+    _write_ninja_file_and_build_library(
+  File "/var/tmp/luli38se/gsplat_venv/lib/python3.12/site-packages/torch/utils/cpp_extension.py", line 2508, in _write_ninja_file_and_build_library
+    verify_ninja_availability()
+  File "/var/tmp/luli38se/gsplat_venv/lib/python3.12/site-packages/torch/utils/cpp_extension.py", line 2574, in verify_ninja_availability
+    raise RuntimeError("Ninja is required to load C++ extensions (pip install ninja to get it)")
+RuntimeError: Ninja is required to load C++ extensions (pip install ninja to get it)
+++ date
+So 13. Sep 10:29:42 CEST 2026

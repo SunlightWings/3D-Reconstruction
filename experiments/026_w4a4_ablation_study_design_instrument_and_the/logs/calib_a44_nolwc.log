@@ -1,0 +1,1609 @@
+device=cuda  torch=2.3.1+cu121
+gpu=NVIDIA RTX 4000 Ada Generation  total=19.5 GiB
+loading VGGT from /home/utn/luli38se/cv/QuantVGGT/VGGT-1B/model_tracker_fixed_e20.pt ...
+  loaded in 7.5s
+loading calibration set from /var/tmp/luli38se/quantsplat/models/QuantVGGT/calib_data.pt ...
+  42 samples in 0.5s
+W-bit=4  A-bit=4
+smooth=True  rot=True  LWC=False  LAC=True
+epochs=15  nsamples=42  cali_bsz=1
+exp_dir=/home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym
+2026-09-09 18:36:40 [INFO] my_app: Initial Memory Stats:
+2026-09-09 18:36:40 [INFO] my_app: Allocated: 8549.90 MB
+2026-09-09 18:36:40 [INFO] my_app: Reserved/Cached: 18394.00 MB
+2026-09-09 18:36:40 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 18:36:40 [INFO] my_app: Max Reserved: 18394.00 MB
+2026-09-09 18:37:23 [INFO] my_app: ========= frame_Layer_0 =========
+2026-09-09 18:37:23 [INFO] my_app: Before frame_Layer_0 Memory Stats:
+2026-09-09 18:37:23 [INFO] my_app: Allocated: 7428.34 MB
+2026-09-09 18:37:23 [INFO] my_app: Reserved/Cached: 7622.00 MB
+2026-09-09 18:37:23 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 18:37:23 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 18:37:29 [INFO] my_app: Layer 0 Epoch 0 Start Memory Stats:
+2026-09-09 18:37:29 [INFO] my_app: Allocated: 7428.34 MB
+2026-09-09 18:37:29 [INFO] my_app: Reserved/Cached: 7622.00 MB
+2026-09-09 18:37:29 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 18:37:29 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 18:37:46 [INFO] my_app: layer:[0] , lwc lac iter:[0], lr:[0.00098908] ,time:[17.051081]s, mse: [0.00001602]
+2026-09-09 18:38:03 [INFO] my_app: layer:[0] , lwc lac iter:[1], lr:[0.00095682] ,time:[17.019635]s, mse: [0.00001380]
+2026-09-09 18:38:21 [INFO] my_app: layer:[0] , lwc lac iter:[2], lr:[0.00090460] ,time:[17.029406]s, mse: [0.00001262]
+2026-09-09 18:38:38 [INFO] my_app: layer:[0] , lwc lac iter:[3], lr:[0.00083473] ,time:[17.067889]s, mse: [0.00001157]
+2026-09-09 18:38:55 [INFO] my_app: layer:[0] , lwc lac iter:[4], lr:[0.00075025] ,time:[17.045118]s, mse: [0.00001041]
+2026-09-09 18:39:12 [INFO] my_app: layer:[0] , lwc lac iter:[5], lr:[0.00065485] ,time:[17.044337]s, mse: [0.00000941]
+2026-09-09 18:39:29 [INFO] my_app: layer:[0] , lwc lac iter:[6], lr:[0.00055271] ,time:[17.052411]s, mse: [0.00000908]
+2026-09-09 18:39:46 [INFO] my_app: layer:[0] , lwc lac iter:[7], lr:[0.00044829] ,time:[17.066998]s, mse: [0.00000874]
+2026-09-09 18:40:03 [INFO] my_app: layer:[0] , lwc lac iter:[8], lr:[0.00034615] ,time:[17.067409]s, mse: [0.00000855]
+2026-09-09 18:40:20 [INFO] my_app: layer:[0] , lwc lac iter:[9], lr:[0.00025075] ,time:[17.075435]s, mse: [0.00000829]
+2026-09-09 18:40:37 [INFO] my_app: layer:[0] , lwc lac iter:[10], lr:[0.00016627] ,time:[17.097579]s, mse: [0.00000835]
+2026-09-09 18:40:54 [INFO] my_app: layer:[0] , lwc lac iter:[11], lr:[0.00009640] ,time:[17.079876]s, mse: [0.00000852]
+2026-09-09 18:41:11 [INFO] my_app: layer:[0] , lwc lac iter:[12], lr:[0.00004418] ,time:[17.080347]s, mse: [0.00000856]
+2026-09-09 18:41:28 [INFO] my_app: layer:[0] , lwc lac iter:[13], lr:[0.00001192] ,time:[17.117104]s, mse: [0.00000858]
+2026-09-09 18:41:45 [INFO] my_app: layer:[0] , lwc lac iter:[14], lr:[0.00000100] ,time:[17.102128]s, mse: [0.00000859]
+2026-09-09 18:41:45 [INFO] my_app: saved parameters for layer 0 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_0.pth
+2026-09-09 18:41:45 [INFO] my_app: After frame_Layer_0 Memory Stats:
+2026-09-09 18:41:45 [INFO] my_app: Allocated: 7366.40 MB
+2026-09-09 18:41:45 [INFO] my_app: Reserved/Cached: 7608.00 MB
+2026-09-09 18:41:45 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 18:41:45 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 18:41:46 [INFO] my_app: ========= global_Layer_0 =========
+2026-09-09 18:41:46 [INFO] my_app: Before global_Layer_0 Memory Stats:
+2026-09-09 18:41:46 [INFO] my_app: Allocated: 7312.34 MB
+2026-09-09 18:41:46 [INFO] my_app: Reserved/Cached: 7608.00 MB
+2026-09-09 18:41:46 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 18:41:46 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 18:41:49 [INFO] my_app: Layer 0 Epoch 0 Start Memory Stats:
+2026-09-09 18:41:49 [INFO] my_app: Allocated: 7312.34 MB
+2026-09-09 18:41:49 [INFO] my_app: Reserved/Cached: 7550.00 MB
+2026-09-09 18:41:49 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 18:41:49 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 18:42:06 [INFO] my_app: layer:[0] , lwc lac iter:[0], lr:[0.00098908] ,time:[17.049760]s, mse: [0.00000914]
+2026-09-09 18:42:23 [INFO] my_app: layer:[0] , lwc lac iter:[1], lr:[0.00095682] ,time:[17.077018]s, mse: [0.00000843]
+2026-09-09 18:42:40 [INFO] my_app: layer:[0] , lwc lac iter:[2], lr:[0.00090460] ,time:[17.102992]s, mse: [0.00000764]
+2026-09-09 18:42:57 [INFO] my_app: layer:[0] , lwc lac iter:[3], lr:[0.00083473] ,time:[17.095323]s, mse: [0.00000692]
+2026-09-09 18:43:14 [INFO] my_app: layer:[0] , lwc lac iter:[4], lr:[0.00075025] ,time:[17.106503]s, mse: [0.00000639]
+2026-09-09 18:43:32 [INFO] my_app: layer:[0] , lwc lac iter:[5], lr:[0.00065485] ,time:[17.109937]s, mse: [0.00000596]
+2026-09-09 18:43:49 [INFO] my_app: layer:[0] , lwc lac iter:[6], lr:[0.00055271] ,time:[17.111483]s, mse: [0.00000563]
+2026-09-09 18:44:06 [INFO] my_app: layer:[0] , lwc lac iter:[7], lr:[0.00044829] ,time:[17.095163]s, mse: [0.00000534]
+2026-09-09 18:44:23 [INFO] my_app: layer:[0] , lwc lac iter:[8], lr:[0.00034615] ,time:[17.117835]s, mse: [0.00000515]
+2026-09-09 18:44:40 [INFO] my_app: layer:[0] , lwc lac iter:[9], lr:[0.00025075] ,time:[17.120140]s, mse: [0.00000511]
+2026-09-09 18:44:57 [INFO] my_app: layer:[0] , lwc lac iter:[10], lr:[0.00016627] ,time:[17.101202]s, mse: [0.00000507]
+2026-09-09 18:45:14 [INFO] my_app: layer:[0] , lwc lac iter:[11], lr:[0.00009640] ,time:[17.109147]s, mse: [0.00000507]
+2026-09-09 18:45:31 [INFO] my_app: layer:[0] , lwc lac iter:[12], lr:[0.00004418] ,time:[17.099666]s, mse: [0.00000510]
+2026-09-09 18:45:48 [INFO] my_app: layer:[0] , lwc lac iter:[13], lr:[0.00001192] ,time:[17.114281]s, mse: [0.00000506]
+2026-09-09 18:46:06 [INFO] my_app: layer:[0] , lwc lac iter:[14], lr:[0.00000100] ,time:[17.104884]s, mse: [0.00000505]
+2026-09-09 18:46:06 [INFO] my_app: saved parameters for layer 0 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_0.pth
+2026-09-09 18:46:06 [INFO] my_app: After global_Layer_0 Memory Stats:
+2026-09-09 18:46:06 [INFO] my_app: Allocated: 7242.27 MB
+2026-09-09 18:46:06 [INFO] my_app: Reserved/Cached: 7492.00 MB
+2026-09-09 18:46:06 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 18:46:06 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 18:46:06 [INFO] my_app: ========= frame_Layer_1 =========
+2026-09-09 18:46:06 [INFO] my_app: Before frame_Layer_1 Memory Stats:
+2026-09-09 18:46:06 [INFO] my_app: Allocated: 7188.21 MB
+2026-09-09 18:46:06 [INFO] my_app: Reserved/Cached: 7492.00 MB
+2026-09-09 18:46:06 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 18:46:06 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 18:46:09 [INFO] my_app: Layer 1 Epoch 0 Start Memory Stats:
+2026-09-09 18:46:09 [INFO] my_app: Allocated: 7188.21 MB
+2026-09-09 18:46:09 [INFO] my_app: Reserved/Cached: 7438.00 MB
+2026-09-09 18:46:09 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 18:46:09 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 18:46:26 [INFO] my_app: layer:[1] , lwc lac iter:[0], lr:[0.00098908] ,time:[17.072832]s, mse: [0.00002120]
+2026-09-09 18:46:43 [INFO] my_app: layer:[1] , lwc lac iter:[1], lr:[0.00095682] ,time:[17.121477]s, mse: [0.00001967]
+2026-09-09 18:47:00 [INFO] my_app: layer:[1] , lwc lac iter:[2], lr:[0.00090460] ,time:[17.103447]s, mse: [0.00001821]
+2026-09-09 18:47:18 [INFO] my_app: layer:[1] , lwc lac iter:[3], lr:[0.00083473] ,time:[17.114854]s, mse: [0.00001729]
+2026-09-09 18:47:35 [INFO] my_app: layer:[1] , lwc lac iter:[4], lr:[0.00075025] ,time:[17.121117]s, mse: [0.00001618]
+2026-09-09 18:47:52 [INFO] my_app: layer:[1] , lwc lac iter:[5], lr:[0.00065485] ,time:[17.113610]s, mse: [0.00001491]
+2026-09-09 18:48:09 [INFO] my_app: layer:[1] , lwc lac iter:[6], lr:[0.00055271] ,time:[17.105204]s, mse: [0.00001411]
+2026-09-09 18:48:26 [INFO] my_app: layer:[1] , lwc lac iter:[7], lr:[0.00044829] ,time:[17.114169]s, mse: [0.00001363]
+2026-09-09 18:48:43 [INFO] my_app: layer:[1] , lwc lac iter:[8], lr:[0.00034615] ,time:[17.119850]s, mse: [0.00001341]
+2026-09-09 18:49:00 [INFO] my_app: layer:[1] , lwc lac iter:[9], lr:[0.00025075] ,time:[17.110250]s, mse: [0.00001326]
+2026-09-09 18:49:17 [INFO] my_app: layer:[1] , lwc lac iter:[10], lr:[0.00016627] ,time:[17.127872]s, mse: [0.00001318]
+2026-09-09 18:49:35 [INFO] my_app: layer:[1] , lwc lac iter:[11], lr:[0.00009640] ,time:[17.124779]s, mse: [0.00001312]
+2026-09-09 18:49:52 [INFO] my_app: layer:[1] , lwc lac iter:[12], lr:[0.00004418] ,time:[17.109357]s, mse: [0.00001313]
+2026-09-09 18:50:09 [INFO] my_app: layer:[1] , lwc lac iter:[13], lr:[0.00001192] ,time:[17.116510]s, mse: [0.00001309]
+2026-09-09 18:50:26 [INFO] my_app: layer:[1] , lwc lac iter:[14], lr:[0.00000100] ,time:[17.102367]s, mse: [0.00001311]
+2026-09-09 18:50:26 [INFO] my_app: saved parameters for layer 1 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_1.pth
+2026-09-09 18:50:26 [INFO] my_app: After frame_Layer_1 Memory Stats:
+2026-09-09 18:50:26 [INFO] my_app: Allocated: 7118.15 MB
+2026-09-09 18:50:26 [INFO] my_app: Reserved/Cached: 7380.00 MB
+2026-09-09 18:50:26 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 18:50:26 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 18:50:26 [INFO] my_app: ========= global_Layer_1 =========
+2026-09-09 18:50:26 [INFO] my_app: Before global_Layer_1 Memory Stats:
+2026-09-09 18:50:26 [INFO] my_app: Allocated: 7064.09 MB
+2026-09-09 18:50:26 [INFO] my_app: Reserved/Cached: 7380.00 MB
+2026-09-09 18:50:26 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 18:50:26 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 18:50:29 [INFO] my_app: Layer 1 Epoch 0 Start Memory Stats:
+2026-09-09 18:50:29 [INFO] my_app: Allocated: 7064.09 MB
+2026-09-09 18:50:29 [INFO] my_app: Reserved/Cached: 7326.00 MB
+2026-09-09 18:50:29 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 18:50:29 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 18:50:47 [INFO] my_app: layer:[1] , lwc lac iter:[0], lr:[0.00098908] ,time:[17.037129]s, mse: [0.00002541]
+2026-09-09 18:51:04 [INFO] my_app: layer:[1] , lwc lac iter:[1], lr:[0.00095682] ,time:[17.051429]s, mse: [0.00002329]
+2026-09-09 18:51:21 [INFO] my_app: layer:[1] , lwc lac iter:[2], lr:[0.00090460] ,time:[17.059578]s, mse: [0.00002201]
+2026-09-09 18:51:38 [INFO] my_app: layer:[1] , lwc lac iter:[3], lr:[0.00083473] ,time:[17.062541]s, mse: [0.00002076]
+2026-09-09 18:51:55 [INFO] my_app: layer:[1] , lwc lac iter:[4], lr:[0.00075025] ,time:[17.066545]s, mse: [0.00001900]
+2026-09-09 18:52:12 [INFO] my_app: layer:[1] , lwc lac iter:[5], lr:[0.00065485] ,time:[17.059580]s, mse: [0.00001767]
+2026-09-09 18:52:29 [INFO] my_app: layer:[1] , lwc lac iter:[6], lr:[0.00055271] ,time:[17.067115]s, mse: [0.00001620]
+2026-09-09 18:52:46 [INFO] my_app: layer:[1] , lwc lac iter:[7], lr:[0.00044829] ,time:[17.074591]s, mse: [0.00001555]
+2026-09-09 18:53:03 [INFO] my_app: layer:[1] , lwc lac iter:[8], lr:[0.00034615] ,time:[17.082564]s, mse: [0.00001529]
+2026-09-09 18:53:20 [INFO] my_app: layer:[1] , lwc lac iter:[9], lr:[0.00025075] ,time:[17.066278]s, mse: [0.00001518]
+2026-09-09 18:53:37 [INFO] my_app: layer:[1] , lwc lac iter:[10], lr:[0.00016627] ,time:[17.075079]s, mse: [0.00001510]
+2026-09-09 18:53:54 [INFO] my_app: layer:[1] , lwc lac iter:[11], lr:[0.00009640] ,time:[17.057400]s, mse: [0.00001502]
+2026-09-09 18:54:11 [INFO] my_app: layer:[1] , lwc lac iter:[12], lr:[0.00004418] ,time:[17.057593]s, mse: [0.00001499]
+2026-09-09 18:54:28 [INFO] my_app: layer:[1] , lwc lac iter:[13], lr:[0.00001192] ,time:[17.054718]s, mse: [0.00001496]
+2026-09-09 18:54:45 [INFO] my_app: layer:[1] , lwc lac iter:[14], lr:[0.00000100] ,time:[17.075295]s, mse: [0.00001493]
+2026-09-09 18:54:45 [INFO] my_app: saved parameters for layer 1 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_1.pth
+2026-09-09 18:54:45 [INFO] my_app: After global_Layer_1 Memory Stats:
+2026-09-09 18:54:45 [INFO] my_app: Allocated: 6994.02 MB
+2026-09-09 18:54:45 [INFO] my_app: Reserved/Cached: 7268.00 MB
+2026-09-09 18:54:45 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 18:54:45 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 18:54:46 [INFO] my_app: ========= frame_Layer_2 =========
+2026-09-09 18:54:46 [INFO] my_app: Before frame_Layer_2 Memory Stats:
+2026-09-09 18:54:46 [INFO] my_app: Allocated: 6939.96 MB
+2026-09-09 18:54:46 [INFO] my_app: Reserved/Cached: 7268.00 MB
+2026-09-09 18:54:46 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 18:54:46 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 18:54:49 [INFO] my_app: Layer 2 Epoch 0 Start Memory Stats:
+2026-09-09 18:54:49 [INFO] my_app: Allocated: 6939.96 MB
+2026-09-09 18:54:49 [INFO] my_app: Reserved/Cached: 7214.00 MB
+2026-09-09 18:54:49 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 18:54:49 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 18:55:06 [INFO] my_app: layer:[2] , lwc lac iter:[0], lr:[0.00098908] ,time:[17.044655]s, mse: [0.00003514]
+2026-09-09 18:55:23 [INFO] my_app: layer:[2] , lwc lac iter:[1], lr:[0.00095682] ,time:[17.092449]s, mse: [0.00003362]
+2026-09-09 18:55:40 [INFO] my_app: layer:[2] , lwc lac iter:[2], lr:[0.00090460] ,time:[17.083765]s, mse: [0.00003225]
+2026-09-09 18:55:57 [INFO] my_app: layer:[2] , lwc lac iter:[3], lr:[0.00083473] ,time:[17.074310]s, mse: [0.00003053]
+2026-09-09 18:56:14 [INFO] my_app: layer:[2] , lwc lac iter:[4], lr:[0.00075025] ,time:[17.089789]s, mse: [0.00002847]
+2026-09-09 18:56:32 [INFO] my_app: layer:[2] , lwc lac iter:[5], lr:[0.00065485] ,time:[17.114009]s, mse: [0.00002647]
+2026-09-09 18:56:49 [INFO] my_app: layer:[2] , lwc lac iter:[6], lr:[0.00055271] ,time:[17.085688]s, mse: [0.00002492]
+2026-09-09 18:57:06 [INFO] my_app: layer:[2] , lwc lac iter:[7], lr:[0.00044829] ,time:[17.104368]s, mse: [0.00002414]
+2026-09-09 18:57:23 [INFO] my_app: layer:[2] , lwc lac iter:[8], lr:[0.00034615] ,time:[17.094000]s, mse: [0.00002383]
+2026-09-09 18:57:40 [INFO] my_app: layer:[2] , lwc lac iter:[9], lr:[0.00025075] ,time:[17.100366]s, mse: [0.00002365]
+2026-09-09 18:57:57 [INFO] my_app: layer:[2] , lwc lac iter:[10], lr:[0.00016627] ,time:[17.088109]s, mse: [0.00002362]
+2026-09-09 18:58:14 [INFO] my_app: layer:[2] , lwc lac iter:[11], lr:[0.00009640] ,time:[17.096909]s, mse: [0.00002355]
+2026-09-09 18:58:31 [INFO] my_app: layer:[2] , lwc lac iter:[12], lr:[0.00004418] ,time:[17.124748]s, mse: [0.00002353]
+2026-09-09 18:58:48 [INFO] my_app: layer:[2] , lwc lac iter:[13], lr:[0.00001192] ,time:[17.074029]s, mse: [0.00002350]
+2026-09-09 18:59:05 [INFO] my_app: layer:[2] , lwc lac iter:[14], lr:[0.00000100] ,time:[17.094963]s, mse: [0.00002348]
+2026-09-09 18:59:05 [INFO] my_app: saved parameters for layer 2 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_2.pth
+2026-09-09 18:59:05 [INFO] my_app: After frame_Layer_2 Memory Stats:
+2026-09-09 18:59:05 [INFO] my_app: Allocated: 6869.90 MB
+2026-09-09 18:59:05 [INFO] my_app: Reserved/Cached: 7222.00 MB
+2026-09-09 18:59:05 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 18:59:05 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 18:59:06 [INFO] my_app: ========= global_Layer_2 =========
+2026-09-09 18:59:06 [INFO] my_app: Before global_Layer_2 Memory Stats:
+2026-09-09 18:59:06 [INFO] my_app: Allocated: 6815.84 MB
+2026-09-09 18:59:06 [INFO] my_app: Reserved/Cached: 7222.00 MB
+2026-09-09 18:59:06 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 18:59:06 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 18:59:09 [INFO] my_app: Layer 2 Epoch 0 Start Memory Stats:
+2026-09-09 18:59:09 [INFO] my_app: Allocated: 6815.84 MB
+2026-09-09 18:59:09 [INFO] my_app: Reserved/Cached: 7166.00 MB
+2026-09-09 18:59:09 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 18:59:09 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 18:59:26 [INFO] my_app: layer:[2] , lwc lac iter:[0], lr:[0.00098908] ,time:[17.011576]s, mse: [0.00003521]
+2026-09-09 18:59:43 [INFO] my_app: layer:[2] , lwc lac iter:[1], lr:[0.00095682] ,time:[17.062758]s, mse: [0.00003355]
+2026-09-09 19:00:00 [INFO] my_app: layer:[2] , lwc lac iter:[2], lr:[0.00090460] ,time:[17.041104]s, mse: [0.00003199]
+2026-09-09 19:00:17 [INFO] my_app: layer:[2] , lwc lac iter:[3], lr:[0.00083473] ,time:[17.052539]s, mse: [0.00003050]
+2026-09-09 19:00:34 [INFO] my_app: layer:[2] , lwc lac iter:[4], lr:[0.00075025] ,time:[17.064080]s, mse: [0.00002875]
+2026-09-09 19:00:51 [INFO] my_app: layer:[2] , lwc lac iter:[5], lr:[0.00065485] ,time:[17.057223]s, mse: [0.00002687]
+2026-09-09 19:01:08 [INFO] my_app: layer:[2] , lwc lac iter:[6], lr:[0.00055271] ,time:[17.039833]s, mse: [0.00002528]
+2026-09-09 19:01:25 [INFO] my_app: layer:[2] , lwc lac iter:[7], lr:[0.00044829] ,time:[17.052477]s, mse: [0.00002448]
+2026-09-09 19:01:42 [INFO] my_app: layer:[2] , lwc lac iter:[8], lr:[0.00034615] ,time:[17.059611]s, mse: [0.00002416]
+2026-09-09 19:01:59 [INFO] my_app: layer:[2] , lwc lac iter:[9], lr:[0.00025075] ,time:[17.060079]s, mse: [0.00002382]
+2026-09-09 19:02:17 [INFO] my_app: layer:[2] , lwc lac iter:[10], lr:[0.00016627] ,time:[17.047634]s, mse: [0.00002363]
+2026-09-09 19:02:34 [INFO] my_app: layer:[2] , lwc lac iter:[11], lr:[0.00009640] ,time:[17.069526]s, mse: [0.00002357]
+2026-09-09 19:02:51 [INFO] my_app: layer:[2] , lwc lac iter:[12], lr:[0.00004418] ,time:[17.047918]s, mse: [0.00002358]
+2026-09-09 19:03:08 [INFO] my_app: layer:[2] , lwc lac iter:[13], lr:[0.00001192] ,time:[17.044468]s, mse: [0.00002356]
+2026-09-09 19:03:25 [INFO] my_app: layer:[2] , lwc lac iter:[14], lr:[0.00000100] ,time:[17.052036]s, mse: [0.00002356]
+2026-09-09 19:03:25 [INFO] my_app: saved parameters for layer 2 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_2.pth
+2026-09-09 19:03:25 [INFO] my_app: After global_Layer_2 Memory Stats:
+2026-09-09 19:03:25 [INFO] my_app: Allocated: 6745.77 MB
+2026-09-09 19:03:25 [INFO] my_app: Reserved/Cached: 7108.00 MB
+2026-09-09 19:03:25 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:03:25 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:03:25 [INFO] my_app: ========= frame_Layer_3 =========
+2026-09-09 19:03:25 [INFO] my_app: Before frame_Layer_3 Memory Stats:
+2026-09-09 19:03:25 [INFO] my_app: Allocated: 6691.71 MB
+2026-09-09 19:03:25 [INFO] my_app: Reserved/Cached: 7108.00 MB
+2026-09-09 19:03:25 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:03:25 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:03:28 [INFO] my_app: Layer 3 Epoch 0 Start Memory Stats:
+2026-09-09 19:03:28 [INFO] my_app: Allocated: 6691.71 MB
+2026-09-09 19:03:28 [INFO] my_app: Reserved/Cached: 7054.00 MB
+2026-09-09 19:03:28 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:03:28 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:03:45 [INFO] my_app: layer:[3] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.995300]s, mse: [0.00002976]
+2026-09-09 19:04:02 [INFO] my_app: layer:[3] , lwc lac iter:[1], lr:[0.00095682] ,time:[17.008652]s, mse: [0.00002867]
+2026-09-09 19:04:19 [INFO] my_app: layer:[3] , lwc lac iter:[2], lr:[0.00090460] ,time:[17.021912]s, mse: [0.00002734]
+2026-09-09 19:04:36 [INFO] my_app: layer:[3] , lwc lac iter:[3], lr:[0.00083473] ,time:[17.033520]s, mse: [0.00002614]
+2026-09-09 19:04:53 [INFO] my_app: layer:[3] , lwc lac iter:[4], lr:[0.00075025] ,time:[17.029035]s, mse: [0.00002442]
+2026-09-09 19:05:10 [INFO] my_app: layer:[3] , lwc lac iter:[5], lr:[0.00065485] ,time:[17.023888]s, mse: [0.00002245]
+2026-09-09 19:05:27 [INFO] my_app: layer:[3] , lwc lac iter:[6], lr:[0.00055271] ,time:[17.027937]s, mse: [0.00002112]
+2026-09-09 19:05:44 [INFO] my_app: layer:[3] , lwc lac iter:[7], lr:[0.00044829] ,time:[17.037489]s, mse: [0.00002042]
+2026-09-09 19:06:01 [INFO] my_app: layer:[3] , lwc lac iter:[8], lr:[0.00034615] ,time:[17.015607]s, mse: [0.00002026]
+2026-09-09 19:06:18 [INFO] my_app: layer:[3] , lwc lac iter:[9], lr:[0.00025075] ,time:[17.030957]s, mse: [0.00002017]
+2026-09-09 19:06:36 [INFO] my_app: layer:[3] , lwc lac iter:[10], lr:[0.00016627] ,time:[17.023585]s, mse: [0.00002000]
+2026-09-09 19:06:53 [INFO] my_app: layer:[3] , lwc lac iter:[11], lr:[0.00009640] ,time:[17.030169]s, mse: [0.00001995]
+2026-09-09 19:07:10 [INFO] my_app: layer:[3] , lwc lac iter:[12], lr:[0.00004418] ,time:[17.028969]s, mse: [0.00001989]
+2026-09-09 19:07:27 [INFO] my_app: layer:[3] , lwc lac iter:[13], lr:[0.00001192] ,time:[17.009438]s, mse: [0.00001989]
+2026-09-09 19:07:44 [INFO] my_app: layer:[3] , lwc lac iter:[14], lr:[0.00000100] ,time:[17.041051]s, mse: [0.00001988]
+2026-09-09 19:07:44 [INFO] my_app: saved parameters for layer 3 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_3.pth
+2026-09-09 19:07:44 [INFO] my_app: After frame_Layer_3 Memory Stats:
+2026-09-09 19:07:44 [INFO] my_app: Allocated: 6621.65 MB
+2026-09-09 19:07:44 [INFO] my_app: Reserved/Cached: 6996.00 MB
+2026-09-09 19:07:44 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:07:44 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:07:44 [INFO] my_app: ========= global_Layer_3 =========
+2026-09-09 19:07:44 [INFO] my_app: Before global_Layer_3 Memory Stats:
+2026-09-09 19:07:44 [INFO] my_app: Allocated: 6567.59 MB
+2026-09-09 19:07:44 [INFO] my_app: Reserved/Cached: 6996.00 MB
+2026-09-09 19:07:44 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:07:44 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:07:47 [INFO] my_app: Layer 3 Epoch 0 Start Memory Stats:
+2026-09-09 19:07:47 [INFO] my_app: Allocated: 6567.59 MB
+2026-09-09 19:07:47 [INFO] my_app: Reserved/Cached: 6942.00 MB
+2026-09-09 19:07:47 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:07:47 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:08:04 [INFO] my_app: layer:[3] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.960823]s, mse: [0.00003212]
+2026-09-09 19:08:21 [INFO] my_app: layer:[3] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.988288]s, mse: [0.00003056]
+2026-09-09 19:08:38 [INFO] my_app: layer:[3] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.993381]s, mse: [0.00002933]
+2026-09-09 19:08:55 [INFO] my_app: layer:[3] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.997853]s, mse: [0.00002782]
+2026-09-09 19:09:12 [INFO] my_app: layer:[3] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.984466]s, mse: [0.00002610]
+2026-09-09 19:09:29 [INFO] my_app: layer:[3] , lwc lac iter:[5], lr:[0.00065485] ,time:[17.001923]s, mse: [0.00002432]
+2026-09-09 19:09:46 [INFO] my_app: layer:[3] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.989596]s, mse: [0.00002293]
+2026-09-09 19:10:03 [INFO] my_app: layer:[3] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.982487]s, mse: [0.00002215]
+2026-09-09 19:10:20 [INFO] my_app: layer:[3] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.995307]s, mse: [0.00002180]
+2026-09-09 19:10:37 [INFO] my_app: layer:[3] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.995119]s, mse: [0.00002156]
+2026-09-09 19:10:54 [INFO] my_app: layer:[3] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.998109]s, mse: [0.00002145]
+2026-09-09 19:11:11 [INFO] my_app: layer:[3] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.997025]s, mse: [0.00002140]
+2026-09-09 19:11:28 [INFO] my_app: layer:[3] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.984286]s, mse: [0.00002139]
+2026-09-09 19:11:45 [INFO] my_app: layer:[3] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.991732]s, mse: [0.00002137]
+2026-09-09 19:12:02 [INFO] my_app: layer:[3] , lwc lac iter:[14], lr:[0.00000100] ,time:[17.001845]s, mse: [0.00002139]
+2026-09-09 19:12:02 [INFO] my_app: saved parameters for layer 3 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_3.pth
+2026-09-09 19:12:02 [INFO] my_app: After global_Layer_3 Memory Stats:
+2026-09-09 19:12:02 [INFO] my_app: Allocated: 6497.52 MB
+2026-09-09 19:12:02 [INFO] my_app: Reserved/Cached: 6884.00 MB
+2026-09-09 19:12:02 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:12:02 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:12:02 [INFO] my_app: ========= frame_Layer_4 =========
+2026-09-09 19:12:02 [INFO] my_app: Before frame_Layer_4 Memory Stats:
+2026-09-09 19:12:02 [INFO] my_app: Allocated: 6443.46 MB
+2026-09-09 19:12:02 [INFO] my_app: Reserved/Cached: 6884.00 MB
+2026-09-09 19:12:02 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:12:02 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:12:06 [INFO] my_app: Layer 4 Epoch 0 Start Memory Stats:
+2026-09-09 19:12:06 [INFO] my_app: Allocated: 6443.46 MB
+2026-09-09 19:12:06 [INFO] my_app: Reserved/Cached: 6830.00 MB
+2026-09-09 19:12:06 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:12:06 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:12:22 [INFO] my_app: layer:[4] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.916919]s, mse: [0.00002403]
+2026-09-09 19:12:39 [INFO] my_app: layer:[4] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.968197]s, mse: [0.00002125]
+2026-09-09 19:12:56 [INFO] my_app: layer:[4] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.977486]s, mse: [0.00002068]
+2026-09-09 19:13:13 [INFO] my_app: layer:[4] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.963097]s, mse: [0.00001968]
+2026-09-09 19:13:30 [INFO] my_app: layer:[4] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.958397]s, mse: [0.00001856]
+2026-09-09 19:13:47 [INFO] my_app: layer:[4] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.974016]s, mse: [0.00001736]
+2026-09-09 19:14:04 [INFO] my_app: layer:[4] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.981368]s, mse: [0.00001643]
+2026-09-09 19:14:21 [INFO] my_app: layer:[4] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.980530]s, mse: [0.00001595]
+2026-09-09 19:14:38 [INFO] my_app: layer:[4] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.986638]s, mse: [0.00001576]
+2026-09-09 19:14:55 [INFO] my_app: layer:[4] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.978858]s, mse: [0.00001567]
+2026-09-09 19:15:12 [INFO] my_app: layer:[4] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.978521]s, mse: [0.00001555]
+2026-09-09 19:15:29 [INFO] my_app: layer:[4] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.974345]s, mse: [0.00001553]
+2026-09-09 19:15:46 [INFO] my_app: layer:[4] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.975298]s, mse: [0.00001549]
+2026-09-09 19:16:03 [INFO] my_app: layer:[4] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.978146]s, mse: [0.00001547]
+2026-09-09 19:16:20 [INFO] my_app: layer:[4] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.982430]s, mse: [0.00001546]
+2026-09-09 19:16:20 [INFO] my_app: saved parameters for layer 4 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_4.pth
+2026-09-09 19:16:20 [INFO] my_app: After frame_Layer_4 Memory Stats:
+2026-09-09 19:16:20 [INFO] my_app: Allocated: 6373.40 MB
+2026-09-09 19:16:20 [INFO] my_app: Reserved/Cached: 6772.00 MB
+2026-09-09 19:16:20 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:16:20 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:16:20 [INFO] my_app: ========= global_Layer_4 =========
+2026-09-09 19:16:20 [INFO] my_app: Before global_Layer_4 Memory Stats:
+2026-09-09 19:16:20 [INFO] my_app: Allocated: 6319.34 MB
+2026-09-09 19:16:20 [INFO] my_app: Reserved/Cached: 6772.00 MB
+2026-09-09 19:16:20 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:16:20 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:16:24 [INFO] my_app: Layer 4 Epoch 0 Start Memory Stats:
+2026-09-09 19:16:24 [INFO] my_app: Allocated: 6319.34 MB
+2026-09-09 19:16:24 [INFO] my_app: Reserved/Cached: 6718.00 MB
+2026-09-09 19:16:24 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:16:24 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:16:41 [INFO] my_app: layer:[4] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.945625]s, mse: [0.00002532]
+2026-09-09 19:16:58 [INFO] my_app: layer:[4] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.969616]s, mse: [0.00002334]
+2026-09-09 19:17:15 [INFO] my_app: layer:[4] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.966058]s, mse: [0.00002212]
+2026-09-09 19:17:31 [INFO] my_app: layer:[4] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.979335]s, mse: [0.00002098]
+2026-09-09 19:17:48 [INFO] my_app: layer:[4] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.986015]s, mse: [0.00001986]
+2026-09-09 19:18:05 [INFO] my_app: layer:[4] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.966036]s, mse: [0.00001843]
+2026-09-09 19:18:22 [INFO] my_app: layer:[4] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.980331]s, mse: [0.00001725]
+2026-09-09 19:18:39 [INFO] my_app: layer:[4] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.984078]s, mse: [0.00001670]
+2026-09-09 19:18:56 [INFO] my_app: layer:[4] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.978495]s, mse: [0.00001641]
+2026-09-09 19:19:13 [INFO] my_app: layer:[4] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.981624]s, mse: [0.00001627]
+2026-09-09 19:19:30 [INFO] my_app: layer:[4] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.979281]s, mse: [0.00001616]
+2026-09-09 19:19:47 [INFO] my_app: layer:[4] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.982117]s, mse: [0.00001614]
+2026-09-09 19:20:04 [INFO] my_app: layer:[4] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.983261]s, mse: [0.00001609]
+2026-09-09 19:20:21 [INFO] my_app: layer:[4] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.982546]s, mse: [0.00001609]
+2026-09-09 19:20:38 [INFO] my_app: layer:[4] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.972841]s, mse: [0.00001608]
+2026-09-09 19:20:38 [INFO] my_app: saved parameters for layer 4 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_4.pth
+2026-09-09 19:20:38 [INFO] my_app: After global_Layer_4 Memory Stats:
+2026-09-09 19:20:38 [INFO] my_app: Allocated: 6249.27 MB
+2026-09-09 19:20:38 [INFO] my_app: Reserved/Cached: 6724.00 MB
+2026-09-09 19:20:38 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:20:38 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:20:38 [INFO] my_app: ========= frame_Layer_5 =========
+2026-09-09 19:20:38 [INFO] my_app: Before frame_Layer_5 Memory Stats:
+2026-09-09 19:20:38 [INFO] my_app: Allocated: 6195.21 MB
+2026-09-09 19:20:38 [INFO] my_app: Reserved/Cached: 6724.00 MB
+2026-09-09 19:20:38 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:20:38 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:20:42 [INFO] my_app: Layer 5 Epoch 0 Start Memory Stats:
+2026-09-09 19:20:42 [INFO] my_app: Allocated: 6195.21 MB
+2026-09-09 19:20:42 [INFO] my_app: Reserved/Cached: 6670.00 MB
+2026-09-09 19:20:42 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:20:42 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:20:59 [INFO] my_app: layer:[5] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.906102]s, mse: [0.00004119]
+2026-09-09 19:21:16 [INFO] my_app: layer:[5] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.933926]s, mse: [0.00003940]
+2026-09-09 19:21:33 [INFO] my_app: layer:[5] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.942439]s, mse: [0.00003788]
+2026-09-09 19:21:50 [INFO] my_app: layer:[5] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.956528]s, mse: [0.00003602]
+2026-09-09 19:22:06 [INFO] my_app: layer:[5] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.949177]s, mse: [0.00003393]
+2026-09-09 19:22:23 [INFO] my_app: layer:[5] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.946395]s, mse: [0.00003146]
+2026-09-09 19:22:40 [INFO] my_app: layer:[5] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.952733]s, mse: [0.00002947]
+2026-09-09 19:22:57 [INFO] my_app: layer:[5] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.947640]s, mse: [0.00002858]
+2026-09-09 19:23:14 [INFO] my_app: layer:[5] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.946667]s, mse: [0.00002821]
+2026-09-09 19:23:31 [INFO] my_app: layer:[5] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.951973]s, mse: [0.00002813]
+2026-09-09 19:23:48 [INFO] my_app: layer:[5] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.954887]s, mse: [0.00002791]
+2026-09-09 19:24:05 [INFO] my_app: layer:[5] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.949931]s, mse: [0.00002783]
+2026-09-09 19:24:22 [INFO] my_app: layer:[5] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.945858]s, mse: [0.00002779]
+2026-09-09 19:24:39 [INFO] my_app: layer:[5] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.960586]s, mse: [0.00002778]
+2026-09-09 19:24:56 [INFO] my_app: layer:[5] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.954010]s, mse: [0.00002780]
+2026-09-09 19:24:56 [INFO] my_app: saved parameters for layer 5 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_5.pth
+2026-09-09 19:24:56 [INFO] my_app: After frame_Layer_5 Memory Stats:
+2026-09-09 19:24:56 [INFO] my_app: Allocated: 6124.82 MB
+2026-09-09 19:24:56 [INFO] my_app: Reserved/Cached: 6558.00 MB
+2026-09-09 19:24:56 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:24:56 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:24:56 [INFO] my_app: ========= global_Layer_5 =========
+2026-09-09 19:24:56 [INFO] my_app: Before global_Layer_5 Memory Stats:
+2026-09-09 19:24:56 [INFO] my_app: Allocated: 6071.09 MB
+2026-09-09 19:24:56 [INFO] my_app: Reserved/Cached: 6558.00 MB
+2026-09-09 19:24:56 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:24:56 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:24:59 [INFO] my_app: Layer 5 Epoch 0 Start Memory Stats:
+2026-09-09 19:24:59 [INFO] my_app: Allocated: 6071.09 MB
+2026-09-09 19:24:59 [INFO] my_app: Reserved/Cached: 6558.00 MB
+2026-09-09 19:24:59 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:24:59 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:25:16 [INFO] my_app: layer:[5] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.916664]s, mse: [0.00003923]
+2026-09-09 19:25:33 [INFO] my_app: layer:[5] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.944280]s, mse: [0.00003769]
+2026-09-09 19:25:50 [INFO] my_app: layer:[5] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.966918]s, mse: [0.00003607]
+2026-09-09 19:26:07 [INFO] my_app: layer:[5] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.954869]s, mse: [0.00003443]
+2026-09-09 19:26:24 [INFO] my_app: layer:[5] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.945853]s, mse: [0.00003226]
+2026-09-09 19:26:41 [INFO] my_app: layer:[5] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.947114]s, mse: [0.00002995]
+2026-09-09 19:26:58 [INFO] my_app: layer:[5] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.941477]s, mse: [0.00002810]
+2026-09-09 19:27:15 [INFO] my_app: layer:[5] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.949314]s, mse: [0.00002707]
+2026-09-09 19:27:32 [INFO] my_app: layer:[5] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.952824]s, mse: [0.00002669]
+2026-09-09 19:27:49 [INFO] my_app: layer:[5] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.955702]s, mse: [0.00002647]
+2026-09-09 19:28:06 [INFO] my_app: layer:[5] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.943907]s, mse: [0.00002638]
+2026-09-09 19:28:23 [INFO] my_app: layer:[5] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.944808]s, mse: [0.00002632]
+2026-09-09 19:28:40 [INFO] my_app: layer:[5] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.960469]s, mse: [0.00002627]
+2026-09-09 19:28:57 [INFO] my_app: layer:[5] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.934003]s, mse: [0.00002628]
+2026-09-09 19:29:14 [INFO] my_app: layer:[5] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.950519]s, mse: [0.00002628]
+2026-09-09 19:29:14 [INFO] my_app: saved parameters for layer 5 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_5.pth
+2026-09-09 19:29:14 [INFO] my_app: After global_Layer_5 Memory Stats:
+2026-09-09 19:29:14 [INFO] my_app: Allocated: 6000.70 MB
+2026-09-09 19:29:14 [INFO] my_app: Reserved/Cached: 6446.00 MB
+2026-09-09 19:29:14 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:29:14 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:29:14 [INFO] my_app: ========= frame_Layer_6 =========
+2026-09-09 19:29:14 [INFO] my_app: Before frame_Layer_6 Memory Stats:
+2026-09-09 19:29:14 [INFO] my_app: Allocated: 5946.96 MB
+2026-09-09 19:29:14 [INFO] my_app: Reserved/Cached: 6446.00 MB
+2026-09-09 19:29:14 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:29:14 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:29:17 [INFO] my_app: Layer 6 Epoch 0 Start Memory Stats:
+2026-09-09 19:29:17 [INFO] my_app: Allocated: 5946.96 MB
+2026-09-09 19:29:17 [INFO] my_app: Reserved/Cached: 6446.00 MB
+2026-09-09 19:29:17 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:29:17 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:29:34 [INFO] my_app: layer:[6] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.898367]s, mse: [0.00003609]
+2026-09-09 19:29:51 [INFO] my_app: layer:[6] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.948318]s, mse: [0.00003487]
+2026-09-09 19:30:08 [INFO] my_app: layer:[6] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.922673]s, mse: [0.00003354]
+2026-09-09 19:30:25 [INFO] my_app: layer:[6] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.919152]s, mse: [0.00003193]
+2026-09-09 19:30:42 [INFO] my_app: layer:[6] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.957053]s, mse: [0.00002987]
+2026-09-09 19:30:59 [INFO] my_app: layer:[6] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.937345]s, mse: [0.00002783]
+2026-09-09 19:31:16 [INFO] my_app: layer:[6] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.930894]s, mse: [0.00002636]
+2026-09-09 19:31:33 [INFO] my_app: layer:[6] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.938565]s, mse: [0.00002569]
+2026-09-09 19:31:50 [INFO] my_app: layer:[6] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.953244]s, mse: [0.00002548]
+2026-09-09 19:32:06 [INFO] my_app: layer:[6] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.954966]s, mse: [0.00002534]
+2026-09-09 19:32:23 [INFO] my_app: layer:[6] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.943274]s, mse: [0.00002522]
+2026-09-09 19:32:40 [INFO] my_app: layer:[6] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.954076]s, mse: [0.00002518]
+2026-09-09 19:32:57 [INFO] my_app: layer:[6] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.952661]s, mse: [0.00002515]
+2026-09-09 19:33:14 [INFO] my_app: layer:[6] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.961128]s, mse: [0.00002513]
+2026-09-09 19:33:31 [INFO] my_app: layer:[6] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.962830]s, mse: [0.00002512]
+2026-09-09 19:33:31 [INFO] my_app: saved parameters for layer 6 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_6.pth
+2026-09-09 19:33:31 [INFO] my_app: After frame_Layer_6 Memory Stats:
+2026-09-09 19:33:31 [INFO] my_app: Allocated: 5876.57 MB
+2026-09-09 19:33:31 [INFO] my_app: Reserved/Cached: 6334.00 MB
+2026-09-09 19:33:31 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:33:31 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:33:31 [INFO] my_app: ========= global_Layer_6 =========
+2026-09-09 19:33:31 [INFO] my_app: Before global_Layer_6 Memory Stats:
+2026-09-09 19:33:31 [INFO] my_app: Allocated: 5822.84 MB
+2026-09-09 19:33:31 [INFO] my_app: Reserved/Cached: 6334.00 MB
+2026-09-09 19:33:31 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:33:31 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:33:35 [INFO] my_app: Layer 6 Epoch 0 Start Memory Stats:
+2026-09-09 19:33:35 [INFO] my_app: Allocated: 5822.84 MB
+2026-09-09 19:33:35 [INFO] my_app: Reserved/Cached: 6334.00 MB
+2026-09-09 19:33:35 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:33:35 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:33:52 [INFO] my_app: layer:[6] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.916746]s, mse: [0.00003924]
+2026-09-09 19:34:09 [INFO] my_app: layer:[6] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.927106]s, mse: [0.00003818]
+2026-09-09 19:34:25 [INFO] my_app: layer:[6] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.929957]s, mse: [0.00003688]
+2026-09-09 19:34:42 [INFO] my_app: layer:[6] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.925282]s, mse: [0.00003532]
+2026-09-09 19:34:59 [INFO] my_app: layer:[6] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.931525]s, mse: [0.00003320]
+2026-09-09 19:35:16 [INFO] my_app: layer:[6] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.923242]s, mse: [0.00003092]
+2026-09-09 19:35:33 [INFO] my_app: layer:[6] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.916976]s, mse: [0.00002926]
+2026-09-09 19:35:50 [INFO] my_app: layer:[6] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.947410]s, mse: [0.00002849]
+2026-09-09 19:36:07 [INFO] my_app: layer:[6] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.935083]s, mse: [0.00002822]
+2026-09-09 19:36:24 [INFO] my_app: layer:[6] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.949542]s, mse: [0.00002817]
+2026-09-09 19:36:41 [INFO] my_app: layer:[6] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.940079]s, mse: [0.00002811]
+2026-09-09 19:36:58 [INFO] my_app: layer:[6] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.937891]s, mse: [0.00002805]
+2026-09-09 19:37:15 [INFO] my_app: layer:[6] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.935663]s, mse: [0.00002799]
+2026-09-09 19:37:32 [INFO] my_app: layer:[6] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.939082]s, mse: [0.00002797]
+2026-09-09 19:37:49 [INFO] my_app: layer:[6] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.938971]s, mse: [0.00002798]
+2026-09-09 19:37:49 [INFO] my_app: saved parameters for layer 6 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_6.pth
+2026-09-09 19:37:49 [INFO] my_app: After global_Layer_6 Memory Stats:
+2026-09-09 19:37:49 [INFO] my_app: Allocated: 5752.45 MB
+2026-09-09 19:37:49 [INFO] my_app: Reserved/Cached: 6222.00 MB
+2026-09-09 19:37:49 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:37:49 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:37:49 [INFO] my_app: ========= frame_Layer_7 =========
+2026-09-09 19:37:49 [INFO] my_app: Before frame_Layer_7 Memory Stats:
+2026-09-09 19:37:49 [INFO] my_app: Allocated: 5698.71 MB
+2026-09-09 19:37:49 [INFO] my_app: Reserved/Cached: 6222.00 MB
+2026-09-09 19:37:49 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:37:49 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:37:52 [INFO] my_app: Layer 7 Epoch 0 Start Memory Stats:
+2026-09-09 19:37:52 [INFO] my_app: Allocated: 5698.71 MB
+2026-09-09 19:37:52 [INFO] my_app: Reserved/Cached: 6222.00 MB
+2026-09-09 19:37:52 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:37:52 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:38:09 [INFO] my_app: layer:[7] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.878815]s, mse: [0.00004070]
+2026-09-09 19:38:26 [INFO] my_app: layer:[7] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.903235]s, mse: [0.00003937]
+2026-09-09 19:38:43 [INFO] my_app: layer:[7] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.910811]s, mse: [0.00003781]
+2026-09-09 19:39:00 [INFO] my_app: layer:[7] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.906341]s, mse: [0.00003607]
+2026-09-09 19:39:17 [INFO] my_app: layer:[7] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.911322]s, mse: [0.00003386]
+2026-09-09 19:39:34 [INFO] my_app: layer:[7] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.906716]s, mse: [0.00003130]
+2026-09-09 19:39:50 [INFO] my_app: layer:[7] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.918632]s, mse: [0.00002967]
+2026-09-09 19:40:07 [INFO] my_app: layer:[7] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.912832]s, mse: [0.00002902]
+2026-09-09 19:40:24 [INFO] my_app: layer:[7] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.901198]s, mse: [0.00002877]
+2026-09-09 19:40:41 [INFO] my_app: layer:[7] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.921284]s, mse: [0.00002873]
+2026-09-09 19:40:58 [INFO] my_app: layer:[7] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.914129]s, mse: [0.00002866]
+2026-09-09 19:41:15 [INFO] my_app: layer:[7] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.897993]s, mse: [0.00002860]
+2026-09-09 19:41:32 [INFO] my_app: layer:[7] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.916181]s, mse: [0.00002857]
+2026-09-09 19:41:49 [INFO] my_app: layer:[7] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.930918]s, mse: [0.00002858]
+2026-09-09 19:42:06 [INFO] my_app: layer:[7] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.902425]s, mse: [0.00002858]
+2026-09-09 19:42:06 [INFO] my_app: saved parameters for layer 7 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_7.pth
+2026-09-09 19:42:06 [INFO] my_app: After frame_Layer_7 Memory Stats:
+2026-09-09 19:42:06 [INFO] my_app: Allocated: 5628.32 MB
+2026-09-09 19:42:06 [INFO] my_app: Reserved/Cached: 6154.00 MB
+2026-09-09 19:42:06 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:42:06 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:42:06 [INFO] my_app: ========= global_Layer_7 =========
+2026-09-09 19:42:06 [INFO] my_app: Before global_Layer_7 Memory Stats:
+2026-09-09 19:42:06 [INFO] my_app: Allocated: 5574.59 MB
+2026-09-09 19:42:06 [INFO] my_app: Reserved/Cached: 6154.00 MB
+2026-09-09 19:42:06 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:42:06 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:42:09 [INFO] my_app: Layer 7 Epoch 0 Start Memory Stats:
+2026-09-09 19:42:09 [INFO] my_app: Allocated: 5574.59 MB
+2026-09-09 19:42:09 [INFO] my_app: Reserved/Cached: 6154.00 MB
+2026-09-09 19:42:09 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:42:09 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:42:26 [INFO] my_app: layer:[7] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.850198]s, mse: [0.00005209]
+2026-09-09 19:42:43 [INFO] my_app: layer:[7] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.893577]s, mse: [0.00005030]
+2026-09-09 19:43:00 [INFO] my_app: layer:[7] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.862192]s, mse: [0.00004851]
+2026-09-09 19:43:17 [INFO] my_app: layer:[7] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.864883]s, mse: [0.00004620]
+2026-09-09 19:43:33 [INFO] my_app: layer:[7] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.865823]s, mse: [0.00004313]
+2026-09-09 19:43:50 [INFO] my_app: layer:[7] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.886961]s, mse: [0.00003992]
+2026-09-09 19:44:07 [INFO] my_app: layer:[7] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.880145]s, mse: [0.00003744]
+2026-09-09 19:44:24 [INFO] my_app: layer:[7] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.880793]s, mse: [0.00003631]
+2026-09-09 19:44:41 [INFO] my_app: layer:[7] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.879681]s, mse: [0.00003588]
+2026-09-09 19:44:58 [INFO] my_app: layer:[7] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.880850]s, mse: [0.00003578]
+2026-09-09 19:45:15 [INFO] my_app: layer:[7] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.859463]s, mse: [0.00003565]
+2026-09-09 19:45:32 [INFO] my_app: layer:[7] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.878793]s, mse: [0.00003563]
+2026-09-09 19:45:49 [INFO] my_app: layer:[7] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.882061]s, mse: [0.00003562]
+2026-09-09 19:46:05 [INFO] my_app: layer:[7] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.903153]s, mse: [0.00003560]
+2026-09-09 19:46:22 [INFO] my_app: layer:[7] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.869062]s, mse: [0.00003560]
+2026-09-09 19:46:22 [INFO] my_app: saved parameters for layer 7 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_7.pth
+2026-09-09 19:46:22 [INFO] my_app: After global_Layer_7 Memory Stats:
+2026-09-09 19:46:22 [INFO] my_app: Allocated: 5504.20 MB
+2026-09-09 19:46:22 [INFO] my_app: Reserved/Cached: 6042.00 MB
+2026-09-09 19:46:22 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:46:22 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:46:22 [INFO] my_app: ========= frame_Layer_8 =========
+2026-09-09 19:46:22 [INFO] my_app: Before frame_Layer_8 Memory Stats:
+2026-09-09 19:46:22 [INFO] my_app: Allocated: 5450.46 MB
+2026-09-09 19:46:22 [INFO] my_app: Reserved/Cached: 6042.00 MB
+2026-09-09 19:46:22 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:46:22 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:46:26 [INFO] my_app: Layer 8 Epoch 0 Start Memory Stats:
+2026-09-09 19:46:26 [INFO] my_app: Allocated: 5450.46 MB
+2026-09-09 19:46:26 [INFO] my_app: Reserved/Cached: 6042.00 MB
+2026-09-09 19:46:26 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:46:26 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:46:43 [INFO] my_app: layer:[8] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.817085]s, mse: [0.00003884]
+2026-09-09 19:46:59 [INFO] my_app: layer:[8] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.848115]s, mse: [0.00003732]
+2026-09-09 19:47:16 [INFO] my_app: layer:[8] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.840066]s, mse: [0.00003595]
+2026-09-09 19:47:33 [INFO] my_app: layer:[8] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.835925]s, mse: [0.00003437]
+2026-09-09 19:47:50 [INFO] my_app: layer:[8] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.852961]s, mse: [0.00003212]
+2026-09-09 19:48:07 [INFO] my_app: layer:[8] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.868881]s, mse: [0.00002977]
+2026-09-09 19:48:24 [INFO] my_app: layer:[8] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.846234]s, mse: [0.00002813]
+2026-09-09 19:48:40 [INFO] my_app: layer:[8] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.860756]s, mse: [0.00002743]
+2026-09-09 19:48:57 [INFO] my_app: layer:[8] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.858880]s, mse: [0.00002718]
+2026-09-09 19:49:14 [INFO] my_app: layer:[8] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.859750]s, mse: [0.00002701]
+2026-09-09 19:49:31 [INFO] my_app: layer:[8] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.848631]s, mse: [0.00002689]
+2026-09-09 19:49:48 [INFO] my_app: layer:[8] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.851339]s, mse: [0.00002678]
+2026-09-09 19:50:05 [INFO] my_app: layer:[8] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.857516]s, mse: [0.00002674]
+2026-09-09 19:50:22 [INFO] my_app: layer:[8] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.835033]s, mse: [0.00002672]
+2026-09-09 19:50:38 [INFO] my_app: layer:[8] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.841708]s, mse: [0.00002671]
+2026-09-09 19:50:39 [INFO] my_app: saved parameters for layer 8 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_8.pth
+2026-09-09 19:50:39 [INFO] my_app: After frame_Layer_8 Memory Stats:
+2026-09-09 19:50:39 [INFO] my_app: Allocated: 5380.07 MB
+2026-09-09 19:50:39 [INFO] my_app: Reserved/Cached: 5930.00 MB
+2026-09-09 19:50:39 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:50:39 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:50:39 [INFO] my_app: ========= global_Layer_8 =========
+2026-09-09 19:50:39 [INFO] my_app: Before global_Layer_8 Memory Stats:
+2026-09-09 19:50:39 [INFO] my_app: Allocated: 5326.34 MB
+2026-09-09 19:50:39 [INFO] my_app: Reserved/Cached: 5930.00 MB
+2026-09-09 19:50:39 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:50:39 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:50:42 [INFO] my_app: Layer 8 Epoch 0 Start Memory Stats:
+2026-09-09 19:50:42 [INFO] my_app: Allocated: 5326.34 MB
+2026-09-09 19:50:42 [INFO] my_app: Reserved/Cached: 5930.00 MB
+2026-09-09 19:50:42 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:50:42 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:50:59 [INFO] my_app: layer:[8] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.821330]s, mse: [0.00004122]
+2026-09-09 19:51:15 [INFO] my_app: layer:[8] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.831792]s, mse: [0.00003958]
+2026-09-09 19:51:32 [INFO] my_app: layer:[8] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.847438]s, mse: [0.00003798]
+2026-09-09 19:51:49 [INFO] my_app: layer:[8] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.857150]s, mse: [0.00003608]
+2026-09-09 19:52:06 [INFO] my_app: layer:[8] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.856359]s, mse: [0.00003381]
+2026-09-09 19:52:23 [INFO] my_app: layer:[8] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.848046]s, mse: [0.00003129]
+2026-09-09 19:52:40 [INFO] my_app: layer:[8] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.837828]s, mse: [0.00002949]
+2026-09-09 19:52:57 [INFO] my_app: layer:[8] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.857310]s, mse: [0.00002871]
+2026-09-09 19:53:13 [INFO] my_app: layer:[8] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.832898]s, mse: [0.00002843]
+2026-09-09 19:53:30 [INFO] my_app: layer:[8] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.841085]s, mse: [0.00002828]
+2026-09-09 19:53:47 [INFO] my_app: layer:[8] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.862843]s, mse: [0.00002815]
+2026-09-09 19:54:04 [INFO] my_app: layer:[8] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.860962]s, mse: [0.00002807]
+2026-09-09 19:54:21 [INFO] my_app: layer:[8] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.854335]s, mse: [0.00002802]
+2026-09-09 19:54:38 [INFO] my_app: layer:[8] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.850622]s, mse: [0.00002799]
+2026-09-09 19:54:55 [INFO] my_app: layer:[8] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.854873]s, mse: [0.00002798]
+2026-09-09 19:54:55 [INFO] my_app: saved parameters for layer 8 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_8.pth
+2026-09-09 19:54:55 [INFO] my_app: After global_Layer_8 Memory Stats:
+2026-09-09 19:54:55 [INFO] my_app: Allocated: 5255.95 MB
+2026-09-09 19:54:55 [INFO] my_app: Reserved/Cached: 5818.00 MB
+2026-09-09 19:54:55 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:54:55 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:54:55 [INFO] my_app: ========= frame_Layer_9 =========
+2026-09-09 19:54:55 [INFO] my_app: Before frame_Layer_9 Memory Stats:
+2026-09-09 19:54:55 [INFO] my_app: Allocated: 5202.21 MB
+2026-09-09 19:54:55 [INFO] my_app: Reserved/Cached: 5818.00 MB
+2026-09-09 19:54:55 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:54:55 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:54:58 [INFO] my_app: Layer 9 Epoch 0 Start Memory Stats:
+2026-09-09 19:54:58 [INFO] my_app: Allocated: 5202.21 MB
+2026-09-09 19:54:58 [INFO] my_app: Reserved/Cached: 5818.00 MB
+2026-09-09 19:54:58 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:54:58 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:55:15 [INFO] my_app: layer:[9] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.825592]s, mse: [0.00004066]
+2026-09-09 19:55:32 [INFO] my_app: layer:[9] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.856170]s, mse: [0.00003919]
+2026-09-09 19:55:48 [INFO] my_app: layer:[9] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.873328]s, mse: [0.00003770]
+2026-09-09 19:56:05 [INFO] my_app: layer:[9] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.844843]s, mse: [0.00003606]
+2026-09-09 19:56:22 [INFO] my_app: layer:[9] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.841924]s, mse: [0.00003393]
+2026-09-09 19:56:39 [INFO] my_app: layer:[9] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.860770]s, mse: [0.00003161]
+2026-09-09 19:56:56 [INFO] my_app: layer:[9] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.865892]s, mse: [0.00002992]
+2026-09-09 19:57:13 [INFO] my_app: layer:[9] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.867299]s, mse: [0.00002925]
+2026-09-09 19:57:30 [INFO] my_app: layer:[9] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.844517]s, mse: [0.00002912]
+2026-09-09 19:57:46 [INFO] my_app: layer:[9] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.869180]s, mse: [0.00002904]
+2026-09-09 19:58:03 [INFO] my_app: layer:[9] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.880967]s, mse: [0.00002892]
+2026-09-09 19:58:20 [INFO] my_app: layer:[9] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.864130]s, mse: [0.00002889]
+2026-09-09 19:58:37 [INFO] my_app: layer:[9] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.839652]s, mse: [0.00002884]
+2026-09-09 19:58:54 [INFO] my_app: layer:[9] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.871798]s, mse: [0.00002880]
+2026-09-09 19:59:11 [INFO] my_app: layer:[9] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.852748]s, mse: [0.00002881]
+2026-09-09 19:59:11 [INFO] my_app: saved parameters for layer 9 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_9.pth
+2026-09-09 19:59:11 [INFO] my_app: After frame_Layer_9 Memory Stats:
+2026-09-09 19:59:11 [INFO] my_app: Allocated: 5131.82 MB
+2026-09-09 19:59:11 [INFO] my_app: Reserved/Cached: 5704.00 MB
+2026-09-09 19:59:11 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:59:11 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:59:11 [INFO] my_app: ========= global_Layer_9 =========
+2026-09-09 19:59:11 [INFO] my_app: Before global_Layer_9 Memory Stats:
+2026-09-09 19:59:11 [INFO] my_app: Allocated: 5078.09 MB
+2026-09-09 19:59:11 [INFO] my_app: Reserved/Cached: 5704.00 MB
+2026-09-09 19:59:11 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:59:11 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:59:14 [INFO] my_app: Layer 9 Epoch 0 Start Memory Stats:
+2026-09-09 19:59:14 [INFO] my_app: Allocated: 5078.09 MB
+2026-09-09 19:59:14 [INFO] my_app: Reserved/Cached: 5704.00 MB
+2026-09-09 19:59:14 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 19:59:14 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 19:59:31 [INFO] my_app: layer:[9] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.803384]s, mse: [0.00005696]
+2026-09-09 19:59:48 [INFO] my_app: layer:[9] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.820440]s, mse: [0.00005482]
+2026-09-09 20:00:05 [INFO] my_app: layer:[9] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.824013]s, mse: [0.00005250]
+2026-09-09 20:00:21 [INFO] my_app: layer:[9] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.854317]s, mse: [0.00004990]
+2026-09-09 20:00:38 [INFO] my_app: layer:[9] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.847507]s, mse: [0.00004667]
+2026-09-09 20:00:55 [INFO] my_app: layer:[9] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.853799]s, mse: [0.00004337]
+2026-09-09 20:01:12 [INFO] my_app: layer:[9] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.832572]s, mse: [0.00004117]
+2026-09-09 20:01:29 [INFO] my_app: layer:[9] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.844796]s, mse: [0.00004047]
+2026-09-09 20:01:46 [INFO] my_app: layer:[9] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.863431]s, mse: [0.00004028]
+2026-09-09 20:02:03 [INFO] my_app: layer:[9] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.853801]s, mse: [0.00004008]
+2026-09-09 20:02:19 [INFO] my_app: layer:[9] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.863118]s, mse: [0.00003994]
+2026-09-09 20:02:36 [INFO] my_app: layer:[9] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.848985]s, mse: [0.00003979]
+2026-09-09 20:02:53 [INFO] my_app: layer:[9] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.866535]s, mse: [0.00003975]
+2026-09-09 20:03:10 [INFO] my_app: layer:[9] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.862920]s, mse: [0.00003972]
+2026-09-09 20:03:27 [INFO] my_app: layer:[9] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.846390]s, mse: [0.00003972]
+2026-09-09 20:03:27 [INFO] my_app: saved parameters for layer 9 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_9.pth
+2026-09-09 20:03:27 [INFO] my_app: After global_Layer_9 Memory Stats:
+2026-09-09 20:03:27 [INFO] my_app: Allocated: 5007.70 MB
+2026-09-09 20:03:27 [INFO] my_app: Reserved/Cached: 5592.00 MB
+2026-09-09 20:03:27 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:03:27 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:03:27 [INFO] my_app: ========= frame_Layer_10 =========
+2026-09-09 20:03:27 [INFO] my_app: Before frame_Layer_10 Memory Stats:
+2026-09-09 20:03:27 [INFO] my_app: Allocated: 4953.96 MB
+2026-09-09 20:03:27 [INFO] my_app: Reserved/Cached: 5592.00 MB
+2026-09-09 20:03:27 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:03:27 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:03:30 [INFO] my_app: Layer 10 Epoch 0 Start Memory Stats:
+2026-09-09 20:03:30 [INFO] my_app: Allocated: 4953.96 MB
+2026-09-09 20:03:30 [INFO] my_app: Reserved/Cached: 5592.00 MB
+2026-09-09 20:03:30 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:03:30 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:03:47 [INFO] my_app: layer:[10] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.852057]s, mse: [0.00006126]
+2026-09-09 20:04:04 [INFO] my_app: layer:[10] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.876473]s, mse: [0.00005826]
+2026-09-09 20:04:21 [INFO] my_app: layer:[10] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.868943]s, mse: [0.00005567]
+2026-09-09 20:04:38 [INFO] my_app: layer:[10] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.869009]s, mse: [0.00005278]
+2026-09-09 20:04:55 [INFO] my_app: layer:[10] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.915119]s, mse: [0.00004901]
+2026-09-09 20:05:11 [INFO] my_app: layer:[10] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.881795]s, mse: [0.00004535]
+2026-09-09 20:05:28 [INFO] my_app: layer:[10] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.882966]s, mse: [0.00004312]
+2026-09-09 20:05:45 [INFO] my_app: layer:[10] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.887340]s, mse: [0.00004246]
+2026-09-09 20:06:02 [INFO] my_app: layer:[10] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.870509]s, mse: [0.00004227]
+2026-09-09 20:06:19 [INFO] my_app: layer:[10] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.873965]s, mse: [0.00004199]
+2026-09-09 20:06:36 [INFO] my_app: layer:[10] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.875968]s, mse: [0.00004179]
+2026-09-09 20:06:53 [INFO] my_app: layer:[10] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.897245]s, mse: [0.00004174]
+2026-09-09 20:07:10 [INFO] my_app: layer:[10] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.883720]s, mse: [0.00004169]
+2026-09-09 20:07:27 [INFO] my_app: layer:[10] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.880801]s, mse: [0.00004163]
+2026-09-09 20:07:43 [INFO] my_app: layer:[10] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.866546]s, mse: [0.00004161]
+2026-09-09 20:07:43 [INFO] my_app: saved parameters for layer 10 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_10.pth
+2026-09-09 20:07:43 [INFO] my_app: After frame_Layer_10 Memory Stats:
+2026-09-09 20:07:43 [INFO] my_app: Allocated: 4883.57 MB
+2026-09-09 20:07:43 [INFO] my_app: Reserved/Cached: 5480.00 MB
+2026-09-09 20:07:43 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:07:43 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:07:43 [INFO] my_app: ========= global_Layer_10 =========
+2026-09-09 20:07:43 [INFO] my_app: Before global_Layer_10 Memory Stats:
+2026-09-09 20:07:43 [INFO] my_app: Allocated: 4829.84 MB
+2026-09-09 20:07:43 [INFO] my_app: Reserved/Cached: 5480.00 MB
+2026-09-09 20:07:43 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:07:43 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:07:47 [INFO] my_app: Layer 10 Epoch 0 Start Memory Stats:
+2026-09-09 20:07:47 [INFO] my_app: Allocated: 4829.84 MB
+2026-09-09 20:07:47 [INFO] my_app: Reserved/Cached: 5480.00 MB
+2026-09-09 20:07:47 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:07:47 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:08:04 [INFO] my_app: layer:[10] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.829170]s, mse: [0.00008375]
+2026-09-09 20:08:20 [INFO] my_app: layer:[10] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.852093]s, mse: [0.00007973]
+2026-09-09 20:08:37 [INFO] my_app: layer:[10] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.856922]s, mse: [0.00007615]
+2026-09-09 20:08:54 [INFO] my_app: layer:[10] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.898742]s, mse: [0.00007211]
+2026-09-09 20:09:11 [INFO] my_app: layer:[10] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.886556]s, mse: [0.00006731]
+2026-09-09 20:09:28 [INFO] my_app: layer:[10] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.859693]s, mse: [0.00006218]
+2026-09-09 20:09:45 [INFO] my_app: layer:[10] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.872447]s, mse: [0.00005900]
+2026-09-09 20:10:02 [INFO] my_app: layer:[10] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.873797]s, mse: [0.00005804]
+2026-09-09 20:10:19 [INFO] my_app: layer:[10] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.854859]s, mse: [0.00005763]
+2026-09-09 20:10:35 [INFO] my_app: layer:[10] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.859035]s, mse: [0.00005734]
+2026-09-09 20:10:52 [INFO] my_app: layer:[10] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.871191]s, mse: [0.00005726]
+2026-09-09 20:11:09 [INFO] my_app: layer:[10] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.862767]s, mse: [0.00005717]
+2026-09-09 20:11:26 [INFO] my_app: layer:[10] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.884783]s, mse: [0.00005709]
+2026-09-09 20:11:43 [INFO] my_app: layer:[10] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.872555]s, mse: [0.00005708]
+2026-09-09 20:12:00 [INFO] my_app: layer:[10] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.882974]s, mse: [0.00005708]
+2026-09-09 20:12:00 [INFO] my_app: saved parameters for layer 10 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_10.pth
+2026-09-09 20:12:00 [INFO] my_app: After global_Layer_10 Memory Stats:
+2026-09-09 20:12:00 [INFO] my_app: Allocated: 4759.45 MB
+2026-09-09 20:12:00 [INFO] my_app: Reserved/Cached: 5432.00 MB
+2026-09-09 20:12:00 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:12:00 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:12:00 [INFO] my_app: ========= frame_Layer_11 =========
+2026-09-09 20:12:00 [INFO] my_app: Before frame_Layer_11 Memory Stats:
+2026-09-09 20:12:00 [INFO] my_app: Allocated: 4705.71 MB
+2026-09-09 20:12:00 [INFO] my_app: Reserved/Cached: 5432.00 MB
+2026-09-09 20:12:00 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:12:00 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:12:03 [INFO] my_app: Layer 11 Epoch 0 Start Memory Stats:
+2026-09-09 20:12:03 [INFO] my_app: Allocated: 4705.71 MB
+2026-09-09 20:12:03 [INFO] my_app: Reserved/Cached: 5432.00 MB
+2026-09-09 20:12:03 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:12:03 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:12:20 [INFO] my_app: layer:[11] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.779799]s, mse: [0.00010044]
+2026-09-09 20:12:37 [INFO] my_app: layer:[11] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.791575]s, mse: [0.00009528]
+2026-09-09 20:12:54 [INFO] my_app: layer:[11] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.816507]s, mse: [0.00009065]
+2026-09-09 20:13:10 [INFO] my_app: layer:[11] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.817017]s, mse: [0.00008463]
+2026-09-09 20:13:27 [INFO] my_app: layer:[11] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.792413]s, mse: [0.00007803]
+2026-09-09 20:13:44 [INFO] my_app: layer:[11] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.794415]s, mse: [0.00007158]
+2026-09-09 20:14:01 [INFO] my_app: layer:[11] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.796680]s, mse: [0.00006811]
+2026-09-09 20:14:18 [INFO] my_app: layer:[11] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.790770]s, mse: [0.00006680]
+2026-09-09 20:14:34 [INFO] my_app: layer:[11] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.799391]s, mse: [0.00006655]
+2026-09-09 20:14:51 [INFO] my_app: layer:[11] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.806173]s, mse: [0.00006648]
+2026-09-09 20:15:08 [INFO] my_app: layer:[11] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.802551]s, mse: [0.00006626]
+2026-09-09 20:15:25 [INFO] my_app: layer:[11] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.792501]s, mse: [0.00006593]
+2026-09-09 20:15:42 [INFO] my_app: layer:[11] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.797874]s, mse: [0.00006591]
+2026-09-09 20:15:58 [INFO] my_app: layer:[11] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.806530]s, mse: [0.00006584]
+2026-09-09 20:16:15 [INFO] my_app: layer:[11] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.801381]s, mse: [0.00006584]
+2026-09-09 20:16:15 [INFO] my_app: saved parameters for layer 11 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_11.pth
+2026-09-09 20:16:15 [INFO] my_app: After frame_Layer_11 Memory Stats:
+2026-09-09 20:16:15 [INFO] my_app: Allocated: 4635.32 MB
+2026-09-09 20:16:15 [INFO] my_app: Reserved/Cached: 5320.00 MB
+2026-09-09 20:16:15 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:16:15 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:16:15 [INFO] my_app: ========= global_Layer_11 =========
+2026-09-09 20:16:15 [INFO] my_app: Before global_Layer_11 Memory Stats:
+2026-09-09 20:16:15 [INFO] my_app: Allocated: 4581.59 MB
+2026-09-09 20:16:15 [INFO] my_app: Reserved/Cached: 5320.00 MB
+2026-09-09 20:16:15 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:16:15 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:16:19 [INFO] my_app: Layer 11 Epoch 0 Start Memory Stats:
+2026-09-09 20:16:19 [INFO] my_app: Allocated: 4581.59 MB
+2026-09-09 20:16:19 [INFO] my_app: Reserved/Cached: 5320.00 MB
+2026-09-09 20:16:19 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:16:19 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:16:35 [INFO] my_app: layer:[11] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.790711]s, mse: [0.00024922]
+2026-09-09 20:16:52 [INFO] my_app: layer:[11] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.815945]s, mse: [0.00023609]
+2026-09-09 20:17:09 [INFO] my_app: layer:[11] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.818317]s, mse: [0.00022545]
+2026-09-09 20:17:26 [INFO] my_app: layer:[11] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.829401]s, mse: [0.00021085]
+2026-09-09 20:17:43 [INFO] my_app: layer:[11] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.817904]s, mse: [0.00019433]
+2026-09-09 20:17:59 [INFO] my_app: layer:[11] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.834956]s, mse: [0.00017894]
+2026-09-09 20:18:16 [INFO] my_app: layer:[11] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.815578]s, mse: [0.00017164]
+2026-09-09 20:18:33 [INFO] my_app: layer:[11] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.809690]s, mse: [0.00016964]
+2026-09-09 20:18:50 [INFO] my_app: layer:[11] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.806765]s, mse: [0.00016853]
+2026-09-09 20:19:07 [INFO] my_app: layer:[11] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.825082]s, mse: [0.00016712]
+2026-09-09 20:19:24 [INFO] my_app: layer:[11] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.795715]s, mse: [0.00016678]
+2026-09-09 20:19:40 [INFO] my_app: layer:[11] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.792776]s, mse: [0.00016617]
+2026-09-09 20:19:57 [INFO] my_app: layer:[11] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.841413]s, mse: [0.00016606]
+2026-09-09 20:20:14 [INFO] my_app: layer:[11] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.822911]s, mse: [0.00016575]
+2026-09-09 20:20:31 [INFO] my_app: layer:[11] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.816192]s, mse: [0.00016570]
+2026-09-09 20:20:31 [INFO] my_app: saved parameters for layer 11 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_11.pth
+2026-09-09 20:20:31 [INFO] my_app: After global_Layer_11 Memory Stats:
+2026-09-09 20:20:31 [INFO] my_app: Allocated: 4511.20 MB
+2026-09-09 20:20:31 [INFO] my_app: Reserved/Cached: 5208.00 MB
+2026-09-09 20:20:31 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:20:31 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:20:31 [INFO] my_app: ========= frame_Layer_12 =========
+2026-09-09 20:20:31 [INFO] my_app: Before frame_Layer_12 Memory Stats:
+2026-09-09 20:20:31 [INFO] my_app: Allocated: 4457.46 MB
+2026-09-09 20:20:31 [INFO] my_app: Reserved/Cached: 5208.00 MB
+2026-09-09 20:20:31 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:20:31 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:20:34 [INFO] my_app: Layer 12 Epoch 0 Start Memory Stats:
+2026-09-09 20:20:34 [INFO] my_app: Allocated: 4457.46 MB
+2026-09-09 20:20:34 [INFO] my_app: Reserved/Cached: 5208.00 MB
+2026-09-09 20:20:34 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:20:34 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:20:51 [INFO] my_app: layer:[12] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.789779]s, mse: [0.00023663]
+2026-09-09 20:21:08 [INFO] my_app: layer:[12] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.803382]s, mse: [0.00021868]
+2026-09-09 20:21:25 [INFO] my_app: layer:[12] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.798326]s, mse: [0.00020488]
+2026-09-09 20:21:41 [INFO] my_app: layer:[12] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.796607]s, mse: [0.00019087]
+2026-09-09 20:21:58 [INFO] my_app: layer:[12] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.794607]s, mse: [0.00017362]
+2026-09-09 20:22:15 [INFO] my_app: layer:[12] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.792412]s, mse: [0.00015970]
+2026-09-09 20:22:32 [INFO] my_app: layer:[12] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.797077]s, mse: [0.00015112]
+2026-09-09 20:22:49 [INFO] my_app: layer:[12] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.794401]s, mse: [0.00014740]
+2026-09-09 20:23:05 [INFO] my_app: layer:[12] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.799000]s, mse: [0.00014527]
+2026-09-09 20:23:22 [INFO] my_app: layer:[12] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.787417]s, mse: [0.00014440]
+2026-09-09 20:23:39 [INFO] my_app: layer:[12] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.797717]s, mse: [0.00014365]
+2026-09-09 20:23:56 [INFO] my_app: layer:[12] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.799675]s, mse: [0.00014335]
+2026-09-09 20:24:13 [INFO] my_app: layer:[12] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.783702]s, mse: [0.00014344]
+2026-09-09 20:24:29 [INFO] my_app: layer:[12] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.796883]s, mse: [0.00014323]
+2026-09-09 20:24:46 [INFO] my_app: layer:[12] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.797731]s, mse: [0.00014300]
+2026-09-09 20:24:46 [INFO] my_app: saved parameters for layer 12 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_12.pth
+2026-09-09 20:24:46 [INFO] my_app: After frame_Layer_12 Memory Stats:
+2026-09-09 20:24:46 [INFO] my_app: Allocated: 4387.07 MB
+2026-09-09 20:24:46 [INFO] my_app: Reserved/Cached: 5032.00 MB
+2026-09-09 20:24:46 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:24:46 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:24:46 [INFO] my_app: ========= global_Layer_12 =========
+2026-09-09 20:24:46 [INFO] my_app: Before global_Layer_12 Memory Stats:
+2026-09-09 20:24:46 [INFO] my_app: Allocated: 4333.34 MB
+2026-09-09 20:24:46 [INFO] my_app: Reserved/Cached: 5032.00 MB
+2026-09-09 20:24:46 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:24:46 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:24:49 [INFO] my_app: Layer 12 Epoch 0 Start Memory Stats:
+2026-09-09 20:24:49 [INFO] my_app: Allocated: 4333.34 MB
+2026-09-09 20:24:49 [INFO] my_app: Reserved/Cached: 5032.00 MB
+2026-09-09 20:24:49 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:24:49 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:25:06 [INFO] my_app: layer:[12] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.813111]s, mse: [0.00039375]
+2026-09-09 20:25:23 [INFO] my_app: layer:[12] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.794353]s, mse: [0.00036255]
+2026-09-09 20:25:40 [INFO] my_app: layer:[12] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.792502]s, mse: [0.00033842]
+2026-09-09 20:25:57 [INFO] my_app: layer:[12] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.795297]s, mse: [0.00031274]
+2026-09-09 20:26:13 [INFO] my_app: layer:[12] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.797031]s, mse: [0.00028596]
+2026-09-09 20:26:30 [INFO] my_app: layer:[12] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.791581]s, mse: [0.00026251]
+2026-09-09 20:26:47 [INFO] my_app: layer:[12] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.815049]s, mse: [0.00024690]
+2026-09-09 20:27:04 [INFO] my_app: layer:[12] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.829226]s, mse: [0.00024137]
+2026-09-09 20:27:21 [INFO] my_app: layer:[12] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.821436]s, mse: [0.00023846]
+2026-09-09 20:27:38 [INFO] my_app: layer:[12] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.831474]s, mse: [0.00023684]
+2026-09-09 20:27:54 [INFO] my_app: layer:[12] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.815567]s, mse: [0.00023659]
+2026-09-09 20:28:11 [INFO] my_app: layer:[12] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.824242]s, mse: [0.00023629]
+2026-09-09 20:28:28 [INFO] my_app: layer:[12] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.823820]s, mse: [0.00023562]
+2026-09-09 20:28:45 [INFO] my_app: layer:[12] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.814286]s, mse: [0.00023523]
+2026-09-09 20:29:02 [INFO] my_app: layer:[12] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.837384]s, mse: [0.00023502]
+2026-09-09 20:29:02 [INFO] my_app: saved parameters for layer 12 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_12.pth
+2026-09-09 20:29:02 [INFO] my_app: After global_Layer_12 Memory Stats:
+2026-09-09 20:29:02 [INFO] my_app: Allocated: 4262.95 MB
+2026-09-09 20:29:02 [INFO] my_app: Reserved/Cached: 4920.00 MB
+2026-09-09 20:29:02 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:29:02 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:29:02 [INFO] my_app: ========= frame_Layer_13 =========
+2026-09-09 20:29:02 [INFO] my_app: Before frame_Layer_13 Memory Stats:
+2026-09-09 20:29:02 [INFO] my_app: Allocated: 4209.21 MB
+2026-09-09 20:29:02 [INFO] my_app: Reserved/Cached: 4920.00 MB
+2026-09-09 20:29:02 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:29:02 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:29:05 [INFO] my_app: Layer 13 Epoch 0 Start Memory Stats:
+2026-09-09 20:29:05 [INFO] my_app: Allocated: 4209.21 MB
+2026-09-09 20:29:05 [INFO] my_app: Reserved/Cached: 4920.00 MB
+2026-09-09 20:29:05 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:29:05 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:29:22 [INFO] my_app: layer:[13] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.779027]s, mse: [0.00046143]
+2026-09-09 20:29:39 [INFO] my_app: layer:[13] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.795914]s, mse: [0.00041979]
+2026-09-09 20:29:55 [INFO] my_app: layer:[13] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.807934]s, mse: [0.00038936]
+2026-09-09 20:30:12 [INFO] my_app: layer:[13] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.818790]s, mse: [0.00036326]
+2026-09-09 20:30:29 [INFO] my_app: layer:[13] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.824791]s, mse: [0.00033196]
+2026-09-09 20:30:46 [INFO] my_app: layer:[13] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.807086]s, mse: [0.00030304]
+2026-09-09 20:31:03 [INFO] my_app: layer:[13] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.824492]s, mse: [0.00028705]
+2026-09-09 20:31:20 [INFO] my_app: layer:[13] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.829546]s, mse: [0.00028114]
+2026-09-09 20:31:36 [INFO] my_app: layer:[13] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.825297]s, mse: [0.00027936]
+2026-09-09 20:31:53 [INFO] my_app: layer:[13] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.837968]s, mse: [0.00027803]
+2026-09-09 20:32:10 [INFO] my_app: layer:[13] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.837251]s, mse: [0.00027687]
+2026-09-09 20:32:27 [INFO] my_app: layer:[13] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.811653]s, mse: [0.00027650]
+2026-09-09 20:32:44 [INFO] my_app: layer:[13] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.832289]s, mse: [0.00027587]
+2026-09-09 20:33:01 [INFO] my_app: layer:[13] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.830307]s, mse: [0.00027570]
+2026-09-09 20:33:17 [INFO] my_app: layer:[13] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.821200]s, mse: [0.00027559]
+2026-09-09 20:33:17 [INFO] my_app: saved parameters for layer 13 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_13.pth
+2026-09-09 20:33:17 [INFO] my_app: After frame_Layer_13 Memory Stats:
+2026-09-09 20:33:17 [INFO] my_app: Allocated: 4138.82 MB
+2026-09-09 20:33:17 [INFO] my_app: Reserved/Cached: 4808.00 MB
+2026-09-09 20:33:17 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:33:17 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:33:17 [INFO] my_app: ========= global_Layer_13 =========
+2026-09-09 20:33:17 [INFO] my_app: Before global_Layer_13 Memory Stats:
+2026-09-09 20:33:17 [INFO] my_app: Allocated: 4085.09 MB
+2026-09-09 20:33:17 [INFO] my_app: Reserved/Cached: 4808.00 MB
+2026-09-09 20:33:17 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:33:17 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:33:21 [INFO] my_app: Layer 13 Epoch 0 Start Memory Stats:
+2026-09-09 20:33:21 [INFO] my_app: Allocated: 4085.09 MB
+2026-09-09 20:33:21 [INFO] my_app: Reserved/Cached: 4808.00 MB
+2026-09-09 20:33:21 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:33:21 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:33:38 [INFO] my_app: layer:[13] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.791497]s, mse: [0.00087731]
+2026-09-09 20:33:54 [INFO] my_app: layer:[13] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.822181]s, mse: [0.00081638]
+2026-09-09 20:34:11 [INFO] my_app: layer:[13] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.824425]s, mse: [0.00076225]
+2026-09-09 20:34:28 [INFO] my_app: layer:[13] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.819928]s, mse: [0.00069758]
+2026-09-09 20:34:45 [INFO] my_app: layer:[13] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.816366]s, mse: [0.00063361]
+2026-09-09 20:35:02 [INFO] my_app: layer:[13] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.818190]s, mse: [0.00057837]
+2026-09-09 20:35:18 [INFO] my_app: layer:[13] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.828001]s, mse: [0.00054767]
+2026-09-09 20:35:35 [INFO] my_app: layer:[13] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.816087]s, mse: [0.00053837]
+2026-09-09 20:35:52 [INFO] my_app: layer:[13] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.830528]s, mse: [0.00053349]
+2026-09-09 20:36:09 [INFO] my_app: layer:[13] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.818961]s, mse: [0.00052653]
+2026-09-09 20:36:26 [INFO] my_app: layer:[13] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.812804]s, mse: [0.00052277]
+2026-09-09 20:36:43 [INFO] my_app: layer:[13] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.841150]s, mse: [0.00052002]
+2026-09-09 20:36:59 [INFO] my_app: layer:[13] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.840232]s, mse: [0.00051887]
+2026-09-09 20:37:16 [INFO] my_app: layer:[13] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.824289]s, mse: [0.00051842]
+2026-09-09 20:37:33 [INFO] my_app: layer:[13] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.814568]s, mse: [0.00051837]
+2026-09-09 20:37:33 [INFO] my_app: saved parameters for layer 13 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_13.pth
+2026-09-09 20:37:33 [INFO] my_app: After global_Layer_13 Memory Stats:
+2026-09-09 20:37:33 [INFO] my_app: Allocated: 4014.70 MB
+2026-09-09 20:37:33 [INFO] my_app: Reserved/Cached: 4696.00 MB
+2026-09-09 20:37:33 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:37:33 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:37:33 [INFO] my_app: ========= frame_Layer_14 =========
+2026-09-09 20:37:33 [INFO] my_app: Before frame_Layer_14 Memory Stats:
+2026-09-09 20:37:33 [INFO] my_app: Allocated: 3960.96 MB
+2026-09-09 20:37:33 [INFO] my_app: Reserved/Cached: 4696.00 MB
+2026-09-09 20:37:33 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:37:33 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:37:36 [INFO] my_app: Layer 14 Epoch 0 Start Memory Stats:
+2026-09-09 20:37:36 [INFO] my_app: Allocated: 3960.96 MB
+2026-09-09 20:37:36 [INFO] my_app: Reserved/Cached: 4696.00 MB
+2026-09-09 20:37:36 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:37:36 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:37:53 [INFO] my_app: layer:[14] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.782623]s, mse: [0.00051063]
+2026-09-09 20:38:10 [INFO] my_app: layer:[14] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.791965]s, mse: [0.00045960]
+2026-09-09 20:38:27 [INFO] my_app: layer:[14] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.794617]s, mse: [0.00042168]
+2026-09-09 20:38:44 [INFO] my_app: layer:[14] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.812230]s, mse: [0.00038590]
+2026-09-09 20:39:00 [INFO] my_app: layer:[14] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.808997]s, mse: [0.00035272]
+2026-09-09 20:39:17 [INFO] my_app: layer:[14] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.794400]s, mse: [0.00032519]
+2026-09-09 20:39:34 [INFO] my_app: layer:[14] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.794509]s, mse: [0.00031017]
+2026-09-09 20:39:51 [INFO] my_app: layer:[14] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.795945]s, mse: [0.00030299]
+2026-09-09 20:40:08 [INFO] my_app: layer:[14] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.819088]s, mse: [0.00029928]
+2026-09-09 20:40:24 [INFO] my_app: layer:[14] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.797764]s, mse: [0.00029622]
+2026-09-09 20:40:41 [INFO] my_app: layer:[14] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.795190]s, mse: [0.00029285]
+2026-09-09 20:40:58 [INFO] my_app: layer:[14] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.808184]s, mse: [0.00029172]
+2026-09-09 20:41:15 [INFO] my_app: layer:[14] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.812528]s, mse: [0.00028967]
+2026-09-09 20:41:32 [INFO] my_app: layer:[14] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.817190]s, mse: [0.00028949]
+2026-09-09 20:41:48 [INFO] my_app: layer:[14] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.793879]s, mse: [0.00028982]
+2026-09-09 20:41:49 [INFO] my_app: saved parameters for layer 14 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_14.pth
+2026-09-09 20:41:49 [INFO] my_app: After frame_Layer_14 Memory Stats:
+2026-09-09 20:41:49 [INFO] my_app: Allocated: 3890.57 MB
+2026-09-09 20:41:49 [INFO] my_app: Reserved/Cached: 4584.00 MB
+2026-09-09 20:41:49 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:41:49 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:41:49 [INFO] my_app: ========= global_Layer_14 =========
+2026-09-09 20:41:49 [INFO] my_app: Before global_Layer_14 Memory Stats:
+2026-09-09 20:41:49 [INFO] my_app: Allocated: 3836.84 MB
+2026-09-09 20:41:49 [INFO] my_app: Reserved/Cached: 4584.00 MB
+2026-09-09 20:41:49 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:41:49 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:41:52 [INFO] my_app: Layer 14 Epoch 0 Start Memory Stats:
+2026-09-09 20:41:52 [INFO] my_app: Allocated: 3836.84 MB
+2026-09-09 20:41:52 [INFO] my_app: Reserved/Cached: 4584.00 MB
+2026-09-09 20:41:52 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:41:52 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:42:09 [INFO] my_app: layer:[14] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.746847]s, mse: [0.00142507]
+2026-09-09 20:42:25 [INFO] my_app: layer:[14] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.792932]s, mse: [0.00131046]
+2026-09-09 20:42:42 [INFO] my_app: layer:[14] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.797492]s, mse: [0.00121648]
+2026-09-09 20:42:59 [INFO] my_app: layer:[14] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.788892]s, mse: [0.00112326]
+2026-09-09 20:43:16 [INFO] my_app: layer:[14] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.777682]s, mse: [0.00101277]
+2026-09-09 20:43:33 [INFO] my_app: layer:[14] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.793956]s, mse: [0.00093506]
+2026-09-09 20:43:49 [INFO] my_app: layer:[14] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.794178]s, mse: [0.00090054]
+2026-09-09 20:44:06 [INFO] my_app: layer:[14] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.796100]s, mse: [0.00088287]
+2026-09-09 20:44:23 [INFO] my_app: layer:[14] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.795545]s, mse: [0.00087475]
+2026-09-09 20:44:40 [INFO] my_app: layer:[14] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.791647]s, mse: [0.00086674]
+2026-09-09 20:44:57 [INFO] my_app: layer:[14] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.796323]s, mse: [0.00086397]
+2026-09-09 20:45:13 [INFO] my_app: layer:[14] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.793463]s, mse: [0.00086031]
+2026-09-09 20:45:30 [INFO] my_app: layer:[14] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.794512]s, mse: [0.00085849]
+2026-09-09 20:45:47 [INFO] my_app: layer:[14] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.796209]s, mse: [0.00085834]
+2026-09-09 20:46:04 [INFO] my_app: layer:[14] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.792944]s, mse: [0.00085785]
+2026-09-09 20:46:04 [INFO] my_app: saved parameters for layer 14 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_14.pth
+2026-09-09 20:46:04 [INFO] my_app: After global_Layer_14 Memory Stats:
+2026-09-09 20:46:04 [INFO] my_app: Allocated: 3766.45 MB
+2026-09-09 20:46:04 [INFO] my_app: Reserved/Cached: 4472.00 MB
+2026-09-09 20:46:04 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:46:04 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:46:04 [INFO] my_app: ========= frame_Layer_15 =========
+2026-09-09 20:46:04 [INFO] my_app: Before frame_Layer_15 Memory Stats:
+2026-09-09 20:46:04 [INFO] my_app: Allocated: 3712.71 MB
+2026-09-09 20:46:04 [INFO] my_app: Reserved/Cached: 4472.00 MB
+2026-09-09 20:46:04 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:46:04 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:46:07 [INFO] my_app: Layer 15 Epoch 0 Start Memory Stats:
+2026-09-09 20:46:07 [INFO] my_app: Allocated: 3712.71 MB
+2026-09-09 20:46:07 [INFO] my_app: Reserved/Cached: 4472.00 MB
+2026-09-09 20:46:07 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:46:07 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:46:24 [INFO] my_app: layer:[15] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.732591]s, mse: [0.00097409]
+2026-09-09 20:46:41 [INFO] my_app: layer:[15] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.774564]s, mse: [0.00089152]
+2026-09-09 20:46:57 [INFO] my_app: layer:[15] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.798353]s, mse: [0.00082132]
+2026-09-09 20:47:14 [INFO] my_app: layer:[15] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.772662]s, mse: [0.00075864]
+2026-09-09 20:47:31 [INFO] my_app: layer:[15] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.771921]s, mse: [0.00069248]
+2026-09-09 20:47:48 [INFO] my_app: layer:[15] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.794709]s, mse: [0.00062201]
+2026-09-09 20:48:05 [INFO] my_app: layer:[15] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.793953]s, mse: [0.00059183]
+2026-09-09 20:48:21 [INFO] my_app: layer:[15] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.780424]s, mse: [0.00058188]
+2026-09-09 20:48:38 [INFO] my_app: layer:[15] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.787772]s, mse: [0.00057738]
+2026-09-09 20:48:55 [INFO] my_app: layer:[15] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.776343]s, mse: [0.00057171]
+2026-09-09 20:49:12 [INFO] my_app: layer:[15] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.769900]s, mse: [0.00056531]
+2026-09-09 20:49:28 [INFO] my_app: layer:[15] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.779194]s, mse: [0.00055988]
+2026-09-09 20:49:45 [INFO] my_app: layer:[15] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.779193]s, mse: [0.00055641]
+2026-09-09 20:50:02 [INFO] my_app: layer:[15] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.794502]s, mse: [0.00055549]
+2026-09-09 20:50:19 [INFO] my_app: layer:[15] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.748968]s, mse: [0.00055578]
+2026-09-09 20:50:19 [INFO] my_app: saved parameters for layer 15 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_15.pth
+2026-09-09 20:50:19 [INFO] my_app: After frame_Layer_15 Memory Stats:
+2026-09-09 20:50:19 [INFO] my_app: Allocated: 3642.32 MB
+2026-09-09 20:50:19 [INFO] my_app: Reserved/Cached: 4360.00 MB
+2026-09-09 20:50:19 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:50:19 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:50:19 [INFO] my_app: ========= global_Layer_15 =========
+2026-09-09 20:50:19 [INFO] my_app: Before global_Layer_15 Memory Stats:
+2026-09-09 20:50:19 [INFO] my_app: Allocated: 3588.59 MB
+2026-09-09 20:50:19 [INFO] my_app: Reserved/Cached: 4360.00 MB
+2026-09-09 20:50:19 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:50:19 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:50:22 [INFO] my_app: Layer 15 Epoch 0 Start Memory Stats:
+2026-09-09 20:50:22 [INFO] my_app: Allocated: 3588.59 MB
+2026-09-09 20:50:22 [INFO] my_app: Reserved/Cached: 4360.00 MB
+2026-09-09 20:50:22 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:50:22 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:50:39 [INFO] my_app: layer:[15] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.697896]s, mse: [0.00128511]
+2026-09-09 20:50:56 [INFO] my_app: layer:[15] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.734224]s, mse: [0.00119159]
+2026-09-09 20:51:12 [INFO] my_app: layer:[15] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.753782]s, mse: [0.00111508]
+2026-09-09 20:51:29 [INFO] my_app: layer:[15] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.736444]s, mse: [0.00103291]
+2026-09-09 20:51:46 [INFO] my_app: layer:[15] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.739435]s, mse: [0.00093315]
+2026-09-09 20:52:03 [INFO] my_app: layer:[15] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.769718]s, mse: [0.00084675]
+2026-09-09 20:52:19 [INFO] my_app: layer:[15] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.734918]s, mse: [0.00080053]
+2026-09-09 20:52:36 [INFO] my_app: layer:[15] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.759687]s, mse: [0.00077579]
+2026-09-09 20:52:53 [INFO] my_app: layer:[15] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.746185]s, mse: [0.00075983]
+2026-09-09 20:53:10 [INFO] my_app: layer:[15] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.756683]s, mse: [0.00075045]
+2026-09-09 20:53:26 [INFO] my_app: layer:[15] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.732733]s, mse: [0.00074659]
+2026-09-09 20:53:43 [INFO] my_app: layer:[15] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.755846]s, mse: [0.00074462]
+2026-09-09 20:54:00 [INFO] my_app: layer:[15] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.754553]s, mse: [0.00074162]
+2026-09-09 20:54:17 [INFO] my_app: layer:[15] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.734810]s, mse: [0.00074099]
+2026-09-09 20:54:33 [INFO] my_app: layer:[15] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.753971]s, mse: [0.00074102]
+2026-09-09 20:54:33 [INFO] my_app: saved parameters for layer 15 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_15.pth
+2026-09-09 20:54:33 [INFO] my_app: After global_Layer_15 Memory Stats:
+2026-09-09 20:54:33 [INFO] my_app: Allocated: 3518.20 MB
+2026-09-09 20:54:33 [INFO] my_app: Reserved/Cached: 4184.00 MB
+2026-09-09 20:54:33 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:54:33 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:54:33 [INFO] my_app: ========= frame_Layer_16 =========
+2026-09-09 20:54:33 [INFO] my_app: Before frame_Layer_16 Memory Stats:
+2026-09-09 20:54:33 [INFO] my_app: Allocated: 3464.46 MB
+2026-09-09 20:54:33 [INFO] my_app: Reserved/Cached: 4184.00 MB
+2026-09-09 20:54:33 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:54:33 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:54:37 [INFO] my_app: Layer 16 Epoch 0 Start Memory Stats:
+2026-09-09 20:54:37 [INFO] my_app: Allocated: 3464.46 MB
+2026-09-09 20:54:37 [INFO] my_app: Reserved/Cached: 4184.00 MB
+2026-09-09 20:54:37 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:54:37 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:54:53 [INFO] my_app: layer:[16] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.763569]s, mse: [0.00089938]
+2026-09-09 20:55:10 [INFO] my_app: layer:[16] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.794956]s, mse: [0.00081672]
+2026-09-09 20:55:27 [INFO] my_app: layer:[16] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.794053]s, mse: [0.00076266]
+2026-09-09 20:55:44 [INFO] my_app: layer:[16] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.795376]s, mse: [0.00070163]
+2026-09-09 20:56:01 [INFO] my_app: layer:[16] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.794872]s, mse: [0.00063822]
+2026-09-09 20:56:17 [INFO] my_app: layer:[16] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.792897]s, mse: [0.00057893]
+2026-09-09 20:56:34 [INFO] my_app: layer:[16] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.793551]s, mse: [0.00054491]
+2026-09-09 20:56:51 [INFO] my_app: layer:[16] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.795906]s, mse: [0.00052967]
+2026-09-09 20:57:08 [INFO] my_app: layer:[16] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.809289]s, mse: [0.00052359]
+2026-09-09 20:57:25 [INFO] my_app: layer:[16] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.780145]s, mse: [0.00051921]
+2026-09-09 20:57:41 [INFO] my_app: layer:[16] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.793595]s, mse: [0.00051420]
+2026-09-09 20:57:58 [INFO] my_app: layer:[16] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.798736]s, mse: [0.00051147]
+2026-09-09 20:58:15 [INFO] my_app: layer:[16] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.794222]s, mse: [0.00051150]
+2026-09-09 20:58:32 [INFO] my_app: layer:[16] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.791738]s, mse: [0.00051115]
+2026-09-09 20:58:49 [INFO] my_app: layer:[16] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.795497]s, mse: [0.00051123]
+2026-09-09 20:58:49 [INFO] my_app: saved parameters for layer 16 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_16.pth
+2026-09-09 20:58:49 [INFO] my_app: After frame_Layer_16 Memory Stats:
+2026-09-09 20:58:49 [INFO] my_app: Allocated: 3394.07 MB
+2026-09-09 20:58:49 [INFO] my_app: Reserved/Cached: 4072.00 MB
+2026-09-09 20:58:49 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:58:49 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:58:49 [INFO] my_app: ========= global_Layer_16 =========
+2026-09-09 20:58:49 [INFO] my_app: Before global_Layer_16 Memory Stats:
+2026-09-09 20:58:49 [INFO] my_app: Allocated: 3340.34 MB
+2026-09-09 20:58:49 [INFO] my_app: Reserved/Cached: 4072.00 MB
+2026-09-09 20:58:49 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:58:49 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:58:52 [INFO] my_app: Layer 16 Epoch 0 Start Memory Stats:
+2026-09-09 20:58:52 [INFO] my_app: Allocated: 3340.34 MB
+2026-09-09 20:58:52 [INFO] my_app: Reserved/Cached: 4072.00 MB
+2026-09-09 20:58:52 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 20:58:52 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 20:59:09 [INFO] my_app: layer:[16] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.780399]s, mse: [0.00134785]
+2026-09-09 20:59:25 [INFO] my_app: layer:[16] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.795517]s, mse: [0.00124520]
+2026-09-09 20:59:42 [INFO] my_app: layer:[16] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.794106]s, mse: [0.00115098]
+2026-09-09 20:59:59 [INFO] my_app: layer:[16] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.805795]s, mse: [0.00105195]
+2026-09-09 21:00:16 [INFO] my_app: layer:[16] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.781413]s, mse: [0.00095979]
+2026-09-09 21:00:33 [INFO] my_app: layer:[16] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.799702]s, mse: [0.00087079]
+2026-09-09 21:00:49 [INFO] my_app: layer:[16] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.791356]s, mse: [0.00081027]
+2026-09-09 21:01:06 [INFO] my_app: layer:[16] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.812170]s, mse: [0.00077489]
+2026-09-09 21:01:23 [INFO] my_app: layer:[16] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.795971]s, mse: [0.00076138]
+2026-09-09 21:01:40 [INFO] my_app: layer:[16] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.800197]s, mse: [0.00075385]
+2026-09-09 21:01:57 [INFO] my_app: layer:[16] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.788897]s, mse: [0.00075012]
+2026-09-09 21:02:13 [INFO] my_app: layer:[16] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.816410]s, mse: [0.00074817]
+2026-09-09 21:02:30 [INFO] my_app: layer:[16] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.794759]s, mse: [0.00074820]
+2026-09-09 21:02:47 [INFO] my_app: layer:[16] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.796606]s, mse: [0.00074538]
+2026-09-09 21:03:04 [INFO] my_app: layer:[16] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.799535]s, mse: [0.00074507]
+2026-09-09 21:03:04 [INFO] my_app: saved parameters for layer 16 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_16.pth
+2026-09-09 21:03:04 [INFO] my_app: After global_Layer_16 Memory Stats:
+2026-09-09 21:03:04 [INFO] my_app: Allocated: 3269.95 MB
+2026-09-09 21:03:04 [INFO] my_app: Reserved/Cached: 3960.00 MB
+2026-09-09 21:03:04 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:03:04 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:03:04 [INFO] my_app: ========= frame_Layer_17 =========
+2026-09-09 21:03:04 [INFO] my_app: Before frame_Layer_17 Memory Stats:
+2026-09-09 21:03:04 [INFO] my_app: Allocated: 3216.21 MB
+2026-09-09 21:03:04 [INFO] my_app: Reserved/Cached: 3960.00 MB
+2026-09-09 21:03:04 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:03:04 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:03:07 [INFO] my_app: Layer 17 Epoch 0 Start Memory Stats:
+2026-09-09 21:03:07 [INFO] my_app: Allocated: 3216.21 MB
+2026-09-09 21:03:07 [INFO] my_app: Reserved/Cached: 3960.00 MB
+2026-09-09 21:03:07 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:03:07 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:03:24 [INFO] my_app: layer:[17] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.754361]s, mse: [0.00099797]
+2026-09-09 21:03:41 [INFO] my_app: layer:[17] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.794045]s, mse: [0.00091149]
+2026-09-09 21:03:58 [INFO] my_app: layer:[17] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.795117]s, mse: [0.00082993]
+2026-09-09 21:04:14 [INFO] my_app: layer:[17] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.797963]s, mse: [0.00076219]
+2026-09-09 21:04:31 [INFO] my_app: layer:[17] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.789709]s, mse: [0.00069167]
+2026-09-09 21:04:48 [INFO] my_app: layer:[17] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.790329]s, mse: [0.00063262]
+2026-09-09 21:05:05 [INFO] my_app: layer:[17] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.782681]s, mse: [0.00058840]
+2026-09-09 21:05:22 [INFO] my_app: layer:[17] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.791795]s, mse: [0.00055403]
+2026-09-09 21:05:38 [INFO] my_app: layer:[17] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.792428]s, mse: [0.00053876]
+2026-09-09 21:05:55 [INFO] my_app: layer:[17] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.795511]s, mse: [0.00053213]
+2026-09-09 21:06:12 [INFO] my_app: layer:[17] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.795202]s, mse: [0.00052839]
+2026-09-09 21:06:29 [INFO] my_app: layer:[17] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.793916]s, mse: [0.00052616]
+2026-09-09 21:06:45 [INFO] my_app: layer:[17] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.796119]s, mse: [0.00052665]
+2026-09-09 21:07:02 [INFO] my_app: layer:[17] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.794584]s, mse: [0.00052709]
+2026-09-09 21:07:19 [INFO] my_app: layer:[17] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.793815]s, mse: [0.00052692]
+2026-09-09 21:07:19 [INFO] my_app: saved parameters for layer 17 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_17.pth
+2026-09-09 21:07:19 [INFO] my_app: After frame_Layer_17 Memory Stats:
+2026-09-09 21:07:19 [INFO] my_app: Allocated: 3145.82 MB
+2026-09-09 21:07:19 [INFO] my_app: Reserved/Cached: 3720.00 MB
+2026-09-09 21:07:19 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:07:19 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:07:19 [INFO] my_app: ========= global_Layer_17 =========
+2026-09-09 21:07:19 [INFO] my_app: Before global_Layer_17 Memory Stats:
+2026-09-09 21:07:19 [INFO] my_app: Allocated: 3092.09 MB
+2026-09-09 21:07:19 [INFO] my_app: Reserved/Cached: 3720.00 MB
+2026-09-09 21:07:19 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:07:19 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:07:22 [INFO] my_app: Layer 17 Epoch 0 Start Memory Stats:
+2026-09-09 21:07:22 [INFO] my_app: Allocated: 3092.09 MB
+2026-09-09 21:07:22 [INFO] my_app: Reserved/Cached: 3720.00 MB
+2026-09-09 21:07:22 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:07:22 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:07:39 [INFO] my_app: layer:[17] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.854225]s, mse: [0.00110846]
+2026-09-09 21:07:56 [INFO] my_app: layer:[17] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.885398]s, mse: [0.00098876]
+2026-09-09 21:08:13 [INFO] my_app: layer:[17] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.889380]s, mse: [0.00091381]
+2026-09-09 21:08:30 [INFO] my_app: layer:[17] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.893485]s, mse: [0.00084363]
+2026-09-09 21:08:47 [INFO] my_app: layer:[17] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.900673]s, mse: [0.00077724]
+2026-09-09 21:09:04 [INFO] my_app: layer:[17] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.901341]s, mse: [0.00070816]
+2026-09-09 21:09:21 [INFO] my_app: layer:[17] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.906834]s, mse: [0.00065345]
+2026-09-09 21:09:38 [INFO] my_app: layer:[17] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.903051]s, mse: [0.00061505]
+2026-09-09 21:09:54 [INFO] my_app: layer:[17] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.898432]s, mse: [0.00059044]
+2026-09-09 21:10:11 [INFO] my_app: layer:[17] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.917901]s, mse: [0.00057354]
+2026-09-09 21:10:28 [INFO] my_app: layer:[17] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.899869]s, mse: [0.00056544]
+2026-09-09 21:10:45 [INFO] my_app: layer:[17] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.907209]s, mse: [0.00056244]
+2026-09-09 21:11:02 [INFO] my_app: layer:[17] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.899057]s, mse: [0.00055999]
+2026-09-09 21:11:19 [INFO] my_app: layer:[17] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.900602]s, mse: [0.00055829]
+2026-09-09 21:11:36 [INFO] my_app: layer:[17] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.897258]s, mse: [0.00055741]
+2026-09-09 21:11:36 [INFO] my_app: saved parameters for layer 17 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_17.pth
+2026-09-09 21:11:36 [INFO] my_app: After global_Layer_17 Memory Stats:
+2026-09-09 21:11:36 [INFO] my_app: Allocated: 3021.70 MB
+2026-09-09 21:11:36 [INFO] my_app: Reserved/Cached: 3608.00 MB
+2026-09-09 21:11:36 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:11:36 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:11:36 [INFO] my_app: ========= frame_Layer_18 =========
+2026-09-09 21:11:36 [INFO] my_app: Before frame_Layer_18 Memory Stats:
+2026-09-09 21:11:36 [INFO] my_app: Allocated: 2967.96 MB
+2026-09-09 21:11:36 [INFO] my_app: Reserved/Cached: 3608.00 MB
+2026-09-09 21:11:36 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:11:36 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:11:39 [INFO] my_app: Layer 18 Epoch 0 Start Memory Stats:
+2026-09-09 21:11:39 [INFO] my_app: Allocated: 2967.96 MB
+2026-09-09 21:11:39 [INFO] my_app: Reserved/Cached: 3608.00 MB
+2026-09-09 21:11:39 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:11:39 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:11:56 [INFO] my_app: layer:[18] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.830272]s, mse: [0.00040742]
+2026-09-09 21:12:13 [INFO] my_app: layer:[18] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.863324]s, mse: [0.00036937]
+2026-09-09 21:12:30 [INFO] my_app: layer:[18] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.853229]s, mse: [0.00033561]
+2026-09-09 21:12:47 [INFO] my_app: layer:[18] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.864134]s, mse: [0.00031068]
+2026-09-09 21:13:04 [INFO] my_app: layer:[18] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.863550]s, mse: [0.00028556]
+2026-09-09 21:13:20 [INFO] my_app: layer:[18] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.842067]s, mse: [0.00026355]
+2026-09-09 21:13:37 [INFO] my_app: layer:[18] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.837332]s, mse: [0.00024812]
+2026-09-09 21:13:54 [INFO] my_app: layer:[18] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.853119]s, mse: [0.00023968]
+2026-09-09 21:14:11 [INFO] my_app: layer:[18] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.872609]s, mse: [0.00023118]
+2026-09-09 21:14:28 [INFO] my_app: layer:[18] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.845482]s, mse: [0.00022432]
+2026-09-09 21:14:45 [INFO] my_app: layer:[18] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.855380]s, mse: [0.00022076]
+2026-09-09 21:15:02 [INFO] my_app: layer:[18] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.863622]s, mse: [0.00021730]
+2026-09-09 21:15:18 [INFO] my_app: layer:[18] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.820649]s, mse: [0.00021675]
+2026-09-09 21:15:35 [INFO] my_app: layer:[18] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.856297]s, mse: [0.00021682]
+2026-09-09 21:15:52 [INFO] my_app: layer:[18] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.866021]s, mse: [0.00021684]
+2026-09-09 21:15:52 [INFO] my_app: saved parameters for layer 18 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_18.pth
+2026-09-09 21:15:52 [INFO] my_app: After frame_Layer_18 Memory Stats:
+2026-09-09 21:15:52 [INFO] my_app: Allocated: 2897.57 MB
+2026-09-09 21:15:52 [INFO] my_app: Reserved/Cached: 3560.00 MB
+2026-09-09 21:15:52 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:15:52 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:15:52 [INFO] my_app: ========= global_Layer_18 =========
+2026-09-09 21:15:52 [INFO] my_app: Before global_Layer_18 Memory Stats:
+2026-09-09 21:15:52 [INFO] my_app: Allocated: 2843.84 MB
+2026-09-09 21:15:52 [INFO] my_app: Reserved/Cached: 3560.00 MB
+2026-09-09 21:15:52 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:15:52 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:15:55 [INFO] my_app: Layer 18 Epoch 0 Start Memory Stats:
+2026-09-09 21:15:55 [INFO] my_app: Allocated: 2843.84 MB
+2026-09-09 21:15:55 [INFO] my_app: Reserved/Cached: 3560.00 MB
+2026-09-09 21:15:55 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:15:55 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:16:12 [INFO] my_app: layer:[18] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.771254]s, mse: [0.00024091]
+2026-09-09 21:16:29 [INFO] my_app: layer:[18] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.795903]s, mse: [0.00020350]
+2026-09-09 21:16:46 [INFO] my_app: layer:[18] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.797031]s, mse: [0.00018752]
+2026-09-09 21:17:03 [INFO] my_app: layer:[18] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.794024]s, mse: [0.00017028]
+2026-09-09 21:17:19 [INFO] my_app: layer:[18] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.794979]s, mse: [0.00016053]
+2026-09-09 21:17:36 [INFO] my_app: layer:[18] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.794354]s, mse: [0.00015647]
+2026-09-09 21:17:53 [INFO] my_app: layer:[18] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.793351]s, mse: [0.00013599]
+2026-09-09 21:18:10 [INFO] my_app: layer:[18] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.795525]s, mse: [0.00012931]
+2026-09-09 21:18:27 [INFO] my_app: layer:[18] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.796042]s, mse: [0.00012768]
+2026-09-09 21:18:43 [INFO] my_app: layer:[18] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.792783]s, mse: [0.00012570]
+2026-09-09 21:19:00 [INFO] my_app: layer:[18] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.794973]s, mse: [0.00012312]
+2026-09-09 21:19:17 [INFO] my_app: layer:[18] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.794991]s, mse: [0.00012036]
+2026-09-09 21:19:34 [INFO] my_app: layer:[18] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.796136]s, mse: [0.00012020]
+2026-09-09 21:19:51 [INFO] my_app: layer:[18] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.792057]s, mse: [0.00011958]
+2026-09-09 21:20:07 [INFO] my_app: layer:[18] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.797565]s, mse: [0.00011905]
+2026-09-09 21:20:07 [INFO] my_app: saved parameters for layer 18 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_18.pth
+2026-09-09 21:20:07 [INFO] my_app: After global_Layer_18 Memory Stats:
+2026-09-09 21:20:07 [INFO] my_app: Allocated: 2773.45 MB
+2026-09-09 21:20:07 [INFO] my_app: Reserved/Cached: 3448.00 MB
+2026-09-09 21:20:07 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:20:07 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:20:07 [INFO] my_app: ========= frame_Layer_19 =========
+2026-09-09 21:20:07 [INFO] my_app: Before frame_Layer_19 Memory Stats:
+2026-09-09 21:20:07 [INFO] my_app: Allocated: 2719.71 MB
+2026-09-09 21:20:07 [INFO] my_app: Reserved/Cached: 3448.00 MB
+2026-09-09 21:20:07 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:20:07 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:20:11 [INFO] my_app: Layer 19 Epoch 0 Start Memory Stats:
+2026-09-09 21:20:11 [INFO] my_app: Allocated: 2719.71 MB
+2026-09-09 21:20:11 [INFO] my_app: Reserved/Cached: 3448.00 MB
+2026-09-09 21:20:11 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:20:11 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:20:27 [INFO] my_app: layer:[19] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.768889]s, mse: [0.00028095]
+2026-09-09 21:20:44 [INFO] my_app: layer:[19] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.790954]s, mse: [0.00024573]
+2026-09-09 21:21:01 [INFO] my_app: layer:[19] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.797326]s, mse: [0.00021844]
+2026-09-09 21:21:18 [INFO] my_app: layer:[19] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.795072]s, mse: [0.00020212]
+2026-09-09 21:21:35 [INFO] my_app: layer:[19] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.794652]s, mse: [0.00018810]
+2026-09-09 21:21:51 [INFO] my_app: layer:[19] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.793245]s, mse: [0.00017271]
+2026-09-09 21:22:08 [INFO] my_app: layer:[19] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.795759]s, mse: [0.00016190]
+2026-09-09 21:22:25 [INFO] my_app: layer:[19] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.795017]s, mse: [0.00015256]
+2026-09-09 21:22:42 [INFO] my_app: layer:[19] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.792848]s, mse: [0.00014670]
+2026-09-09 21:22:59 [INFO] my_app: layer:[19] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.794868]s, mse: [0.00014707]
+2026-09-09 21:23:15 [INFO] my_app: layer:[19] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.795160]s, mse: [0.00014674]
+2026-09-09 21:23:32 [INFO] my_app: layer:[19] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.794741]s, mse: [0.00014349]
+2026-09-09 21:23:49 [INFO] my_app: layer:[19] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.795510]s, mse: [0.00014147]
+2026-09-09 21:24:06 [INFO] my_app: layer:[19] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.796783]s, mse: [0.00014127]
+2026-09-09 21:24:23 [INFO] my_app: layer:[19] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.791470]s, mse: [0.00014158]
+2026-09-09 21:24:23 [INFO] my_app: saved parameters for layer 19 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_19.pth
+2026-09-09 21:24:23 [INFO] my_app: After frame_Layer_19 Memory Stats:
+2026-09-09 21:24:23 [INFO] my_app: Allocated: 2649.32 MB
+2026-09-09 21:24:23 [INFO] my_app: Reserved/Cached: 3336.00 MB
+2026-09-09 21:24:23 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:24:23 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:24:23 [INFO] my_app: ========= global_Layer_19 =========
+2026-09-09 21:24:23 [INFO] my_app: Before global_Layer_19 Memory Stats:
+2026-09-09 21:24:23 [INFO] my_app: Allocated: 2595.59 MB
+2026-09-09 21:24:23 [INFO] my_app: Reserved/Cached: 3336.00 MB
+2026-09-09 21:24:23 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:24:23 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:24:26 [INFO] my_app: Layer 19 Epoch 0 Start Memory Stats:
+2026-09-09 21:24:26 [INFO] my_app: Allocated: 2595.59 MB
+2026-09-09 21:24:26 [INFO] my_app: Reserved/Cached: 3336.00 MB
+2026-09-09 21:24:26 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:24:26 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:24:43 [INFO] my_app: layer:[19] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.703788]s, mse: [0.00103119]
+2026-09-09 21:24:59 [INFO] my_app: layer:[19] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.734251]s, mse: [0.00083027]
+2026-09-09 21:25:16 [INFO] my_app: layer:[19] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.755003]s, mse: [0.00068779]
+2026-09-09 21:25:33 [INFO] my_app: layer:[19] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.771243]s, mse: [0.00063721]
+2026-09-09 21:25:50 [INFO] my_app: layer:[19] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.758453]s, mse: [0.00059413]
+2026-09-09 21:26:06 [INFO] my_app: layer:[19] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.757432]s, mse: [0.00054876]
+2026-09-09 21:26:23 [INFO] my_app: layer:[19] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.768661]s, mse: [0.00050944]
+2026-09-09 21:26:40 [INFO] my_app: layer:[19] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.746451]s, mse: [0.00047119]
+2026-09-09 21:26:57 [INFO] my_app: layer:[19] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.765025]s, mse: [0.00045062]
+2026-09-09 21:27:14 [INFO] my_app: layer:[19] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.778419]s, mse: [0.00044390]
+2026-09-09 21:27:30 [INFO] my_app: layer:[19] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.755444]s, mse: [0.00043576]
+2026-09-09 21:27:47 [INFO] my_app: layer:[19] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.787647]s, mse: [0.00042745]
+2026-09-09 21:28:04 [INFO] my_app: layer:[19] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.748706]s, mse: [0.00042453]
+2026-09-09 21:28:21 [INFO] my_app: layer:[19] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.763267]s, mse: [0.00042457]
+2026-09-09 21:28:37 [INFO] my_app: layer:[19] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.776125]s, mse: [0.00042715]
+2026-09-09 21:28:37 [INFO] my_app: saved parameters for layer 19 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_19.pth
+2026-09-09 21:28:37 [INFO] my_app: After global_Layer_19 Memory Stats:
+2026-09-09 21:28:37 [INFO] my_app: Allocated: 2525.20 MB
+2026-09-09 21:28:37 [INFO] my_app: Reserved/Cached: 3096.00 MB
+2026-09-09 21:28:37 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:28:37 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:28:37 [INFO] my_app: ========= frame_Layer_20 =========
+2026-09-09 21:28:37 [INFO] my_app: Before frame_Layer_20 Memory Stats:
+2026-09-09 21:28:37 [INFO] my_app: Allocated: 2471.46 MB
+2026-09-09 21:28:37 [INFO] my_app: Reserved/Cached: 3096.00 MB
+2026-09-09 21:28:37 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:28:37 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:28:41 [INFO] my_app: Layer 20 Epoch 0 Start Memory Stats:
+2026-09-09 21:28:41 [INFO] my_app: Allocated: 2471.46 MB
+2026-09-09 21:28:41 [INFO] my_app: Reserved/Cached: 3096.00 MB
+2026-09-09 21:28:41 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:28:41 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:28:57 [INFO] my_app: layer:[20] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.778137]s, mse: [0.00191652]
+2026-09-09 21:29:14 [INFO] my_app: layer:[20] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.844690]s, mse: [0.00151688]
+2026-09-09 21:29:31 [INFO] my_app: layer:[20] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.837328]s, mse: [0.00129751]
+2026-09-09 21:29:48 [INFO] my_app: layer:[20] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.833456]s, mse: [0.00114693]
+2026-09-09 21:30:05 [INFO] my_app: layer:[20] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.838616]s, mse: [0.00105850]
+2026-09-09 21:30:22 [INFO] my_app: layer:[20] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.829279]s, mse: [0.00100912]
+2026-09-09 21:30:38 [INFO] my_app: layer:[20] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.819527]s, mse: [0.00098314]
+2026-09-09 21:30:55 [INFO] my_app: layer:[20] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.845368]s, mse: [0.00092577]
+2026-09-09 21:31:12 [INFO] my_app: layer:[20] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.839242]s, mse: [0.00091362]
+2026-09-09 21:31:29 [INFO] my_app: layer:[20] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.834213]s, mse: [0.00088538]
+2026-09-09 21:31:46 [INFO] my_app: layer:[20] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.835289]s, mse: [0.00087184]
+2026-09-09 21:32:03 [INFO] my_app: layer:[20] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.827951]s, mse: [0.00086240]
+2026-09-09 21:32:20 [INFO] my_app: layer:[20] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.853218]s, mse: [0.00085798]
+2026-09-09 21:32:36 [INFO] my_app: layer:[20] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.848076]s, mse: [0.00085671]
+2026-09-09 21:32:53 [INFO] my_app: layer:[20] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.856905]s, mse: [0.00085750]
+2026-09-09 21:32:53 [INFO] my_app: saved parameters for layer 20 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_20.pth
+2026-09-09 21:32:53 [INFO] my_app: After frame_Layer_20 Memory Stats:
+2026-09-09 21:32:53 [INFO] my_app: Allocated: 2401.07 MB
+2026-09-09 21:32:53 [INFO] my_app: Reserved/Cached: 2984.00 MB
+2026-09-09 21:32:53 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:32:53 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:32:53 [INFO] my_app: ========= global_Layer_20 =========
+2026-09-09 21:32:53 [INFO] my_app: Before global_Layer_20 Memory Stats:
+2026-09-09 21:32:53 [INFO] my_app: Allocated: 2347.34 MB
+2026-09-09 21:32:53 [INFO] my_app: Reserved/Cached: 2984.00 MB
+2026-09-09 21:32:53 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:32:53 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:32:57 [INFO] my_app: Layer 20 Epoch 0 Start Memory Stats:
+2026-09-09 21:32:57 [INFO] my_app: Allocated: 2347.34 MB
+2026-09-09 21:32:57 [INFO] my_app: Reserved/Cached: 2984.00 MB
+2026-09-09 21:32:57 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:32:57 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:33:13 [INFO] my_app: layer:[20] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.829758]s, mse: [0.00112622]
+2026-09-09 21:33:30 [INFO] my_app: layer:[20] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.840888]s, mse: [0.00101082]
+2026-09-09 21:33:47 [INFO] my_app: layer:[20] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.869882]s, mse: [0.00091339]
+2026-09-09 21:34:04 [INFO] my_app: layer:[20] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.849458]s, mse: [0.00083171]
+2026-09-09 21:34:21 [INFO] my_app: layer:[20] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.881459]s, mse: [0.00075698]
+2026-09-09 21:34:38 [INFO] my_app: layer:[20] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.858395]s, mse: [0.00069193]
+2026-09-09 21:34:55 [INFO] my_app: layer:[20] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.866743]s, mse: [0.00063547]
+2026-09-09 21:35:11 [INFO] my_app: layer:[20] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.861948]s, mse: [0.00059941]
+2026-09-09 21:35:28 [INFO] my_app: layer:[20] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.863421]s, mse: [0.00057647]
+2026-09-09 21:35:45 [INFO] my_app: layer:[20] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.833789]s, mse: [0.00056242]
+2026-09-09 21:36:02 [INFO] my_app: layer:[20] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.849709]s, mse: [0.00055034]
+2026-09-09 21:36:19 [INFO] my_app: layer:[20] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.878494]s, mse: [0.00054572]
+2026-09-09 21:36:36 [INFO] my_app: layer:[20] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.869653]s, mse: [0.00054615]
+2026-09-09 21:36:53 [INFO] my_app: layer:[20] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.864574]s, mse: [0.00054429]
+2026-09-09 21:37:10 [INFO] my_app: layer:[20] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.884264]s, mse: [0.00054352]
+2026-09-09 21:37:10 [INFO] my_app: saved parameters for layer 20 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_20.pth
+2026-09-09 21:37:10 [INFO] my_app: After global_Layer_20 Memory Stats:
+2026-09-09 21:37:10 [INFO] my_app: Allocated: 2276.95 MB
+2026-09-09 21:37:10 [INFO] my_app: Reserved/Cached: 2808.00 MB
+2026-09-09 21:37:10 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:37:10 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:37:10 [INFO] my_app: ========= frame_Layer_21 =========
+2026-09-09 21:37:10 [INFO] my_app: Before frame_Layer_21 Memory Stats:
+2026-09-09 21:37:10 [INFO] my_app: Allocated: 2223.21 MB
+2026-09-09 21:37:10 [INFO] my_app: Reserved/Cached: 2808.00 MB
+2026-09-09 21:37:10 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:37:10 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:37:13 [INFO] my_app: Layer 21 Epoch 0 Start Memory Stats:
+2026-09-09 21:37:13 [INFO] my_app: Allocated: 2223.21 MB
+2026-09-09 21:37:13 [INFO] my_app: Reserved/Cached: 2808.00 MB
+2026-09-09 21:37:13 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:37:13 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:37:30 [INFO] my_app: layer:[21] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.839213]s, mse: [0.00138157]
+2026-09-09 21:37:47 [INFO] my_app: layer:[21] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.850463]s, mse: [0.00127269]
+2026-09-09 21:38:03 [INFO] my_app: layer:[21] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.871644]s, mse: [0.00116067]
+2026-09-09 21:38:20 [INFO] my_app: layer:[21] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.880138]s, mse: [0.00105896]
+2026-09-09 21:38:37 [INFO] my_app: layer:[21] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.878623]s, mse: [0.00096289]
+2026-09-09 21:38:54 [INFO] my_app: layer:[21] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.858931]s, mse: [0.00088187]
+2026-09-09 21:39:11 [INFO] my_app: layer:[21] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.863179]s, mse: [0.00082387]
+2026-09-09 21:39:28 [INFO] my_app: layer:[21] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.871144]s, mse: [0.00079410]
+2026-09-09 21:39:45 [INFO] my_app: layer:[21] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.874903]s, mse: [0.00078025]
+2026-09-09 21:40:02 [INFO] my_app: layer:[21] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.887925]s, mse: [0.00076626]
+2026-09-09 21:40:18 [INFO] my_app: layer:[21] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.894207]s, mse: [0.00076014]
+2026-09-09 21:40:35 [INFO] my_app: layer:[21] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.878192]s, mse: [0.00075150]
+2026-09-09 21:40:52 [INFO] my_app: layer:[21] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.871845]s, mse: [0.00074793]
+2026-09-09 21:41:09 [INFO] my_app: layer:[21] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.886278]s, mse: [0.00074521]
+2026-09-09 21:41:26 [INFO] my_app: layer:[21] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.874713]s, mse: [0.00074476]
+2026-09-09 21:41:26 [INFO] my_app: saved parameters for layer 21 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_21.pth
+2026-09-09 21:41:26 [INFO] my_app: After frame_Layer_21 Memory Stats:
+2026-09-09 21:41:26 [INFO] my_app: Allocated: 2152.82 MB
+2026-09-09 21:41:26 [INFO] my_app: Reserved/Cached: 2696.00 MB
+2026-09-09 21:41:26 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:41:26 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:41:26 [INFO] my_app: ========= global_Layer_21 =========
+2026-09-09 21:41:26 [INFO] my_app: Before global_Layer_21 Memory Stats:
+2026-09-09 21:41:26 [INFO] my_app: Allocated: 2099.09 MB
+2026-09-09 21:41:26 [INFO] my_app: Reserved/Cached: 2696.00 MB
+2026-09-09 21:41:26 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:41:26 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:41:29 [INFO] my_app: Layer 21 Epoch 0 Start Memory Stats:
+2026-09-09 21:41:29 [INFO] my_app: Allocated: 2099.09 MB
+2026-09-09 21:41:29 [INFO] my_app: Reserved/Cached: 2696.00 MB
+2026-09-09 21:41:29 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:41:29 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:41:46 [INFO] my_app: layer:[21] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.848476]s, mse: [0.00162609]
+2026-09-09 21:42:03 [INFO] my_app: layer:[21] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.859611]s, mse: [0.00145911]
+2026-09-09 21:42:20 [INFO] my_app: layer:[21] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.890148]s, mse: [0.00136936]
+2026-09-09 21:42:37 [INFO] my_app: layer:[21] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.899941]s, mse: [0.00121913]
+2026-09-09 21:42:54 [INFO] my_app: layer:[21] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.893882]s, mse: [0.00110290]
+2026-09-09 21:43:11 [INFO] my_app: layer:[21] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.887663]s, mse: [0.00103722]
+2026-09-09 21:43:28 [INFO] my_app: layer:[21] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.888168]s, mse: [0.00099383]
+2026-09-09 21:43:44 [INFO] my_app: layer:[21] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.892268]s, mse: [0.00095532]
+2026-09-09 21:44:01 [INFO] my_app: layer:[21] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.897157]s, mse: [0.00094593]
+2026-09-09 21:44:18 [INFO] my_app: layer:[21] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.899103]s, mse: [0.00093455]
+2026-09-09 21:44:35 [INFO] my_app: layer:[21] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.885411]s, mse: [0.00091267]
+2026-09-09 21:44:52 [INFO] my_app: layer:[21] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.892160]s, mse: [0.00090254]
+2026-09-09 21:45:09 [INFO] my_app: layer:[21] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.905503]s, mse: [0.00090137]
+2026-09-09 21:45:26 [INFO] my_app: layer:[21] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.900581]s, mse: [0.00089877]
+2026-09-09 21:45:43 [INFO] my_app: layer:[21] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.898815]s, mse: [0.00089915]
+2026-09-09 21:45:43 [INFO] my_app: saved parameters for layer 21 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_21.pth
+2026-09-09 21:45:43 [INFO] my_app: After global_Layer_21 Memory Stats:
+2026-09-09 21:45:43 [INFO] my_app: Allocated: 2028.70 MB
+2026-09-09 21:45:43 [INFO] my_app: Reserved/Cached: 2584.00 MB
+2026-09-09 21:45:43 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:45:43 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:45:43 [INFO] my_app: ========= frame_Layer_22 =========
+2026-09-09 21:45:43 [INFO] my_app: Before frame_Layer_22 Memory Stats:
+2026-09-09 21:45:43 [INFO] my_app: Allocated: 1974.96 MB
+2026-09-09 21:45:43 [INFO] my_app: Reserved/Cached: 2584.00 MB
+2026-09-09 21:45:43 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:45:43 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:45:46 [INFO] my_app: Layer 22 Epoch 0 Start Memory Stats:
+2026-09-09 21:45:46 [INFO] my_app: Allocated: 1974.96 MB
+2026-09-09 21:45:46 [INFO] my_app: Reserved/Cached: 2584.00 MB
+2026-09-09 21:45:46 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:45:46 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:46:03 [INFO] my_app: layer:[22] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.849435]s, mse: [0.00185635]
+2026-09-09 21:46:20 [INFO] my_app: layer:[22] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.865031]s, mse: [0.00158293]
+2026-09-09 21:46:37 [INFO] my_app: layer:[22] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.862656]s, mse: [0.00138281]
+2026-09-09 21:46:54 [INFO] my_app: layer:[22] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.873187]s, mse: [0.00124984]
+2026-09-09 21:47:11 [INFO] my_app: layer:[22] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.892015]s, mse: [0.00112176]
+2026-09-09 21:47:28 [INFO] my_app: layer:[22] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.892969]s, mse: [0.00102733]
+2026-09-09 21:47:45 [INFO] my_app: layer:[22] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.873273]s, mse: [0.00096563]
+2026-09-09 21:48:01 [INFO] my_app: layer:[22] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.884228]s, mse: [0.00093336]
+2026-09-09 21:48:18 [INFO] my_app: layer:[22] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.875770]s, mse: [0.00092055]
+2026-09-09 21:48:35 [INFO] my_app: layer:[22] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.870752]s, mse: [0.00090631]
+2026-09-09 21:48:52 [INFO] my_app: layer:[22] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.891075]s, mse: [0.00088495]
+2026-09-09 21:49:09 [INFO] my_app: layer:[22] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.900007]s, mse: [0.00087338]
+2026-09-09 21:49:26 [INFO] my_app: layer:[22] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.895816]s, mse: [0.00086869]
+2026-09-09 21:49:43 [INFO] my_app: layer:[22] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.872760]s, mse: [0.00086537]
+2026-09-09 21:50:00 [INFO] my_app: layer:[22] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.881205]s, mse: [0.00086499]
+2026-09-09 21:50:00 [INFO] my_app: saved parameters for layer 22 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_22.pth
+2026-09-09 21:50:00 [INFO] my_app: After frame_Layer_22 Memory Stats:
+2026-09-09 21:50:00 [INFO] my_app: Allocated: 1904.57 MB
+2026-09-09 21:50:00 [INFO] my_app: Reserved/Cached: 2344.00 MB
+2026-09-09 21:50:00 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:50:00 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:50:00 [INFO] my_app: ========= global_Layer_22 =========
+2026-09-09 21:50:00 [INFO] my_app: Before global_Layer_22 Memory Stats:
+2026-09-09 21:50:00 [INFO] my_app: Allocated: 1850.84 MB
+2026-09-09 21:50:00 [INFO] my_app: Reserved/Cached: 2344.00 MB
+2026-09-09 21:50:00 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:50:00 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:50:03 [INFO] my_app: Layer 22 Epoch 0 Start Memory Stats:
+2026-09-09 21:50:03 [INFO] my_app: Allocated: 1850.84 MB
+2026-09-09 21:50:03 [INFO] my_app: Reserved/Cached: 2344.00 MB
+2026-09-09 21:50:03 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:50:03 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:50:20 [INFO] my_app: layer:[22] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.911416]s, mse: [0.00055810]
+2026-09-09 21:50:37 [INFO] my_app: layer:[22] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.943226]s, mse: [0.00049730]
+2026-09-09 21:50:54 [INFO] my_app: layer:[22] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.932471]s, mse: [0.00044885]
+2026-09-09 21:51:11 [INFO] my_app: layer:[22] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.950474]s, mse: [0.00041163]
+2026-09-09 21:51:28 [INFO] my_app: layer:[22] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.952321]s, mse: [0.00036762]
+2026-09-09 21:51:45 [INFO] my_app: layer:[22] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.926692]s, mse: [0.00033239]
+2026-09-09 21:52:02 [INFO] my_app: layer:[22] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.946871]s, mse: [0.00030754]
+2026-09-09 21:52:18 [INFO] my_app: layer:[22] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.939382]s, mse: [0.00029211]
+2026-09-09 21:52:35 [INFO] my_app: layer:[22] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.943407]s, mse: [0.00028476]
+2026-09-09 21:52:52 [INFO] my_app: layer:[22] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.943049]s, mse: [0.00027896]
+2026-09-09 21:53:09 [INFO] my_app: layer:[22] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.940338]s, mse: [0.00027507]
+2026-09-09 21:53:26 [INFO] my_app: layer:[22] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.949916]s, mse: [0.00027274]
+2026-09-09 21:53:43 [INFO] my_app: layer:[22] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.942326]s, mse: [0.00027153]
+2026-09-09 21:54:00 [INFO] my_app: layer:[22] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.944205]s, mse: [0.00027178]
+2026-09-09 21:54:17 [INFO] my_app: layer:[22] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.954252]s, mse: [0.00027164]
+2026-09-09 21:54:17 [INFO] my_app: saved parameters for layer 22 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_22.pth
+2026-09-09 21:54:17 [INFO] my_app: After global_Layer_22 Memory Stats:
+2026-09-09 21:54:17 [INFO] my_app: Allocated: 1780.45 MB
+2026-09-09 21:54:17 [INFO] my_app: Reserved/Cached: 2232.00 MB
+2026-09-09 21:54:17 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:54:17 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:54:17 [INFO] my_app: ========= frame_Layer_23 =========
+2026-09-09 21:54:17 [INFO] my_app: Before frame_Layer_23 Memory Stats:
+2026-09-09 21:54:17 [INFO] my_app: Allocated: 1726.71 MB
+2026-09-09 21:54:17 [INFO] my_app: Reserved/Cached: 2232.00 MB
+2026-09-09 21:54:17 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:54:17 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:54:20 [INFO] my_app: Layer 23 Epoch 0 Start Memory Stats:
+2026-09-09 21:54:20 [INFO] my_app: Allocated: 1726.71 MB
+2026-09-09 21:54:20 [INFO] my_app: Reserved/Cached: 2232.00 MB
+2026-09-09 21:54:20 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:54:20 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:54:37 [INFO] my_app: layer:[23] , lwc lac iter:[0], lr:[0.00098908] ,time:[16.862117]s, mse: [0.00553041]
+2026-09-09 21:54:54 [INFO] my_app: layer:[23] , lwc lac iter:[1], lr:[0.00095682] ,time:[16.902287]s, mse: [0.00498339]
+2026-09-09 21:55:11 [INFO] my_app: layer:[23] , lwc lac iter:[2], lr:[0.00090460] ,time:[16.903980]s, mse: [0.00458803]
+2026-09-09 21:55:28 [INFO] my_app: layer:[23] , lwc lac iter:[3], lr:[0.00083473] ,time:[16.895503]s, mse: [0.00414238]
+2026-09-09 21:55:45 [INFO] my_app: layer:[23] , lwc lac iter:[4], lr:[0.00075025] ,time:[16.910871]s, mse: [0.00372422]
+2026-09-09 21:56:02 [INFO] my_app: layer:[23] , lwc lac iter:[5], lr:[0.00065485] ,time:[16.902895]s, mse: [0.00334236]
+2026-09-09 21:56:19 [INFO] my_app: layer:[23] , lwc lac iter:[6], lr:[0.00055271] ,time:[16.917753]s, mse: [0.00312149]
+2026-09-09 21:56:36 [INFO] my_app: layer:[23] , lwc lac iter:[7], lr:[0.00044829] ,time:[16.904825]s, mse: [0.00299627]
+2026-09-09 21:56:53 [INFO] my_app: layer:[23] , lwc lac iter:[8], lr:[0.00034615] ,time:[16.892237]s, mse: [0.00293384]
+2026-09-09 21:57:09 [INFO] my_app: layer:[23] , lwc lac iter:[9], lr:[0.00025075] ,time:[16.904996]s, mse: [0.00288101]
+2026-09-09 21:57:26 [INFO] my_app: layer:[23] , lwc lac iter:[10], lr:[0.00016627] ,time:[16.917280]s, mse: [0.00286551]
+2026-09-09 21:57:43 [INFO] my_app: layer:[23] , lwc lac iter:[11], lr:[0.00009640] ,time:[16.899353]s, mse: [0.00284089]
+2026-09-09 21:58:00 [INFO] my_app: layer:[23] , lwc lac iter:[12], lr:[0.00004418] ,time:[16.897258]s, mse: [0.00283781]
+2026-09-09 21:58:17 [INFO] my_app: layer:[23] , lwc lac iter:[13], lr:[0.00001192] ,time:[16.912545]s, mse: [0.00283263]
+2026-09-09 21:58:34 [INFO] my_app: layer:[23] , lwc lac iter:[14], lr:[0.00000100] ,time:[16.904188]s, mse: [0.00282784]
+2026-09-09 21:58:34 [INFO] my_app: saved parameters for layer 23 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_23.pth
+2026-09-09 21:58:34 [INFO] my_app: After frame_Layer_23 Memory Stats:
+2026-09-09 21:58:34 [INFO] my_app: Allocated: 1656.32 MB
+2026-09-09 21:58:34 [INFO] my_app: Reserved/Cached: 1926.00 MB
+2026-09-09 21:58:34 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:58:34 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:58:34 [INFO] my_app: ========= global_Layer_23 =========
+2026-09-09 21:58:34 [INFO] my_app: Before global_Layer_23 Memory Stats:
+2026-09-09 21:58:34 [INFO] my_app: Allocated: 1602.59 MB
+2026-09-09 21:58:34 [INFO] my_app: Reserved/Cached: 1926.00 MB
+2026-09-09 21:58:34 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:58:34 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:58:38 [INFO] my_app: Layer 23 Epoch 0 Start Memory Stats:
+2026-09-09 21:58:38 [INFO] my_app: Allocated: 1602.59 MB
+2026-09-09 21:58:38 [INFO] my_app: Reserved/Cached: 1926.00 MB
+2026-09-09 21:58:38 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 21:58:38 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 21:58:55 [INFO] my_app: layer:[23] , lwc lac iter:[0], lr:[0.00098908] ,time:[17.037060]s, mse: [0.01389890]
+2026-09-09 21:59:12 [INFO] my_app: layer:[23] , lwc lac iter:[1], lr:[0.00095682] ,time:[17.062469]s, mse: [0.01202775]
+2026-09-09 21:59:29 [INFO] my_app: layer:[23] , lwc lac iter:[2], lr:[0.00090460] ,time:[17.061114]s, mse: [0.01092522]
+2026-09-09 21:59:46 [INFO] my_app: layer:[23] , lwc lac iter:[3], lr:[0.00083473] ,time:[17.070368]s, mse: [0.00981493]
+2026-09-09 22:00:03 [INFO] my_app: layer:[23] , lwc lac iter:[4], lr:[0.00075025] ,time:[17.070219]s, mse: [0.00872075]
+2026-09-09 22:00:20 [INFO] my_app: layer:[23] , lwc lac iter:[5], lr:[0.00065485] ,time:[17.069118]s, mse: [0.00781731]
+2026-09-09 22:00:37 [INFO] my_app: layer:[23] , lwc lac iter:[6], lr:[0.00055271] ,time:[17.065856]s, mse: [0.00729268]
+2026-09-09 22:00:54 [INFO] my_app: layer:[23] , lwc lac iter:[7], lr:[0.00044829] ,time:[17.077929]s, mse: [0.00692296]
+2026-09-09 22:01:11 [INFO] my_app: layer:[23] , lwc lac iter:[8], lr:[0.00034615] ,time:[17.056832]s, mse: [0.00672564]
+2026-09-09 22:01:28 [INFO] my_app: layer:[23] , lwc lac iter:[9], lr:[0.00025075] ,time:[17.061402]s, mse: [0.00659990]
+2026-09-09 22:01:45 [INFO] my_app: layer:[23] , lwc lac iter:[10], lr:[0.00016627] ,time:[17.062920]s, mse: [0.00648644]
+2026-09-09 22:02:02 [INFO] my_app: layer:[23] , lwc lac iter:[11], lr:[0.00009640] ,time:[17.063524]s, mse: [0.00644835]
+2026-09-09 22:02:19 [INFO] my_app: layer:[23] , lwc lac iter:[12], lr:[0.00004418] ,time:[17.068747]s, mse: [0.00640376]
+2026-09-09 22:02:36 [INFO] my_app: layer:[23] , lwc lac iter:[13], lr:[0.00001192] ,time:[17.059837]s, mse: [0.00639123]
+2026-09-09 22:02:54 [INFO] my_app: layer:[23] , lwc lac iter:[14], lr:[0.00000100] ,time:[17.061513]s, mse: [0.00638768]
+2026-09-09 22:02:54 [INFO] my_app: saved parameters for layer 23 at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_23.pth
+2026-09-09 22:02:54 [INFO] my_app: After global_Layer_23 Memory Stats:
+2026-09-09 22:02:54 [INFO] my_app: Allocated: 1532.52 MB
+2026-09-09 22:02:54 [INFO] my_app: Reserved/Cached: 1868.00 MB
+2026-09-09 22:02:54 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 22:02:54 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 22:02:54 [INFO] my_app: Final Memory Stats:
+2026-09-09 22:02:54 [INFO] my_app: Allocated: 1478.46 MB
+2026-09-09 22:02:54 [INFO] my_app: Reserved/Cached: 1814.00 MB
+2026-09-09 22:02:54 [INFO] my_app: Max Allocated: 13548.64 MB
+2026-09-09 22:02:54 [INFO] my_app: Max Reserved: 18400.00 MB
+2026-09-09 22:02:58 [INFO] my_app: saved merged parameters at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_total.pth
+2026-09-09 22:02:58 [INFO] my_app: saved merged parameters at /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_total.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_0.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_0.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_1.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_1.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_2.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_2.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_3.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_3.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_4.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_4.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_5.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_5.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_6.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_6.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_7.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_7.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_8.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_8.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_9.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_9.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_10.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_10.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_11.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_11.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_12.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_12.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_13.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_13.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_14.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_14.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_15.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_15.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_16.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_16.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_17.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_17.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_18.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_18.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_19.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_19.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_20.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_20.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_21.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_21.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_22.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_22.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_layer_23.pth
+2026-09-09 22:02:58 [INFO] my_app: removed layer parameter file: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_layer_23.pth
+calibration finished in 207.6 min
+  wrote /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_total.pth  (1.78 GiB)
+  wrote /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_global_parameters_total.pth  (1.78 GiB)

@@ -1,0 +1,33 @@
+====================================================================================================
+POWER: scenes needed to detect the OBSERVED effect at 80 % power, alpha 0.05, paired t (noncentral t)
+contrast                                          mean       sd       d  n needed  (have 40)
+psnr full vs w4a4                              +0.1359   0.5083  +0.267       112
+ssim full vs w4a4                              +0.0013   0.0147  +0.089       986
+lpips full vs w4a4                             +0.0108   0.0245  +0.442        43
+psnr_exposure_corrected full vs w4a4           -0.0038   0.5534  -0.007    170555
+psnr full vs w4a4_local                        +0.1638   0.4951  +0.331        74
+ssim full vs w4a4_local                        +0.0040   0.0155  +0.261       117
+lpips full vs w4a4_local                       +0.0079   0.0200  +0.394        53
+psnr_exposure_corrected full vs w4a4_local     +0.0404   0.3783  +0.107       689
+psnr full vs w4a4_no_lwc                       -0.0344   0.5346  -0.064      1901
+ssim full vs w4a4_no_lwc                       +0.0000   0.0143  +0.002       inf
+lpips full vs w4a4_no_lwc                      +0.0012   0.0193  +0.062      2046
+psnr_exposure_corrected full vs w4a4_no_lwc    -0.0727   0.5071  -0.143       384
+psnr full vs w4a4_no_smooth                    +0.0181   0.4390  +0.041      4605
+ssim full vs w4a4_no_smooth                    +0.0009   0.0146  +0.064      1897
+lpips full vs w4a4_no_smooth                   +0.0029   0.0165  +0.179       248
+psnr_exposure_corrected full vs w4a4_no_smooth   -0.0165   0.5935  -0.028     10098
+psnr full vs w4a4_no_lac                       +0.1000   0.4730  +0.211       178
+ssim full vs w4a4_no_lac                       +0.0046   0.0166  +0.276       106
+lpips full vs w4a4_no_lac                      +0.0084   0.0214  +0.392        54
+psnr_exposure_corrected full vs w4a4_no_lac    +0.0047   0.5724  +0.008    115208
+psnr full vs w4a4_no_rot                       +0.4316   0.6561  +0.658        21
+ssim full vs w4a4_no_rot                       +0.0041   0.0149  +0.273       108
+lpips full vs w4a4_no_rot                      +0.0145   0.0289  +0.504        33
+psnr_exposure_corrected full vs w4a4_no_rot    -0.0218   0.5363  -0.041      4774
+psnr full vs w4a4_rtn                          +0.9848   1.2067  +0.816        14
+ssim full vs w4a4_rtn                          +0.0209   0.0416  +0.501        34
+lpips full vs w4a4_rtn                         +0.0563   0.0685  +0.822        14
+psnr_exposure_corrected full vs w4a4_rtn       +0.4602   2.1509  +0.214       174
+
+saved /var/tmp/luli38se/quantsplat/oracle_sweep/results/cpu_power.json

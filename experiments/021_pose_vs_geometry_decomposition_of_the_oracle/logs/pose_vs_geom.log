@@ -1,0 +1,334 @@
++ /opt/saltstack/salt/bin/python3.10 render.py -m /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/apple/110_13051_23361/models/oracle -s /var/tmp/luli38se/quantsplat/oracle_sweep/pose_vs_geom/d0.0000/apple/110_13051_23361/heldout --iteration 30000 --skip_test -d 
+Looking for config file in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/apple/110_13051_23361/models/oracle/cfg_args
+Config file found: /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/apple/110_13051_23361/models/oracle/cfg_args
+Rendering /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/apple/110_13051_23361/models/oracle
+Loading trained model at iteration 30000 [08/09 09:06:13]
+Reading camera 1/9Reading camera 2/9Reading camera 3/9Reading camera 4/9Reading camera 5/9Reading camera 6/9Reading camera 7/9Reading camera 8/9Reading camera 9/9 [08/09 09:06:13]
+Loading Training Cameras [08/09 09:06:13]
+Loading Test Cameras [08/09 09:06:14]
+Rendering progress:   0%|          | 0/9 [00:00<?, ?it/s]Rendering progress:  11%|█         | 1/9 [00:00<00:01,  4.70it/s]Rendering progress:  22%|██▏       | 2/9 [00:00<00:01,  5.80it/s]Rendering progress:  33%|███▎      | 3/9 [00:00<00:01,  6.00it/s]Rendering progress:  44%|████▍     | 4/9 [00:00<00:00,  5.97it/s]Rendering progress:  56%|█████▌    | 5/9 [00:00<00:00,  5.93it/s]Rendering progress:  67%|██████▋   | 6/9 [00:01<00:00,  5.64it/s]Rendering progress:  78%|███████▊  | 7/9 [00:01<00:00,  5.63it/s]Rendering progress:  89%|████████▉ | 8/9 [00:01<00:00,  5.42it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  5.53it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  5.62it/s]
+  delta=0.0000 apple/110_13051_23361             fg PSNR=17.332
++ /opt/saltstack/salt/bin/python3.10 render.py -m /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/ball/123_14363_28981/models/oracle -s /var/tmp/luli38se/quantsplat/oracle_sweep/pose_vs_geom/d0.0000/ball/123_14363_28981/heldout --iteration 30000 --skip_test -d 
+Looking for config file in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/ball/123_14363_28981/models/oracle/cfg_args
+Config file found: /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/ball/123_14363_28981/models/oracle/cfg_args
+Rendering /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/ball/123_14363_28981/models/oracle
+Loading trained model at iteration 30000 [08/09 09:06:17]
+Reading camera 1/9Reading camera 2/9Reading camera 3/9Reading camera 4/9Reading camera 5/9Reading camera 6/9Reading camera 7/9Reading camera 8/9Reading camera 9/9 [08/09 09:06:17]
+Loading Training Cameras [08/09 09:06:17]
+Loading Test Cameras [08/09 09:06:17]
+Rendering progress:   0%|          | 0/9 [00:00<?, ?it/s]Rendering progress:  11%|█         | 1/9 [00:00<00:01,  6.97it/s]Rendering progress:  22%|██▏       | 2/9 [00:00<00:01,  6.78it/s]Rendering progress:  33%|███▎      | 3/9 [00:00<00:00,  7.55it/s]Rendering progress:  44%|████▍     | 4/9 [00:00<00:00,  8.26it/s]Rendering progress:  56%|█████▌    | 5/9 [00:00<00:00,  8.81it/s]Rendering progress:  78%|███████▊  | 7/9 [00:00<00:00,  9.65it/s]Rendering progress:  89%|████████▉ | 8/9 [00:00<00:00,  9.15it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  9.10it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  8.68it/s]
+  delta=0.0000 ball/123_14363_28981              fg PSNR=14.907
++ /opt/saltstack/salt/bin/python3.10 render.py -m /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/bowl/70_5792_13401/models/oracle -s /var/tmp/luli38se/quantsplat/oracle_sweep/pose_vs_geom/d0.0000/bowl/70_5792_13401/heldout --iteration 30000 --skip_test -d 
+Looking for config file in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/bowl/70_5792_13401/models/oracle/cfg_args
+Config file found: /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/bowl/70_5792_13401/models/oracle/cfg_args
+Rendering /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/bowl/70_5792_13401/models/oracle
+Loading trained model at iteration 30000 [08/09 09:06:19]
+Reading camera 1/9Reading camera 2/9Reading camera 3/9Reading camera 4/9Reading camera 5/9Reading camera 6/9Reading camera 7/9Reading camera 8/9Reading camera 9/9 [08/09 09:06:19]
+Loading Training Cameras [08/09 09:06:19]
+Loading Test Cameras [08/09 09:06:20]
+Rendering progress:   0%|          | 0/9 [00:00<?, ?it/s]Rendering progress:  11%|█         | 1/9 [00:00<00:01,  6.45it/s]Rendering progress:  22%|██▏       | 2/9 [00:00<00:00,  7.45it/s]Rendering progress:  33%|███▎      | 3/9 [00:00<00:00,  7.98it/s]Rendering progress:  44%|████▍     | 4/9 [00:00<00:00,  8.58it/s]Rendering progress:  56%|█████▌    | 5/9 [00:00<00:00,  8.80it/s]Rendering progress:  67%|██████▋   | 6/9 [00:00<00:00,  8.43it/s]Rendering progress:  78%|███████▊  | 7/9 [00:00<00:00,  8.87it/s]Rendering progress:  89%|████████▉ | 8/9 [00:00<00:00,  9.10it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  9.20it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  8.65it/s]
+  delta=0.0000 bowl/70_5792_13401                fg PSNR=17.449
++ /opt/saltstack/salt/bin/python3.10 render.py -m /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/broccoli/412_56288_108844/models/oracle -s /var/tmp/luli38se/quantsplat/oracle_sweep/pose_vs_geom/d0.0000/broccoli/412_56288_108844/heldout --iteration 30000 --skip_test -d 
+Looking for config file in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/broccoli/412_56288_108844/models/oracle/cfg_args
+Config file found: /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/broccoli/412_56288_108844/models/oracle/cfg_args
+Rendering /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/broccoli/412_56288_108844/models/oracle
+Loading trained model at iteration 30000 [08/09 09:06:22]
+Reading camera 1/9Reading camera 2/9Reading camera 3/9Reading camera 4/9Reading camera 5/9Reading camera 6/9Reading camera 7/9Reading camera 8/9Reading camera 9/9 [08/09 09:06:22]
+Loading Training Cameras [08/09 09:06:22]
+Loading Test Cameras [08/09 09:06:22]
+Rendering progress:   0%|          | 0/9 [00:00<?, ?it/s]Rendering progress:  11%|█         | 1/9 [00:00<00:01,  7.33it/s]Rendering progress:  33%|███▎      | 3/9 [00:00<00:00,  8.82it/s]Rendering progress:  56%|█████▌    | 5/9 [00:00<00:00,  9.83it/s]Rendering progress:  67%|██████▋   | 6/9 [00:00<00:00,  9.81it/s]Rendering progress:  78%|███████▊  | 7/9 [00:00<00:00,  9.78it/s]Rendering progress: 100%|██████████| 9/9 [00:00<00:00,  9.76it/s]Rendering progress: 100%|██████████| 9/9 [00:00<00:00,  9.58it/s]
+  delta=0.0000 broccoli/412_56288_108844         fg PSNR=15.087
++ /opt/saltstack/salt/bin/python3.10 render.py -m /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/hydrant/167_18184_34441/models/oracle -s /var/tmp/luli38se/quantsplat/oracle_sweep/pose_vs_geom/d0.0000/hydrant/167_18184_34441/heldout --iteration 30000 --skip_test -d 
+Looking for config file in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/hydrant/167_18184_34441/models/oracle/cfg_args
+Config file found: /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/hydrant/167_18184_34441/models/oracle/cfg_args
+Rendering /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/hydrant/167_18184_34441/models/oracle
+Loading trained model at iteration 30000 [08/09 09:06:25]
+Reading camera 1/9Reading camera 2/9Reading camera 3/9Reading camera 4/9Reading camera 5/9Reading camera 6/9Reading camera 7/9Reading camera 8/9Reading camera 9/9 [08/09 09:06:25]
+Loading Training Cameras [08/09 09:06:25]
+Loading Test Cameras [08/09 09:06:25]
+Rendering progress:   0%|          | 0/9 [00:00<?, ?it/s]Rendering progress:  11%|█         | 1/9 [00:00<00:01,  7.59it/s]Rendering progress:  33%|███▎      | 3/9 [00:00<00:00, 10.50it/s]Rendering progress:  56%|█████▌    | 5/9 [00:00<00:00, 10.87it/s]Rendering progress:  78%|███████▊  | 7/9 [00:00<00:00, 11.45it/s]Rendering progress: 100%|██████████| 9/9 [00:00<00:00, 11.52it/s]Rendering progress: 100%|██████████| 9/9 [00:00<00:00, 11.13it/s]
+  delta=0.0000 hydrant/167_18184_34441           fg PSNR=12.900
++ /opt/saltstack/salt/bin/python3.10 render.py -m /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/remote/350_36761_68623/models/oracle -s /var/tmp/luli38se/quantsplat/oracle_sweep/pose_vs_geom/d0.0000/remote/350_36761_68623/heldout --iteration 30000 --skip_test -d 
+Looking for config file in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/remote/350_36761_68623/models/oracle/cfg_args
+Config file found: /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/remote/350_36761_68623/models/oracle/cfg_args
+Rendering /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/remote/350_36761_68623/models/oracle
+Loading trained model at iteration 30000 [08/09 09:06:27]
+Reading camera 1/9Reading camera 2/9Reading camera 3/9Reading camera 4/9Reading camera 5/9Reading camera 6/9Reading camera 7/9Reading camera 8/9Reading camera 9/9 [08/09 09:06:27]
+Loading Training Cameras [08/09 09:06:27]
+Loading Test Cameras [08/09 09:06:27]
+Rendering progress:   0%|          | 0/9 [00:00<?, ?it/s]Rendering progress:  11%|█         | 1/9 [00:00<00:01,  5.63it/s]Rendering progress:  22%|██▏       | 2/9 [00:00<00:00,  7.27it/s]Rendering progress:  33%|███▎      | 3/9 [00:00<00:00,  8.26it/s]Rendering progress:  44%|████▍     | 4/9 [00:00<00:00,  8.79it/s]Rendering progress:  56%|█████▌    | 5/9 [00:00<00:00,  8.83it/s]Rendering progress:  67%|██████▋   | 6/9 [00:00<00:00,  9.08it/s]Rendering progress:  78%|███████▊  | 7/9 [00:00<00:00,  8.76it/s]Rendering progress:  89%|████████▉ | 8/9 [00:00<00:00,  8.65it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  8.18it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  8.29it/s]
+  delta=0.0000 remote/350_36761_68623            fg PSNR=11.795
++ /opt/saltstack/salt/bin/python3.10 render.py -m /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/teddybear/187_20215_38541/models/oracle -s /var/tmp/luli38se/quantsplat/oracle_sweep/pose_vs_geom/d0.0000/teddybear/187_20215_38541/heldout --iteration 30000 --skip_test -d 
+Looking for config file in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/teddybear/187_20215_38541/models/oracle/cfg_args
+Config file found: /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/teddybear/187_20215_38541/models/oracle/cfg_args
+Rendering /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/teddybear/187_20215_38541/models/oracle
+Loading trained model at iteration 30000 [08/09 09:06:30]
+Reading camera 1/9Reading camera 2/9Reading camera 3/9Reading camera 4/9Reading camera 5/9Reading camera 6/9Reading camera 7/9Reading camera 8/9Reading camera 9/9 [08/09 09:06:30]
+Loading Training Cameras [08/09 09:06:30]
+Loading Test Cameras [08/09 09:06:30]
+Rendering progress:   0%|          | 0/9 [00:00<?, ?it/s]Rendering progress:  11%|█         | 1/9 [00:00<00:01,  6.51it/s]Rendering progress:  22%|██▏       | 2/9 [00:00<00:00,  7.55it/s]Rendering progress:  33%|███▎      | 3/9 [00:00<00:00,  8.15it/s]Rendering progress:  44%|████▍     | 4/9 [00:00<00:00,  8.68it/s]Rendering progress:  56%|█████▌    | 5/9 [00:00<00:00,  9.08it/s]Rendering progress:  67%|██████▋   | 6/9 [00:00<00:00,  9.03it/s]Rendering progress:  78%|███████▊  | 7/9 [00:00<00:00,  8.98it/s]Rendering progress:  89%|████████▉ | 8/9 [00:00<00:00,  8.97it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  9.25it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  8.79it/s]
+  delta=0.0000 teddybear/187_20215_38541         fg PSNR=15.680
++ /opt/saltstack/salt/bin/python3.10 render.py -m /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/toaster/372_41229_82130/models/oracle -s /var/tmp/luli38se/quantsplat/oracle_sweep/pose_vs_geom/d0.0000/toaster/372_41229_82130/heldout --iteration 30000 --skip_test -d 
+Looking for config file in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/toaster/372_41229_82130/models/oracle/cfg_args
+Config file found: /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/toaster/372_41229_82130/models/oracle/cfg_args
+Rendering /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/toaster/372_41229_82130/models/oracle
+Loading trained model at iteration 30000 [08/09 09:06:33]
+Reading camera 1/9Reading camera 2/9Reading camera 3/9Reading camera 4/9Reading camera 5/9Reading camera 6/9Reading camera 7/9Reading camera 8/9Reading camera 9/9 [08/09 09:06:33]
+Loading Training Cameras [08/09 09:06:33]
+Loading Test Cameras [08/09 09:06:33]
+Rendering progress:   0%|          | 0/9 [00:00<?, ?it/s]Rendering progress:  11%|█         | 1/9 [00:00<00:01,  6.19it/s]Rendering progress:  22%|██▏       | 2/9 [00:00<00:01,  6.92it/s]Rendering progress:  33%|███▎      | 3/9 [00:00<00:00,  7.13it/s]Rendering progress:  44%|████▍     | 4/9 [00:00<00:00,  7.82it/s]Rendering progress:  67%|██████▋   | 6/9 [00:00<00:00,  8.82it/s]Rendering progress:  89%|████████▉ | 8/9 [00:00<00:00,  9.35it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  9.28it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  8.60it/s]
+  delta=0.0000 toaster/372_41229_82130           fg PSNR=13.474
+delta=0.0000: MEAN fg PSNR = 14.828 dB
+
++ /opt/saltstack/salt/bin/python3.10 render.py -m /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/apple/110_13051_23361/models/oracle -s /var/tmp/luli38se/quantsplat/oracle_sweep/pose_vs_geom/d0.0200/apple/110_13051_23361/heldout --iteration 30000 --skip_test -d 
+Looking for config file in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/apple/110_13051_23361/models/oracle/cfg_args
+Config file found: /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/apple/110_13051_23361/models/oracle/cfg_args
+Rendering /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/apple/110_13051_23361/models/oracle
+Loading trained model at iteration 30000 [08/09 09:06:35]
+Reading camera 1/9Reading camera 2/9Reading camera 3/9Reading camera 4/9Reading camera 5/9Reading camera 6/9Reading camera 7/9Reading camera 8/9Reading camera 9/9 [08/09 09:06:35]
+Loading Training Cameras [08/09 09:06:35]
+Loading Test Cameras [08/09 09:06:36]
+Rendering progress:   0%|          | 0/9 [00:00<?, ?it/s]Rendering progress:  11%|█         | 1/9 [00:00<00:01,  4.83it/s]Rendering progress:  22%|██▏       | 2/9 [00:00<00:01,  5.91it/s]Rendering progress:  33%|███▎      | 3/9 [00:00<00:00,  6.08it/s]Rendering progress:  44%|████▍     | 4/9 [00:00<00:00,  6.01it/s]Rendering progress:  56%|█████▌    | 5/9 [00:00<00:00,  5.93it/s]Rendering progress:  67%|██████▋   | 6/9 [00:01<00:00,  5.66it/s]Rendering progress:  78%|███████▊  | 7/9 [00:01<00:00,  5.63it/s]Rendering progress:  89%|████████▉ | 8/9 [00:01<00:00,  5.44it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  5.56it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  5.66it/s]
+  delta=0.0200 apple/110_13051_23361             fg PSNR=16.972
++ /opt/saltstack/salt/bin/python3.10 render.py -m /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/ball/123_14363_28981/models/oracle -s /var/tmp/luli38se/quantsplat/oracle_sweep/pose_vs_geom/d0.0200/ball/123_14363_28981/heldout --iteration 30000 --skip_test -d 
+Looking for config file in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/ball/123_14363_28981/models/oracle/cfg_args
+Config file found: /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/ball/123_14363_28981/models/oracle/cfg_args
+Rendering /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/ball/123_14363_28981/models/oracle
+Loading trained model at iteration 30000 [08/09 09:06:39]
+Reading camera 1/9Reading camera 2/9Reading camera 3/9Reading camera 4/9Reading camera 5/9Reading camera 6/9Reading camera 7/9Reading camera 8/9Reading camera 9/9 [08/09 09:06:39]
+Loading Training Cameras [08/09 09:06:39]
+Loading Test Cameras [08/09 09:06:39]
+Rendering progress:   0%|          | 0/9 [00:00<?, ?it/s]Rendering progress:  11%|█         | 1/9 [00:00<00:01,  7.01it/s]Rendering progress:  22%|██▏       | 2/9 [00:00<00:01,  6.83it/s]Rendering progress:  33%|███▎      | 3/9 [00:00<00:00,  7.59it/s]Rendering progress:  44%|████▍     | 4/9 [00:00<00:00,  8.31it/s]Rendering progress:  56%|█████▌    | 5/9 [00:00<00:00,  8.82it/s]Rendering progress:  78%|███████▊  | 7/9 [00:00<00:00,  9.85it/s]Rendering progress:  89%|████████▉ | 8/9 [00:00<00:00,  9.82it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  9.58it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  8.96it/s]
+  delta=0.0200 ball/123_14363_28981              fg PSNR=13.424
++ /opt/saltstack/salt/bin/python3.10 render.py -m /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/bowl/70_5792_13401/models/oracle -s /var/tmp/luli38se/quantsplat/oracle_sweep/pose_vs_geom/d0.0200/bowl/70_5792_13401/heldout --iteration 30000 --skip_test -d 
+Looking for config file in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/bowl/70_5792_13401/models/oracle/cfg_args
+Config file found: /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/bowl/70_5792_13401/models/oracle/cfg_args
+Rendering /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/bowl/70_5792_13401/models/oracle
+Loading trained model at iteration 30000 [08/09 09:06:41]
+Reading camera 1/9Reading camera 2/9Reading camera 3/9Reading camera 4/9Reading camera 5/9Reading camera 6/9Reading camera 7/9Reading camera 8/9Reading camera 9/9 [08/09 09:06:41]
+Loading Training Cameras [08/09 09:06:41]
+Loading Test Cameras [08/09 09:06:41]
+Rendering progress:   0%|          | 0/9 [00:00<?, ?it/s]Rendering progress:  11%|█         | 1/9 [00:00<00:01,  6.47it/s]Rendering progress:  22%|██▏       | 2/9 [00:00<00:00,  7.42it/s]Rendering progress:  33%|███▎      | 3/9 [00:00<00:00,  7.97it/s]Rendering progress:  44%|████▍     | 4/9 [00:00<00:00,  7.99it/s]Rendering progress:  56%|█████▌    | 5/9 [00:00<00:00,  8.36it/s]Rendering progress:  67%|██████▋   | 6/9 [00:00<00:00,  8.70it/s]Rendering progress:  78%|███████▊  | 7/9 [00:00<00:00,  8.97it/s]Rendering progress:  89%|████████▉ | 8/9 [00:00<00:00,  9.17it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  9.17it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  8.59it/s]
+  delta=0.0200 bowl/70_5792_13401                fg PSNR=16.363
++ /opt/saltstack/salt/bin/python3.10 render.py -m /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/broccoli/412_56288_108844/models/oracle -s /var/tmp/luli38se/quantsplat/oracle_sweep/pose_vs_geom/d0.0200/broccoli/412_56288_108844/heldout --iteration 30000 --skip_test -d 
+Looking for config file in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/broccoli/412_56288_108844/models/oracle/cfg_args
+Config file found: /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/broccoli/412_56288_108844/models/oracle/cfg_args
+Rendering /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/broccoli/412_56288_108844/models/oracle
+Loading trained model at iteration 30000 [08/09 09:06:44]
+Reading camera 1/9Reading camera 2/9Reading camera 3/9Reading camera 4/9Reading camera 5/9Reading camera 6/9Reading camera 7/9Reading camera 8/9Reading camera 9/9 [08/09 09:06:44]
+Loading Training Cameras [08/09 09:06:44]
+Loading Test Cameras [08/09 09:06:44]
+Rendering progress:   0%|          | 0/9 [00:00<?, ?it/s]Rendering progress:  11%|█         | 1/9 [00:00<00:01,  7.29it/s]Rendering progress:  33%|███▎      | 3/9 [00:00<00:00,  9.19it/s]Rendering progress:  56%|█████▌    | 5/9 [00:00<00:00, 10.05it/s]Rendering progress:  67%|██████▋   | 6/9 [00:00<00:00,  9.99it/s]Rendering progress:  78%|███████▊  | 7/9 [00:00<00:00,  9.89it/s]Rendering progress: 100%|██████████| 9/9 [00:00<00:00,  9.82it/s]Rendering progress: 100%|██████████| 9/9 [00:00<00:00,  9.70it/s]
+  delta=0.0200 broccoli/412_56288_108844         fg PSNR=13.951
++ /opt/saltstack/salt/bin/python3.10 render.py -m /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/hydrant/167_18184_34441/models/oracle -s /var/tmp/luli38se/quantsplat/oracle_sweep/pose_vs_geom/d0.0200/hydrant/167_18184_34441/heldout --iteration 30000 --skip_test -d 
+Looking for config file in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/hydrant/167_18184_34441/models/oracle/cfg_args
+Config file found: /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/hydrant/167_18184_34441/models/oracle/cfg_args
+Rendering /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/hydrant/167_18184_34441/models/oracle
+Loading trained model at iteration 30000 [08/09 09:06:46]
+Reading camera 1/9Reading camera 2/9Reading camera 3/9Reading camera 4/9Reading camera 5/9Reading camera 6/9Reading camera 7/9Reading camera 8/9Reading camera 9/9 [08/09 09:06:46]
+Loading Training Cameras [08/09 09:06:46]
+Loading Test Cameras [08/09 09:06:47]
+Rendering progress:   0%|          | 0/9 [00:00<?, ?it/s]Rendering progress:  11%|█         | 1/9 [00:00<00:01,  7.09it/s]Rendering progress:  33%|███▎      | 3/9 [00:00<00:00, 10.25it/s]Rendering progress:  56%|█████▌    | 5/9 [00:00<00:00, 10.80it/s]Rendering progress:  78%|███████▊  | 7/9 [00:00<00:00, 11.41it/s]Rendering progress: 100%|██████████| 9/9 [00:00<00:00, 11.44it/s]Rendering progress: 100%|██████████| 9/9 [00:00<00:00, 11.01it/s]
+  delta=0.0200 hydrant/167_18184_34441           fg PSNR=10.350
++ /opt/saltstack/salt/bin/python3.10 render.py -m /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/remote/350_36761_68623/models/oracle -s /var/tmp/luli38se/quantsplat/oracle_sweep/pose_vs_geom/d0.0200/remote/350_36761_68623/heldout --iteration 30000 --skip_test -d 
+Looking for config file in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/remote/350_36761_68623/models/oracle/cfg_args
+Config file found: /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/remote/350_36761_68623/models/oracle/cfg_args
+Rendering /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/remote/350_36761_68623/models/oracle
+Loading trained model at iteration 30000 [08/09 09:06:49]
+Reading camera 1/9Reading camera 2/9Reading camera 3/9Reading camera 4/9Reading camera 5/9Reading camera 6/9Reading camera 7/9Reading camera 8/9Reading camera 9/9 [08/09 09:06:49]
+Loading Training Cameras [08/09 09:06:49]
+Loading Test Cameras [08/09 09:06:49]
+Rendering progress:   0%|          | 0/9 [00:00<?, ?it/s]Rendering progress:  11%|█         | 1/9 [00:00<00:01,  6.11it/s]Rendering progress:  22%|██▏       | 2/9 [00:00<00:00,  7.61it/s]Rendering progress:  33%|███▎      | 3/9 [00:00<00:00,  8.48it/s]Rendering progress:  44%|████▍     | 4/9 [00:00<00:00,  8.96it/s]Rendering progress:  56%|█████▌    | 5/9 [00:00<00:00,  8.92it/s]Rendering progress:  67%|██████▋   | 6/9 [00:00<00:00,  9.12it/s]Rendering progress:  78%|███████▊  | 7/9 [00:00<00:00,  8.79it/s]Rendering progress:  89%|████████▉ | 8/9 [00:00<00:00,  8.67it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  8.17it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  8.39it/s]
+  delta=0.0200 remote/350_36761_68623            fg PSNR=11.639
++ /opt/saltstack/salt/bin/python3.10 render.py -m /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/teddybear/187_20215_38541/models/oracle -s /var/tmp/luli38se/quantsplat/oracle_sweep/pose_vs_geom/d0.0200/teddybear/187_20215_38541/heldout --iteration 30000 --skip_test -d 
+Looking for config file in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/teddybear/187_20215_38541/models/oracle/cfg_args
+Config file found: /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/teddybear/187_20215_38541/models/oracle/cfg_args
+Rendering /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/teddybear/187_20215_38541/models/oracle
+Loading trained model at iteration 30000 [08/09 09:06:52]
+Reading camera 1/9Reading camera 2/9Reading camera 3/9Reading camera 4/9Reading camera 5/9Reading camera 6/9Reading camera 7/9Reading camera 8/9Reading camera 9/9 [08/09 09:06:52]
+Loading Training Cameras [08/09 09:06:52]
+Loading Test Cameras [08/09 09:06:52]
+Rendering progress:   0%|          | 0/9 [00:00<?, ?it/s]Rendering progress:  11%|█         | 1/9 [00:00<00:01,  6.52it/s]Rendering progress:  22%|██▏       | 2/9 [00:00<00:00,  7.53it/s]Rendering progress:  33%|███▎      | 3/9 [00:00<00:00,  8.14it/s]Rendering progress:  44%|████▍     | 4/9 [00:00<00:00,  8.68it/s]Rendering progress:  56%|█████▌    | 5/9 [00:00<00:00,  9.09it/s]Rendering progress:  67%|██████▋   | 6/9 [00:00<00:00,  9.11it/s]Rendering progress:  78%|███████▊  | 7/9 [00:00<00:00,  8.98it/s]Rendering progress:  89%|████████▉ | 8/9 [00:00<00:00,  8.99it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  8.98it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  8.71it/s]
+  delta=0.0200 teddybear/187_20215_38541         fg PSNR=14.463
++ /opt/saltstack/salt/bin/python3.10 render.py -m /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/toaster/372_41229_82130/models/oracle -s /var/tmp/luli38se/quantsplat/oracle_sweep/pose_vs_geom/d0.0200/toaster/372_41229_82130/heldout --iteration 30000 --skip_test -d 
+Looking for config file in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/toaster/372_41229_82130/models/oracle/cfg_args
+Config file found: /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/toaster/372_41229_82130/models/oracle/cfg_args
+Rendering /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/toaster/372_41229_82130/models/oracle
+Loading trained model at iteration 30000 [08/09 09:06:54]
+Reading camera 1/9Reading camera 2/9Reading camera 3/9Reading camera 4/9Reading camera 5/9Reading camera 6/9Reading camera 7/9Reading camera 8/9Reading camera 9/9 [08/09 09:06:54]
+Loading Training Cameras [08/09 09:06:54]
+Loading Test Cameras [08/09 09:06:55]
+Rendering progress:   0%|          | 0/9 [00:00<?, ?it/s]Rendering progress:  11%|█         | 1/9 [00:00<00:01,  6.59it/s]Rendering progress:  22%|██▏       | 2/9 [00:00<00:00,  7.13it/s]Rendering progress:  33%|███▎      | 3/9 [00:00<00:00,  7.87it/s]Rendering progress:  44%|████▍     | 4/9 [00:00<00:00,  8.35it/s]Rendering progress:  67%|██████▋   | 6/9 [00:00<00:00,  9.07it/s]Rendering progress:  89%|████████▉ | 8/9 [00:00<00:00,  9.53it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  9.42it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  8.88it/s]
+  delta=0.0200 toaster/372_41229_82130           fg PSNR=12.025
+delta=0.0200: MEAN fg PSNR = 13.648 dB
+
++ /opt/saltstack/salt/bin/python3.10 render.py -m /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/apple/110_13051_23361/models/oracle -s /var/tmp/luli38se/quantsplat/oracle_sweep/pose_vs_geom/d0.0813/apple/110_13051_23361/heldout --iteration 30000 --skip_test -d 
+Looking for config file in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/apple/110_13051_23361/models/oracle/cfg_args
+Config file found: /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/apple/110_13051_23361/models/oracle/cfg_args
+Rendering /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/apple/110_13051_23361/models/oracle
+Loading trained model at iteration 30000 [08/09 09:06:57]
+Reading camera 1/9Reading camera 2/9Reading camera 3/9Reading camera 4/9Reading camera 5/9Reading camera 6/9Reading camera 7/9Reading camera 8/9Reading camera 9/9 [08/09 09:06:57]
+Loading Training Cameras [08/09 09:06:57]
+Loading Test Cameras [08/09 09:06:57]
+Rendering progress:   0%|          | 0/9 [00:00<?, ?it/s]Rendering progress:  11%|█         | 1/9 [00:00<00:01,  4.99it/s]Rendering progress:  22%|██▏       | 2/9 [00:00<00:01,  6.02it/s]Rendering progress:  33%|███▎      | 3/9 [00:00<00:00,  6.05it/s]Rendering progress:  44%|████▍     | 4/9 [00:00<00:00,  5.88it/s]Rendering progress:  56%|█████▌    | 5/9 [00:00<00:00,  5.82it/s]Rendering progress:  67%|██████▋   | 6/9 [00:01<00:00,  5.57it/s]Rendering progress:  78%|███████▊  | 7/9 [00:01<00:00,  5.55it/s]Rendering progress:  89%|████████▉ | 8/9 [00:01<00:00,  5.41it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  5.56it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  5.63it/s]
+  delta=0.0813 apple/110_13051_23361             fg PSNR=15.216
++ /opt/saltstack/salt/bin/python3.10 render.py -m /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/ball/123_14363_28981/models/oracle -s /var/tmp/luli38se/quantsplat/oracle_sweep/pose_vs_geom/d0.0813/ball/123_14363_28981/heldout --iteration 30000 --skip_test -d 
+Looking for config file in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/ball/123_14363_28981/models/oracle/cfg_args
+Config file found: /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/ball/123_14363_28981/models/oracle/cfg_args
+Rendering /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/ball/123_14363_28981/models/oracle
+Loading trained model at iteration 30000 [08/09 09:07:00]
+Reading camera 1/9Reading camera 2/9Reading camera 3/9Reading camera 4/9Reading camera 5/9Reading camera 6/9Reading camera 7/9Reading camera 8/9Reading camera 9/9 [08/09 09:07:00]
+Loading Training Cameras [08/09 09:07:00]
+Loading Test Cameras [08/09 09:07:01]
+Rendering progress:   0%|          | 0/9 [00:00<?, ?it/s]Rendering progress:  11%|█         | 1/9 [00:00<00:01,  7.28it/s]Rendering progress:  22%|██▏       | 2/9 [00:00<00:01,  6.83it/s]Rendering progress:  33%|███▎      | 3/9 [00:00<00:00,  7.60it/s]Rendering progress:  44%|████▍     | 4/9 [00:00<00:00,  8.36it/s]Rendering progress:  56%|█████▌    | 5/9 [00:00<00:00,  8.87it/s]Rendering progress:  78%|███████▊  | 7/9 [00:00<00:00,  9.84it/s]Rendering progress:  89%|████████▉ | 8/9 [00:00<00:00,  9.81it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  9.58it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  8.99it/s]
+  delta=0.0813 ball/123_14363_28981              fg PSNR=12.051
++ /opt/saltstack/salt/bin/python3.10 render.py -m /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/bowl/70_5792_13401/models/oracle -s /var/tmp/luli38se/quantsplat/oracle_sweep/pose_vs_geom/d0.0813/bowl/70_5792_13401/heldout --iteration 30000 --skip_test -d 
+Looking for config file in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/bowl/70_5792_13401/models/oracle/cfg_args
+Config file found: /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/bowl/70_5792_13401/models/oracle/cfg_args
+Rendering /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/bowl/70_5792_13401/models/oracle
+Loading trained model at iteration 30000 [08/09 09:07:03]
+Reading camera 1/9Reading camera 2/9Reading camera 3/9Reading camera 4/9Reading camera 5/9Reading camera 6/9Reading camera 7/9Reading camera 8/9Reading camera 9/9 [08/09 09:07:03]
+Loading Training Cameras [08/09 09:07:03]
+Loading Test Cameras [08/09 09:07:03]
+Rendering progress:   0%|          | 0/9 [00:00<?, ?it/s]Rendering progress:  11%|█         | 1/9 [00:00<00:01,  6.98it/s]Rendering progress:  22%|██▏       | 2/9 [00:00<00:00,  7.67it/s]Rendering progress:  33%|███▎      | 3/9 [00:00<00:00,  7.71it/s]Rendering progress:  44%|████▍     | 4/9 [00:00<00:00,  8.40it/s]Rendering progress:  56%|█████▌    | 5/9 [00:00<00:00,  8.66it/s]Rendering progress:  67%|██████▋   | 6/9 [00:00<00:00,  8.86it/s]Rendering progress:  78%|███████▊  | 7/9 [00:00<00:00,  9.18it/s]Rendering progress:  89%|████████▉ | 8/9 [00:00<00:00,  9.38it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  9.42it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  8.82it/s]
+  delta=0.0813 bowl/70_5792_13401                fg PSNR=15.685
++ /opt/saltstack/salt/bin/python3.10 render.py -m /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/broccoli/412_56288_108844/models/oracle -s /var/tmp/luli38se/quantsplat/oracle_sweep/pose_vs_geom/d0.0813/broccoli/412_56288_108844/heldout --iteration 30000 --skip_test -d 
+Looking for config file in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/broccoli/412_56288_108844/models/oracle/cfg_args
+Config file found: /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/broccoli/412_56288_108844/models/oracle/cfg_args
+Rendering /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/broccoli/412_56288_108844/models/oracle
+Loading trained model at iteration 30000 [08/09 09:07:06]
+Reading camera 1/9Reading camera 2/9Reading camera 3/9Reading camera 4/9Reading camera 5/9Reading camera 6/9Reading camera 7/9Reading camera 8/9Reading camera 9/9 [08/09 09:07:06]
+Loading Training Cameras [08/09 09:07:06]
+Loading Test Cameras [08/09 09:07:06]
+Rendering progress:   0%|          | 0/9 [00:00<?, ?it/s]Rendering progress:  11%|█         | 1/9 [00:00<00:01,  6.74it/s]Rendering progress:  33%|███▎      | 3/9 [00:00<00:00,  9.26it/s]Rendering progress:  56%|█████▌    | 5/9 [00:00<00:00, 10.13it/s]Rendering progress:  67%|██████▋   | 6/9 [00:00<00:00,  9.99it/s]Rendering progress:  78%|███████▊  | 7/9 [00:00<00:00,  9.90it/s]Rendering progress:  89%|████████▉ | 8/9 [00:00<00:00,  9.83it/s]Rendering progress: 100%|██████████| 9/9 [00:00<00:00,  9.70it/s]Rendering progress: 100%|██████████| 9/9 [00:00<00:00,  9.64it/s]
+  delta=0.0813 broccoli/412_56288_108844         fg PSNR=13.504
++ /opt/saltstack/salt/bin/python3.10 render.py -m /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/hydrant/167_18184_34441/models/oracle -s /var/tmp/luli38se/quantsplat/oracle_sweep/pose_vs_geom/d0.0813/hydrant/167_18184_34441/heldout --iteration 30000 --skip_test -d 
+Looking for config file in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/hydrant/167_18184_34441/models/oracle/cfg_args
+Config file found: /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/hydrant/167_18184_34441/models/oracle/cfg_args
+Rendering /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/hydrant/167_18184_34441/models/oracle
+Loading trained model at iteration 30000 [08/09 09:07:08]
+Reading camera 1/9Reading camera 2/9Reading camera 3/9Reading camera 4/9Reading camera 5/9Reading camera 6/9Reading camera 7/9Reading camera 8/9Reading camera 9/9 [08/09 09:07:08]
+Loading Training Cameras [08/09 09:07:08]
+Loading Test Cameras [08/09 09:07:08]
+Rendering progress:   0%|          | 0/9 [00:00<?, ?it/s]Rendering progress:  11%|█         | 1/9 [00:00<00:00,  8.29it/s]Rendering progress:  33%|███▎      | 3/9 [00:00<00:00, 10.91it/s]Rendering progress:  56%|█████▌    | 5/9 [00:00<00:00, 11.12it/s]Rendering progress:  78%|███████▊  | 7/9 [00:00<00:00, 11.64it/s]Rendering progress: 100%|██████████| 9/9 [00:00<00:00, 11.62it/s]Rendering progress: 100%|██████████| 9/9 [00:00<00:00, 11.34it/s]
+  delta=0.0813 hydrant/167_18184_34441           fg PSNR=9.813
++ /opt/saltstack/salt/bin/python3.10 render.py -m /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/remote/350_36761_68623/models/oracle -s /var/tmp/luli38se/quantsplat/oracle_sweep/pose_vs_geom/d0.0813/remote/350_36761_68623/heldout --iteration 30000 --skip_test -d 
+Looking for config file in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/remote/350_36761_68623/models/oracle/cfg_args
+Config file found: /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/remote/350_36761_68623/models/oracle/cfg_args
+Rendering /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/remote/350_36761_68623/models/oracle
+Loading trained model at iteration 30000 [08/09 09:07:11]
+Reading camera 1/9Reading camera 2/9Reading camera 3/9Reading camera 4/9Reading camera 5/9Reading camera 6/9Reading camera 7/9Reading camera 8/9Reading camera 9/9 [08/09 09:07:11]
+Loading Training Cameras [08/09 09:07:11]
+Loading Test Cameras [08/09 09:07:11]
+Rendering progress:   0%|          | 0/9 [00:00<?, ?it/s]Rendering progress:  11%|█         | 1/9 [00:00<00:01,  6.04it/s]Rendering progress:  22%|██▏       | 2/9 [00:00<00:00,  7.61it/s]Rendering progress:  33%|███▎      | 3/9 [00:00<00:00,  8.44it/s]Rendering progress:  44%|████▍     | 4/9 [00:00<00:00,  8.93it/s]Rendering progress:  56%|█████▌    | 5/9 [00:00<00:00,  9.00it/s]Rendering progress:  67%|██████▋   | 6/9 [00:00<00:00,  9.12it/s]Rendering progress:  78%|███████▊  | 7/9 [00:00<00:00,  8.76it/s]Rendering progress:  89%|████████▉ | 8/9 [00:00<00:00,  8.70it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  8.18it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  8.39it/s]
+  delta=0.0813 remote/350_36761_68623            fg PSNR=10.919
++ /opt/saltstack/salt/bin/python3.10 render.py -m /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/teddybear/187_20215_38541/models/oracle -s /var/tmp/luli38se/quantsplat/oracle_sweep/pose_vs_geom/d0.0813/teddybear/187_20215_38541/heldout --iteration 30000 --skip_test -d 
+Looking for config file in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/teddybear/187_20215_38541/models/oracle/cfg_args
+Config file found: /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/teddybear/187_20215_38541/models/oracle/cfg_args
+Rendering /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/teddybear/187_20215_38541/models/oracle
+Loading trained model at iteration 30000 [08/09 09:07:13]
+Reading camera 1/9Reading camera 2/9Reading camera 3/9Reading camera 4/9Reading camera 5/9Reading camera 6/9Reading camera 7/9Reading camera 8/9Reading camera 9/9 [08/09 09:07:13]
+Loading Training Cameras [08/09 09:07:13]
+Loading Test Cameras [08/09 09:07:14]
+Rendering progress:   0%|          | 0/9 [00:00<?, ?it/s]Rendering progress:  11%|█         | 1/9 [00:00<00:01,  6.63it/s]Rendering progress:  22%|██▏       | 2/9 [00:00<00:00,  7.57it/s]Rendering progress:  33%|███▎      | 3/9 [00:00<00:00,  8.24it/s]Rendering progress:  44%|████▍     | 4/9 [00:00<00:00,  8.79it/s]Rendering progress:  56%|█████▌    | 5/9 [00:00<00:00,  9.13it/s]Rendering progress:  67%|██████▋   | 6/9 [00:00<00:00,  9.14it/s]Rendering progress:  78%|███████▊  | 7/9 [00:00<00:00,  9.08it/s]Rendering progress:  89%|████████▉ | 8/9 [00:00<00:00,  9.00it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  9.06it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  8.78it/s]
+  delta=0.0813 teddybear/187_20215_38541         fg PSNR=12.965
++ /opt/saltstack/salt/bin/python3.10 render.py -m /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/toaster/372_41229_82130/models/oracle -s /var/tmp/luli38se/quantsplat/oracle_sweep/pose_vs_geom/d0.0813/toaster/372_41229_82130/heldout --iteration 30000 --skip_test -d 
+Looking for config file in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/toaster/372_41229_82130/models/oracle/cfg_args
+Config file found: /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/toaster/372_41229_82130/models/oracle/cfg_args
+Rendering /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/toaster/372_41229_82130/models/oracle
+Loading trained model at iteration 30000 [08/09 09:07:16]
+Reading camera 1/9Reading camera 2/9Reading camera 3/9Reading camera 4/9Reading camera 5/9Reading camera 6/9Reading camera 7/9Reading camera 8/9Reading camera 9/9 [08/09 09:07:16]
+Loading Training Cameras [08/09 09:07:16]
+Loading Test Cameras [08/09 09:07:16]
+Rendering progress:   0%|          | 0/9 [00:00<?, ?it/s]Rendering progress:  11%|█         | 1/9 [00:00<00:01,  7.20it/s]Rendering progress:  22%|██▏       | 2/9 [00:00<00:00,  7.38it/s]Rendering progress:  33%|███▎      | 3/9 [00:00<00:00,  7.97it/s]Rendering progress:  44%|████▍     | 4/9 [00:00<00:00,  7.76it/s]Rendering progress:  56%|█████▌    | 5/9 [00:00<00:00,  7.99it/s]Rendering progress:  67%|██████▋   | 6/9 [00:00<00:00,  8.31it/s]Rendering progress:  89%|████████▉ | 8/9 [00:00<00:00,  9.13it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  9.11it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  8.52it/s]
+  delta=0.0813 toaster/372_41229_82130           fg PSNR=10.748
+delta=0.0813: MEAN fg PSNR = 12.613 dB
+
++ /opt/saltstack/salt/bin/python3.10 render.py -m /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/apple/110_13051_23361/models/oracle -s /var/tmp/luli38se/quantsplat/oracle_sweep/pose_vs_geom/d0.1380/apple/110_13051_23361/heldout --iteration 30000 --skip_test -d 
+Looking for config file in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/apple/110_13051_23361/models/oracle/cfg_args
+Config file found: /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/apple/110_13051_23361/models/oracle/cfg_args
+Rendering /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/apple/110_13051_23361/models/oracle
+Loading trained model at iteration 30000 [08/09 09:07:19]
+Reading camera 1/9Reading camera 2/9Reading camera 3/9Reading camera 4/9Reading camera 5/9Reading camera 6/9Reading camera 7/9Reading camera 8/9Reading camera 9/9 [08/09 09:07:19]
+Loading Training Cameras [08/09 09:07:19]
+Loading Test Cameras [08/09 09:07:19]
+Rendering progress:   0%|          | 0/9 [00:00<?, ?it/s]Rendering progress:  11%|█         | 1/9 [00:00<00:01,  5.11it/s]Rendering progress:  22%|██▏       | 2/9 [00:00<00:01,  6.08it/s]Rendering progress:  33%|███▎      | 3/9 [00:00<00:00,  6.22it/s]Rendering progress:  44%|████▍     | 4/9 [00:00<00:00,  6.13it/s]Rendering progress:  56%|█████▌    | 5/9 [00:00<00:00,  6.03it/s]Rendering progress:  67%|██████▋   | 6/9 [00:01<00:00,  5.70it/s]Rendering progress:  78%|███████▊  | 7/9 [00:01<00:00,  5.62it/s]Rendering progress:  89%|████████▉ | 8/9 [00:01<00:00,  5.38it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  5.45it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  5.66it/s]
+  delta=0.1380 apple/110_13051_23361             fg PSNR=14.452
++ /opt/saltstack/salt/bin/python3.10 render.py -m /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/ball/123_14363_28981/models/oracle -s /var/tmp/luli38se/quantsplat/oracle_sweep/pose_vs_geom/d0.1380/ball/123_14363_28981/heldout --iteration 30000 --skip_test -d 
+Looking for config file in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/ball/123_14363_28981/models/oracle/cfg_args
+Config file found: /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/ball/123_14363_28981/models/oracle/cfg_args
+Rendering /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/ball/123_14363_28981/models/oracle
+Loading trained model at iteration 30000 [08/09 09:07:22]
+Reading camera 1/9Reading camera 2/9Reading camera 3/9Reading camera 4/9Reading camera 5/9Reading camera 6/9Reading camera 7/9Reading camera 8/9Reading camera 9/9 [08/09 09:07:22]
+Loading Training Cameras [08/09 09:07:22]
+Loading Test Cameras [08/09 09:07:22]
+Rendering progress:   0%|          | 0/9 [00:00<?, ?it/s]Rendering progress:  11%|█         | 1/9 [00:00<00:01,  7.88it/s]Rendering progress:  22%|██▏       | 2/9 [00:00<00:01,  6.99it/s]Rendering progress:  33%|███▎      | 3/9 [00:00<00:00,  7.73it/s]Rendering progress:  44%|████▍     | 4/9 [00:00<00:00,  8.45it/s]Rendering progress:  67%|██████▋   | 6/9 [00:00<00:00,  9.50it/s]Rendering progress:  89%|████████▉ | 8/9 [00:00<00:00,  9.88it/s]Rendering progress: 100%|██████████| 9/9 [00:00<00:00,  9.63it/s]Rendering progress: 100%|██████████| 9/9 [00:00<00:00,  9.11it/s]
+  delta=0.1380 ball/123_14363_28981              fg PSNR=11.906
++ /opt/saltstack/salt/bin/python3.10 render.py -m /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/bowl/70_5792_13401/models/oracle -s /var/tmp/luli38se/quantsplat/oracle_sweep/pose_vs_geom/d0.1380/bowl/70_5792_13401/heldout --iteration 30000 --skip_test -d 
+Looking for config file in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/bowl/70_5792_13401/models/oracle/cfg_args
+Config file found: /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/bowl/70_5792_13401/models/oracle/cfg_args
+Rendering /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/bowl/70_5792_13401/models/oracle
+Loading trained model at iteration 30000 [08/09 09:07:25]
+Reading camera 1/9Reading camera 2/9Reading camera 3/9Reading camera 4/9Reading camera 5/9Reading camera 6/9Reading camera 7/9Reading camera 8/9Reading camera 9/9 [08/09 09:07:25]
+Loading Training Cameras [08/09 09:07:25]
+Loading Test Cameras [08/09 09:07:25]
+Rendering progress:   0%|          | 0/9 [00:00<?, ?it/s]Rendering progress:  11%|█         | 1/9 [00:00<00:01,  6.32it/s]Rendering progress:  22%|██▏       | 2/9 [00:00<00:00,  7.44it/s]Rendering progress:  33%|███▎      | 3/9 [00:00<00:00,  7.92it/s]Rendering progress:  44%|████▍     | 4/9 [00:00<00:00,  8.63it/s]Rendering progress:  56%|█████▌    | 5/9 [00:00<00:00,  8.71it/s]Rendering progress:  67%|██████▋   | 6/9 [00:00<00:00,  8.89it/s]Rendering progress:  78%|███████▊  | 7/9 [00:00<00:00,  9.20it/s]Rendering progress:  89%|████████▉ | 8/9 [00:00<00:00,  9.32it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  8.85it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  8.62it/s]
+  delta=0.1380 bowl/70_5792_13401                fg PSNR=15.083
++ /opt/saltstack/salt/bin/python3.10 render.py -m /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/broccoli/412_56288_108844/models/oracle -s /var/tmp/luli38se/quantsplat/oracle_sweep/pose_vs_geom/d0.1380/broccoli/412_56288_108844/heldout --iteration 30000 --skip_test -d 
+Looking for config file in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/broccoli/412_56288_108844/models/oracle/cfg_args
+Config file found: /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/broccoli/412_56288_108844/models/oracle/cfg_args
+Rendering /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/broccoli/412_56288_108844/models/oracle
+Loading trained model at iteration 30000 [08/09 09:07:27]
+Reading camera 1/9Reading camera 2/9Reading camera 3/9Reading camera 4/9Reading camera 5/9Reading camera 6/9Reading camera 7/9Reading camera 8/9Reading camera 9/9 [08/09 09:07:27]
+Loading Training Cameras [08/09 09:07:27]
+Loading Test Cameras [08/09 09:07:28]
+Rendering progress:   0%|          | 0/9 [00:00<?, ?it/s]Rendering progress:  11%|█         | 1/9 [00:00<00:01,  6.88it/s]Rendering progress:  33%|███▎      | 3/9 [00:00<00:00,  9.34it/s]Rendering progress:  56%|█████▌    | 5/9 [00:00<00:00,  9.95it/s]Rendering progress:  67%|██████▋   | 6/9 [00:00<00:00,  9.70it/s]Rendering progress:  78%|███████▊  | 7/9 [00:00<00:00,  9.68it/s]Rendering progress:  89%|████████▉ | 8/9 [00:00<00:00,  9.55it/s]Rendering progress: 100%|██████████| 9/9 [00:00<00:00,  9.44it/s]Rendering progress: 100%|██████████| 9/9 [00:00<00:00,  9.45it/s]
+  delta=0.1380 broccoli/412_56288_108844         fg PSNR=12.777
++ /opt/saltstack/salt/bin/python3.10 render.py -m /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/hydrant/167_18184_34441/models/oracle -s /var/tmp/luli38se/quantsplat/oracle_sweep/pose_vs_geom/d0.1380/hydrant/167_18184_34441/heldout --iteration 30000 --skip_test -d 
+Looking for config file in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/hydrant/167_18184_34441/models/oracle/cfg_args
+Config file found: /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/hydrant/167_18184_34441/models/oracle/cfg_args
+Rendering /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/hydrant/167_18184_34441/models/oracle
+Loading trained model at iteration 30000 [08/09 09:07:30]
+Reading camera 1/9Reading camera 2/9Reading camera 3/9Reading camera 4/9Reading camera 5/9Reading camera 6/9Reading camera 7/9Reading camera 8/9Reading camera 9/9 [08/09 09:07:30]
+Loading Training Cameras [08/09 09:07:30]
+Loading Test Cameras [08/09 09:07:30]
+Rendering progress:   0%|          | 0/9 [00:00<?, ?it/s]Rendering progress:  11%|█         | 1/9 [00:00<00:00,  8.32it/s]Rendering progress:  33%|███▎      | 3/9 [00:00<00:00, 10.97it/s]Rendering progress:  56%|█████▌    | 5/9 [00:00<00:00, 11.32it/s]Rendering progress:  78%|███████▊  | 7/9 [00:00<00:00, 11.68it/s]Rendering progress: 100%|██████████| 9/9 [00:00<00:00, 11.66it/s]Rendering progress: 100%|██████████| 9/9 [00:00<00:00, 11.40it/s]
+  delta=0.1380 hydrant/167_18184_34441           fg PSNR=8.967
++ /opt/saltstack/salt/bin/python3.10 render.py -m /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/remote/350_36761_68623/models/oracle -s /var/tmp/luli38se/quantsplat/oracle_sweep/pose_vs_geom/d0.1380/remote/350_36761_68623/heldout --iteration 30000 --skip_test -d 
+Looking for config file in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/remote/350_36761_68623/models/oracle/cfg_args
+Config file found: /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/remote/350_36761_68623/models/oracle/cfg_args
+Rendering /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/remote/350_36761_68623/models/oracle
+Loading trained model at iteration 30000 [08/09 09:07:32]
+Reading camera 1/9Reading camera 2/9Reading camera 3/9Reading camera 4/9Reading camera 5/9Reading camera 6/9Reading camera 7/9Reading camera 8/9Reading camera 9/9 [08/09 09:07:32]
+Loading Training Cameras [08/09 09:07:32]
+Loading Test Cameras [08/09 09:07:33]
+Rendering progress:   0%|          | 0/9 [00:00<?, ?it/s]Rendering progress:  11%|█         | 1/9 [00:00<00:01,  5.98it/s]Rendering progress:  22%|██▏       | 2/9 [00:00<00:00,  7.32it/s]Rendering progress:  33%|███▎      | 3/9 [00:00<00:00,  8.22it/s]Rendering progress:  44%|████▍     | 4/9 [00:00<00:00,  8.68it/s]Rendering progress:  56%|█████▌    | 5/9 [00:00<00:00,  8.66it/s]Rendering progress:  67%|██████▋   | 6/9 [00:00<00:00,  8.87it/s]Rendering progress:  78%|███████▊  | 7/9 [00:00<00:00,  8.54it/s]Rendering progress:  89%|████████▉ | 8/9 [00:00<00:00,  8.50it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  8.06it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  8.20it/s]
+  delta=0.1380 remote/350_36761_68623            fg PSNR=10.365
++ /opt/saltstack/salt/bin/python3.10 render.py -m /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/teddybear/187_20215_38541/models/oracle -s /var/tmp/luli38se/quantsplat/oracle_sweep/pose_vs_geom/d0.1380/teddybear/187_20215_38541/heldout --iteration 30000 --skip_test -d 
+Looking for config file in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/teddybear/187_20215_38541/models/oracle/cfg_args
+Config file found: /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/teddybear/187_20215_38541/models/oracle/cfg_args
+Rendering /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/teddybear/187_20215_38541/models/oracle
+Loading trained model at iteration 30000 [08/09 09:07:35]
+Reading camera 1/9Reading camera 2/9Reading camera 3/9Reading camera 4/9Reading camera 5/9Reading camera 6/9Reading camera 7/9Reading camera 8/9Reading camera 9/9 [08/09 09:07:35]
+Loading Training Cameras [08/09 09:07:35]
+Loading Test Cameras [08/09 09:07:35]
+Rendering progress:   0%|          | 0/9 [00:00<?, ?it/s]Rendering progress:  11%|█         | 1/9 [00:00<00:01,  6.57it/s]Rendering progress:  22%|██▏       | 2/9 [00:00<00:00,  7.47it/s]Rendering progress:  33%|███▎      | 3/9 [00:00<00:00,  8.15it/s]Rendering progress:  44%|████▍     | 4/9 [00:00<00:00,  8.72it/s]Rendering progress:  56%|█████▌    | 5/9 [00:00<00:00,  9.09it/s]Rendering progress:  67%|██████▋   | 6/9 [00:00<00:00,  9.11it/s]Rendering progress:  78%|███████▊  | 7/9 [00:00<00:00,  9.06it/s]Rendering progress:  89%|████████▉ | 8/9 [00:00<00:00,  8.22it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  8.55it/s]
+  delta=0.1380 teddybear/187_20215_38541         fg PSNR=11.869
++ /opt/saltstack/salt/bin/python3.10 render.py -m /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/toaster/372_41229_82130/models/oracle -s /var/tmp/luli38se/quantsplat/oracle_sweep/pose_vs_geom/d0.1380/toaster/372_41229_82130/heldout --iteration 30000 --skip_test -d 
+Looking for config file in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/toaster/372_41229_82130/models/oracle/cfg_args
+Config file found: /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/toaster/372_41229_82130/models/oracle/cfg_args
+Rendering /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/toaster/372_41229_82130/models/oracle
+Loading trained model at iteration 30000 [08/09 09:07:38]
+Reading camera 1/9Reading camera 2/9Reading camera 3/9Reading camera 4/9Reading camera 5/9Reading camera 6/9Reading camera 7/9Reading camera 8/9Reading camera 9/9 [08/09 09:07:38]
+Loading Training Cameras [08/09 09:07:38]
+Loading Test Cameras [08/09 09:07:38]
+Rendering progress:   0%|          | 0/9 [00:00<?, ?it/s]Rendering progress:  11%|█         | 1/9 [00:00<00:01,  6.92it/s]Rendering progress:  22%|██▏       | 2/9 [00:00<00:00,  7.26it/s]Rendering progress:  33%|███▎      | 3/9 [00:00<00:00,  7.88it/s]Rendering progress:  44%|████▍     | 4/9 [00:00<00:00,  8.34it/s]Rendering progress:  67%|██████▋   | 6/9 [00:00<00:00,  9.05it/s]Rendering progress:  89%|████████▉ | 8/9 [00:00<00:00,  9.47it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  9.30it/s]Rendering progress: 100%|██████████| 9/9 [00:01<00:00,  8.85it/s]
+  delta=0.1380 toaster/372_41229_82130           fg PSNR=10.939
+delta=0.1380: MEAN fg PSNR = 12.045 dB
+
+=== PSNR cost of alignment error (oracle arm, foreground mask) ===
+  delta=0.0000 radii -> 14.828 dB (cost +0.000 dB)
+  delta=0.0200 radii -> 13.648 dB (cost +1.180 dB)
+  delta=0.0813 radii -> 12.613 dB (cost +2.215 dB)
+  delta=0.1380 radii -> 12.045 dB (cost +2.783 dB)
+saved /var/tmp/luli38se/quantsplat/oracle_sweep/results/pose_vs_geometry.json

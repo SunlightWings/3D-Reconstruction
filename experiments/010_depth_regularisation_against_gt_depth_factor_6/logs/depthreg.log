@@ -1,0 +1,42 @@
+FAILED: /opt/saltstack/salt/bin/python3.10 render.py -m /var/tmp/luli38se/quantsplat/oracle_sweep/depthreg/apple/110_13051_23361 -s /var/tmp/luli38se/quantsplat/oracle_sweep/depthreg/apple/110_13051_23361/heldout --iteration 500 --skip_test --quiet
+Looking for config file in /var/tmp/luli38se/quantsplat/oracle_sweep/depthreg/apple/110_13051_23361/cfg_args
+Config file found: /var/tmp/luli38se/quantsplat/oracle_sweep/depthreg/apple/110_13051_23361/cfg_args
+Rendering /var/tmp/luli38se/quantsplat/oracle_sweep/depthreg/apple/110_13051_23361
+
+
+  [depthreg] apple/110_13051_23361 it=500: PSNR=16.00 SSIM=0.4668227566613091
+  [depthreg] apple/110_13051_23361 it=1000: PSNR=15.29 SSIM=0.4420371486081017
+  [depthreg] apple/110_13051_23361 it=3000: PSNR=14.98 SSIM=0.36639394031630623
+  [depthreg] apple/110_13051_23361 it=7000: PSNR=14.90 SSIM=0.3605347093608644
+  [depthreg] ball/123_14363_28981 it=500: PSNR=10.47 SSIM=0.35720938113000655
+  [depthreg] ball/123_14363_28981 it=1000: PSNR=10.95 SSIM=0.35111947854359943
+  [depthreg] ball/123_14363_28981 it=3000: PSNR=14.91 SSIM=0.32831916047467125
+  [depthreg] ball/123_14363_28981 it=7000: PSNR=14.82 SSIM=0.34510134988360935
+  [depthreg] bowl/70_5792_13401 it=500: PSNR=11.96 SSIM=0.4669482873545753
+  [depthreg] bowl/70_5792_13401 it=1000: PSNR=12.40 SSIM=0.4470294051700168
+  [depthreg] bowl/70_5792_13401 it=3000: PSNR=14.80 SSIM=0.3705463690890206
+  [depthreg] bowl/70_5792_13401 it=7000: PSNR=15.35 SSIM=0.3861330846945445
+  [depthreg] broccoli/412_56288_108844 it=500: PSNR=9.41 SSIM=0.5616452627711825
+  [depthreg] broccoli/412_56288_108844 it=1000: PSNR=10.67 SSIM=0.5255385405487485
+  [depthreg] broccoli/412_56288_108844 it=3000: PSNR=12.24 SSIM=0.4394227729903327
+  [depthreg] broccoli/412_56288_108844 it=7000: PSNR=13.03 SSIM=0.4449390769004822
+  [depthreg] hydrant/167_18184_34441 it=500: PSNR=10.71 SSIM=0.3408730427424113
+  [depthreg] hydrant/167_18184_34441 it=1000: PSNR=11.69 SSIM=0.3094724002811644
+  [depthreg] hydrant/167_18184_34441 it=3000: PSNR=12.50 SSIM=0.26682886729637784
+  [depthreg] hydrant/167_18184_34441 it=7000: PSNR=13.78 SSIM=0.28471887442800736
+  [depthreg] remote/350_36761_68623 it=500: PSNR=11.12 SSIM=0.48009859522183734
+  [depthreg] remote/350_36761_68623 it=1000: PSNR=13.05 SSIM=0.45117998454305863
+  [depthreg] remote/350_36761_68623 it=3000: PSNR=13.89 SSIM=0.32124655445416767
+  [depthreg] remote/350_36761_68623 it=7000: PSNR=14.69 SSIM=0.3353358507156372
+  [depthreg] teddybear/187_20215_38541 it=500: PSNR=17.77 SSIM=0.5544029970963796
+  [depthreg] teddybear/187_20215_38541 it=1000: PSNR=15.28 SSIM=0.5087051424715254
+  [depthreg] teddybear/187_20215_38541 it=3000: PSNR=17.36 SSIM=0.41715224583943683
+  [depthreg] teddybear/187_20215_38541 it=7000: PSNR=17.76 SSIM=0.4066208468543159
+  [depthreg] toaster/372_41229_82130 it=500: PSNR=10.93 SSIM=0.3629346059428321
+  [depthreg] toaster/372_41229_82130 it=1000: PSNR=10.37 SSIM=0.3305988725688722
+  [depthreg] toaster/372_41229_82130 it=3000: PSNR=12.88 SSIM=0.28927799065907794
+  [depthreg] toaster/372_41229_82130 it=7000: PSNR=13.95 SSIM=0.2851506049434344
+[depthreg] it=500: MEAN PSNR=12.297 dB  SSIM=0.4489
+[depthreg] it=1000: MEAN PSNR=12.461 dB  SSIM=0.4207
+[depthreg] it=3000: MEAN PSNR=14.195 dB  SSIM=0.3499
+[depthreg] it=7000: MEAN PSNR=14.786 dB  SSIM=0.3561

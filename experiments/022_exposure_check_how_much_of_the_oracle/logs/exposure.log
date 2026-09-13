@@ -1,0 +1,13 @@
+  apple/110_13051_23361             oracle=17.332  +gain/bias=19.727 (+2.395)  nearest-GT=17.824
+  ball/123_14363_28981              oracle=14.907  +gain/bias=17.916 (+3.009)  nearest-GT=15.809
+  bowl/70_5792_13401                oracle=17.449  +gain/bias=19.187 (+1.738)  nearest-GT=16.981
+  broccoli/412_56288_108844         oracle=15.087  +gain/bias=20.341 (+5.254)  nearest-GT=14.674
+  hydrant/167_18184_34441           oracle=12.900  +gain/bias=18.331 (+5.431)  nearest-GT=16.590
+  remote/350_36761_68623            oracle=11.795  +gain/bias=14.251 (+2.456)  nearest-GT=12.109
+  teddybear/187_20215_38541         oracle=15.680  +gain/bias=20.770 (+5.090)  nearest-GT=15.501
+  toaster/372_41229_82130           oracle=13.474  +gain/bias=16.435 (+2.962)  nearest-GT=13.823
+
+oracle raw                       : 14.828 dB
+oracle after per-image gain+bias : 18.370 dB  (photometric headroom +3.542 dB)
+nearest-pose training GT frame   : 15.414 dB  (oracle beats it by -0.586 dB)
+saved /var/tmp/luli38se/quantsplat/oracle_sweep/results/exposure_check.json

@@ -1,0 +1,107 @@
+{
+  "description": "Sim(3) fitting direction comparison on A5 (LOO) and A4 (on-silhouette).",
+  "point_stride": 8,
+  "summary": {
+    "full_inverse_loo_mean": 0.010314131434771402,
+    "full_inverse_on_silhouette_mean": 0.09502069014286343,
+    "full_direct_loo_mean": 0.13701422932541407,
+    "full_direct_on_silhouette_mean": 0.09514436940102607,
+    "w4a4_inverse_loo_mean": 0.011522778160197329,
+    "w4a4_inverse_on_silhouette_mean": 0.09393003430538335,
+    "w4a4_direct_loo_mean": 0.1554019648530375,
+    "w4a4_direct_on_silhouette_mean": 0.09403396844990873
+  },
+  "better_on_loo": "inverse",
+  "better_on_silhouette": "direct",
+  "agree": false,
+  "per_scene": [
+    {
+      "scene": "apple/110_13051_23361",
+      "full_inverse_loo": 0.010726612813659806,
+      "full_inverse_on_silhouette": 0.14868958558354375,
+      "full_direct_loo": 0.14445980402911834,
+      "full_direct_on_silhouette": 0.14874254540185872,
+      "w4a4_inverse_loo": 0.007926918122283856,
+      "w4a4_inverse_on_silhouette": 0.16003757792902473,
+      "w4a4_direct_loo": 0.10564265163048572,
+      "w4a4_direct_on_silhouette": 0.16002254697737794
+    },
+    {
+      "scene": "ball/123_14363_28981",
+      "full_inverse_loo": 0.006524199385194402,
+      "full_inverse_on_silhouette": 0.0965680473372781,
+      "full_direct_loo": 0.07621642378560341,
+      "full_direct_on_silhouette": 0.0965680473372781,
+      "w4a4_inverse_loo": 0.009013119135353315,
+      "w4a4_inverse_on_silhouette": 0.0965261980965884,
+      "w4a4_direct_loo": 0.10384607976877422,
+      "w4a4_direct_on_silhouette": 0.09643719293290247
+    },
+    {
+      "scene": "bowl/70_5792_13401",
+      "full_inverse_loo": 0.03413433008309542,
+      "full_inverse_on_silhouette": 0.153171101428513,
+      "full_direct_loo": 0.44226964820529835,
+      "full_direct_on_silhouette": 0.15409868297912618,
+      "w4a4_inverse_loo": 0.023644146623687662,
+      "w4a4_inverse_on_silhouette": 0.13469932453201564,
+      "w4a4_direct_loo": 0.3012215836169254,
+      "w4a4_direct_on_silhouette": 0.1358017502509055
+    },
+    {
+      "scene": "broccoli/412_56288_108844",
+      "full_inverse_loo": 0.0052096786346887605,
+      "full_inverse_on_silhouette": 0.04818903296243753,
+      "full_direct_loo": 0.08269997856242392,
+      "full_direct_on_silhouette": 0.04809137834333783,
+      "w4a4_inverse_loo": 0.0098727755590765,
+      "w4a4_inverse_on_silhouette": 0.04812387224833805,
+      "w4a4_direct_loo": 0.15367633487615168,
+      "w4a4_direct_on_silhouette": 0.04792791119156786
+    },
+    {
+      "scene": "hydrant/167_18184_34441",
+      "full_inverse_loo": 0.002333430401023613,
+      "full_inverse_on_silhouette": 0.07533305364949654,
+      "full_direct_loo": 0.044709259799368156,
+      "full_direct_on_silhouette": 0.07536616623872815,
+      "w4a4_inverse_loo": 0.00501031081255367,
+      "w4a4_inverse_on_silhouette": 0.073182184525408,
+      "w4a4_direct_loo": 0.09634870480724256,
+      "w4a4_direct_on_silhouette": 0.07324276159507438
+    },
+    {
+      "scene": "remote/350_36761_68623",
+      "full_inverse_loo": 0.004206458427415256,
+      "full_inverse_on_silhouette": 0.06048846463571365,
+      "full_direct_loo": 0.06469505306586042,
+      "full_direct_on_silhouette": 0.060471384972358044,
+      "w4a4_inverse_loo": 0.0076246739705874075,
+      "w4a4_inverse_on_silhouette": 0.06252672103211604,
+      "w4a4_direct_loo": 0.11631535382812155,
+      "w4a4_direct_on_silhouette": 0.06251346177634977
+    },
+    {
+      "scene": "teddybear/187_20215_38541",
+      "full_inverse_loo": 0.0044214413839886845,
+      "full_inverse_on_silhouette": 0.09937087562727666,
+      "full_direct_loo": 0.05869863477296293,
+      "full_direct_on_silhouette": 0.09932376872866684,
+      "w4a4_inverse_loo": 0.012989269220765678,
+      "w4a4_inverse_on_silhouette": 0.09907339306690409,
+      "w4a4_direct_loo": 0.17284486485654632,
+      "w4a4_direct_on_silhouette": 0.09900365623516727
+    },
+    {
+      "scene": "toaster/372_41229_82130",
+      "full_inverse_loo": 0.014956900349105273,
+      "full_inverse_on_silhouette": 0.07835535991864821,
+      "full_direct_loo": 0.18236503238267693,
+      "full_direct_on_silhouette": 0.0784929812068547,
+      "w4a4_inverse_loo": 0.016101011837270543,
+      "w4a4_inverse_on_silhouette": 0.0772710030126719,
+      "w4a4_direct_loo": 0.1933201454400526,
+      "w4a4_direct_on_silhouette": 0.07732246663992466
+    }
+  ]
+}

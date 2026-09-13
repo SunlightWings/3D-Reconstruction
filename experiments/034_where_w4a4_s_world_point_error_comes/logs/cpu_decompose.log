@@ -1,0 +1,12 @@
+====================================================================================================
+W4A4 WORLD-POINT ERROR, depth vs camera share (1330 of 1330 view-groups)
+  unprojection convention check, max |unproject(full depth, full cam) - full points| = 3.85e-07
+  all      n=1330  total median 0.03624  depth-only median 0.02510  depth share (median of per-group ratio) 0.705  total > depth-only in 1169/1330  Wilcoxon p=4.02e-181
+  no bowl  n=1296  total median 0.03559  depth-only median 0.02469  depth share (median of per-group ratio) 0.712  total > depth-only in 1135/1296  Wilcoxon p=1.1e-174
+
+  by region (medians over groups of per-group medians):
+    object     n=1330 total 0.02163  depth-only (global scale) 0.01397 share 0.637  |  depth-shape (per-view scale) 0.00646 share 0.316
+    background n=1330 total 0.03278  depth-only (global scale) 0.02175 share 0.627  |  depth-shape (per-view scale) 0.01089 share 0.337
+    per-view depth-scale drift of w4a4 relative to full, std of log scale across the 6 views: median 0.01308, p90 0.02292
+
+saved /var/tmp/luli38se/quantsplat/oracle_sweep/results/cpu_decompose.json

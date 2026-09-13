@@ -1,0 +1,16 @@
+====================================================================================================
+EXPOSURE CORRECTION vs GEOMETRY ERROR (extra PSNR the correction recovers for the arm, beyond full's)
+  all arms, n = 280                      cam_rot: rho=+0.221 (p=0.00019)  focal: rho=+0.262 (p=8.9e-06)  point_err: rho=+0.118 (p=0.049)  raw_psnr_loss: rho=+0.766 (p=3.4e-55)
+  mild arms (no rtn, no_rot), n = 200    cam_rot: rho=+0.026 (p=0.71)  focal: rho=+0.030 (p=0.67)  point_err: rho=-0.111 (p=0.12)  raw_psnr_loss: rho=+0.705 (p=2.1e-31)
+  all arms, no bowl                      cam_rot: rho=+0.227 (p=0.00016)  focal: rho=+0.270 (p=5.8e-06)  point_err: rho=+0.123 (p=0.043)  raw_psnr_loss: rho=+0.782 (p=1.4e-57)
+
+  per-arm mean extra correction gain (dB):
+    w4a4             +0.1397  Wilcoxon p=0.277
+    w4a4_local       +0.1234  Wilcoxon p=0.211
+    w4a4_no_lwc      +0.0383  Wilcoxon p=0.942
+    w4a4_no_smooth   +0.0347  Wilcoxon p=0.785
+    w4a4_no_lac      +0.0953  Wilcoxon p=0.476
+    w4a4_no_rot      +0.4534  Wilcoxon p=0.000336
+    w4a4_rtn         +0.5246  Wilcoxon p=0.000402
+
+saved /var/tmp/luli38se/quantsplat/oracle_sweep/results/cpu_exposure.json

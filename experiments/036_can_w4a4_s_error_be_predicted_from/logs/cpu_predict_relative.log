@@ -1,0 +1,32 @@
+====================================================================================================
+PREDICTABILITY of W4A4 error from W4A4's own output: 1330 view-groups (0 failed), target = relative point error
+
+  all content pixels: n = 2394000 pixels, positives 239400
+    single-feature AUROC (descriptive, no fitting): log_depth=0.679, log_depth_rel_median=0.701, depth_grad_rel=0.718, depth_local_std_rel=0.721, img_grad=0.436, img_texture=0.444, img_intensity=0.489, radial_pos=0.710, log_self_inconsistency=0.728
+    scene-held-out     linear AUROC=0.8165  folds 0.763..0.878
+    scene-held-out     binned AUROC=0.8310  folds 0.783..0.876
+    category-held-out  linear AUROC=0.8171  folds 0.797..0.851
+    category-held-out  binned AUROC=0.8328  folds 0.797..0.884
+
+  foreground pixels only: n = 351348 pixels, positives 6169
+    single-feature AUROC (descriptive, no fitting): log_depth=0.453, log_depth_rel_median=0.580, depth_grad_rel=0.640, depth_local_std_rel=0.641, img_grad=0.471, img_texture=0.451, img_intensity=0.490, radial_pos=0.561, log_self_inconsistency=0.594
+    scene-held-out     linear AUROC=0.6432  folds 0.607..0.877
+    scene-held-out     binned AUROC=0.5888  folds 0.578..0.765
+    category-held-out  linear AUROC=0.6677  folds 0.668..0.787
+    category-held-out  binned AUROC=0.6314  folds 0.606..0.754
+
+  CAMERA LEVEL (per view-group): Spearman of self-inconsistency with camera error
+    w4a4_vs_full_rot ~ group_self_inconsistency                    n=1330 rho=-0.032 p=0.248
+    w4a4_vs_full_rot ~ group_depth_spread                          n=1330 rho=-0.361 p=3.19e-42
+    w4a4_vs_gt_rot ~ group_self_inconsistency                      n=1330 rho=-0.090 p=0.00106
+    w4a4_vs_gt_rot ~ group_depth_spread                            n=1330 rho=-0.352 p=4.22e-40
+    full_vs_gt_rot ~ group_self_inconsistency                      n=1330 rho=-0.048 p=0.0808
+    full_vs_gt_rot ~ group_depth_spread                            n=1330 rho=-0.274 p=2.36e-24
+    w4a4_vs_full_rot ~ group_self_inconsistency (no bowl)          n=1296 rho=-0.024 p=0.395
+    w4a4_vs_full_rot ~ group_depth_spread (no bowl)                n=1296 rho=-0.314 p=4.17e-31
+    w4a4_vs_gt_rot ~ group_self_inconsistency (no bowl)            n=1296 rho=-0.085 p=0.00217
+    w4a4_vs_gt_rot ~ group_depth_spread (no bowl)                  n=1296 rho=-0.304 p=3.95e-29
+    full_vs_gt_rot ~ group_self_inconsistency (no bowl)            n=1296 rho=-0.041 p=0.144
+    full_vs_gt_rot ~ group_depth_spread (no bowl)                  n=1296 rho=-0.220 p=1.2e-15
+
+saved /var/tmp/luli38se/quantsplat/oracle_sweep/results/cpu_predict_relative.json

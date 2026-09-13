@@ -1,0 +1,53 @@
+[2026-09-08 09:12:43] ========================================================================
+[2026-09-08 09:12:43] DOWNSTREAM-3DGS DIAGNOSTIC GATES: starting run
+[2026-09-08 09:12:43] Expensive (GPU-training) scenes: ['apple/110_13051_23361', 'ball/123_14363_28981', 'bowl/70_5792_13401', 'broccoli/412_56288_108844', 'hydrant/167_18184_34441', 'remote/350_36761_68623', 'teddybear/187_20215_38541', 'toaster/372_41229_82130']
+[2026-09-08 09:12:43] ========================================================================
+[2026-09-08 09:12:43] START A5
+[2026-09-08 09:12:44] DONE  A5 in 0.0 min
+[2026-09-08 09:12:44] START A3
+[2026-09-08 09:12:44] A3 apple/110_13051_23361: building oracle GT-geometry source
+3DGS train: resume skip, found /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/apple/110_13051_23361/models/oracle/point_cloud/iteration_30000/point_cloud.ply
+Render: resume skip, found 9 heldout renders in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/apple/110_13051_23361/heldout/oracle/renders
+[2026-09-08 09:12:45] A3 apple/110_13051_23361: oracle foreground PSNR=17.33 dB (content=15.45; full=11.57, w4a4=11.44)
+[2026-09-08 09:12:45] A3 ball/123_14363_28981: building oracle GT-geometry source
+3DGS train: resume skip, found /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/ball/123_14363_28981/models/oracle/point_cloud/iteration_30000/point_cloud.ply
+Render: resume skip, found 9 heldout renders in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/ball/123_14363_28981/heldout/oracle/renders
+[2026-09-08 09:12:45] A3 ball/123_14363_28981: oracle foreground PSNR=14.91 dB (content=14.05; full=10.66, w4a4=10.29)
+[2026-09-08 09:12:45] A3 bowl/70_5792_13401: building oracle GT-geometry source
+3DGS train: resume skip, found /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/bowl/70_5792_13401/models/oracle/point_cloud/iteration_30000/point_cloud.ply
+Render: resume skip, found 9 heldout renders in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/bowl/70_5792_13401/heldout/oracle/renders
+[2026-09-08 09:12:46] A3 bowl/70_5792_13401: oracle foreground PSNR=17.45 dB (content=14.76; full=8.91, w4a4=10.20)
+[2026-09-08 09:12:46] A3 broccoli/412_56288_108844: building oracle GT-geometry source
+3DGS train: resume skip, found /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/broccoli/412_56288_108844/models/oracle/point_cloud/iteration_30000/point_cloud.ply
+Render: resume skip, found 9 heldout renders in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/broccoli/412_56288_108844/heldout/oracle/renders
+[2026-09-08 09:12:46] A3 broccoli/412_56288_108844: oracle foreground PSNR=15.09 dB (content=12.04; full=9.29, w4a4=9.26)
+[2026-09-08 09:12:46] A3 hydrant/167_18184_34441: building oracle GT-geometry source
+3DGS train: resume skip, found /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/hydrant/167_18184_34441/models/oracle/point_cloud/iteration_30000/point_cloud.ply
+Render: resume skip, found 9 heldout renders in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/hydrant/167_18184_34441/heldout/oracle/renders
+[2026-09-08 09:12:46] A3 hydrant/167_18184_34441: oracle foreground PSNR=12.90 dB (content=12.83; full=8.40, w4a4=7.74)
+[2026-09-08 09:12:46] A3 remote/350_36761_68623: building oracle GT-geometry source
+3DGS train: resume skip, found /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/remote/350_36761_68623/models/oracle/point_cloud/iteration_30000/point_cloud.ply
+Render: resume skip, found 9 heldout renders in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/remote/350_36761_68623/heldout/oracle/renders
+[2026-09-08 09:12:46] A3 remote/350_36761_68623: oracle foreground PSNR=11.79 dB (content=14.47; full=10.23, w4a4=9.95)
+[2026-09-08 09:12:46] A3 teddybear/187_20215_38541: building oracle GT-geometry source
+3DGS train: resume skip, found /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/teddybear/187_20215_38541/models/oracle/point_cloud/iteration_30000/point_cloud.ply
+Render: resume skip, found 9 heldout renders in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/teddybear/187_20215_38541/heldout/oracle/renders
+[2026-09-08 09:12:47] A3 teddybear/187_20215_38541: oracle foreground PSNR=15.68 dB (content=15.83; full=11.43, w4a4=11.28)
+[2026-09-08 09:12:47] A3 toaster/372_41229_82130: building oracle GT-geometry source
+3DGS train: resume skip, found /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/toaster/372_41229_82130/models/oracle/point_cloud/iteration_30000/point_cloud.ply
+Render: resume skip, found 9 heldout renders in /var/tmp/luli38se/quantsplat/downstream_diagnostics_v1/toaster/372_41229_82130/heldout/oracle/renders
+[2026-09-08 09:12:47] A3 toaster/372_41229_82130: oracle foreground PSNR=13.47 dB (content=13.06; full=9.43, w4a4=9.99)
+[2026-09-08 09:12:47] DONE  A3 in 0.0 min
+[2026-09-08 09:12:47] START A6
+[2026-09-08 09:12:47] A6 apple/110_13051_23361: oracle self-fit content=50.17 dB, foreground=50.34 dB
+[2026-09-08 09:12:47] A6 ball/123_14363_28981: oracle self-fit content=47.05 dB, foreground=48.74 dB
+[2026-09-08 09:12:48] A6 bowl/70_5792_13401: oracle self-fit content=47.81 dB, foreground=46.63 dB
+[2026-09-08 09:12:48] A6 broccoli/412_56288_108844: oracle self-fit content=49.60 dB, foreground=46.28 dB
+[2026-09-08 09:12:48] A6 hydrant/167_18184_34441: oracle self-fit content=46.95 dB, foreground=48.52 dB
+[2026-09-08 09:12:48] A6 remote/350_36761_68623: oracle self-fit content=48.33 dB, foreground=47.73 dB
+[2026-09-08 09:12:48] A6 teddybear/187_20215_38541: oracle self-fit content=46.93 dB, foreground=46.07 dB
+[2026-09-08 09:12:48] A6 toaster/372_41229_82130: oracle self-fit content=45.58 dB, foreground=48.57 dB
+[2026-09-08 09:12:48] DONE  A6 in 0.0 min
+[2026-09-08 09:12:48] ========================================================================
+[2026-09-08 09:12:48] ALL DIAGNOSTIC TESTS ATTEMPTED. Report: /home/utn/luli38se/cv/3D-Reconstruction/results/downstream_3dgs/DIAGNOSTIC_RESULTS.md
+[2026-09-08 09:12:48] ========================================================================

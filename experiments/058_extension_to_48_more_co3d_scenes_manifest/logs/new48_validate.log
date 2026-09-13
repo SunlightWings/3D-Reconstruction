@@ -1,0 +1,6 @@
+fg_min 0.0: usable sets exact 28/40, total differing frames 69 (of 7889), g0000 (used downstream) reproduced 29/40
+fg_min 0.005: usable sets exact 31/40, total differing frames 51 (of 7889), g0000 (used downstream) reproduced 33/40
+fg_min 0.01: usable sets exact 32/40, total differing frames 50 (of 7889), g0000 (used downstream) reproduced 33/40
+fg_min 0.02: usable sets exact 32/40, total differing frames 50 (of 7889), g0000 (used downstream) reproduced 33/40
+
+residual differences at fg_min 0.01: 0

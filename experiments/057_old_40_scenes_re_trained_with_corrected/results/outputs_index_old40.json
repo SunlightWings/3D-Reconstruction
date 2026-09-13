@@ -1,0 +1,802 @@
+{
+  "apple/110_13051_23361": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/apple/110_13051_23361/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/apple/110_13051_23361/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/apple/110_13051_23361/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/apple/110_13051_23361/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/apple/110_13051_23361/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/apple/110_13051_23361/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/apple/110_13051_23361/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/apple/110_13051_23361/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/apple/110_13051_23361/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/apple/110_13051_23361/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "apple/189_20393_38136": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/apple/189_20393_38136/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/apple/189_20393_38136/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/apple/189_20393_38136/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/apple/189_20393_38136/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/apple/189_20393_38136/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/apple/189_20393_38136/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/apple/189_20393_38136/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/apple/189_20393_38136/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/apple/189_20393_38136/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/apple/189_20393_38136/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "ball/123_14363_28981": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/ball/123_14363_28981/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/ball/123_14363_28981/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/ball/123_14363_28981/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/ball/123_14363_28981/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/ball/123_14363_28981/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/ball/123_14363_28981/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/ball/123_14363_28981/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/ball/123_14363_28981/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/ball/123_14363_28981/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/ball/123_14363_28981/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "ball/375_42693_85518": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/ball/375_42693_85518/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/ball/375_42693_85518/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/ball/375_42693_85518/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/ball/375_42693_85518/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/ball/375_42693_85518/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/ball/375_42693_85518/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/ball/375_42693_85518/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/ball/375_42693_85518/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/ball/375_42693_85518/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/ball/375_42693_85518/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "bench/415_57112_110099": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/bench/415_57112_110099/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/bench/415_57112_110099/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/bench/415_57112_110099/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/bench/415_57112_110099/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/bench/415_57112_110099/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/bench/415_57112_110099/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/bench/415_57112_110099/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/bench/415_57112_110099/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/bench/415_57112_110099/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/bench/415_57112_110099/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "bench/415_57121_110109": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/bench/415_57121_110109/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/bench/415_57121_110109/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/bench/415_57121_110109/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/bench/415_57121_110109/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/bench/415_57121_110109/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/bench/415_57121_110109/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/bench/415_57121_110109/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/bench/415_57121_110109/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/bench/415_57121_110109/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/bench/415_57121_110109/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "book/119_13962_28926": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/book/119_13962_28926/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/book/119_13962_28926/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/book/119_13962_28926/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/book/119_13962_28926/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/book/119_13962_28926/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/book/119_13962_28926/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/book/119_13962_28926/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/book/119_13962_28926/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/book/119_13962_28926/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/book/119_13962_28926/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "book/247_26469_51778": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/book/247_26469_51778/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/book/247_26469_51778/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/book/247_26469_51778/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/book/247_26469_51778/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/book/247_26469_51778/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/book/247_26469_51778/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/book/247_26469_51778/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/book/247_26469_51778/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/book/247_26469_51778/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/book/247_26469_51778/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "bowl/69_5465_12831": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/bowl/69_5465_12831/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/bowl/69_5465_12831/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/bowl/69_5465_12831/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/bowl/69_5465_12831/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/bowl/69_5465_12831/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/bowl/69_5465_12831/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/bowl/69_5465_12831/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/bowl/69_5465_12831/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/bowl/69_5465_12831/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/bowl/69_5465_12831/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "bowl/70_5792_13401": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/bowl/70_5792_13401/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/bowl/70_5792_13401/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/bowl/70_5792_13401/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/bowl/70_5792_13401/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/bowl/70_5792_13401/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/bowl/70_5792_13401/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/bowl/70_5792_13401/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/bowl/70_5792_13401/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/bowl/70_5792_13401/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/bowl/70_5792_13401/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "broccoli/372_41112_81867": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/broccoli/372_41112_81867/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/broccoli/372_41112_81867/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/broccoli/372_41112_81867/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/broccoli/372_41112_81867/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/broccoli/372_41112_81867/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/broccoli/372_41112_81867/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/broccoli/372_41112_81867/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/broccoli/372_41112_81867/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/broccoli/372_41112_81867/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/broccoli/372_41112_81867/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "broccoli/412_56288_108844": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/broccoli/412_56288_108844/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/broccoli/412_56288_108844/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/broccoli/412_56288_108844/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/broccoli/412_56288_108844/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/broccoli/412_56288_108844/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/broccoli/412_56288_108844/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/broccoli/412_56288_108844/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/broccoli/412_56288_108844/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/broccoli/412_56288_108844/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/broccoli/412_56288_108844/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "cake/374_42274_84517": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/cake/374_42274_84517/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/cake/374_42274_84517/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/cake/374_42274_84517/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/cake/374_42274_84517/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/cake/374_42274_84517/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/cake/374_42274_84517/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/cake/374_42274_84517/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/cake/374_42274_84517/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/cake/374_42274_84517/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/cake/374_42274_84517/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "cake/403_53094_103680": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/cake/403_53094_103680/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/cake/403_53094_103680/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/cake/403_53094_103680/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/cake/403_53094_103680/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/cake/403_53094_103680/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/cake/403_53094_103680/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/cake/403_53094_103680/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/cake/403_53094_103680/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/cake/403_53094_103680/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/cake/403_53094_103680/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "donut/391_47032_93657": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/donut/391_47032_93657/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/donut/391_47032_93657/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/donut/391_47032_93657/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/donut/391_47032_93657/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/donut/391_47032_93657/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/donut/391_47032_93657/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/donut/391_47032_93657/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/donut/391_47032_93657/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/donut/391_47032_93657/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/donut/391_47032_93657/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "donut/403_52964_103416": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/donut/403_52964_103416/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/donut/403_52964_103416/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/donut/403_52964_103416/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/donut/403_52964_103416/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/donut/403_52964_103416/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/donut/403_52964_103416/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/donut/403_52964_103416/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/donut/403_52964_103416/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/donut/403_52964_103416/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/donut/403_52964_103416/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "hydrant/167_18184_34441": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/hydrant/167_18184_34441/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/hydrant/167_18184_34441/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/hydrant/167_18184_34441/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/hydrant/167_18184_34441/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/hydrant/167_18184_34441/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/hydrant/167_18184_34441/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/hydrant/167_18184_34441/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/hydrant/167_18184_34441/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/hydrant/167_18184_34441/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/hydrant/167_18184_34441/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "hydrant/411_56064_108483": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/hydrant/411_56064_108483/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/hydrant/411_56064_108483/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/hydrant/411_56064_108483/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/hydrant/411_56064_108483/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/hydrant/411_56064_108483/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/hydrant/411_56064_108483/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/hydrant/411_56064_108483/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/hydrant/411_56064_108483/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/hydrant/411_56064_108483/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/hydrant/411_56064_108483/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "mouse/107_12753_23606": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/mouse/107_12753_23606/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/mouse/107_12753_23606/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/mouse/107_12753_23606/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/mouse/107_12753_23606/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/mouse/107_12753_23606/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/mouse/107_12753_23606/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/mouse/107_12753_23606/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/mouse/107_12753_23606/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/mouse/107_12753_23606/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/mouse/107_12753_23606/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "mouse/377_43416_86289": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/mouse/377_43416_86289/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/mouse/377_43416_86289/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/mouse/377_43416_86289/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/mouse/377_43416_86289/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/mouse/377_43416_86289/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/mouse/377_43416_86289/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/mouse/377_43416_86289/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/mouse/377_43416_86289/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/mouse/377_43416_86289/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/mouse/377_43416_86289/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "orange/374_42196_84367": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/orange/374_42196_84367/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/orange/374_42196_84367/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/orange/374_42196_84367/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/orange/374_42196_84367/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/orange/374_42196_84367/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/orange/374_42196_84367/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/orange/374_42196_84367/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/orange/374_42196_84367/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/orange/374_42196_84367/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/orange/374_42196_84367/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "orange/385_45386_90752": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/orange/385_45386_90752/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/orange/385_45386_90752/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/orange/385_45386_90752/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/orange/385_45386_90752/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/orange/385_45386_90752/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/orange/385_45386_90752/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/orange/385_45386_90752/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/orange/385_45386_90752/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/orange/385_45386_90752/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/orange/385_45386_90752/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "plant/247_26441_50907": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/plant/247_26441_50907/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/plant/247_26441_50907/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/plant/247_26441_50907/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/plant/247_26441_50907/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/plant/247_26441_50907/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/plant/247_26441_50907/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/plant/247_26441_50907/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/plant/247_26441_50907/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/plant/247_26441_50907/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/plant/247_26441_50907/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "plant/374_42005_84358": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/plant/374_42005_84358/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/plant/374_42005_84358/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/plant/374_42005_84358/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/plant/374_42005_84358/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/plant/374_42005_84358/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/plant/374_42005_84358/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/plant/374_42005_84358/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/plant/374_42005_84358/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/plant/374_42005_84358/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/plant/374_42005_84358/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "remote/195_20989_41543": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/remote/195_20989_41543/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/remote/195_20989_41543/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/remote/195_20989_41543/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/remote/195_20989_41543/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/remote/195_20989_41543/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/remote/195_20989_41543/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/remote/195_20989_41543/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/remote/195_20989_41543/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/remote/195_20989_41543/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/remote/195_20989_41543/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "remote/350_36761_68623": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/remote/350_36761_68623/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/remote/350_36761_68623/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/remote/350_36761_68623/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/remote/350_36761_68623/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/remote/350_36761_68623/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/remote/350_36761_68623/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/remote/350_36761_68623/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/remote/350_36761_68623/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/remote/350_36761_68623/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/remote/350_36761_68623/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "skateboard/245_26182_52130": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/skateboard/245_26182_52130/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/skateboard/245_26182_52130/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/skateboard/245_26182_52130/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/skateboard/245_26182_52130/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/skateboard/245_26182_52130/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/skateboard/245_26182_52130/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/skateboard/245_26182_52130/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/skateboard/245_26182_52130/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/skateboard/245_26182_52130/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/skateboard/245_26182_52130/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "skateboard/366_39266_76077": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/skateboard/366_39266_76077/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/skateboard/366_39266_76077/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/skateboard/366_39266_76077/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/skateboard/366_39266_76077/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/skateboard/366_39266_76077/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/skateboard/366_39266_76077/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/skateboard/366_39266_76077/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/skateboard/366_39266_76077/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/skateboard/366_39266_76077/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/skateboard/366_39266_76077/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "suitcase/410_55734_107452": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/suitcase/410_55734_107452/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/suitcase/410_55734_107452/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/suitcase/410_55734_107452/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/suitcase/410_55734_107452/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/suitcase/410_55734_107452/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/suitcase/410_55734_107452/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/suitcase/410_55734_107452/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/suitcase/410_55734_107452/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/suitcase/410_55734_107452/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/suitcase/410_55734_107452/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "suitcase/50_2928_8645": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/suitcase/50_2928_8645/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/suitcase/50_2928_8645/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/suitcase/50_2928_8645/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/suitcase/50_2928_8645/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/suitcase/50_2928_8645/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/suitcase/50_2928_8645/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/suitcase/50_2928_8645/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/suitcase/50_2928_8645/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/suitcase/50_2928_8645/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/suitcase/50_2928_8645/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "teddybear/187_20215_38541": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/teddybear/187_20215_38541/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/teddybear/187_20215_38541/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/teddybear/187_20215_38541/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/teddybear/187_20215_38541/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/teddybear/187_20215_38541/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/teddybear/187_20215_38541/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/teddybear/187_20215_38541/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/teddybear/187_20215_38541/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/teddybear/187_20215_38541/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/teddybear/187_20215_38541/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "teddybear/34_1479_4753": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/teddybear/34_1479_4753/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/teddybear/34_1479_4753/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/teddybear/34_1479_4753/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/teddybear/34_1479_4753/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/teddybear/34_1479_4753/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/teddybear/34_1479_4753/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/teddybear/34_1479_4753/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/teddybear/34_1479_4753/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/teddybear/34_1479_4753/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/teddybear/34_1479_4753/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "toaster/372_41229_82130": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/toaster/372_41229_82130/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/toaster/372_41229_82130/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toaster/372_41229_82130/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toaster/372_41229_82130/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toaster/372_41229_82130/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/toaster/372_41229_82130/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/toaster/372_41229_82130/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toaster/372_41229_82130/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toaster/372_41229_82130/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toaster/372_41229_82130/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "toaster/416_57389_110765": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/toaster/416_57389_110765/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/toaster/416_57389_110765/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toaster/416_57389_110765/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toaster/416_57389_110765/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toaster/416_57389_110765/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/toaster/416_57389_110765/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/toaster/416_57389_110765/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toaster/416_57389_110765/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toaster/416_57389_110765/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toaster/416_57389_110765/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "toytrain/240_25394_51994": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/toytrain/240_25394_51994/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/toytrain/240_25394_51994/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toytrain/240_25394_51994/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toytrain/240_25394_51994/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toytrain/240_25394_51994/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/toytrain/240_25394_51994/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/toytrain/240_25394_51994/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toytrain/240_25394_51994/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toytrain/240_25394_51994/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toytrain/240_25394_51994/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "toytrain/399_51323_100753": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/toytrain/399_51323_100753/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/toytrain/399_51323_100753/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toytrain/399_51323_100753/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toytrain/399_51323_100753/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toytrain/399_51323_100753/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/toytrain/399_51323_100753/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/toytrain/399_51323_100753/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toytrain/399_51323_100753/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toytrain/399_51323_100753/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toytrain/399_51323_100753/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "toytruck/190_20494_39385": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/toytruck/190_20494_39385/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/toytruck/190_20494_39385/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toytruck/190_20494_39385/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toytruck/190_20494_39385/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toytruck/190_20494_39385/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/toytruck/190_20494_39385/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/toytruck/190_20494_39385/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toytruck/190_20494_39385/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toytruck/190_20494_39385/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toytruck/190_20494_39385/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "toytruck/346_36113_66551": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/toytruck/346_36113_66551/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/toytruck/346_36113_66551/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toytruck/346_36113_66551/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toytruck/346_36113_66551/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toytruck/346_36113_66551/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/toytruck/346_36113_66551/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/toytruck/346_36113_66551/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toytruck/346_36113_66551/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toytruck/346_36113_66551/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/toytruck/346_36113_66551/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "vase/374_41862_83720": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/vase/374_41862_83720/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/vase/374_41862_83720/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/vase/374_41862_83720/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/vase/374_41862_83720/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/vase/374_41862_83720/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/vase/374_41862_83720/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/vase/374_41862_83720/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/vase/374_41862_83720/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/vase/374_41862_83720/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/vase/374_41862_83720/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  },
+  "vase/380_44863_89631": {
+    "full": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/vase/380_44863_89631/g0000/full.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/vase/380_44863_89631/g0000/full_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/vase/380_44863_89631/models/full_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/vase/380_44863_89631/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/vase/380_44863_89631/heldout/full_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    },
+    "w4a4": {
+      "npz": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/vase/380_44863_89631/g0000/w4a4.npz",
+      "meta_json": "/var/tmp/luli38se/quantsplat/disagreement_dataset_v1/run/predictions/vase/380_44863_89631/g0000/w4a4_meta.json",
+      "ply": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/vase/380_44863_89631/models/w4a4_qfix/point_cloud/iteration_7000/point_cloud.ply",
+      "scene_manifest": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/vase/380_44863_89631/scene_manifest.json",
+      "renders": "/var/tmp/luli38se/quantsplat/downstream_validation_v1/vase/380_44863_89631/heldout/w4a4_qfix_it7000/renders",
+      "iterations": 7000,
+      "cameras": "rotation-corrected"
+    }
+  }
+}

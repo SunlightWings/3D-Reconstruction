@@ -1,0 +1,674 @@
+{
+  "arms": {
+    "full_qfix": {
+      "n": 8,
+      "psnr": 14.573634567177347,
+      "ssim": 0.31949917847911513,
+      "lpips": 0.346426397562027
+    },
+    "w3a3_qfix": {
+      "n": 8,
+      "psnr": 12.98328300615514,
+      "ssim": 0.24854370413555038,
+      "lpips": 0.43902762710220283
+    },
+    "w3a3_qfix_oracle_prune": {
+      "n": 8,
+      "psnr": 13.142175320829878,
+      "ssim": 0.2550587374716997,
+      "lpips": 0.44068247286809814
+    },
+    "w3a3_qfix_oracle_weight": {
+      "n": 8,
+      "psnr": 13.01867579927941,
+      "ssim": 0.24984239786863327,
+      "lpips": 0.43764923988944954
+    },
+    "w3a3_qfix_rand_prune": {
+      "n": 8,
+      "psnr": 13.019104632100955,
+      "ssim": 0.24796275618589586,
+      "lpips": 0.4393347123016914
+    },
+    "w3a3_qfix_predictor_prune": {
+      "n": 8,
+      "psnr": 12.532769641814784,
+      "ssim": 0.24774514190438723,
+      "lpips": 0.44777954411175513
+    },
+    "w3a3_qfix_predictor_weight": {
+      "n": 8,
+      "psnr": 12.931042749058626,
+      "ssim": 0.2491340146710475,
+      "lpips": 0.43793752106527484
+    }
+  },
+  "pairs": {
+    "full_qfix__vs__w3a3_qfix__psnr": {
+      "n": 8,
+      "mean": 1.590351561022208,
+      "t_p": 0.011803070688583092,
+      "wilcoxon_p": 0.015625,
+      "ci95": [
+        0.476843420847773,
+        2.7038597011966434
+      ],
+      "first_better": 7
+    },
+    "full_qfix__vs__w3a3_qfix__ssim": {
+      "n": 8,
+      "mean": 0.07095547434356478,
+      "t_p": 0.006953717082098115,
+      "wilcoxon_p": 0.015625,
+      "ci95": [
+        0.026488517838356374,
+        0.11542243084877318
+      ],
+      "first_better": 7
+    },
+    "full_qfix__vs__w3a3_qfix__lpips": {
+      "n": 8,
+      "mean": 0.09260122954017586,
+      "t_p": 0.0037974250286168703,
+      "wilcoxon_p": 0.0078125,
+      "ci95": [
+        0.04106845157343321,
+        0.14413400750691852
+      ],
+      "first_better": 8
+    },
+    "w3a3_qfix_oracle_prune__vs__w3a3_qfix__psnr": {
+      "n": 8,
+      "mean": 0.1588923146747383,
+      "t_p": 0.30449992031021517,
+      "wilcoxon_p": 0.4609375,
+      "ci95": [
+        -0.1802247002442433,
+        0.4980093295937199
+      ],
+      "first_better": 4
+    },
+    "w3a3_qfix_oracle_prune__vs__w3a3_qfix__ssim": {
+      "n": 8,
+      "mean": 0.006515033336149327,
+      "t_p": 0.059838271449364704,
+      "wilcoxon_p": 0.0546875,
+      "ci95": [
+        -0.0003541623006768505,
+        0.013384228972975504
+      ],
+      "first_better": 7
+    },
+    "w3a3_qfix_oracle_prune__vs__w3a3_qfix__lpips": {
+      "n": 8,
+      "mean": -0.0016548457658953075,
+      "t_p": 0.8717344968765025,
+      "wilcoxon_p": 0.84375,
+      "ci95": [
+        -0.025020529316015668,
+        0.021710837784225053
+      ],
+      "first_better": 3
+    },
+    "w3a3_qfix_oracle_weight__vs__w3a3_qfix__psnr": {
+      "n": 8,
+      "mean": 0.03539279312427168,
+      "t_p": 0.5835946157503796,
+      "wilcoxon_p": 0.84375,
+      "ci95": [
+        -0.11027601042004093,
+        0.1810615966685843
+      ],
+      "first_better": 5
+    },
+    "w3a3_qfix_oracle_weight__vs__w3a3_qfix__ssim": {
+      "n": 8,
+      "mean": 0.0012986937330828792,
+      "t_p": 0.3752377809268928,
+      "wilcoxon_p": 0.1953125,
+      "ci95": [
+        -0.0019445516910166468,
+        0.004541939157182405
+      ],
+      "first_better": 7
+    },
+    "w3a3_qfix_oracle_weight__vs__w3a3_qfix__lpips": {
+      "n": 8,
+      "mean": 0.0013783872127533028,
+      "t_p": 0.4174651679192284,
+      "wilcoxon_p": 0.4609375,
+      "ci95": [
+        -0.0024047324696116813,
+        0.0051615068951182865
+      ],
+      "first_better": 5
+    },
+    "w3a3_qfix_rand_prune__vs__w3a3_qfix__psnr": {
+      "n": 8,
+      "mean": 0.035821625945816615,
+      "t_p": 0.6188034661060867,
+      "wilcoxon_p": 0.9453125,
+      "ci95": [
+        -0.12693233784843738,
+        0.1985755897400706
+      ],
+      "first_better": 4
+    },
+    "w3a3_qfix_rand_prune__vs__w3a3_qfix__ssim": {
+      "n": 8,
+      "mean": -0.0005809479496545235,
+      "t_p": 0.6844834464836955,
+      "wilcoxon_p": 0.640625,
+      "ci95": [
+        -0.0038229741380313882,
+        0.0026610782387223413
+      ],
+      "first_better": 4
+    },
+    "w3a3_qfix_rand_prune__vs__w3a3_qfix__lpips": {
+      "n": 8,
+      "mean": -0.00030708519948852847,
+      "t_p": 0.859292906184502,
+      "wilcoxon_p": 0.7421875,
+      "ci95": [
+        -0.004255285686009265,
+        0.0036411152870322082
+      ],
+      "first_better": 3
+    },
+    "w3a3_qfix_oracle_prune__vs__w3a3_qfix_rand_prune__psnr": {
+      "n": 8,
+      "mean": 0.12307068872892168,
+      "t_p": 0.46383642132021546,
+      "wilcoxon_p": 0.84375,
+      "ci95": [
+        -0.25254424190365427,
+        0.49868561936149763
+      ],
+      "first_better": 4
+    },
+    "w3a3_qfix_oracle_prune__vs__w3a3_qfix_rand_prune__ssim": {
+      "n": 8,
+      "mean": 0.0070959812858038505,
+      "t_p": 0.027577038668438244,
+      "wilcoxon_p": 0.0546875,
+      "ci95": [
+        0.0010448875386897052,
+        0.013147075032917996
+      ],
+      "first_better": 7
+    },
+    "w3a3_qfix_oracle_prune__vs__w3a3_qfix_rand_prune__lpips": {
+      "n": 8,
+      "mean": -0.001347760566406779,
+      "t_p": 0.9014735387168309,
+      "wilcoxon_p": 0.9453125,
+      "ci95": [
+        -0.026175819636408002,
+        0.023480298503594444
+      ],
+      "first_better": 5
+    },
+    "w3a3_qfix_predictor_prune__vs__w3a3_qfix__psnr": {
+      "n": 8,
+      "mean": -0.4505133643403554,
+      "t_p": 0.10782008515771134,
+      "wilcoxon_p": 0.109375,
+      "ci95": [
+        -1.0284380639494293,
+        0.1274113352687184
+      ],
+      "first_better": 1
+    },
+    "w3a3_qfix_predictor_prune__vs__w3a3_qfix__ssim": {
+      "n": 8,
+      "mean": -0.0007985622311631781,
+      "t_p": 0.7462501921148826,
+      "wilcoxon_p": 1.0,
+      "ci95": [
+        -0.006407697167056889,
+        0.0048105727047305325
+      ],
+      "first_better": 4
+    },
+    "w3a3_qfix_predictor_prune__vs__w3a3_qfix__lpips": {
+      "n": 8,
+      "mean": -0.008751917009552308,
+      "t_p": 0.5003052762035455,
+      "wilcoxon_p": 0.546875,
+      "ci95": [
+        -0.03787445639957297,
+        0.02037062238046836
+      ],
+      "first_better": 3
+    },
+    "w3a3_qfix_predictor_weight__vs__w3a3_qfix__psnr": {
+      "n": 8,
+      "mean": -0.05224025709651192,
+      "t_p": 0.5278517050953152,
+      "wilcoxon_p": 0.4609375,
+      "ci95": [
+        -0.23823284488127763,
+        0.1337523306882538
+      ],
+      "first_better": 2
+    },
+    "w3a3_qfix_predictor_weight__vs__w3a3_qfix__ssim": {
+      "n": 8,
+      "mean": 0.0005903105354971398,
+      "t_p": 0.7436044969755178,
+      "wilcoxon_p": 0.7421875,
+      "ci95": [
+        -0.0035113822399088796,
+        0.004692003310903159
+      ],
+      "first_better": 5
+    },
+    "w3a3_qfix_predictor_weight__vs__w3a3_qfix__lpips": {
+      "n": 8,
+      "mean": 0.001090106036927968,
+      "t_p": 0.6280913025043316,
+      "wilcoxon_p": 0.546875,
+      "ci95": [
+        -0.003999505220664249,
+        0.006179717294520185
+      ],
+      "first_better": 4
+    },
+    "w3a3_qfix_predictor_prune__vs__w3a3_qfix_rand_prune__psnr": {
+      "n": 8,
+      "mean": -0.486334990286172,
+      "t_p": 0.1217387430172148,
+      "wilcoxon_p": 0.109375,
+      "ci95": [
+        -1.1396111090667087,
+        0.1669411284943647
+      ],
+      "first_better": 2
+    },
+    "w3a3_qfix_predictor_prune__vs__w3a3_qfix_rand_prune__ssim": {
+      "n": 8,
+      "mean": -0.00021761428150865458,
+      "t_p": 0.9182265883044255,
+      "wilcoxon_p": 0.640625,
+      "ci95": [
+        -0.005052461084683175,
+        0.004617232521665866
+      ],
+      "first_better": 3
+    },
+    "w3a3_qfix_predictor_prune__vs__w3a3_qfix_rand_prune__lpips": {
+      "n": 8,
+      "mean": -0.00844483181006378,
+      "t_p": 0.5505005263339927,
+      "wilcoxon_p": 0.84375,
+      "ci95": [
+        -0.04028873249038542,
+        0.02339906887025786
+      ],
+      "first_better": 4
+    }
+  },
+  "per_scene": [
+    {
+      "scene": "apple/110_13051_23361",
+      "full_qfix_foreground_psnr": 18.12127960348456,
+      "full_qfix_foreground_ssim": 0.4589165416028764,
+      "full_qfix_foreground_lpips": 0.31882669859462315,
+      "full_qfix_content_psnr": 14.270107665312302,
+      "full_qfix_content_ssim": 0.3069441152943505,
+      "full_qfix_content_lpips": 0.44698992040422225,
+      "w3a3_qfix_foreground_psnr": 14.55124384619298,
+      "w3a3_qfix_foreground_ssim": 0.3548968301879035,
+      "w3a3_qfix_foreground_lpips": 0.48421917027897304,
+      "w3a3_qfix_content_psnr": 10.914366780202975,
+      "w3a3_qfix_content_ssim": 0.25986293454964954,
+      "w3a3_qfix_content_lpips": 0.6310527324676514,
+      "w3a3_qfix_oracle_prune_foreground_psnr": 14.821288322901758,
+      "w3a3_qfix_oracle_prune_foreground_ssim": 0.3704617785082923,
+      "w3a3_qfix_oracle_prune_foreground_lpips": 0.4734531475438012,
+      "w3a3_qfix_oracle_prune_content_psnr": 10.968125284014288,
+      "w3a3_qfix_oracle_prune_content_ssim": 0.2573348979155223,
+      "w3a3_qfix_oracle_prune_content_lpips": 0.6292437116305033,
+      "w3a3_qfix_oracle_weight_foreground_psnr": 14.593028437171398,
+      "w3a3_qfix_oracle_weight_foreground_ssim": 0.35555656419859993,
+      "w3a3_qfix_oracle_weight_foreground_lpips": 0.4840223756101396,
+      "w3a3_qfix_oracle_weight_content_psnr": 11.025864353505924,
+      "w3a3_qfix_oracle_weight_content_ssim": 0.262655645608902,
+      "w3a3_qfix_oracle_weight_content_lpips": 0.632187459203932,
+      "w3a3_qfix_rand_prune_foreground_psnr": 14.60297105970532,
+      "w3a3_qfix_rand_prune_foreground_ssim": 0.3600425620873769,
+      "w3a3_qfix_rand_prune_foreground_lpips": 0.48541845546828377,
+      "w3a3_qfix_rand_prune_content_psnr": 11.039624450162886,
+      "w3a3_qfix_rand_prune_content_ssim": 0.2618545873297585,
+      "w3a3_qfix_rand_prune_content_lpips": 0.6292894085248312,
+      "w3a3_qfix_predictor_prune_foreground_psnr": 14.448465465302982,
+      "w3a3_qfix_predictor_prune_foreground_ssim": 0.3586024244626363,
+      "w3a3_qfix_predictor_prune_foreground_lpips": 0.4823673698637221,
+      "w3a3_qfix_predictor_prune_content_psnr": 10.991377984361865,
+      "w3a3_qfix_predictor_prune_content_ssim": 0.25420067210992175,
+      "w3a3_qfix_predictor_prune_content_lpips": 0.627687050236596,
+      "w3a3_qfix_predictor_weight_foreground_psnr": 14.752032407465663,
+      "w3a3_qfix_predictor_weight_foreground_ssim": 0.35979511009322274,
+      "w3a3_qfix_predictor_weight_foreground_lpips": 0.4816298882166545,
+      "w3a3_qfix_predictor_weight_content_psnr": 11.008184005133323,
+      "w3a3_qfix_predictor_weight_content_ssim": 0.26428035895029706,
+      "w3a3_qfix_predictor_weight_content_lpips": 0.6302226450708177
+    },
+    {
+      "scene": "ball/123_14363_28981",
+      "full_qfix_foreground_psnr": 13.970043844886337,
+      "full_qfix_foreground_ssim": 0.39300355977482265,
+      "full_qfix_foreground_lpips": 0.38913528952333665,
+      "full_qfix_content_psnr": 11.183579967668493,
+      "full_qfix_content_ssim": 0.3343605465359158,
+      "full_qfix_content_lpips": 0.5031075411372714,
+      "w3a3_qfix_foreground_psnr": 13.235253870449489,
+      "w3a3_qfix_foreground_ssim": 0.2965555389722188,
+      "w3a3_qfix_foreground_lpips": 0.40038153363598716,
+      "w3a3_qfix_content_psnr": 10.577833097845028,
+      "w3a3_qfix_content_ssim": 0.28558120131492615,
+      "w3a3_qfix_content_lpips": 0.5349598990546333,
+      "w3a3_qfix_oracle_prune_foreground_psnr": 12.975029669530251,
+      "w3a3_qfix_oracle_prune_foreground_ssim": 0.2966853827238083,
+      "w3a3_qfix_oracle_prune_foreground_lpips": 0.43245592878924477,
+      "w3a3_qfix_oracle_prune_content_psnr": 10.84811655075964,
+      "w3a3_qfix_oracle_prune_content_ssim": 0.29095332821210224,
+      "w3a3_qfix_oracle_prune_content_lpips": 0.5397987829314338,
+      "w3a3_qfix_oracle_weight_foreground_psnr": 13.264376771063855,
+      "w3a3_qfix_oracle_weight_foreground_ssim": 0.29674441781308913,
+      "w3a3_qfix_oracle_weight_foreground_lpips": 0.40003296898470986,
+      "w3a3_qfix_oracle_weight_content_psnr": 10.621502740388658,
+      "w3a3_qfix_oracle_weight_content_ssim": 0.2874777383274502,
+      "w3a3_qfix_oracle_weight_content_lpips": 0.5323721335993873,
+      "w3a3_qfix_rand_prune_foreground_psnr": 13.061917866987152,
+      "w3a3_qfix_rand_prune_foreground_ssim": 0.2926034861140781,
+      "w3a3_qfix_rand_prune_foreground_lpips": 0.401458986931377,
+      "w3a3_qfix_rand_prune_content_psnr": 10.743693641665788,
+      "w3a3_qfix_rand_prune_content_ssim": 0.2873059031036165,
+      "w3a3_qfix_rand_prune_content_lpips": 0.5302870670954386,
+      "w3a3_qfix_predictor_prune_foreground_psnr": 12.747360705747525,
+      "w3a3_qfix_predictor_prune_foreground_ssim": 0.2827680955330531,
+      "w3a3_qfix_predictor_prune_foreground_lpips": 0.41666363014115226,
+      "w3a3_qfix_predictor_prune_content_psnr": 10.666991137241377,
+      "w3a3_qfix_predictor_prune_content_ssim": 0.28112928403748405,
+      "w3a3_qfix_predictor_prune_content_lpips": 0.5439453638262219,
+      "w3a3_qfix_predictor_weight_foreground_psnr": 12.778320541395342,
+      "w3a3_qfix_predictor_weight_foreground_ssim": 0.28940508266290027,
+      "w3a3_qfix_predictor_weight_foreground_lpips": 0.4108445694049199,
+      "w3a3_qfix_predictor_weight_content_psnr": 10.647192199900637,
+      "w3a3_qfix_predictor_weight_content_ssim": 0.28620453510019517,
+      "w3a3_qfix_predictor_weight_content_lpips": 0.5318629162179099
+    },
+    {
+      "scene": "bowl/70_5792_13401",
+      "full_qfix_foreground_psnr": 15.165755965473206,
+      "full_qfix_foreground_ssim": 0.18652212371428809,
+      "full_qfix_foreground_lpips": 0.46097760068045723,
+      "full_qfix_content_psnr": 11.181737092309412,
+      "full_qfix_content_ssim": 0.30481154719988507,
+      "full_qfix_content_lpips": 0.5465121997727288,
+      "w3a3_qfix_foreground_psnr": 12.678162232475746,
+      "w3a3_qfix_foreground_ssim": 0.17708539962768555,
+      "w3a3_qfix_foreground_lpips": 0.5482382906807793,
+      "w3a3_qfix_content_psnr": 9.414915569564519,
+      "w3a3_qfix_content_ssim": 0.28950243526034886,
+      "w3a3_qfix_content_lpips": 0.6210349069701301,
+      "w3a3_qfix_oracle_prune_foreground_psnr": 12.645580276685134,
+      "w3a3_qfix_oracle_prune_foreground_ssim": 0.18467758927080366,
+      "w3a3_qfix_oracle_prune_foreground_lpips": 0.5527323616875542,
+      "w3a3_qfix_oracle_prune_content_psnr": 9.678174817495067,
+      "w3a3_qfix_oracle_prune_content_ssim": 0.29323986338244545,
+      "w3a3_qfix_oracle_prune_content_lpips": 0.6167650951279534,
+      "w3a3_qfix_oracle_weight_foreground_psnr": 12.603177150649945,
+      "w3a3_qfix_oracle_weight_foreground_ssim": 0.1785096600651741,
+      "w3a3_qfix_oracle_weight_foreground_lpips": 0.5522721840275658,
+      "w3a3_qfix_oracle_weight_content_psnr": 9.35781995719353,
+      "w3a3_qfix_oracle_weight_content_ssim": 0.29332121544414097,
+      "w3a3_qfix_oracle_weight_content_lpips": 0.6182118190659417,
+      "w3a3_qfix_rand_prune_foreground_psnr": 12.702739136625405,
+      "w3a3_qfix_rand_prune_foreground_ssim": 0.17577538970443937,
+      "w3a3_qfix_rand_prune_foreground_lpips": 0.5469211869769626,
+      "w3a3_qfix_rand_prune_content_psnr": 9.498312628777574,
+      "w3a3_qfix_rand_prune_content_ssim": 0.2928050143851174,
+      "w3a3_qfix_rand_prune_content_lpips": 0.6165870163175795,
+      "w3a3_qfix_predictor_prune_foreground_psnr": 12.153246313110333,
+      "w3a3_qfix_predictor_prune_foreground_ssim": 0.17634613398048612,
+      "w3a3_qfix_predictor_prune_foreground_lpips": 0.5516043404738108,
+      "w3a3_qfix_predictor_prune_content_psnr": 9.750834222625032,
+      "w3a3_qfix_predictor_prune_content_ssim": 0.2960042556126912,
+      "w3a3_qfix_predictor_prune_content_lpips": 0.613237202167511,
+      "w3a3_qfix_predictor_weight_foreground_psnr": 12.549977320036906,
+      "w3a3_qfix_predictor_weight_foreground_ssim": 0.17827220178312725,
+      "w3a3_qfix_predictor_weight_foreground_lpips": 0.5437456766764323,
+      "w3a3_qfix_predictor_weight_content_psnr": 9.346988895003392,
+      "w3a3_qfix_predictor_weight_content_ssim": 0.2932939893669552,
+      "w3a3_qfix_predictor_weight_content_lpips": 0.6224360201093886
+    },
+    {
+      "scene": "broccoli/412_56288_108844",
+      "full_qfix_foreground_psnr": 15.411389396177396,
+      "full_qfix_foreground_ssim": 0.23300200866328347,
+      "full_qfix_foreground_lpips": 0.28778230647246045,
+      "full_qfix_content_psnr": 11.688395480064708,
+      "full_qfix_content_ssim": 0.48918821745448643,
+      "full_qfix_content_lpips": 0.4335446622636583,
+      "w3a3_qfix_foreground_psnr": 14.265025462777325,
+      "w3a3_qfix_foreground_ssim": 0.24116086131996578,
+      "w3a3_qfix_foreground_lpips": 0.33375344342655605,
+      "w3a3_qfix_content_psnr": 11.135867775223122,
+      "w3a3_qfix_content_ssim": 0.4626765052477519,
+      "w3a3_qfix_content_lpips": 0.44330369267198777,
+      "w3a3_qfix_oracle_prune_foreground_psnr": 14.513800286783201,
+      "w3a3_qfix_oracle_prune_foreground_ssim": 0.24986494415336186,
+      "w3a3_qfix_oracle_prune_foreground_lpips": 0.332716123925315,
+      "w3a3_qfix_oracle_prune_content_psnr": 11.266143719037292,
+      "w3a3_qfix_oracle_prune_content_ssim": 0.47138413455751205,
+      "w3a3_qfix_oracle_prune_content_lpips": 0.4211416012710995,
+      "w3a3_qfix_oracle_weight_foreground_psnr": 14.45434980747926,
+      "w3a3_qfix_oracle_weight_foreground_ssim": 0.2471808526251051,
+      "w3a3_qfix_oracle_weight_foreground_lpips": 0.3240179071823756,
+      "w3a3_qfix_oracle_weight_content_psnr": 11.169065448306135,
+      "w3a3_qfix_oracle_weight_content_ssim": 0.4765395654572381,
+      "w3a3_qfix_oracle_weight_content_lpips": 0.4228585826026069,
+      "w3a3_qfix_rand_prune_foreground_psnr": 14.3919082905036,
+      "w3a3_qfix_rand_prune_foreground_ssim": 0.2450258798069424,
+      "w3a3_qfix_rand_prune_foreground_lpips": 0.3371336625681983,
+      "w3a3_qfix_rand_prune_content_psnr": 11.261854419283035,
+      "w3a3_qfix_rand_prune_content_ssim": 0.4727535943190257,
+      "w3a3_qfix_rand_prune_content_lpips": 0.4316961053344939,
+      "w3a3_qfix_predictor_prune_foreground_psnr": 14.90498897494525,
+      "w3a3_qfix_predictor_prune_foreground_ssim": 0.24358892109658983,
+      "w3a3_qfix_predictor_prune_foreground_lpips": 0.31910428073671127,
+      "w3a3_qfix_predictor_prune_content_psnr": 11.227159757384864,
+      "w3a3_qfix_predictor_prune_content_ssim": 0.47149145272043014,
+      "w3a3_qfix_predictor_prune_content_lpips": 0.42380037903785706,
+      "w3a3_qfix_predictor_weight_foreground_psnr": 14.509719295276767,
+      "w3a3_qfix_predictor_weight_foreground_ssim": 0.24807319541772208,
+      "w3a3_qfix_predictor_weight_foreground_lpips": 0.3228549344672097,
+      "w3a3_qfix_predictor_weight_content_psnr": 11.18839439967686,
+      "w3a3_qfix_predictor_weight_content_ssim": 0.47990063826243085,
+      "w3a3_qfix_predictor_weight_content_lpips": 0.41989919543266296
+    },
+    {
+      "scene": "hydrant/167_18184_34441",
+      "full_qfix_foreground_psnr": 13.115390604410862,
+      "full_qfix_foreground_ssim": 0.28972453541225857,
+      "full_qfix_foreground_lpips": 0.382819770110978,
+      "full_qfix_content_psnr": 10.934717544406338,
+      "full_qfix_content_ssim": 0.2740732530752818,
+      "full_qfix_content_lpips": 0.46513280603620744,
+      "w3a3_qfix_foreground_psnr": 12.299178836659522,
+      "w3a3_qfix_foreground_ssim": 0.18376306858327654,
+      "w3a3_qfix_foreground_lpips": 0.42978425489531624,
+      "w3a3_qfix_content_psnr": 9.742100798502488,
+      "w3a3_qfix_content_ssim": 0.21758387486139932,
+      "w3a3_qfix_content_lpips": 0.553122897942861,
+      "w3a3_qfix_oracle_prune_foreground_psnr": 12.454391369596879,
+      "w3a3_qfix_oracle_prune_foreground_ssim": 0.1790886488225725,
+      "w3a3_qfix_oracle_prune_foreground_lpips": 0.4690619640880161,
+      "w3a3_qfix_oracle_prune_content_psnr": 10.255707627480096,
+      "w3a3_qfix_oracle_prune_content_ssim": 0.19748089545302921,
+      "w3a3_qfix_oracle_prune_content_lpips": 0.5370067457358042,
+      "w3a3_qfix_oracle_weight_foreground_psnr": 12.647852781765476,
+      "w3a3_qfix_oracle_weight_foreground_ssim": 0.18952619367175633,
+      "w3a3_qfix_oracle_weight_foreground_lpips": 0.42790522509151036,
+      "w3a3_qfix_oracle_weight_content_psnr": 9.701075733110608,
+      "w3a3_qfix_oracle_weight_content_ssim": 0.22109440796905094,
+      "w3a3_qfix_oracle_weight_content_lpips": 0.5472960902584924,
+      "w3a3_qfix_rand_prune_foreground_psnr": 12.75577357786779,
+      "w3a3_qfix_rand_prune_foreground_ssim": 0.18480954733159807,
+      "w3a3_qfix_rand_prune_foreground_lpips": 0.42022129562166,
+      "w3a3_qfix_rand_prune_content_psnr": 9.996615700300088,
+      "w3a3_qfix_rand_prune_content_ssim": 0.2236869815323088,
+      "w3a3_qfix_rand_prune_content_lpips": 0.5355402496125963,
+      "w3a3_qfix_predictor_prune_foreground_psnr": 10.752062553104054,
+      "w3a3_qfix_predictor_prune_foreground_ssim": 0.18993454840448168,
+      "w3a3_qfix_predictor_prune_foreground_lpips": 0.5157516184780333,
+      "w3a3_qfix_predictor_prune_content_psnr": 9.515060476247106,
+      "w3a3_qfix_predictor_prune_content_ssim": 0.2171508769194285,
+      "w3a3_qfix_predictor_prune_content_lpips": 0.5680125686857436,
+      "w3a3_qfix_predictor_weight_foreground_psnr": 12.27243319155754,
+      "w3a3_qfix_predictor_weight_foreground_ssim": 0.18623597588804033,
+      "w3a3_qfix_predictor_weight_foreground_lpips": 0.4263186736239327,
+      "w3a3_qfix_predictor_weight_content_psnr": 9.77122573575448,
+      "w3a3_qfix_predictor_weight_content_ssim": 0.22229078743192884,
+      "w3a3_qfix_predictor_weight_content_lpips": 0.5431067943572998
+    },
+    {
+      "scene": "remote/350_36761_68623",
+      "full_qfix_foreground_psnr": 14.369847603573286,
+      "full_qfix_foreground_ssim": 0.36475763221581775,
+      "full_qfix_foreground_lpips": 0.19980513056119284,
+      "full_qfix_content_psnr": 14.406752878506857,
+      "full_qfix_content_ssim": 0.37957454721132916,
+      "full_qfix_content_lpips": 0.35227403541405994,
+      "w3a3_qfix_foreground_psnr": 11.275555410524262,
+      "w3a3_qfix_foreground_ssim": 0.2147778703106774,
+      "w3a3_qfix_foreground_lpips": 0.3942783772945404,
+      "w3a3_qfix_content_psnr": 11.066524041258253,
+      "w3a3_qfix_content_ssim": 0.338619202375412,
+      "w3a3_qfix_content_lpips": 0.5040135251151191,
+      "w3a3_qfix_oracle_prune_foreground_psnr": 11.1642536228808,
+      "w3a3_qfix_oracle_prune_foreground_ssim": 0.2191950562927458,
+      "w3a3_qfix_oracle_prune_foreground_lpips": 0.39517497685220504,
+      "w3a3_qfix_oracle_prune_content_psnr": 11.38127472062615,
+      "w3a3_qfix_oracle_prune_content_ssim": 0.33345044983757866,
+      "w3a3_qfix_oracle_prune_content_lpips": 0.487744003534317,
+      "w3a3_qfix_oracle_weight_foreground_psnr": 11.209041528532266,
+      "w3a3_qfix_oracle_weight_foreground_ssim": 0.21663693255848354,
+      "w3a3_qfix_oracle_weight_foreground_lpips": 0.39442314041985405,
+      "w3a3_qfix_oracle_weight_content_psnr": 11.010882065776986,
+      "w3a3_qfix_oracle_weight_content_ssim": 0.34056297275755143,
+      "w3a3_qfix_oracle_weight_content_lpips": 0.4979022377067142,
+      "w3a3_qfix_rand_prune_foreground_psnr": 11.255896335357333,
+      "w3a3_qfix_rand_prune_foreground_ssim": 0.20908069610595703,
+      "w3a3_qfix_rand_prune_foreground_lpips": 0.3974547154373593,
+      "w3a3_qfix_rand_prune_content_psnr": 11.092072693444898,
+      "w3a3_qfix_rand_prune_content_ssim": 0.33693117565578884,
+      "w3a3_qfix_rand_prune_content_lpips": 0.4930563833978441,
+      "w3a3_qfix_predictor_prune_foreground_psnr": 11.021710021741082,
+      "w3a3_qfix_predictor_prune_foreground_ssim": 0.21877611180146536,
+      "w3a3_qfix_predictor_prune_foreground_lpips": 0.3967130051718818,
+      "w3a3_qfix_predictor_prune_content_psnr": 11.635441598252422,
+      "w3a3_qfix_predictor_prune_content_ssim": 0.332979205581877,
+      "w3a3_qfix_predictor_prune_content_lpips": 0.4865078926086426,
+      "w3a3_qfix_predictor_weight_foreground_psnr": 11.264866050073927,
+      "w3a3_qfix_predictor_weight_foreground_ssim": 0.2176993323696984,
+      "w3a3_qfix_predictor_weight_foreground_lpips": 0.39514021741019356,
+      "w3a3_qfix_predictor_weight_content_psnr": 11.013853578599544,
+      "w3a3_qfix_predictor_weight_content_ssim": 0.3387346300813887,
+      "w3a3_qfix_predictor_weight_content_lpips": 0.49593038029140896
+    },
+    {
+      "scene": "teddybear/187_20215_38541",
+      "full_qfix_foreground_psnr": 17.583081864841315,
+      "full_qfix_foreground_ssim": 0.39432788888613385,
+      "full_qfix_foreground_lpips": 0.2557668818367852,
+      "full_qfix_content_psnr": 16.979396273942385,
+      "full_qfix_content_ssim": 0.4038238955868615,
+      "full_qfix_content_lpips": 0.3664355195230908,
+      "w3a3_qfix_foreground_psnr": 16.358283939292022,
+      "w3a3_qfix_foreground_ssim": 0.3351178566614787,
+      "w3a3_qfix_foreground_lpips": 0.35238086183865863,
+      "w3a3_qfix_content_psnr": 15.842576651274916,
+      "w3a3_qfix_content_ssim": 0.37645206186506486,
+      "w3a3_qfix_content_lpips": 0.4230787952740987,
+      "w3a3_qfix_oracle_prune_foreground_psnr": 16.305514780842508,
+      "w3a3_qfix_oracle_prune_foreground_ssim": 0.3356339501010047,
+      "w3a3_qfix_oracle_prune_foreground_lpips": 0.3533991128206253,
+      "w3a3_qfix_oracle_prune_content_psnr": 15.50263873287782,
+      "w3a3_qfix_oracle_prune_content_ssim": 0.36405841178364223,
+      "w3a3_qfix_oracle_prune_content_lpips": 0.43840813636779785,
+      "w3a3_qfix_oracle_weight_foreground_psnr": 16.399389974041924,
+      "w3a3_qfix_oracle_weight_foreground_ssim": 0.3361077772246467,
+      "w3a3_qfix_oracle_weight_foreground_lpips": 0.34643442928791046,
+      "w3a3_qfix_oracle_weight_content_psnr": 15.820691561442548,
+      "w3a3_qfix_oracle_weight_content_ssim": 0.37651339835590786,
+      "w3a3_qfix_oracle_weight_content_lpips": 0.42060832844840157,
+      "w3a3_qfix_rand_prune_foreground_psnr": 16.29088317416118,
+      "w3a3_qfix_rand_prune_foreground_ssim": 0.3311655554506514,
+      "w3a3_qfix_rand_prune_foreground_lpips": 0.3584689928425683,
+      "w3a3_qfix_rand_prune_content_psnr": 15.714817134846205,
+      "w3a3_qfix_rand_prune_content_ssim": 0.37148741549915737,
+      "w3a3_qfix_rand_prune_content_lpips": 0.43062864740689594,
+      "w3a3_qfix_predictor_prune_foreground_psnr": 15.104641696930978,
+      "w3a3_qfix_predictor_prune_foreground_ssim": 0.3276788095633189,
+      "w3a3_qfix_predictor_prune_foreground_lpips": 0.36379874911573196,
+      "w3a3_qfix_predictor_prune_content_psnr": 15.14771663256125,
+      "w3a3_qfix_predictor_prune_content_ssim": 0.358800255590015,
+      "w3a3_qfix_predictor_prune_content_lpips": 0.4535890022913615,
+      "w3a3_qfix_predictor_weight_foreground_psnr": 16.31863298767914,
+      "w3a3_qfix_predictor_weight_foreground_ssim": 0.33421162101957536,
+      "w3a3_qfix_predictor_weight_foreground_lpips": 0.35326849752002293,
+      "w3a3_qfix_predictor_weight_content_psnr": 15.766169611597267,
+      "w3a3_qfix_predictor_weight_content_ssim": 0.37641532553566825,
+      "w3a3_qfix_predictor_weight_content_lpips": 0.4232113195790185
+    },
+    {
+      "scene": "toaster/372_41229_82130",
+      "full_qfix_foreground_psnr": 8.85228765457182,
+      "full_qfix_foreground_ssim": 0.23573913756344053,
+      "full_qfix_foreground_lpips": 0.4762975027163823,
+      "full_qfix_content_psnr": 9.6159885379381,
+      "full_qfix_content_ssim": 0.24595106641451517,
+      "full_qfix_content_lpips": 0.5491824315653907,
+      "w3a3_qfix_foreground_psnr": 9.203560450869771,
+      "w3a3_qfix_foreground_ssim": 0.18499220742119682,
+      "w3a3_qfix_foreground_lpips": 0.5691850847668118,
+      "w3a3_qfix_content_psnr": 9.480280965157464,
+      "w3a3_qfix_content_ssim": 0.231307006544537,
+      "w3a3_qfix_content_lpips": 0.5949763490094079,
+      "w3a3_qfix_oracle_prune_foreground_psnr": 10.257544237418493,
+      "w3a3_qfix_oracle_prune_foreground_ssim": 0.2048625499010086,
+      "w3a3_qfix_oracle_prune_foreground_lpips": 0.5164661672380235,
+      "w3a3_qfix_oracle_prune_content_psnr": 9.618019306099407,
+      "w3a3_qfix_oracle_prune_content_ssim": 0.23317200938860574,
+      "w3a3_qfix_oracle_prune_content_lpips": 0.5776482654942406,
+      "w3a3_qfix_oracle_weight_foreground_psnr": 8.978189943531168,
+      "w3a3_qfix_oracle_weight_foreground_ssim": 0.17847678479221132,
+      "w3a3_qfix_oracle_weight_foreground_lpips": 0.5720856885115305,
+      "w3a3_qfix_oracle_weight_content_psnr": 9.481576387030932,
+      "w3a3_qfix_oracle_weight_content_ssim": 0.23059047096305424,
+      "w3a3_qfix_oracle_weight_content_lpips": 0.5919989546140035,
+      "w3a3_qfix_rand_prune_foreground_psnr": 9.090747615599868,
+      "w3a3_qfix_rand_prune_foreground_ssim": 0.18519893288612366,
+      "w3a3_qfix_rand_prune_foreground_lpips": 0.5676004025671217,
+      "w3a3_qfix_rand_prune_content_psnr": 9.499311369535679,
+      "w3a3_qfix_rand_prune_content_ssim": 0.23079240653249952,
+      "w3a3_qfix_rand_prune_content_lpips": 0.5908847086959415,
+      "w3a3_qfix_predictor_prune_foreground_psnr": 9.12968140363607,
+      "w3a3_qfix_predictor_prune_foreground_ssim": 0.1842660903930664,
+      "w3a3_qfix_predictor_prune_foreground_lpips": 0.5362333589129977,
+      "w3a3_qfix_predictor_prune_content_psnr": 9.186220283899475,
+      "w3a3_qfix_predictor_prune_content_ssim": 0.2309877591000663,
+      "w3a3_qfix_predictor_prune_content_lpips": 0.5931039253870646,
+      "w3a3_qfix_predictor_weight_foreground_psnr": 9.002360198983736,
+      "w3a3_qfix_predictor_weight_foreground_ssim": 0.17937959813409382,
+      "w3a3_qfix_predictor_weight_foreground_lpips": 0.5696977112028334,
+      "w3a3_qfix_predictor_weight_content_psnr": 9.471592523775074,
+      "w3a3_qfix_predictor_weight_content_ssim": 0.23226427369647556,
+      "w3a3_qfix_predictor_weight_content_lpips": 0.5956154002083672
+    }
+  ]
+}

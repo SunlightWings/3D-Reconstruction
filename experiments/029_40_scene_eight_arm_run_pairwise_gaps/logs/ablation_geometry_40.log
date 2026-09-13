@@ -1,0 +1,16 @@
+
+Geometry error vs full-precision VGGT  (all, n=40 scenes)
+arm               cam rot deg  cam centre   spread  depth rel  point err
+------------------------------------------------------------------------
+full                   0.0097     0.00000    1.000    0.00000    0.00000
+w4a4                   1.2754     0.02063    1.004    0.02255    0.06144
+w4a4_local             1.1014     0.01896    1.002    0.02450    0.04987
+w4a4_no_rot            2.0323     0.03665    0.996    0.04404    0.10293
+w4a4_no_smooth         1.1390     0.02034    0.991    0.02509    0.05840
+w4a4_no_lwc            1.0799     0.01662    1.005    0.02201    0.05326
+w4a4_rtn              14.6565     0.12093    0.889    0.11145    0.46422
+w4a4_no_lac            1.3160     0.02286    1.002    0.02933    0.06447
+w2a4                 113.9351     0.68659    0.010    0.13184   87.35657
+
+saved /var/tmp/luli38se/quantsplat/oracle_sweep/results/w4a4_ablation_all40.json
+cam_spread_ratio far below 1 means the pose head collapsed (cf. W2A4 at ~0.01).

@@ -1,0 +1,48 @@
+/home/utn/luli38se/cv/3D-Reconstruction/code/quantization/cpu_probes.py:356: RuntimeWarning: All-NaN slice encountered
+  cons = np.nanmedian(rel, axis=0)
+/home/utn/luli38se/cv/3D-Reconstruction/code/quantization/cpu_probes.py:356: RuntimeWarning: All-NaN slice encountered
+  cons = np.nanmedian(rel, axis=0)
+/home/utn/luli38se/cv/3D-Reconstruction/code/quantization/cpu_probes.py:356: RuntimeWarning: All-NaN slice encountered
+  cons = np.nanmedian(rel, axis=0)
+/home/utn/luli38se/cv/3D-Reconstruction/code/quantization/cpu_probes.py:356: RuntimeWarning: All-NaN slice encountered
+  cons = np.nanmedian(rel, axis=0)
+/home/utn/luli38se/cv/3D-Reconstruction/code/quantization/cpu_probes.py:356: RuntimeWarning: All-NaN slice encountered
+  cons = np.nanmedian(rel, axis=0)
+/home/utn/luli38se/cv/3D-Reconstruction/code/quantization/cpu_probes.py:356: RuntimeWarning: All-NaN slice encountered
+  cons = np.nanmedian(rel, axis=0)
+/home/utn/luli38se/cv/3D-Reconstruction/code/quantization/cpu_probes.py:356: RuntimeWarning: All-NaN slice encountered
+  cons = np.nanmedian(rel, axis=0)
+/home/utn/luli38se/cv/3D-Reconstruction/code/quantization/cpu_probes.py:356: RuntimeWarning: All-NaN slice encountered
+  cons = np.nanmedian(rel, axis=0)
+====================================================================================================
+PREDICTABILITY of W4A4 error from W4A4's own output: 1330 view-groups (0 failed)
+
+  all content pixels: n = 2394000 pixels, positives 239400
+    single-feature AUROC (descriptive, no fitting): log_depth=0.811, log_depth_rel_median=0.821, depth_grad_rel=0.727, depth_local_std_rel=0.731, img_grad=0.438, img_texture=0.445, img_intensity=0.491, radial_pos=0.744, log_self_inconsistency=0.770
+    scene-held-out     linear AUROC=0.8882  folds 0.876..0.909
+    scene-held-out     binned AUROC=0.8979  folds 0.881..0.913
+    category-held-out  linear AUROC=0.8873  folds 0.878..0.895
+    category-held-out  binned AUROC=0.8970  folds 0.888..0.919
+
+  foreground pixels only: n = 351348 pixels, positives 1600
+    single-feature AUROC (descriptive, no fitting): log_depth=0.783, log_depth_rel_median=0.826, depth_grad_rel=0.826, depth_local_std_rel=0.828, img_grad=0.439, img_texture=0.432, img_intensity=0.563, radial_pos=0.744, log_self_inconsistency=0.691
+    scene-held-out     linear AUROC=0.8806  folds 0.817..0.940
+    scene-held-out     binned AUROC=0.8678  folds 0.839..0.938
+    category-held-out  linear AUROC=0.8968  folds 0.741..0.979
+    category-held-out  binned AUROC=0.8808  folds 0.751..0.967
+
+  CAMERA LEVEL (per view-group): Spearman of self-inconsistency with camera error
+    w4a4_vs_full_rot ~ group_self_inconsistency                    n=1330 rho=-0.032 p=0.248
+    w4a4_vs_full_rot ~ group_depth_spread                          n=1330 rho=-0.361 p=3.19e-42
+    w4a4_vs_gt_rot ~ group_self_inconsistency                      n=1330 rho=-0.090 p=0.00106
+    w4a4_vs_gt_rot ~ group_depth_spread                            n=1330 rho=-0.352 p=4.22e-40
+    full_vs_gt_rot ~ group_self_inconsistency                      n=1330 rho=-0.048 p=0.0808
+    full_vs_gt_rot ~ group_depth_spread                            n=1330 rho=-0.274 p=2.36e-24
+    w4a4_vs_full_rot ~ group_self_inconsistency (no bowl)          n=1296 rho=-0.024 p=0.395
+    w4a4_vs_full_rot ~ group_depth_spread (no bowl)                n=1296 rho=-0.314 p=4.17e-31
+    w4a4_vs_gt_rot ~ group_self_inconsistency (no bowl)            n=1296 rho=-0.085 p=0.00217
+    w4a4_vs_gt_rot ~ group_depth_spread (no bowl)                  n=1296 rho=-0.304 p=3.95e-29
+    full_vs_gt_rot ~ group_self_inconsistency (no bowl)            n=1296 rho=-0.041 p=0.144
+    full_vs_gt_rot ~ group_depth_spread (no bowl)                  n=1296 rho=-0.220 p=1.2e-15
+
+saved /var/tmp/luli38se/quantsplat/oracle_sweep/results/cpu_predict.json

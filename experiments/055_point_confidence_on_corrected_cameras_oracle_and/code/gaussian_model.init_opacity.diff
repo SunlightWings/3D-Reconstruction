@@ -1,0 +1,17 @@
+--- /home/utn/luli38se/cv/gaussian-splatting/scene/gaussian_model.py.orig_before_init_opacity	2026-09-13 10:47:34.317211000 +0200
++++ /home/utn/luli38se/cv/gaussian-splatting/scene/gaussian_model.py	2026-09-13 10:47:34.357217000 +0200
+@@ -162,6 +162,14 @@
+         rots[:, 0] = 1
+ 
+         opacities = self.inverse_opacity_activation(0.1 * torch.ones((fused_point_cloud.shape[0], 1), dtype=torch.float, device="cuda"))
++        # Opt-in per-point initial opacity (confidence weighting). Unset -> unchanged GraphDECO behaviour.
++        _init_op = __import__("os").environ.get("GS_INIT_OPACITY_NPY")
++        if _init_op:
++            _o = torch.tensor(np.load(_init_op), dtype=torch.float, device="cuda").reshape(-1, 1)
++            if _o.shape[0] != fused_point_cloud.shape[0]:
++                raise RuntimeError(f"GS_INIT_OPACITY_NPY has {_o.shape[0]} values for {fused_point_cloud.shape[0]} points")
++            opacities = self.inverse_opacity_activation(_o.clamp(1e-4, 0.99))
++            print("Initial opacity from", _init_op, "mean", float(_o.mean()))
+ 
+         self._xyz = nn.Parameter(fused_point_cloud.requires_grad_(True))
+         self._features_dc = nn.Parameter(features[:,:,0:1].transpose(1, 2).contiguous().requires_grad_(True))

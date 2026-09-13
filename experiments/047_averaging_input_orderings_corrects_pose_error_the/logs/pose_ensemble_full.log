@@ -1,0 +1,50 @@
+loading full ...
+[1/40] apple/110_13051_23361  single 0.003 -> ensemble 0.612 deg  (4.6s/scene)
+[2/40] apple/189_20393_38136  single 0.009 -> ensemble 0.670 deg  (4.6s/scene)
+[3/40] ball/123_14363_28981  single 0.008 -> ensemble 0.107 deg  (4.6s/scene)
+[4/40] ball/375_42693_85518  single 0.008 -> ensemble 0.538 deg  (4.6s/scene)
+[5/40] bench/415_57112_110099  single 0.006 -> ensemble 0.260 deg  (4.6s/scene)
+[6/40] bench/415_57121_110109  single 0.014 -> ensemble 0.239 deg  (4.6s/scene)
+[7/40] book/119_13962_28926  single 0.013 -> ensemble 0.483 deg  (4.6s/scene)
+[8/40] book/247_26469_51778  single 0.009 -> ensemble 0.790 deg  (4.6s/scene)
+[9/40] bowl/69_5465_12831  single 0.019 -> ensemble 0.456 deg  (4.6s/scene)
+[10/40] bowl/70_5792_13401  single 0.013 -> ensemble 8.492 deg  (4.6s/scene)
+[11/40] broccoli/372_41112_81867  single 0.011 -> ensemble 0.231 deg  (4.6s/scene)
+[12/40] broccoli/412_56288_108844  single 0.009 -> ensemble 0.462 deg  (4.6s/scene)
+[13/40] cake/374_42274_84517  single 0.012 -> ensemble 0.192 deg  (4.6s/scene)
+[14/40] cake/403_53094_103680  single 0.013 -> ensemble 0.753 deg  (4.6s/scene)
+[15/40] donut/391_47032_93657  single 0.012 -> ensemble 0.364 deg  (4.6s/scene)
+[16/40] donut/403_52964_103416  single 0.015 -> ensemble 0.437 deg  (4.6s/scene)
+[17/40] hydrant/167_18184_34441  single 0.024 -> ensemble 0.176 deg  (4.6s/scene)
+[18/40] hydrant/411_56064_108483  single 0.008 -> ensemble 0.133 deg  (4.6s/scene)
+[19/40] mouse/107_12753_23606  single 0.009 -> ensemble 0.247 deg  (4.6s/scene)
+[20/40] mouse/377_43416_86289  single 0.008 -> ensemble 0.426 deg  (4.6s/scene)
+[21/40] orange/374_42196_84367  single 0.008 -> ensemble 0.454 deg  (4.6s/scene)
+[22/40] orange/385_45386_90752  single 0.004 -> ensemble 1.289 deg  (4.6s/scene)
+[23/40] plant/247_26441_50907  single 0.012 -> ensemble 0.556 deg  (4.6s/scene)
+[24/40] plant/374_42005_84358  single 0.006 -> ensemble 0.274 deg  (4.6s/scene)
+[25/40] remote/195_20989_41543  single 0.007 -> ensemble 0.478 deg  (4.6s/scene)
+[26/40] remote/350_36761_68623  single 0.011 -> ensemble 0.515 deg  (4.6s/scene)
+[27/40] skateboard/245_26182_52130  single 0.010 -> ensemble 0.186 deg  (4.6s/scene)
+[28/40] skateboard/366_39266_76077  single 0.008 -> ensemble 0.793 deg  (4.6s/scene)
+[29/40] suitcase/410_55734_107452  single 0.002 -> ensemble 0.104 deg  (4.6s/scene)
+[30/40] suitcase/50_2928_8645  single 0.004 -> ensemble 0.931 deg  (4.6s/scene)
+[31/40] teddybear/187_20215_38541  single 0.002 -> ensemble 0.175 deg  (4.6s/scene)
+[32/40] teddybear/34_1479_4753  single 0.020 -> ensemble 0.413 deg  (4.6s/scene)
+[33/40] toaster/372_41229_82130  single 0.022 -> ensemble 0.482 deg  (4.6s/scene)
+[34/40] toaster/416_57389_110765  single 0.006 -> ensemble 0.312 deg  (4.6s/scene)
+[35/40] toytrain/240_25394_51994  single 0.004 -> ensemble 0.182 deg  (4.6s/scene)
+[36/40] toytrain/399_51323_100753  single 0.000 -> ensemble 0.669 deg  (4.6s/scene)
+[37/40] toytruck/190_20494_39385  single 0.005 -> ensemble 0.830 deg  (4.6s/scene)
+[38/40] toytruck/346_36113_66551  single 0.007 -> ensemble 0.347 deg  (4.6s/scene)
+[39/40] vase/374_41862_83720  single 0.008 -> ensemble 0.916 deg  (4.6s/scene)
+[40/40] vase/380_44863_89631  single 0.017 -> ensemble 0.704 deg  (4.6s/scene)
+
+================================================================================================
+POSE ENSEMBLING, variant full, 4 orderings, n = 40 scenes
+  vs_full          n= 40  single median 0.0083 -> ensemble 0.4546 deg  improved 0/40  median reduction -4687.2%  Wilcoxon p=1.82e-12
+  vs_full (no bowl) n= 39  single median 0.0081 -> ensemble 0.4536 deg  improved 0/39  median reduction -4679.7%  Wilcoxon p=3.64e-12
+  vs_gt            n= 40  single median 1.1121 -> ensemble 1.1193 deg  improved 27/40  median reduction +6.4%  Wilcoxon p=0.0278
+  vs_gt (no bowl)  n= 39  single median 1.1031 -> ensemble 1.0922 deg  improved 27/39  median reduction +6.6%  Wilcoxon p=0.00976
+
+saved /var/tmp/luli38se/quantsplat/oracle_sweep/results/pose_ensemble_full_p4.json

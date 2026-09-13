@@ -1,0 +1,136 @@
+{
+  "status": "PASS",
+  "scenes": 40,
+  "primary_frames": 7889,
+  "groups": 1330,
+  "cues_are_overlapping": true,
+  "top_region_fraction": 0.1,
+  "consistent_high_excess_cues": [
+    {
+      "cue": "object_boundary",
+      "label": "Object boundary",
+      "median_enrichment": 2.0232377787956803,
+      "ci95": [
+        1.7962784470821704,
+        2.1708640794794345
+      ],
+      "fraction_scenes_gt1": 0.975
+    },
+    {
+      "cue": "high_depth_gradient",
+      "label": "High GT depth gradient",
+      "median_enrichment": 1.3891734618573621,
+      "ci95": [
+        1.2283817469424856,
+        1.5351688411192392
+      ],
+      "fraction_scenes_gt1": 0.9
+    },
+    {
+      "cue": "high_texture",
+      "label": "High texture",
+      "median_enrichment": 1.1971123188204222,
+      "ci95": [
+        1.1147602054347554,
+        1.3776394656768152
+      ],
+      "fraction_scenes_gt1": 0.85
+    },
+    {
+      "cue": "rgb_edge",
+      "label": "RGB edge",
+      "median_enrichment": 1.1958930015996208,
+      "ci95": [
+        1.0907698888538828,
+        1.2966848265608877
+      ],
+      "fraction_scenes_gt1": 0.75
+    }
+  ],
+  "consistent_high_disagreement_cues": [
+    {
+      "cue": "object_boundary",
+      "label": "Object boundary",
+      "median_enrichment": 2.649920596252924,
+      "ci95": [
+        2.437427499854957,
+        2.971482649576166
+      ],
+      "fraction_scenes_gt1": 1.0
+    },
+    {
+      "cue": "thin_structure",
+      "label": "Thin/protrusion heuristic",
+      "median_enrichment": 2.1378281110348647,
+      "ci95": [
+        1.3913346194844052,
+        2.8557747096379
+      ],
+      "fraction_scenes_gt1": 0.7777777777777778
+    },
+    {
+      "cue": "high_depth_gradient",
+      "label": "High GT depth gradient",
+      "median_enrichment": 1.3512521460193607,
+      "ci95": [
+        1.27379642863023,
+        1.5268645048285667
+      ],
+      "fraction_scenes_gt1": 0.9
+    },
+    {
+      "cue": "high_texture",
+      "label": "High texture",
+      "median_enrichment": 1.2547705608550415,
+      "ci95": [
+        1.0781388056352272,
+        1.424445088472881
+      ],
+      "fraction_scenes_gt1": 0.825
+    },
+    {
+      "cue": "rgb_edge",
+      "label": "RGB edge",
+      "median_enrichment": 1.2213495044901141,
+      "ci95": [
+        1.1264334636034734,
+        1.397549547871204
+      ],
+      "fraction_scenes_gt1": 0.75
+    }
+  ],
+  "ranked_by_high_excess_enrichment": [
+    "object_boundary",
+    "thin_structure",
+    "high_depth_gradient",
+    "high_texture",
+    "rgb_edge",
+    "corner",
+    "low_texture",
+    "smooth_flat"
+  ],
+  "ranked_by_high_disagreement_enrichment": [
+    "object_boundary",
+    "thin_structure",
+    "high_depth_gradient",
+    "high_texture",
+    "rgb_edge",
+    "corner",
+    "low_texture",
+    "smooth_flat"
+  ],
+  "manifest_sha256": "1ce2f3f8d43cc17f61d84545b82f132a3b64d49d5acf70ff0fe0ac6aa9968e06",
+  "workers": 4,
+  "prediction_file_sha_reverified": false,
+  "elapsed_seconds": 210.26423573493958,
+  "cue_definitions": {
+    "object_boundary": "Valid foreground pixels removed by a 2-pixel binary erosion.",
+    "rgb_edge": "Top 10% grayscale Sobel-gradient magnitude among valid foreground pixels in each frame.",
+    "corner": "Top 10% positive Harris corner response among valid foreground pixels in each frame (k=0.04, Gaussian sigma=1.5).",
+    "low_texture": "Bottom 20% local grayscale standard deviation (9x9 window) among valid foreground pixels in each frame.",
+    "high_texture": "Top 20% local grayscale standard deviation (9x9 window) among valid foreground pixels in each frame.",
+    "thin_structure": "Valid pixels surviving 2-pixel erosion but removed by radius-4 disk binary opening; a morphology heuristic for narrow protrusions/structures, not a semantic label.",
+    "high_depth_gradient": "Top 10% GT log-depth gradient magnitude, using only pixels whose left/right/up/down depth neighbors are all valid.",
+    "smooth_flat": "2-pixel-eroded object interior that is low-texture and lies in the bottom 50% valid GT log-depth gradient magnitude."
+  }
+}

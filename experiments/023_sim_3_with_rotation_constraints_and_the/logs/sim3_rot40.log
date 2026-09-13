@@ -1,0 +1,51 @@
+  apple/110_13051_23361             LOO full: centres=0.1441  rotation=0.1275  joint=0.1239
+  apple/189_20393_38136             LOO full: centres=0.1125  rotation=0.1172  joint=0.1134
+  ball/123_14363_28981              LOO full: centres=0.0760  rotation=0.0678  joint=0.0715
+  ball/375_42693_85518              LOO full: centres=0.0755  rotation=0.0698  joint=0.0673
+  bench/415_57112_110099            LOO full: centres=0.0625  rotation=0.0582  joint=0.0603
+  bench/415_57121_110109            LOO full: centres=0.0327  rotation=0.0291  joint=0.0281
+  book/119_13962_28926              LOO full: centres=0.0288  rotation=0.0358  joint=0.0269
+  book/247_26469_51778              LOO full: centres=0.0831  rotation=0.1065  joint=0.0796
+  bowl/69_5465_12831                LOO full: centres=0.2563  rotation=0.2169  joint=0.2256
+  bowl/70_5792_13401                LOO full: centres=0.4549  rotation=0.3684  joint=0.3939
+  broccoli/372_41112_81867          LOO full: centres=0.0585  rotation=0.0576  joint=0.0554
+  broccoli/412_56288_108844         LOO full: centres=0.0826  rotation=0.0965  joint=0.0836
+  cake/374_42274_84517              LOO full: centres=0.0877  rotation=0.0905  joint=0.0867
+  cake/403_53094_103680             LOO full: centres=0.2498  rotation=0.2913  joint=0.2199
+  donut/391_47032_93657             LOO full: centres=0.0716  rotation=0.0948  joint=0.0691
+  donut/403_52964_103416            LOO full: centres=0.2214  rotation=0.2576  joint=0.2228
+  hydrant/167_18184_34441           LOO full: centres=0.0449  rotation=0.0452  joint=0.0432
+  hydrant/411_56064_108483          LOO full: centres=0.0809  rotation=0.0766  joint=0.0762
+  mouse/107_12753_23606             LOO full: centres=0.2160  rotation=0.2117  joint=0.1947
+  mouse/377_43416_86289             LOO full: centres=0.1618  rotation=0.1444  joint=0.1469
+  orange/374_42196_84367            LOO full: centres=0.0870  rotation=0.0753  joint=0.0782
+  orange/385_45386_90752            LOO full: centres=0.2172  rotation=0.2117  joint=0.2016
+  plant/247_26441_50907             LOO full: centres=0.0655  rotation=0.0665  joint=0.0643
+  plant/374_42005_84358             LOO full: centres=0.1451  rotation=0.1356  joint=0.1384
+  remote/195_20989_41543            LOO full: centres=0.1034  rotation=0.0703  joint=0.0826
+  remote/350_36761_68623            LOO full: centres=0.0646  rotation=0.0785  joint=0.0701
+  skateboard/245_26182_52130        LOO full: centres=0.0531  rotation=0.0486  joint=0.0463
+  skateboard/366_39266_76077        LOO full: centres=0.0619  rotation=0.0578  joint=0.0558
+  suitcase/410_55734_107452         LOO full: centres=0.0906  rotation=0.0810  joint=0.0858
+  suitcase/50_2928_8645             LOO full: centres=0.0555  rotation=0.0550  joint=0.0517
+  teddybear/187_20215_38541         LOO full: centres=0.0588  rotation=0.0629  joint=0.0603
+  teddybear/34_1479_4753            LOO full: centres=0.0580  rotation=0.0606  joint=0.0572
+  toaster/372_41229_82130           LOO full: centres=0.1821  rotation=0.1448  joint=0.1574
+  toaster/416_57389_110765          LOO full: centres=0.0557  rotation=0.0607  joint=0.0542
+  toytrain/240_25394_51994          LOO full: centres=0.0397  rotation=0.0400  joint=0.0365
+  toytrain/399_51323_100753         LOO full: centres=0.0710  rotation=0.0527  joint=0.0546
+  toytruck/190_20494_39385          LOO full: centres=0.1437  rotation=0.1362  joint=0.1360
+  toytruck/346_36113_66551          LOO full: centres=0.0972  rotation=0.1015  joint=0.0973
+  vase/374_41862_83720              LOO full: centres=0.0372  rotation=0.0384  joint=0.0333
+  vase/380_44863_89631              LOO full: centres=0.0818  rotation=0.0914  joint=0.0854
+
+=== means ===
+full  centres   LOO=0.1093   on-silhouette=8.70%
+full  rotation  LOO=0.1058   on-silhouette=8.58%
+full  joint     LOO=0.1009   on-silhouette=8.62%
+w4a4  centres   LOO=0.1527   on-silhouette=8.80%
+w4a4  rotation  LOO=0.1427   on-silhouette=8.65%
+w4a4  joint     LOO=0.1394   on-silhouette=8.70%
+
+best by LOO (full): joint
+saved /var/tmp/luli38se/quantsplat/oracle_sweep/results/sim3_rotation.json

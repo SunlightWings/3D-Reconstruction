@@ -1,0 +1,58 @@
+{
+  "description": "GT points projected back through their own GT camera (self) and through the other input frames' GT cameras (cross-view).",
+  "self_target": 0.9,
+  "mean_self_on_silhouette": 1.0,
+  "mean_cross_on_silhouette": 0.963575856422725,
+  "passed": true,
+  "verdict": "GT camera path is self-consistent; A4's low on-silhouette is NOT explained by the intrinsics/pad-affine/CAM_FLIP path",
+  "per_scene": [
+    {
+      "scene": "apple/110_13051_23361",
+      "self_on_silhouette": 1.0,
+      "self_inside_image": 1.0,
+      "cross_on_silhouette": 0.9267565259806185
+    },
+    {
+      "scene": "ball/123_14363_28981",
+      "self_on_silhouette": 1.0,
+      "self_inside_image": 1.0,
+      "cross_on_silhouette": 0.927490749509285
+    },
+    {
+      "scene": "bowl/70_5792_13401",
+      "self_on_silhouette": 1.0,
+      "self_inside_image": 1.0,
+      "cross_on_silhouette": 0.9758249363520405
+    },
+    {
+      "scene": "broccoli/412_56288_108844",
+      "self_on_silhouette": 1.0,
+      "self_inside_image": 1.0,
+      "cross_on_silhouette": 0.9931052400273974
+    },
+    {
+      "scene": "hydrant/167_18184_34441",
+      "self_on_silhouette": 1.0,
+      "self_inside_image": 1.0,
+      "cross_on_silhouette": 0.9589146796521629
+    },
+    {
+      "scene": "remote/350_36761_68623",
+      "self_on_silhouette": 1.0,
+      "self_inside_image": 1.0,
+      "cross_on_silhouette": 0.9928213317297114
+    },
+    {
+      "scene": "teddybear/187_20215_38541",
+      "self_on_silhouette": 1.0,
+      "self_inside_image": 1.0,
+      "cross_on_silhouette": 0.961817391959317
+    },
+    {
+      "scene": "toaster/372_41229_82130",
+      "self_on_silhouette": 1.0,
+      "self_inside_image": 1.0,
+      "cross_on_silhouette": 0.971875996171267
+    }
+  ]
+}

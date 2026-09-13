@@ -1,0 +1,39 @@
+variant=w4a4_local  scenes=8 (subset)
+loading w4a4_local ...
+  loaded in 88.7s: calibrated locally by code/quantization/calibrate_w2a4.py
+  apple/110_13051_23361: 2.23s, peak 15383 MiB -> w4a4_local.npz
+  ball/123_14363_28981: 2.02s, peak 15384 MiB -> w4a4_local.npz
+  bowl/70_5792_13401: 2.02s, peak 15384 MiB -> w4a4_local.npz
+  broccoli/412_56288_108844: 2.03s, peak 15384 MiB -> w4a4_local.npz
+  hydrant/167_18184_34441: 2.03s, peak 15384 MiB -> w4a4_local.npz
+  remote/350_36761_68623: 2.03s, peak 15384 MiB -> w4a4_local.npz
+  teddybear/187_20215_38541: 2.03s, peak 15384 MiB -> w4a4_local.npz
+  toaster/372_41229_82130: 2.03s, peak 15384 MiB -> w4a4_local.npz
+
+8/8 scenes; mean inference 2.05s
+variant=w4a4_local  scenes=8 (subset)
+loading w4a4_local ...
+  loaded in 25.4s: calibrated locally by code/quantization/calibrate_w2a4.py
+  skip apple/110_13051_23361 (exists)
+  skip ball/123_14363_28981 (exists)
+  skip bowl/70_5792_13401 (exists)
+  skip broccoli/412_56288_108844 (exists)
+  skip hydrant/167_18184_34441 (exists)
+  skip remote/350_36761_68623 (exists)
+  skip teddybear/187_20215_38541 (exists)
+  skip toaster/372_41229_82130 (exists)
+
+8/8 scenes (all pre-existing)
+variant=w4a4_local  scenes=8 (subset)
+loading w4a4_local ...
+  loaded in 29.3s: calibrated locally by code/quantization/calibrate_w2a4.py
+  skip apple/110_13051_23361 (exists)
+  skip ball/123_14363_28981 (exists)
+  skip bowl/70_5792_13401 (exists)
+  skip broccoli/412_56288_108844 (exists)
+  skip hydrant/167_18184_34441 (exists)
+  skip remote/350_36761_68623 (exists)
+  skip teddybear/187_20215_38541 (exists)
+  skip toaster/372_41229_82130 (exists)
+
+8/8 scenes (all pre-existing)

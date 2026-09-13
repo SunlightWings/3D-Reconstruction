@@ -1,0 +1,48 @@
+w4a4_rtn: 40 scenes with a prediction
+  apple/110_13051_23361        bias 1.3960  err before 0.3641  oracle: 0.0000->0.0000  const: 1.1726->0.1633  iqr: 1.1684->0.1675
+  apple/189_20393_38136        bias 1.3148  err before 0.2960  oracle: 0.0000->0.0000  const: 1.1726->0.1053  iqr: 1.1769->0.1012
+  ball/123_14363_28981         bias 1.0603  err before 0.0536  oracle: 0.0000->0.0000  const: 1.1780->0.1056  iqr: 1.1917->0.1158
+  ball/375_42693_85518         bias 1.0893  err before 0.0904  oracle: 0.0000->0.0000  const: 1.1780->0.0744  iqr: 1.1834->0.0786
+  bench/415_57112_110099       bias 1.0788  err before 0.0808  oracle: 0.0000->0.0000  const: 1.1780->0.0825  iqr: 1.1919->0.0933
+  bench/415_57121_110109       bias 1.0357  err before 0.0367  oracle: 0.0000->0.0000  const: 1.1780->0.1218  iqr: 1.1852->0.1271
+  book/119_13962_28926         bias 1.2522  err before 0.2507  oracle: 0.0000->0.0000  const: 1.1726->0.0666  iqr: 1.1816->0.0585
+  book/247_26469_51778         bias 1.1722  err before 0.1739  oracle: 0.0000->0.0000  const: 1.1780->0.0172  iqr: 1.1791->0.0172
+  bowl/69_5465_12831           bias 1.2550  err before 0.2358  oracle: 0.0000->0.0000  const: 1.1726->0.0539  iqr: 1.1827->0.0449
+  bowl/70_5792_13401           bias 0.9579  err before 0.0445  oracle: 0.0000->0.0000  const: 1.1780->0.1889  iqr: 1.1902->0.1972
+  broccoli/372_41112_81867     bias 1.1949  err before 0.1846  oracle: 0.0000->0.0000  const: 1.1726->0.0109  iqr: 1.1795->0.0154
+  broccoli/412_56288_108844    bias 1.1305  err before 0.1349  oracle: 0.0000->0.0000  const: 1.1780->0.0366  iqr: 1.1801->0.0383
+  cake/374_42274_84517         bias 1.2651  err before 0.2618  oracle: 0.0000->0.0000  const: 1.1726->0.0761  iqr: 1.1760->0.0730
+  cake/403_53094_103680        bias 1.0859  err before 0.0802  oracle: 0.0000->0.0000  const: 1.1780->0.0830  iqr: 1.1821->0.0862
+  donut/391_47032_93657        bias 1.1319  err before 0.1303  oracle: 0.0000->0.0000  const: 1.1780->0.0405  iqr: 1.1807->0.0427
+  donut/403_52964_103416       bias 1.1780  err before 0.1788  oracle: 0.0000->0.0000  const: 1.1726->0.0232  iqr: 1.1800->0.0170
+  hydrant/167_18184_34441      bias 1.0609  err before 0.0695  oracle: 0.0000->0.0000  const: 1.1780->0.0921  iqr: 1.1886->0.1003
+  hydrant/411_56064_108483     bias 1.0418  err before 0.0402  oracle: 0.0000->0.0000  const: 1.1780->0.1170  iqr: 1.2006->0.1336
+  mouse/107_12753_23606        bias 1.1833  err before 0.1654  oracle: 0.0000->0.0000  const: 1.1726->0.0431  iqr: 1.2037->0.0431
+  mouse/377_43416_86289        bias 1.2390  err before 0.2260  oracle: 0.0000->0.0000  const: 1.1726->0.0456  iqr: 1.1793->0.0396
+  orange/374_42196_84367       bias 1.5000  err before 0.5061  oracle: 0.0000->0.0000  const: 1.1726->0.2845  iqr: 1.1741->0.2828
+  orange/385_45386_90752       bias 1.3215  err before 0.3227  oracle: 0.0000->0.0000  const: 1.1726->0.1281  iqr: 1.1714->0.1292
+  plant/247_26441_50907        bias 1.1718  err before 0.1750  oracle: 0.0000->0.0000  const: 1.1780->0.0305  iqr: 1.1827->0.0288
+  plant/374_42005_84358        bias 1.1811  err before 0.1912  oracle: 0.0000->0.0000  const: 1.1726->0.0255  iqr: 1.1986->0.0142
+  remote/195_20989_41543       bias 1.1726  err before 0.1593  oracle: 0.0000->0.0000  const: 1.1780->0.0304  iqr: 1.1826->0.0303
+  remote/350_36761_68623       bias 1.1864  err before 0.1883  oracle: 0.0000->0.0000  const: 1.1726->0.0276  iqr: 1.1783->0.0260
+  skateboard/245_26182_52130   bias 1.1517  err before 0.1564  oracle: 0.0000->0.0000  const: 1.1780->0.0183  iqr: 1.1797->0.0198
+  skateboard/366_39266_76077   bias 1.0791  err before 0.0745  oracle: 0.0000->0.0000  const: 1.1780->0.0879  iqr: 1.1825->0.0914
+  suitcase/410_55734_107452    bias 1.2038  err before 0.2051  oracle: 0.0000->0.0000  const: 1.1726->0.0278  iqr: 1.1790->0.0229
+  suitcase/50_2928_8645        bias 1.1550  err before 0.1522  oracle: 0.0000->0.0000  const: 1.1780->0.0228  iqr: 1.1782->0.0228
+  teddybear/187_20215_38541    bias 1.1000  err before 0.0989  oracle: 0.0000->0.0000  const: 1.1780->0.0672  iqr: 1.1829->0.0710
+  teddybear/34_1479_4753       bias 1.1369  err before 0.1440  oracle: 0.0000->0.0000  const: 1.1780->0.0329  iqr: 1.1879->0.0370
+  toaster/372_41229_82130      bias 1.1444  err before 0.1478  oracle: 0.0000->0.0000  const: 1.1780->0.0257  iqr: 1.1806->0.0278
+  toaster/416_57389_110765     bias 1.2238  err before 0.2208  oracle: 0.0000->0.0000  const: 1.1726->0.0411  iqr: 1.1840->0.0311
+  toytrain/240_25394_51994     bias 1.1892  err before 0.1895  oracle: 0.0000->0.0000  const: 1.1726->0.0227  iqr: 1.1783->0.0177
+  toytrain/399_51323_100753    bias 1.3046  err before 0.2956  oracle: 0.0000->0.0000  const: 1.1726->0.1049  iqr: 1.1746->0.1030
+  toytruck/190_20494_39385     bias 1.4495  err before 0.4832  oracle: 0.0000->0.0000  const: 1.1726->0.2649  iqr: 1.1758->0.2615
+  toytruck/346_36113_66551     bias 1.1138  err before 0.1118  oracle: 0.0000->0.0000  const: 1.1780->0.0562  iqr: 1.1808->0.0585
+  vase/374_41862_83720         bias 1.2826  err before 0.2675  oracle: 0.0000->0.0000  const: 1.1726->0.0810  iqr: 1.1744->0.0793
+  vase/380_44863_89631         bias 1.2809  err before 0.2729  oracle: 0.0000->0.0000  const: 1.1726->0.0856  iqr: 1.1788->0.0799
+
+median-over-cameras focal error, mean over scenes:
+  before  0.1865
+  oracle  0.0000
+  const   0.0753
+  iqr     0.0756
+saved /var/tmp/luli38se/quantsplat/oracle_sweep/results/focal_corrector_w4a4_rtn_all.json

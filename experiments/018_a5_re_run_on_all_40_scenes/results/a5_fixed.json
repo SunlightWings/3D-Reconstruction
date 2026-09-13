@@ -1,0 +1,1251 @@
+{
+  "description": "Leave-one-camera-out Sim(3) extrapolation error: fit on 5 of 6 input cameras, predict the 6th. The held-out predicted camera is mapped back into the GT frame so that the residual and the normalising radius share a frame (see ongoing_logs.md #017); median_loo_error_legacy_frame_inconsistent reproduces the old, ~13x-too-small figure.",
+  "expect": "median well under 0.02 (2% of scene radius)",
+  "n_scenes": 40,
+  "median_of_scene_medians_full": 0.08133962190064452,
+  "median_of_scene_medians_w4a4": 0.13804836064611745,
+  "worst_scene_full": "bowl/70_5792_13401",
+  "worst_scene_w4a4": "donut/403_52964_103416",
+  "per_scene": [
+    {
+      "scene": "apple/110_13051_23361",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.14409973677447974,
+          "max_loo_error_scene_radii": 0.2108237221250726,
+          "median_loo_error_legacy_frame_inconsistent": 0.010726612813659806,
+          "per_fold": [
+            0.08952637148988123,
+            0.07607699656060297,
+            0.20703749026885654,
+            0.2108237221250726,
+            0.19867310205907823,
+            0.0405803795122593
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.10554167846949236,
+          "max_loo_error_scene_radii": 0.30595024589743586,
+          "median_loo_error_legacy_frame_inconsistent": 0.007926918122283856,
+          "per_fold": [
+            0.0969298595979769,
+            0.055367159940494175,
+            0.23587274947804762,
+            0.30595024589743586,
+            0.11415349734100781,
+            0.06751939705607433
+          ]
+        }
+      }
+    },
+    {
+      "scene": "apple/189_20393_38136",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.11248113959651831,
+          "max_loo_error_scene_radii": 0.1821888556485442,
+          "median_loo_error_legacy_frame_inconsistent": 0.0058723034760248035,
+          "per_fold": [
+            0.08145106738419738,
+            0.1024551476414161,
+            0.10050485533312761,
+            0.1821888556485442,
+            0.1229151582361948,
+            0.12250713155162053
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.21507533909798757,
+          "max_loo_error_scene_radii": 0.2546505091943753,
+          "median_loo_error_legacy_frame_inconsistent": 0.011188061078286005,
+          "per_fold": [
+            0.15018831443439704,
+            0.21352546143588866,
+            0.23084474855410325,
+            0.2546505091943753,
+            0.08652113095314458,
+            0.21662521676008648
+          ]
+        }
+      }
+    },
+    {
+      "scene": "ball/123_14363_28981",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.07603787951876502,
+          "max_loo_error_scene_radii": 0.0912447514680811,
+          "median_loo_error_legacy_frame_inconsistent": 0.006524199385194402,
+          "per_fold": [
+            0.03241265702402114,
+            0.07928523492008707,
+            0.06231884062857705,
+            0.0765668833632221,
+            0.0912447514680811,
+            0.07550887567430795
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.1039441574940326,
+          "max_loo_error_scene_radii": 0.1841549785722698,
+          "median_loo_error_legacy_frame_inconsistent": 0.009013119135353315,
+          "per_fold": [
+            0.13616429473180616,
+            0.027441244351876802,
+            0.07758281593045868,
+            0.11914106905616191,
+            0.08874724593190329,
+            0.1841549785722698
+          ]
+        }
+      }
+    },
+    {
+      "scene": "ball/375_42693_85518",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.07552845898229296,
+          "max_loo_error_scene_radii": 0.10096113350120363,
+          "median_loo_error_legacy_frame_inconsistent": 0.006552269491411911,
+          "per_fold": [
+            0.07961172390535719,
+            0.09205833049169825,
+            0.10096113350120363,
+            0.07144519405922872,
+            0.05546795321542392,
+            0.0255294309671106
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.07876747647079159,
+          "max_loo_error_scene_radii": 0.12039778920927673,
+          "median_loo_error_legacy_frame_inconsistent": 0.006791756816623605,
+          "per_fold": [
+            0.06551116375837741,
+            0.12039778920927673,
+            0.07677667139123652,
+            0.08075828155034666,
+            0.11028890757406018,
+            0.062073228212313696
+          ]
+        }
+      }
+    },
+    {
+      "scene": "bench/415_57112_110099",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.06253570751423497,
+          "max_loo_error_scene_radii": 0.13892891337134847,
+          "median_loo_error_legacy_frame_inconsistent": 0.009487173489879007,
+          "per_fold": [
+            0.029597097424507966,
+            0.06170212423944092,
+            0.04737232458157976,
+            0.08617324177572418,
+            0.06336929078902902,
+            0.13892891337134847
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.05308426087939094,
+          "max_loo_error_scene_radii": 0.10380585442898471,
+          "median_loo_error_legacy_frame_inconsistent": 0.008094836085055818,
+          "per_fold": [
+            0.053823286973026005,
+            0.05234523478575588,
+            0.013083138982414108,
+            0.09301938497407151,
+            0.022051234599073887,
+            0.10380585442898471
+          ]
+        }
+      }
+    },
+    {
+      "scene": "bench/415_57121_110109",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.032657969249507215,
+          "max_loo_error_scene_radii": 0.05362586257976845,
+          "median_loo_error_legacy_frame_inconsistent": 0.00283486557166821,
+          "per_fold": [
+            0.03911557517068586,
+            0.01801143071739774,
+            0.05362586257976845,
+            0.044269873056283195,
+            0.026200363328328567,
+            0.0225638293718631
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.06721226428523533,
+          "max_loo_error_scene_radii": 0.0942977207973979,
+          "median_loo_error_legacy_frame_inconsistent": 0.00587998583303094,
+          "per_fold": [
+            0.08891598480975199,
+            0.030381102751219767,
+            0.0942977207973979,
+            0.05090065937887593,
+            0.08352386919159473,
+            0.03648507815596936
+          ]
+        }
+      }
+    },
+    {
+      "scene": "book/119_13962_28926",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.028839623999658212,
+          "max_loo_error_scene_radii": 0.05298054692258009,
+          "median_loo_error_legacy_frame_inconsistent": 0.0023220754485620346,
+          "per_fold": [
+            0.05298054692258009,
+            0.050268118792388156,
+            0.0199110635568837,
+            0.027469491900849827,
+            0.01930125867758967,
+            0.030209756098466593
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.10079236878454632,
+          "max_loo_error_scene_radii": 0.17415908116044437,
+          "median_loo_error_legacy_frame_inconsistent": 0.008124894281454614,
+          "per_fold": [
+            0.06678333052028326,
+            0.17415908116044437,
+            0.1590461546872477,
+            0.08164645825399627,
+            0.11993827931509637,
+            0.04993907101675099
+          ]
+        }
+      }
+    },
+    {
+      "scene": "book/247_26469_51778",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.08306540073722715,
+          "max_loo_error_scene_radii": 0.23955766166258982,
+          "median_loo_error_legacy_frame_inconsistent": 0.006561915822806744,
+          "per_fold": [
+            0.07319836719058069,
+            0.05712551060318879,
+            0.23955766166258982,
+            0.18712885757972847,
+            0.08782211173615478,
+            0.07830868973829953
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.16869768543948413,
+          "max_loo_error_scene_radii": 0.3519668193491087,
+          "median_loo_error_legacy_frame_inconsistent": 0.013471820218348744,
+          "per_fold": [
+            0.18136723347136105,
+            0.10594245353189206,
+            0.3519668193491087,
+            0.18883290674942257,
+            0.1560281374076072,
+            0.09763337283363978
+          ]
+        }
+      }
+    },
+    {
+      "scene": "bowl/69_5465_12831",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.25632385040449635,
+          "max_loo_error_scene_radii": 0.37294572619625865,
+          "median_loo_error_legacy_frame_inconsistent": 0.014527007908664239,
+          "per_fold": [
+            0.23344047497996886,
+            0.32666494190160283,
+            0.037226664959208386,
+            0.37294572619625865,
+            0.1579077952289896,
+            0.2792072258290238
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.302624333676102,
+          "max_loo_error_scene_radii": 0.3965829995347889,
+          "median_loo_error_legacy_frame_inconsistent": 0.01677066542635579,
+          "per_fold": [
+            0.3493218825981658,
+            0.12118376029886405,
+            0.2559267847540381,
+            0.36428015137552244,
+            0.3965829995347889,
+            0.22908263514031635
+          ]
+        }
+      }
+    },
+    {
+      "scene": "bowl/70_5792_13401",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.45490883437939367,
+          "max_loo_error_scene_radii": 0.6889947309108412,
+          "median_loo_error_legacy_frame_inconsistent": 0.03413433008309542,
+          "per_fold": [
+            0.2735698713560295,
+            0.19285317261914664,
+            0.4235999719229913,
+            0.6889947309108412,
+            0.486217696835796,
+            0.5503006515813071
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.3259965974276884,
+          "max_loo_error_scene_radii": 0.7889450137568261,
+          "median_loo_error_legacy_frame_inconsistent": 0.023644146623687662,
+          "per_fold": [
+            0.10689264620075989,
+            0.23085881347172305,
+            0.5294106429405894,
+            0.7889450137568261,
+            0.4211343813836537,
+            0.20583570165097317
+          ]
+        }
+      }
+    },
+    {
+      "scene": "broccoli/372_41112_81867",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.058453457272131484,
+          "max_loo_error_scene_radii": 0.07586694918233224,
+          "median_loo_error_legacy_frame_inconsistent": 0.004304745641743643,
+          "per_fold": [
+            0.06030650820929396,
+            0.06411662214438164,
+            0.07586694918233224,
+            0.04838634996819826,
+            0.05660040633496901,
+            0.026721545552027128
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.09259131381923336,
+          "max_loo_error_scene_radii": 0.15527548369176522,
+          "median_loo_error_legacy_frame_inconsistent": 0.006844095700227428,
+          "per_fold": [
+            0.098684033470962,
+            0.08098544268955726,
+            0.08649859416750473,
+            0.11539167644413488,
+            0.15527548369176522,
+            0.03332810830639943
+          ]
+        }
+      }
+    },
+    {
+      "scene": "broccoli/412_56288_108844",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.08261736531301514,
+          "max_loo_error_scene_radii": 0.12243206149735593,
+          "median_loo_error_legacy_frame_inconsistent": 0.0052096786346887605,
+          "per_fold": [
+            0.10245272962249251,
+            0.09155071845819045,
+            0.12243206149735593,
+            0.071863024858384,
+            0.07368401216783982,
+            0.048360523353639016
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.15380772063019243,
+          "max_loo_error_scene_radii": 0.28141158052405046,
+          "median_loo_error_legacy_frame_inconsistent": 0.0098727755590765,
+          "per_fold": [
+            0.28141158052405046,
+            0.10240343637095957,
+            0.21475752454196037,
+            0.12389117729073444,
+            0.07858522466641454,
+            0.18372426396965044
+          ]
+        }
+      }
+    },
+    {
+      "scene": "cake/374_42274_84517",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.08772310101960376,
+          "max_loo_error_scene_radii": 0.1504163313440276,
+          "median_loo_error_legacy_frame_inconsistent": 0.007736384249936586,
+          "per_fold": [
+            0.09222870717640698,
+            0.07995381862767824,
+            0.1504163313440276,
+            0.08321749486280056,
+            0.13030904928256373,
+            0.08059695311773919
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.15957309375831083,
+          "max_loo_error_scene_radii": 0.3193630987096515,
+          "median_loo_error_legacy_frame_inconsistent": 0.014035466105263942,
+          "per_fold": [
+            0.11107133720793037,
+            0.08736100901726801,
+            0.21696199432623206,
+            0.20031160160178807,
+            0.3193630987096515,
+            0.1188345859148336
+          ]
+        }
+      }
+    },
+    {
+      "scene": "cake/403_53094_103680",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.249818108340656,
+          "max_loo_error_scene_radii": 0.38005289455368213,
+          "median_loo_error_legacy_frame_inconsistent": 0.016955544460586246,
+          "per_fold": [
+            0.30126589946915977,
+            0.04710082347547719,
+            0.2004971142207944,
+            0.2797288766610784,
+            0.21990734002023357,
+            0.38005289455368213
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.20899846027950514,
+          "max_loo_error_scene_radii": 0.34816514446961583,
+          "median_loo_error_legacy_frame_inconsistent": 0.01414158827958992,
+          "per_fold": [
+            0.09086711383492702,
+            0.21231594427292327,
+            0.205680976286087,
+            0.34816514446961583,
+            0.16177624838085627,
+            0.2901848575886139
+          ]
+        }
+      }
+    },
+    {
+      "scene": "donut/391_47032_93657",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.07164045439832945,
+          "max_loo_error_scene_radii": 0.32965791798738336,
+          "median_loo_error_legacy_frame_inconsistent": 0.00367035526517835,
+          "per_fold": [
+            0.06945966788625826,
+            0.29310071644853664,
+            0.00719304034011745,
+            0.07382124091040061,
+            0.04793203235229105,
+            0.32965791798738336
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.20211669552120048,
+          "max_loo_error_scene_radii": 0.27627603420268027,
+          "median_loo_error_legacy_frame_inconsistent": 0.010553228703918519,
+          "per_fold": [
+            0.27327796654072317,
+            0.24230020152266057,
+            0.12666661273517765,
+            0.12958802541156458,
+            0.16193318951974042,
+            0.27627603420268027
+          ]
+        }
+      }
+    },
+    {
+      "scene": "donut/403_52964_103416",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.22142434888776757,
+          "max_loo_error_scene_radii": 0.6075867083887674,
+          "median_loo_error_legacy_frame_inconsistent": 0.00994637025412027,
+          "per_fold": [
+            0.23227444127228716,
+            0.1955582720602224,
+            0.19925100463388928,
+            0.6075867083887674,
+            0.5878917749387037,
+            0.21057425650324801
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.43373852536783497,
+          "max_loo_error_scene_radii": 0.5784783754328684,
+          "median_loo_error_legacy_frame_inconsistent": 0.01960239187923979,
+          "per_fold": [
+            0.48629954942273834,
+            0.26141092431124596,
+            0.38117750131293154,
+            0.5419422582587824,
+            0.5784783754328684,
+            0.3354769420918885
+          ]
+        }
+      }
+    },
+    {
+      "scene": "hydrant/167_18184_34441",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.04485900773519794,
+          "max_loo_error_scene_radii": 0.06950977342696608,
+          "median_loo_error_legacy_frame_inconsistent": 0.002333430401023613,
+          "per_fold": [
+            0.045720010265907975,
+            0.04399800520448789,
+            0.06950977342696608,
+            0.06583024141540342,
+            0.020149179725528724,
+            0.0183992798077851
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.09599433577236566,
+          "max_loo_error_scene_radii": 0.11485599644388439,
+          "median_loo_error_legacy_frame_inconsistent": 0.00501031081255367,
+          "per_fold": [
+            0.08264053478969649,
+            0.11257379278654969,
+            0.11485599644388439,
+            0.10934813675503481,
+            0.02669218016359904,
+            0.05007841831550358
+          ]
+        }
+      }
+    },
+    {
+      "scene": "hydrant/411_56064_108483",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.08090402379875555,
+          "max_loo_error_scene_radii": 0.19780885026200548,
+          "median_loo_error_legacy_frame_inconsistent": 0.00493254222126796,
+          "per_fold": [
+            0.06306331846239054,
+            0.0295591948006192,
+            0.1778902995969556,
+            0.19780885026200548,
+            0.07908761882283698,
+            0.08272042877467414
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.09157323903646689,
+          "max_loo_error_scene_radii": 0.20888719368513586,
+          "median_loo_error_legacy_frame_inconsistent": 0.005555358174855423,
+          "per_fold": [
+            0.03252387808620225,
+            0.0738720357758458,
+            0.20888719368513586,
+            0.1828647937647904,
+            0.09900772711354952,
+            0.08413875095938425
+          ]
+        }
+      }
+    },
+    {
+      "scene": "mouse/107_12753_23606",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.21601658660477452,
+          "max_loo_error_scene_radii": 0.38533174169252926,
+          "median_loo_error_legacy_frame_inconsistent": 0.019262388936968695,
+          "per_fold": [
+            0.0575859577069245,
+            0.20326947341831825,
+            0.2287636997912308,
+            0.38533174169252926,
+            0.1659133474124611,
+            0.2656784795104987
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.16763980604203918,
+          "max_loo_error_scene_radii": 0.32316481481625653,
+          "median_loo_error_legacy_frame_inconsistent": 0.014833348646482404,
+          "per_fold": [
+            0.08888340822607385,
+            0.14309129513300786,
+            0.18288307184667082,
+            0.32316481481625653,
+            0.15239654023740754,
+            0.18673537851307676
+          ]
+        }
+      }
+    },
+    {
+      "scene": "mouse/377_43416_86289",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.1617767211022168,
+          "max_loo_error_scene_radii": 0.22693098402128756,
+          "median_loo_error_legacy_frame_inconsistent": 0.01128521381551997,
+          "per_fold": [
+            0.1631214521089279,
+            0.22693098402128756,
+            0.14031607492230172,
+            0.16043199009550574,
+            0.16618306446158312,
+            0.10729807335785933
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.22878452889905948,
+          "max_loo_error_scene_radii": 0.2663785064710502,
+          "median_loo_error_legacy_frame_inconsistent": 0.016182648343552448,
+          "per_fold": [
+            0.24123656871713525,
+            0.14169410151331407,
+            0.21633248908098368,
+            0.2663785064710502,
+            0.2484787767132285,
+            0.12594910591832978
+          ]
+        }
+      }
+    },
+    {
+      "scene": "orange/374_42196_84367",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.08701638376766527,
+          "max_loo_error_scene_radii": 0.17210217699676084,
+          "median_loo_error_legacy_frame_inconsistent": 0.008592568832873768,
+          "per_fold": [
+            0.10416033735430094,
+            0.12449811733866958,
+            0.17210217699676084,
+            0.06109208308016657,
+            0.06987243018102961,
+            0.03252181541570574
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.1665013089552364,
+          "max_loo_error_scene_radii": 0.2975109919031253,
+          "median_loo_error_legacy_frame_inconsistent": 0.01652901592262302,
+          "per_fold": [
+            0.2103237547033397,
+            0.13535889580836793,
+            0.2975109919031253,
+            0.1510663694475633,
+            0.1819362484629095,
+            0.07838058589092849
+          ]
+        }
+      }
+    },
+    {
+      "scene": "orange/385_45386_90752",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.2172108355488831,
+          "max_loo_error_scene_radii": 0.43497005221128626,
+          "median_loo_error_legacy_frame_inconsistent": 0.01376302446955674,
+          "per_fold": [
+            0.43497005221128626,
+            0.11625988403635742,
+            0.03790899665176542,
+            0.3722792488249964,
+            0.3181617870614088,
+            0.11368812295511448
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.26295349198739937,
+          "max_loo_error_scene_radii": 0.4148335260812485,
+          "median_loo_error_legacy_frame_inconsistent": 0.016860470300895793,
+          "per_fold": [
+            0.3543032741182928,
+            0.21218289274191035,
+            0.06046383757760541,
+            0.31372409123288836,
+            0.4148335260812485,
+            0.051601387238778884
+          ]
+        }
+      }
+    },
+    {
+      "scene": "plant/247_26441_50907",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.06548091911151997,
+          "max_loo_error_scene_radii": 0.08602436677068925,
+          "median_loo_error_legacy_frame_inconsistent": 0.006437560873822332,
+          "per_fold": [
+            0.060577261521792165,
+            0.04892505401304719,
+            0.08602436677068925,
+            0.03014679928406398,
+            0.07038457670124779,
+            0.07538865559000765
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.14221782841417302,
+          "max_loo_error_scene_radii": 0.18613076697426081,
+          "median_loo_error_legacy_frame_inconsistent": 0.013875324658678866,
+          "per_fold": [
+            0.11031058327007645,
+            0.15823518832154948,
+            0.12620046850679653,
+            0.18613076697426081,
+            0.16856546892075933,
+            0.09126519720873548
+          ]
+        }
+      }
+    },
+    {
+      "scene": "plant/374_42005_84358",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.1450811413483814,
+          "max_loo_error_scene_radii": 0.2314744637275623,
+          "median_loo_error_legacy_frame_inconsistent": 0.009257743609369247,
+          "per_fold": [
+            0.11468136660906136,
+            0.08947859974270235,
+            0.17548091608770144,
+            0.21988286173357552,
+            0.2314744637275623,
+            0.07355200624432962
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.1335548364924526,
+          "max_loo_error_scene_radii": 0.2133368425618983,
+          "median_loo_error_legacy_frame_inconsistent": 0.008453586529541375,
+          "per_fold": [
+            0.11336293709783316,
+            0.060563896292250737,
+            0.153746735887072,
+            0.2133368425618983,
+            0.20498904278081712,
+            0.05645415663105798
+          ]
+        }
+      }
+    },
+    {
+      "scene": "remote/195_20989_41543",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.10336052214567848,
+          "max_loo_error_scene_radii": 0.21206869618605045,
+          "median_loo_error_legacy_frame_inconsistent": 0.008414523654721695,
+          "per_fold": [
+            0.11696289061070309,
+            0.21206869618605045,
+            0.08975815368065387,
+            0.08295668514090142,
+            0.12564676395663812,
+            0.06845901700453275
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.13387889287806187,
+          "max_loo_error_scene_radii": 0.150208163804789,
+          "median_loo_error_legacy_frame_inconsistent": 0.010831975377750196,
+          "per_fold": [
+            0.13133726373211363,
+            0.06660474242253596,
+            0.150208163804789,
+            0.1364205220240101,
+            0.14658489032993335,
+            0.048799659558699214
+          ]
+        }
+      }
+    },
+    {
+      "scene": "remote/350_36761_68623",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.06462722762321416,
+          "max_loo_error_scene_radii": 0.10561679091697043,
+          "median_loo_error_legacy_frame_inconsistent": 0.004206458427415256,
+          "per_fold": [
+            0.05593090322765517,
+            0.10561679091697043,
+            0.07332355201877315,
+            0.04831806826617755,
+            0.029051834430842,
+            0.08018941520376177
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.11787077411402859,
+          "max_loo_error_scene_radii": 0.2747643110793417,
+          "median_loo_error_legacy_frame_inconsistent": 0.0076246739705874075,
+          "per_fold": [
+            0.03415959249686627,
+            0.2747643110793417,
+            0.2297665751109116,
+            0.09137014528935458,
+            0.10413280908543365,
+            0.13160873914262353
+          ]
+        }
+      }
+    },
+    {
+      "scene": "skateboard/245_26182_52130",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.05311689798506995,
+          "max_loo_error_scene_radii": 0.09267828555552753,
+          "median_loo_error_legacy_frame_inconsistent": 0.005124144224163494,
+          "per_fold": [
+            0.07841476347929856,
+            0.044124138874273876,
+            0.09267828555552753,
+            0.057399329230492624,
+            0.02450254063485827,
+            0.048834466739647274
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.06768719590831114,
+          "max_loo_error_scene_radii": 0.11266810660733399,
+          "median_loo_error_legacy_frame_inconsistent": 0.0065936550289731315,
+          "per_fold": [
+            0.07375975380973927,
+            0.047642862068968096,
+            0.06161463800688301,
+            0.08868639683908212,
+            0.11266810660733399,
+            0.035538492771584405
+          ]
+        }
+      }
+    },
+    {
+      "scene": "skateboard/366_39266_76077",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.06194374192772781,
+          "max_loo_error_scene_radii": 0.14658598428850472,
+          "median_loo_error_legacy_frame_inconsistent": 0.004376951467040954,
+          "per_fold": [
+            0.060607602449910106,
+            0.06327988140554551,
+            0.04381372047866489,
+            0.12761885756122182,
+            0.14658598428850472,
+            0.059518850827292226
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.1511917970987206,
+          "max_loo_error_scene_radii": 0.19182888571269444,
+          "median_loo_error_legacy_frame_inconsistent": 0.010557108420931098,
+          "per_fold": [
+            0.1648765625429952,
+            0.09015494482408101,
+            0.19182888571269444,
+            0.14198816588196914,
+            0.1603954283154721,
+            0.09477320740188847
+          ]
+        }
+      }
+    },
+    {
+      "scene": "suitcase/410_55734_107452",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.0906465868814999,
+          "max_loo_error_scene_radii": 0.14328245428868788,
+          "median_loo_error_legacy_frame_inconsistent": 0.006911819092176407,
+          "per_fold": [
+            0.01958536259532386,
+            0.10181036422316214,
+            0.07948280953983768,
+            0.14328245428868788,
+            0.10439751503890998,
+            0.07501512874264894
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.09953354853535197,
+          "max_loo_error_scene_radii": 0.14913973930801494,
+          "median_loo_error_legacy_frame_inconsistent": 0.007541884142401771,
+          "per_fold": [
+            0.015526210818987635,
+            0.09414023061958032,
+            0.10492686645112362,
+            0.14913973930801494,
+            0.11189441313285498,
+            0.03406731415642585
+          ]
+        }
+      }
+    },
+    {
+      "scene": "suitcase/50_2928_8645",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.055515716070593954,
+          "max_loo_error_scene_radii": 0.14346696732886258,
+          "median_loo_error_legacy_frame_inconsistent": 0.004521202402145257,
+          "per_fold": [
+            0.042018182799187134,
+            0.044514144579077125,
+            0.1234693450412975,
+            0.14346696732886258,
+            0.06651728756211078,
+            0.0366479295682262
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.10038698072818175,
+          "max_loo_error_scene_radii": 0.2252860709708112,
+          "median_loo_error_legacy_frame_inconsistent": 0.008140807643354822,
+          "per_fold": [
+            0.020592674018839102,
+            0.11346984396206389,
+            0.21241141265253777,
+            0.2252860709708112,
+            0.08730411749429963,
+            0.020020442906043982
+          ]
+        }
+      }
+    },
+    {
+      "scene": "teddybear/187_20215_38541",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.058781413476256136,
+          "max_loo_error_scene_radii": 0.10111657755093037,
+          "median_loo_error_legacy_frame_inconsistent": 0.0044214413839886845,
+          "per_fold": [
+            0.10111657755093037,
+            0.051339535708499265,
+            0.021175283587133723,
+            0.05924404116568915,
+            0.05831878578682313,
+            0.085482114961826
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.17133343061510228,
+          "max_loo_error_scene_radii": 0.21613619424995892,
+          "median_loo_error_legacy_frame_inconsistent": 0.012989269220765678,
+          "per_fold": [
+            0.21613619424995892,
+            0.17911685187092796,
+            0.0336805795860744,
+            0.21526865409560034,
+            0.1635500093592766,
+            0.1324466837193657
+          ]
+        }
+      }
+    },
+    {
+      "scene": "teddybear/34_1479_4753",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.057960900378984936,
+          "max_loo_error_scene_radii": 0.09992777078541389,
+          "median_loo_error_legacy_frame_inconsistent": 0.004817357951318426,
+          "per_fold": [
+            0.04704355170523338,
+            0.0548054821130555,
+            0.061116318644914375,
+            0.06930065165220436,
+            0.09992777078541389,
+            0.00940522805150696
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.12794950957175055,
+          "max_loo_error_scene_radii": 0.24326849438526085,
+          "median_loo_error_legacy_frame_inconsistent": 0.010767839944993763,
+          "per_fold": [
+            0.0367942381046412,
+            0.12048351088923298,
+            0.08247898973622798,
+            0.21913805925214946,
+            0.24326849438526085,
+            0.13541550825426812
+          ]
+        }
+      }
+    },
+    {
+      "scene": "toaster/372_41229_82130",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.18207603001700576,
+          "max_loo_error_scene_radii": 0.321346581475318,
+          "median_loo_error_legacy_frame_inconsistent": 0.014956900349105273,
+          "per_fold": [
+            0.00972865255517504,
+            0.16624080295036683,
+            0.05006892670926411,
+            0.21533208491880107,
+            0.321346581475318,
+            0.19791125708364468
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.1932508837757007,
+          "max_loo_error_scene_radii": 0.2894407895897302,
+          "median_loo_error_legacy_frame_inconsistent": 0.016101011837270543,
+          "per_fold": [
+            0.12789458753072142,
+            0.13460228374735875,
+            0.2104165616887654,
+            0.17608520586263599,
+            0.2894407895897302,
+            0.2164638782003624
+          ]
+        }
+      }
+    },
+    {
+      "scene": "toaster/416_57389_110765",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.05565532403054568,
+          "max_loo_error_scene_radii": 0.10766653663912448,
+          "median_loo_error_legacy_frame_inconsistent": 0.005055374794373313,
+          "per_fold": [
+            0.028746508323607495,
+            0.034965578256162984,
+            0.07634506980492838,
+            0.10766653663912448,
+            0.08883676271198847,
+            0.03467214866692059
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.0906641430660406,
+          "max_loo_error_scene_radii": 0.2223304612725387,
+          "median_loo_error_legacy_frame_inconsistent": 0.00830996570844492,
+          "per_fold": [
+            0.09336526400403591,
+            0.05015210769184875,
+            0.16578103119557838,
+            0.2223304612725387,
+            0.07492352206808972,
+            0.0879630221280453
+          ]
+        }
+      }
+    },
+    {
+      "scene": "toytrain/240_25394_51994",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.03966209944555141,
+          "max_loo_error_scene_radii": 0.1065786299973377,
+          "median_loo_error_legacy_frame_inconsistent": 0.003909330116267583,
+          "per_fold": [
+            0.03868189186694358,
+            0.0386775771503194,
+            0.1065786299973377,
+            0.08186127926279771,
+            0.040642307024159226,
+            0.02553930089684654
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.14975733031131477,
+          "max_loo_error_scene_radii": 0.22291109800038644,
+          "median_loo_error_legacy_frame_inconsistent": 0.015152754102348818,
+          "per_fold": [
+            0.15072567388659255,
+            0.14930650109749968,
+            0.15020815952512986,
+            0.22291109800038644,
+            0.0929404828490055,
+            0.10196340832598354
+          ]
+        }
+      }
+    },
+    {
+      "scene": "toytrain/399_51323_100753",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.07097732231232817,
+          "max_loo_error_scene_radii": 0.10802686678756644,
+          "median_loo_error_legacy_frame_inconsistent": 0.008660530744231452,
+          "per_fold": [
+            0.09127300227874967,
+            0.042193999749679065,
+            0.09710780935537781,
+            0.10802686678756644,
+            0.050681642345906684,
+            0.03775158036154099
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.07357043803223695,
+          "max_loo_error_scene_radii": 0.13799588865261253,
+          "median_loo_error_legacy_frame_inconsistent": 0.008972073960147521,
+          "per_fold": [
+            0.09148315685251945,
+            0.05565771921195446,
+            0.13077935172974806,
+            0.13799588865261253,
+            0.0554247685017486,
+            0.03608879547096731
+          ]
+        }
+      }
+    },
+    {
+      "scene": "toytruck/190_20494_39385",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.14367337907010952,
+          "max_loo_error_scene_radii": 0.2252059115593364,
+          "median_loo_error_legacy_frame_inconsistent": 0.012780419926253235,
+          "per_fold": [
+            0.0752017270796852,
+            0.12882090703970814,
+            0.16760794346573962,
+            0.2252059115593364,
+            0.15852585110051093,
+            0.051341055408362986
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.1907599108917553,
+          "max_loo_error_scene_radii": 0.30815689441133964,
+          "median_loo_error_legacy_frame_inconsistent": 0.017052644150146123,
+          "per_fold": [
+            0.19955154183522222,
+            0.18196827994828843,
+            0.30815689441133964,
+            0.30801595600116766,
+            0.17765208246875586,
+            0.09139406831382955
+          ]
+        }
+      }
+    },
+    {
+      "scene": "toytruck/346_36113_66551",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.09718209156749469,
+          "max_loo_error_scene_radii": 0.16304597449709654,
+          "median_loo_error_legacy_frame_inconsistent": 0.008874704123130111,
+          "per_fold": [
+            0.10557813339081004,
+            0.08617414785339439,
+            0.10145033573125181,
+            0.08507085135268898,
+            0.16304597449709654,
+            0.09291384740373757
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.10957872223827753,
+          "max_loo_error_scene_radii": 0.14349903948029885,
+          "median_loo_error_legacy_frame_inconsistent": 0.010082196329897559,
+          "per_fold": [
+            0.14349903948029885,
+            0.045129209654622714,
+            0.1399541050210824,
+            0.08889951361118033,
+            0.13025793086537474,
+            0.08575265787257903
+          ]
+        }
+      }
+    },
+    {
+      "scene": "vase/374_41862_83720",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.03724514424707941,
+          "max_loo_error_scene_radii": 0.08213986872263898,
+          "median_loo_error_legacy_frame_inconsistent": 0.003150752700842531,
+          "per_fold": [
+            0.011066606725461945,
+            0.040703542884855844,
+            0.08213986872263898,
+            0.0683607940860878,
+            0.03378674560930298,
+            0.0335569257357199
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.08593155389084922,
+          "max_loo_error_scene_radii": 0.2170461190257452,
+          "median_loo_error_legacy_frame_inconsistent": 0.007153777777728492,
+          "per_fold": [
+            0.04764009687141004,
+            0.07486911359680652,
+            0.2170461190257452,
+            0.15154732074086585,
+            0.07382468672534796,
+            0.09699399418489194
+          ]
+        }
+      }
+    },
+    {
+      "scene": "vase/380_44863_89631",
+      "variants": {
+        "full": {
+          "median_loo_error_scene_radii": 0.08177522000253348,
+          "max_loo_error_scene_radii": 0.1569019459718213,
+          "median_loo_error_legacy_frame_inconsistent": 0.007153212757143255,
+          "per_fold": [
+            0.0727119463530758,
+            0.13419595968731612,
+            0.1569019459718213,
+            0.07057258257684124,
+            0.09083849365199116,
+            0.024725803101894307
+          ]
+        },
+        "w4a4": {
+          "median_loo_error_scene_radii": 0.18430927742625686,
+          "max_loo_error_scene_radii": 0.2713173396373413,
+          "median_loo_error_legacy_frame_inconsistent": 0.016377363325558815,
+          "per_fold": [
+            0.2713173396373413,
+            0.2623244778374564,
+            0.19572079146437948,
+            0.17289776338813426,
+            0.1104923583868651,
+            0.0944491040088483
+          ]
+        }
+      }
+    }
+  ]
+}

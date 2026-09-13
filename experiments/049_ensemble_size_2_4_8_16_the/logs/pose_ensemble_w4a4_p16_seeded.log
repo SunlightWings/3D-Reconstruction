@@ -1,0 +1,51 @@
+loading w4a4 ...
+[1/40] apple/110_13051_23361  single 0.718 -> ensemble 0.923 deg  (35.0s/scene)
+[2/40] apple/189_20393_38136  single 1.208 -> ensemble 0.603 deg  (35.1s/scene)
+[3/40] ball/123_14363_28981  single 0.617 -> ensemble 0.820 deg  (35.1s/scene)
+[4/40] ball/375_42693_85518  single 1.708 -> ensemble 0.561 deg  (35.1s/scene)
+[5/40] bench/415_57112_110099  single 0.345 -> ensemble 0.250 deg  (35.1s/scene)
+[6/40] bench/415_57121_110109  single 0.613 -> ensemble 0.333 deg  (35.1s/scene)
+[7/40] book/119_13962_28926  single 1.442 -> ensemble 0.454 deg  (35.1s/scene)
+[8/40] book/247_26469_51778  single 0.752 -> ensemble 0.663 deg  (35.1s/scene)
+[9/40] bowl/69_5465_12831  single 0.688 -> ensemble 0.594 deg  (35.1s/scene)
+[10/40] bowl/70_5792_13401  single 4.779 -> ensemble 6.298 deg  (35.2s/scene)
+[11/40] broccoli/372_41112_81867  single 0.624 -> ensemble 0.327 deg  (35.2s/scene)
+[12/40] broccoli/412_56288_108844  single 0.681 -> ensemble 0.399 deg  (35.2s/scene)
+[13/40] cake/374_42274_84517  single 0.794 -> ensemble 0.451 deg  (35.2s/scene)
+[14/40] cake/403_53094_103680  single 2.250 -> ensemble 2.613 deg  (35.2s/scene)
+[15/40] donut/391_47032_93657  single 2.341 -> ensemble 2.956 deg  (35.2s/scene)
+[16/40] donut/403_52964_103416  single 0.742 -> ensemble 0.564 deg  (35.2s/scene)
+[17/40] hydrant/167_18184_34441  single 0.772 -> ensemble 0.616 deg  (35.2s/scene)
+[18/40] hydrant/411_56064_108483  single 0.522 -> ensemble 0.391 deg  (35.2s/scene)
+[19/40] mouse/107_12753_23606  single 1.175 -> ensemble 1.092 deg  (35.2s/scene)
+[20/40] mouse/377_43416_86289  single 1.541 -> ensemble 0.567 deg  (35.2s/scene)
+[21/40] orange/374_42196_84367  single 1.131 -> ensemble 0.744 deg  (35.2s/scene)
+[22/40] orange/385_45386_90752  single 2.634 -> ensemble 1.704 deg  (35.2s/scene)
+[23/40] plant/247_26441_50907  single 0.919 -> ensemble 0.869 deg  (35.2s/scene)
+[24/40] plant/374_42005_84358  single 1.537 -> ensemble 0.790 deg  (35.2s/scene)
+[25/40] remote/195_20989_41543  single 0.849 -> ensemble 0.428 deg  (35.2s/scene)
+[26/40] remote/350_36761_68623  single 1.335 -> ensemble 0.748 deg  (35.2s/scene)
+[27/40] skateboard/245_26182_52130  single 1.014 -> ensemble 0.784 deg  (35.2s/scene)
+[28/40] skateboard/366_39266_76077  single 1.994 -> ensemble 1.388 deg  (35.2s/scene)
+[29/40] suitcase/410_55734_107452  single 0.582 -> ensemble 0.614 deg  (35.2s/scene)
+[30/40] suitcase/50_2928_8645  single 3.937 -> ensemble 1.434 deg  (35.2s/scene)
+[31/40] teddybear/187_20215_38541  single 1.314 -> ensemble 0.565 deg  (35.2s/scene)
+[32/40] teddybear/34_1479_4753  single 0.498 -> ensemble 0.387 deg  (35.2s/scene)
+[33/40] toaster/372_41229_82130  single 1.167 -> ensemble 0.826 deg  (35.2s/scene)
+[34/40] toaster/416_57389_110765  single 1.633 -> ensemble 0.783 deg  (35.2s/scene)
+[35/40] toytrain/240_25394_51994  single 1.333 -> ensemble 1.103 deg  (35.2s/scene)
+[36/40] toytrain/399_51323_100753  single 0.485 -> ensemble 0.713 deg  (35.2s/scene)
+[37/40] toytruck/190_20494_39385  single 1.101 -> ensemble 1.144 deg  (35.2s/scene)
+[38/40] toytruck/346_36113_66551  single 0.529 -> ensemble 0.287 deg  (35.2s/scene)
+[39/40] vase/374_41862_83720  single 1.258 -> ensemble 0.820 deg  (35.2s/scene)
+[40/40] vase/380_44863_89631  single 1.452 -> ensemble 1.461 deg  (35.2s/scene)
+
+================================================================================================
+POSE ENSEMBLING, variant w4a4, 16 orderings, n = 40 scenes
+  focal error vs full: single median 0.02220 -> ensemble 0.01850  improved 19/40  Wilcoxon p=0.405
+  vs_full          n= 40  single median 1.1162 -> ensemble 0.7283 deg  improved 31/40  median reduction +28.4%  Wilcoxon p=0.00017
+  vs_full (no bowl) n= 39  single median 1.1010 -> ensemble 0.7125 deg  improved 31/39  median reduction +29.2%  Wilcoxon p=2.03e-05
+  vs_gt            n= 40  single median 1.7123 -> ensemble 1.2725 deg  improved 31/40  median reduction +14.3%  Wilcoxon p=7.2e-05
+  vs_gt (no bowl)  n= 39  single median 1.6581 -> ensemble 1.2662 deg  improved 31/39  median reduction +14.8%  Wilcoxon p=2.38e-05
+
+saved /var/tmp/luli38se/quantsplat/oracle_sweep/results/pose_ensemble_w4a4_p16.json

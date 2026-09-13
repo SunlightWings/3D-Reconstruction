@@ -1,0 +1,58 @@
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+/home/utn/luli38se/cv/.venv/lib/python3.12/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/utn/luli38se/cv/.venv/lib/python3.12/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/utn/luli38se/cv/.venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+[1/40] apple/110_13051_23361
+[2/40] apple/189_20393_38136
+[3/40] ball/123_14363_28981
+[4/40] ball/375_42693_85518
+[5/40] bench/415_57112_110099
+[6/40] bench/415_57121_110109
+[7/40] book/119_13962_28926
+[8/40] book/247_26469_51778
+[9/40] bowl/69_5465_12831
+[10/40] bowl/70_5792_13401
+[11/40] broccoli/372_41112_81867
+[12/40] broccoli/412_56288_108844
+[13/40] cake/374_42274_84517
+[14/40] cake/403_53094_103680
+[15/40] donut/391_47032_93657
+[16/40] donut/403_52964_103416
+[17/40] hydrant/167_18184_34441
+[18/40] hydrant/411_56064_108483
+[19/40] mouse/107_12753_23606
+[20/40] mouse/377_43416_86289
+[21/40] orange/374_42196_84367
+[22/40] orange/385_45386_90752
+[23/40] plant/247_26441_50907
+[24/40] plant/374_42005_84358
+[25/40] remote/195_20989_41543
+[26/40] remote/350_36761_68623
+[27/40] skateboard/245_26182_52130
+[28/40] skateboard/366_39266_76077
+[29/40] suitcase/410_55734_107452
+[30/40] suitcase/50_2928_8645
+[31/40] teddybear/187_20215_38541
+[32/40] teddybear/34_1479_4753
+[33/40] toaster/372_41229_82130
+[34/40] toaster/416_57389_110765
+[35/40] toytrain/240_25394_51994
+[36/40] toytrain/399_51323_100753
+[37/40] toytruck/190_20494_39385
+[38/40] toytruck/346_36113_66551
+[39/40] vase/374_41862_83720
+[40/40] vase/380_44863_89631
+
+============================================================================================
+arm             LPIPS raw    clipped  unclipped   clip-raw  unclip-raw  clipped px
+full               0.6604     0.6895     0.6895    +0.0291     +0.0291       0.06%
+w4a4               0.6712     0.6952     0.6952    +0.0240     +0.0240       0.16%
+w4a4_local         0.6683     0.6993     0.6993    +0.0310     +0.0310       0.08%
+w4a4_no_rot        0.6749     0.6992     0.6993    +0.0243     +0.0243       0.17%
+w4a4_rtn           0.7167     0.7327     0.7326    +0.0159     +0.0159       0.08%
+
+higher LPIPS = worse. If unclipped ~ raw, the clip is the cause.
+
+saved /var/tmp/luli38se/quantsplat/oracle_sweep/results/lpips_clip_test_all_it7000.json

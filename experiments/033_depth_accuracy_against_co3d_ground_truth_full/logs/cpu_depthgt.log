@@ -1,0 +1,10 @@
+====================================================================================================
+DEPTH vs CO3D GT (per-image median scale), 1330 of 1330 view-groups usable
+  absrel              full 0.00542  w4a4 0.00645  diff +0.00103 (median +0.00084)  Wilcoxon p=2.01e-191  w4a4 larger in 1214/1330
+  delta125            full 0.99851  w4a4 0.99871  diff +0.00019 (median +0.00000)  Wilcoxon p=9.1e-17  w4a4 larger in 527/1330
+  absrel    (no bowl) full 0.00539  w4a4 0.00644  diff +0.00105 (median +0.00086)  Wilcoxon p=5.9e-191  w4a4 larger in 1194/1296
+  delta125  (no bowl) full 0.99847  w4a4 0.99868  diff +0.00021 (median +0.00000)  Wilcoxon p=2.27e-24  w4a4 larger in 527/1296
+
+  full-vs-w4a4 depth disagreement, object-edge band over interior: median ratio 1.594, > 1 in 99.1% of 1330 groups, Wilcoxon(log ratio) p=2.34e-218
+
+saved /var/tmp/luli38se/quantsplat/oracle_sweep/results/cpu_depthgt.json

@@ -1,0 +1,51 @@
+loading full ...
+[1/40] apple/110_13051_23361  spread 1.242 deg  err-vs-full 0.003  (4.6s/scene)
+[2/40] apple/189_20393_38136  spread 1.968 deg  err-vs-full 0.009  (4.6s/scene)
+[3/40] ball/123_14363_28981  spread 0.296 deg  err-vs-full 0.008  (4.6s/scene)
+[4/40] ball/375_42693_85518  spread 0.660 deg  err-vs-full 0.008  (4.6s/scene)
+[5/40] bench/415_57112_110099  spread 0.379 deg  err-vs-full 0.006  (4.6s/scene)
+[6/40] bench/415_57121_110109  spread 0.296 deg  err-vs-full 0.014  (4.6s/scene)
+[7/40] book/119_13962_28926  spread 1.097 deg  err-vs-full 0.013  (4.6s/scene)
+[8/40] book/247_26469_51778  spread 0.839 deg  err-vs-full 0.009  (4.6s/scene)
+[9/40] bowl/69_5465_12831  spread 0.648 deg  err-vs-full 0.019  (4.6s/scene)
+[10/40] bowl/70_5792_13401  spread 6.450 deg  err-vs-full 0.013  (4.6s/scene)
+[11/40] broccoli/372_41112_81867  spread 0.342 deg  err-vs-full 0.011  (4.6s/scene)
+[12/40] broccoli/412_56288_108844  spread 0.648 deg  err-vs-full 0.009  (4.6s/scene)
+[13/40] cake/374_42274_84517  spread 0.329 deg  err-vs-full 0.012  (4.6s/scene)
+[14/40] cake/403_53094_103680  spread 2.512 deg  err-vs-full 0.013  (4.6s/scene)
+[15/40] donut/391_47032_93657  spread 1.506 deg  err-vs-full 0.012  (4.6s/scene)
+[16/40] donut/403_52964_103416  spread 0.560 deg  err-vs-full 0.015  (4.6s/scene)
+[17/40] hydrant/167_18184_34441  spread 0.449 deg  err-vs-full 0.024  (4.6s/scene)
+[18/40] hydrant/411_56064_108483  spread 0.463 deg  err-vs-full 0.008  (4.6s/scene)
+[19/40] mouse/107_12753_23606  spread 0.844 deg  err-vs-full 0.009  (4.6s/scene)
+[20/40] mouse/377_43416_86289  spread 0.468 deg  err-vs-full 0.008  (4.6s/scene)
+[21/40] orange/374_42196_84367  spread 1.238 deg  err-vs-full 0.008  (4.6s/scene)
+[22/40] orange/385_45386_90752  spread 1.096 deg  err-vs-full 0.004  (4.6s/scene)
+[23/40] plant/247_26441_50907  spread 0.605 deg  err-vs-full 0.012  (4.6s/scene)
+[24/40] plant/374_42005_84358  spread 1.033 deg  err-vs-full 0.006  (4.6s/scene)
+[25/40] remote/195_20989_41543  spread 0.666 deg  err-vs-full 0.007  (4.6s/scene)
+[26/40] remote/350_36761_68623  spread 0.552 deg  err-vs-full 0.011  (4.6s/scene)
+[27/40] skateboard/245_26182_52130  spread 0.371 deg  err-vs-full 0.010  (4.6s/scene)
+[28/40] skateboard/366_39266_76077  spread 0.452 deg  err-vs-full 0.008  (4.6s/scene)
+[29/40] suitcase/410_55734_107452  spread 0.551 deg  err-vs-full 0.002  (4.6s/scene)
+[30/40] suitcase/50_2928_8645  spread 1.489 deg  err-vs-full 0.004  (4.6s/scene)
+[31/40] teddybear/187_20215_38541  spread 0.365 deg  err-vs-full 0.002  (4.6s/scene)
+[32/40] teddybear/34_1479_4753  spread 0.472 deg  err-vs-full 0.020  (4.6s/scene)
+[33/40] toaster/372_41229_82130  spread 0.459 deg  err-vs-full 0.022  (4.6s/scene)
+[34/40] toaster/416_57389_110765  spread 0.271 deg  err-vs-full 0.006  (4.6s/scene)
+[35/40] toytrain/240_25394_51994  spread 0.429 deg  err-vs-full 0.004  (4.6s/scene)
+[36/40] toytrain/399_51323_100753  spread 1.300 deg  err-vs-full 0.000  (4.6s/scene)
+[37/40] toytruck/190_20494_39385  spread 0.612 deg  err-vs-full 0.005  (4.6s/scene)
+[38/40] toytruck/346_36113_66551  spread 0.564 deg  err-vs-full 0.007  (4.6s/scene)
+[39/40] vase/374_41862_83720  spread 0.744 deg  err-vs-full 0.008  (4.6s/scene)
+[40/40] vase/380_44863_89631  spread 0.960 deg  err-vs-full 0.017  (4.6s/scene)
+
+================================================================================================
+POSE UNCERTAINTY from 4 input orderings, variant full, n = 40 scenes
+  order-induced spread: median 0.6084 deg, range 0.2715-6.4497
+  spread vs err_vs_full_deg            n=40 rho=-0.062 p=0.703
+  spread vs err_vs_full_deg (no bowl)  n=39 rho=-0.109 p=0.508
+  spread vs err_vs_gt_deg              n=40 rho=+0.709 p=3.02e-07
+  spread vs err_vs_gt_deg (no bowl)    n=39 rho=+0.686 p=1.4e-06
+
+saved /var/tmp/luli38se/quantsplat/oracle_sweep/results/pose_uncertainty_full_p4.json

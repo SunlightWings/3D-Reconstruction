@@ -1,0 +1,19 @@
+====================================================================================================
+TRAINED-MODEL GEOMETRY vs CO3D ground-truth point cloud (median distance, scene radii; lower = better)
+arm                  n    #gauss  solid  init acc  final acc  init comp  final comp
+full                40    388591  0.360    0.0385     0.0454     0.0152      0.0184
+w4a4                40    387662  0.358    0.0433     0.0505     0.0161      0.0208
+w4a4_rtn            40    403604  0.331    0.0806     0.0812     0.1090      0.0959
+w4a4_rtn_conf50     36    388718  0.383    0.0738     0.0784     0.1232      0.0951
+w4a4_rtn_rand50     36    366776  0.369    0.0806     0.0816     0.1237      0.1044
+swapP_w4a4_rtn      40    352634  0.326    0.0806     0.0801     0.1090      0.0361
+swapK_w4a4_rtn      40    450434  0.319    0.0385     0.0477     0.0152      0.0419
+swapB_w4a4_rtn      40    420529  0.311    0.0806     0.0840     0.1090      0.1179
+
+MECHANISM, paired over the 40 scenes with full, swapP and swapK models:
+  swapP init acc - full init acc (bad points start worse)        mean +nan  median +nan  Wilcoxon p=nan  positive 36/40
+  swapP final acc - full final acc (does training close it?)     mean +nan  median +nan  Wilcoxon p=nan  positive 37/40
+  swapK init acc - full init acc (same points: expect 0)         mean +0.0000  median +0.0000  Wilcoxon p=1  positive 0/40
+  swapK final acc - full final acc (do bad cameras corrupt it?)  mean +nan  median +nan  Wilcoxon p=nan  positive 24/40
+
+saved /var/tmp/luli38se/quantsplat/oracle_sweep/results/cpu_gaussians_op0.1.json

@@ -1,0 +1,40 @@
+variant=w4a4_no_lwc  scenes=8 (subset)
+loading w4a4_no_lwc ...
+Traceback (most recent call last):
+  File "/home/utn/luli38se/cv/3D-Reconstruction/code/quantization/run_w2a4_inference.py", line 143, in <module>
+    main()
+  File "/home/utn/luli38se/cv/3D-Reconstruction/code/quantization/run_w2a4_inference.py", line 84, in main
+    model = load_quantized(a.variant, a.device)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/utn/luli38se/cv/3D-Reconstruction/code/quantization/quant_loader.py", line 145, in load_quantized
+    frame_info = _copy_qs_checkpoint(Path(spec["qs_dir"]) / "qs_frame_parameters_total.pth",
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/utn/luli38se/cv/3D-Reconstruction/code/quantization/quant_loader.py", line 119, in _copy_qs_checkpoint
+    raise FileNotFoundError(
+FileNotFoundError: QS checkpoint missing: /home/utn/luli38se/cv/QuantVGGT/evaluation/outputs/w4a4/a44_nolwc_model_tracker_fixed_e20.pt_sym/qs_frame_parameters_total.pth. For w2a4 this means calibration has not finished -- run code/quantization/calibrate_w2a4.py.
+variant=w4a4_no_lwc  scenes=8 (subset)
+loading w4a4_no_lwc ...
+  loaded in 23.7s: calibrated locally by code/quantization/calibrate_w2a4.py
+  apple/110_13051_23361: 2.24s, peak 15379 MiB -> w4a4_no_lwc.npz
+  ball/123_14363_28981: 2.03s, peak 15380 MiB -> w4a4_no_lwc.npz
+  bowl/70_5792_13401: 2.03s, peak 15380 MiB -> w4a4_no_lwc.npz
+  broccoli/412_56288_108844: 2.03s, peak 15380 MiB -> w4a4_no_lwc.npz
+  hydrant/167_18184_34441: 2.03s, peak 15380 MiB -> w4a4_no_lwc.npz
+  remote/350_36761_68623: 2.03s, peak 15380 MiB -> w4a4_no_lwc.npz
+  teddybear/187_20215_38541: 2.03s, peak 15380 MiB -> w4a4_no_lwc.npz
+  toaster/372_41229_82130: 2.03s, peak 15380 MiB -> w4a4_no_lwc.npz
+
+8/8 scenes; mean inference 2.06s
+variant=w4a4_no_lwc  scenes=8 (subset)
+loading w4a4_no_lwc ...
+  loaded in 31.2s: calibrated locally by code/quantization/calibrate_w2a4.py
+  skip apple/110_13051_23361 (exists)
+  skip ball/123_14363_28981 (exists)
+  skip bowl/70_5792_13401 (exists)
+  skip broccoli/412_56288_108844 (exists)
+  skip hydrant/167_18184_34441 (exists)
+  skip remote/350_36761_68623 (exists)
+  skip teddybear/187_20215_38541 (exists)
+  skip toaster/372_41229_82130 (exists)
+
+8/8 scenes (all pre-existing)
