@@ -75,101 +75,6 @@ CSS += """
     gap: 8px;
 }
 
-.qs-wipe {
-    --qs-wipe: 50%;
-    position: relative;
-    width: 100%;
-    max-width: 740px;
-    aspect-ratio: 1;
-    margin: 12px auto;
-    overflow: hidden;
-    border-radius: 12px;
-    border: 1px solid #d9e3e8;
-    background: #fff;
-    isolation: isolate;
-}
-
-.qs-wipe img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    margin: 0;
-    user-select: none;
-    pointer-events: none;
-}
-
-.qs-wipe .qs-wipe-top {
-    clip-path: inset(0 calc(100% - var(--qs-wipe)) 0 0);
-}
-
-.qs-wipe-line {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: var(--qs-wipe);
-    width: 3px;
-    transform: translateX(-50%);
-    background: #fff;
-    box-shadow: 0 0 5px #132c38;
-    pointer-events: none;
-}
-
-.qs-wipe-line::after {
-    content: '\\2194';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: grid;
-    place-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: #fff;
-    color: #132c38;
-    box-shadow: 0 1px 8px #132c3840;
-    font-size: 24px;
-}
-
-.qs-wipe input[type=range] {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    margin: 0;
-    cursor: ew-resize;
-    z-index: 3;
-    touch-action: none;
-}
-
-.qs-wipe:focus-within {
-    outline: 3px solid #107e79;
-    outline-offset: 3px;
-}
-
-.qs-wipe-label {
-    position: absolute;
-    top: 12px;
-    padding: 5px 9px;
-    border-radius: 6px;
-    background: #132c38df;
-    color: #fff;
-    z-index: 2;
-    pointer-events: none;
-    font-size: 12px;
-}
-
-.qs-wipe-label.left {
-    left: 12px;
-}
-
-.qs-wipe-label.right {
-    right: 12px;
-}
-
 .qs-input-grid {
     display: grid;
     grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -190,37 +95,6 @@ CSS += """
     }
 }
 """
-
-
-# This listener stays on the HTML component when its contents change.
-# Moving the divider is browser-only: no Python call or image reload.
-WIPE_JS = """
-if (!element.dataset.qsWipeBound) {
-    element.dataset.qsWipeBound = "true";
-
-    element.addEventListener("input", (event) => {
-        const control = event.target;
-
-        if (
-            !(control instanceof HTMLInputElement) ||
-            !control.matches("[data-qs-divider]")
-        ) {
-            return;
-        }
-
-        const stage = control.closest(".qs-wipe");
-
-        if (stage) {
-            stage.style.setProperty(
-                "--qs-wipe",
-                `${control.value}%`
-            );
-        }
-    });
-}
-"""
-
-
 # ---------------------------------------------------------------------
 # Image loading: embedded PNGs, no dynamic Gradio image-file outputs
 # ---------------------------------------------------------------------
@@ -295,6 +169,118 @@ def view_index(scene_id: str, view) -> int:
         min(int(view or 1) - 1, count - 1),
     )
 
+def render_slider(scene_id, view, arm_a, arm_b):
+    idx = view_index(scene_id, view)
+
+    path_a = DATA.image(scene_id, arm_a, idx)
+    path_b = DATA.image(scene_id, arm_b, idx)
+
+    if not path_a or not path_b:
+        return None
+
+    with Image.open(path_a) as im_a:
+        img_a = im_a.convert("RGB").copy()
+
+    with Image.open(path_b) as im_b:
+        img_b = im_b.convert("RGB").copy()
+
+    return (img_a, img_b)
+
+TURN_ROOT = DATA.root / "turntable"
+
+
+def available_turntable_scenes():
+    scenes = []
+
+    if not TURN_ROOT.is_dir():
+        return scenes
+
+    for category_dir in sorted(TURN_ROOT.iterdir()):
+        if not category_dir.is_dir():
+            continue
+
+        for sequence_dir in sorted(category_dir.iterdir()):
+            if not sequence_dir.is_dir():
+                continue
+
+            scene_id = f"{category_dir.name}/{sequence_dir.name}"
+
+            # Only show scenes that have all three reconstructions.
+            if not all(
+                (sequence_dir / arm).is_dir()
+                for arm in ["full", "w4a4", "w3a3"]
+            ):
+                continue
+
+            if scene_id in DATA.by_scene:
+                label = DATA.by_scene[scene_id].get(
+                    "label",
+                    scene_id,
+                )
+            else:
+                label = scene_id
+
+            scenes.append((label, scene_id))
+
+    return scenes
+
+
+def render_turntable_html(scene_id: str, angle):
+    if not scene_id:
+        return """
+        <div class="notice">
+            No turntable reconstructions are packaged yet.
+        </div>
+        """
+
+    # We rendered 36 frames:
+    # 000 = 0°, 001 = 10°, ... 035 = 350°.
+    angle = int(angle or 0)
+    angle = max(0, min(angle, 350))
+
+    idx = angle // 10
+
+    category, sequence = scene_id.split("/", 1)
+    scene_root = TURN_ROOT / category / sequence
+
+    panels = []
+
+    for arm in ["full", "w4a4", "w3a3"]:
+        path = scene_root / arm / f"{idx:03d}.png"
+
+        uri = image_uri(path) if path.is_file() else ""
+
+        panels.append(
+            image_panel(
+                DATA.label(arm),
+                uri,
+                f"Novel orbit view · {angle}°",
+            )
+        )
+
+    scene_label = html.escape(
+        DATA.by_scene.get(
+            scene_id,
+            {},
+        ).get("label", scene_id)
+    )
+
+    return (
+        '<div class="qs-view-header">'
+        f'<strong>{scene_label}</strong>'
+        f'<span>Rotation {angle}°</span>'
+        '</div>'
+        '<div class="qs-render-grid">'
+        + "".join(panels)
+        + "</div>"
+        '<div class="fineprint">'
+        'These are synthetic novel-camera views rendered from the '
+        'trained 3D Gaussian representations. They are intended for '
+        'qualitative inspection and are not used for PSNR, SSIM, '
+        'or LPIPS evaluation.'
+        '</div>'
+    )
+
 
 def render_view_html(
     scene_id: str,
@@ -302,7 +288,7 @@ def render_view_html(
     arm_a: str,
     arm_b: str,
 ) -> str:
-    """Return the three panels and divider as one HTML string."""
+    """Return the three held-out render panels as one HTML string."""
     idx = view_index(scene_id, view)
     scene = DATA.by_scene[scene_id]
 
@@ -322,58 +308,6 @@ def render_view_html(
         + image_panel(label_b, b_uri, f"Frame {frame}")
     )
 
-    if a_uri and b_uri:
-        comparison = f"""
-        <div class="qs-wipe" data-frame="{frame}">
-            <img
-                src="{b_uri}"
-                alt="{html.escape(label_b)}"
-                draggable="false"
-            >
-
-            <img
-                class="qs-wipe-top"
-                src="{a_uri}"
-                alt="{html.escape(label_a)}"
-                draggable="false"
-            >
-
-            <span class="qs-wipe-label left">
-                {html.escape(label_a)}
-            </span>
-
-            <span class="qs-wipe-label right">
-                {html.escape(label_b)}
-            </span>
-
-            <span class="qs-wipe-line"></span>
-
-            <input
-                data-qs-divider
-                type="range"
-                min="0"
-                max="100"
-                step="1"
-                value="50"
-                aria-label="Comparison divider position"
-            >
-        </div>
-
-        <p class="fineprint">
-            Drag the divider, or focus it and use the arrow keys.
-            Both images use frame {frame}.
-            Left: {html.escape(label_a)}.
-            Right: {html.escape(label_b)}.
-        </p>
-        """
-    else:
-        comparison = """
-        <div class="notice">
-            The divider becomes available when both selected models
-            have a packaged render.
-        </div>
-        """
-
     scene_label = html.escape(
         scene.get("label", scene_id)
     )
@@ -385,8 +319,6 @@ def render_view_html(
         f' &middot; Frame {frame}</span>'
         '</div>'
         f'<div class="qs-render-grid">{panels}</div>'
-        '<h3 class="qs-compare-title">Direct comparison</h3>'
-        + comparison
     )
 
 
@@ -433,19 +365,38 @@ def render_comparison(
     arm_a: str,
     arm_b: str,
 ):
-    """Return four HTML values to four existing HTML components."""
+    """Return the five comparison-view outputs."""
     idx = view_index(scene_id, view)
 
     return (
         ui.view_status(
-            DATA, scene_id, idx + 1, arm_a, arm_b
+            DATA,
+            scene_id,
+            idx + 1,
+            arm_a,
+            arm_b,
         ),
+
         render_view_html(
-            scene_id, idx + 1, arm_a, arm_b
+            scene_id,
+            idx + 1,
+            arm_a,
+            arm_b,
         ),
+
+        render_slider(
+            scene_id,
+            idx + 1,
+            arm_a,
+            arm_b,
+        ),
+
         ui.scene_scores(
-            DATA, scene_id, [arm_a, arm_b]
+            DATA,
+            scene_id,
+            [arm_a, arm_b],
         ),
+
         input_images_html(scene_id),
     )
 
@@ -558,15 +509,19 @@ def build_demo():
 
                 status = gr.HTML(initial[0])
 
-                # This replaces gr.Image and gr.ImageSlider.
                 viewer = gr.HTML(
                     value=initial[1],
                     elem_id="qs-html-viewer",
-                    js_on_load=WIPE_JS,
-                    apply_default_css=False,
                 )
 
-                scene_table = gr.HTML(initial[2])
+                comparison_slider = gr.ImageSlider(
+                    value=initial[2],
+                    label="Direct comparison",
+                    interactive=True,
+                    height=420,
+                )
+
+                scene_table = gr.HTML(initial[3])
 
                 gr.HTML("""
                 <div class="explain-card">
@@ -585,10 +540,7 @@ def build_demo():
                     "The six input images",
                     open=False,
                 ):
-                    input_gallery = gr.HTML(
-                        initial[3],
-                        apply_default_css=False,
-                    )
+                    input_gallery = gr.HTML(initial[4])
 
                 # One shared listener for all four controls.
                 gr.on(
@@ -603,6 +555,7 @@ def build_demo():
                     outputs=[
                         status,
                         viewer,
+                        comparison_slider,
                         scene_table,
                         input_gallery,
                     ],
@@ -613,6 +566,78 @@ def build_demo():
                 )
 
             # ---------------------------------------------------------
+            # 3D reconstruction viewer
+            # ---------------------------------------------------------
+
+            with gr.Tab("3D Reconstruction", id="reconstruction"):
+                gr.HTML("""
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow small">
+                            02 / 3D RECONSTRUCTION
+                        </span>
+                        <h2>Rotate the reconstructed scene.</h2>
+                    </div>
+                    <span>
+                        Same virtual camera trajectory across all model variants.
+                    </span>
+                </div>
+                """)
+
+                turntable_scenes = available_turntable_scenes()
+
+                if turntable_scenes:
+                    first_turntable = turntable_scenes[0][1]
+
+                    with gr.Row(elem_classes="control-row"):
+                        turntable_scene = gr.Dropdown(
+                            choices=turntable_scenes,
+                            value=first_turntable,
+                            label="Scene",
+                            scale=2,
+                            filterable=False,
+                        )
+
+                        turntable_angle = gr.Slider(
+                            minimum=0,
+                            maximum=350,
+                            value=0,
+                            step=10,
+                            label="Rotation",
+                            scale=3,
+                        )
+
+                    turntable_viewer = gr.HTML(
+                        render_turntable_html(
+                            first_turntable,
+                            0,
+                        )
+                    )
+
+                    gr.on(
+                        triggers=[
+                            turntable_scene.change,
+                            turntable_angle.change,
+                        ],
+                        fn=render_turntable_html,
+                        inputs=[
+                            turntable_scene,
+                            turntable_angle,
+                        ],
+                        outputs=turntable_viewer,
+                        trigger_mode="always_last",
+                        concurrency_limit=1,
+                        show_progress="hidden",
+                    )
+
+                else:
+                    gr.HTML("""
+                    <div class="notice">
+                        No turntable reconstructions have been packaged yet.
+                    </div>
+                    """)
+
+            # ---------------------------------------------------------
             # Results
             # ---------------------------------------------------------
 
@@ -621,7 +646,7 @@ def build_demo():
                 <div class="section-heading">
                     <div>
                         <span class="eyebrow small">
-                            02 / MEASURED RESULTS
+                            03 / MEASURED RESULTS
                         </span>
                         <h2>Look beyond a single view.</h2>
                     </div>
@@ -727,7 +752,7 @@ def build_demo():
                 <div class="section-heading">
                     <div>
                         <span class="eyebrow small">
-                            03 / UPSTREAM DIAGNOSTICS
+                            04 / UPSTREAM DIAGNOSTICS
                         </span>
                         <h2>What changed before splatting?</h2>
                     </div>
@@ -765,7 +790,7 @@ def build_demo():
                 <div class="section-heading">
                     <div>
                         <span class="eyebrow small">
-                            04 / EXPERIMENT PROTOCOL
+                            05 / EXPERIMENT PROTOCOL
                         </span>
                         <h2>One downstream pipeline.</h2>
                     </div>

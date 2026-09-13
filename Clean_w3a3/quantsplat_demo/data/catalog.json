@@ -86,8 +86,8 @@
         ]
       },
       "pairing": {
-        "full": "Provided archive contract: sorted GT frame names correspond to sorted render indices.",
-        "w4a4": "Provided archive contract: sorted GT frame names correspond to sorted render indices.",
+        "full": "COLMAP held-out image names checked; sorted index pairing",
+        "w4a4": "COLMAP held-out image names checked; sorted index pairing",
         "w3a3": "COLMAP held-out image names checked; sorted index pairing"
       },
       "inputs": [
@@ -168,8 +168,8 @@
         ]
       },
       "pairing": {
-        "full": "Provided archive contract: sorted GT frame names correspond to sorted render indices.",
-        "w4a4": "Provided archive contract: sorted GT frame names correspond to sorted render indices.",
+        "full": "COLMAP held-out image names checked; sorted index pairing",
+        "w4a4": "COLMAP held-out image names checked; sorted index pairing",
         "w3a3": "COLMAP held-out image names checked; sorted index pairing"
       },
       "inputs": [
@@ -250,8 +250,8 @@
         ]
       },
       "pairing": {
-        "full": "Provided archive contract: sorted GT frame names correspond to sorted render indices.",
-        "w4a4": "Provided archive contract: sorted GT frame names correspond to sorted render indices.",
+        "full": "COLMAP held-out image names checked; sorted index pairing",
+        "w4a4": "COLMAP held-out image names checked; sorted index pairing",
         "w3a3": "COLMAP held-out image names checked; sorted index pairing"
       },
       "inputs": [
@@ -332,8 +332,8 @@
         ]
       },
       "pairing": {
-        "full": "Provided archive contract: sorted GT frame names correspond to sorted render indices.",
-        "w4a4": "Provided archive contract: sorted GT frame names correspond to sorted render indices.",
+        "full": "COLMAP held-out image names checked; sorted index pairing",
+        "w4a4": "COLMAP held-out image names checked; sorted index pairing",
         "w3a3": "COLMAP held-out image names checked; sorted index pairing"
       },
       "inputs": [
@@ -414,8 +414,8 @@
         ]
       },
       "pairing": {
-        "full": "Provided archive contract: sorted GT frame names correspond to sorted render indices.",
-        "w4a4": "Provided archive contract: sorted GT frame names correspond to sorted render indices.",
+        "full": "COLMAP held-out image names checked; sorted index pairing",
+        "w4a4": "COLMAP held-out image names checked; sorted index pairing",
         "w3a3": "COLMAP held-out image names checked; sorted index pairing"
       },
       "inputs": [
@@ -496,8 +496,8 @@
         ]
       },
       "pairing": {
-        "full": "Provided archive contract: sorted GT frame names correspond to sorted render indices.",
-        "w4a4": "Provided archive contract: sorted GT frame names correspond to sorted render indices.",
+        "full": "COLMAP held-out image names checked; sorted index pairing",
+        "w4a4": "COLMAP held-out image names checked; sorted index pairing",
         "w3a3": "COLMAP held-out image names checked; sorted index pairing"
       },
       "inputs": [
@@ -578,8 +578,8 @@
         ]
       },
       "pairing": {
-        "full": "Provided archive contract: sorted GT frame names correspond to sorted render indices.",
-        "w4a4": "Provided archive contract: sorted GT frame names correspond to sorted render indices.",
+        "full": "COLMAP held-out image names checked; sorted index pairing",
+        "w4a4": "COLMAP held-out image names checked; sorted index pairing",
         "w3a3": "COLMAP held-out image names checked; sorted index pairing"
       },
       "inputs": [
@@ -660,8 +660,8 @@
         ]
       },
       "pairing": {
-        "full": "Provided archive contract: sorted GT frame names correspond to sorted render indices.",
-        "w4a4": "Provided archive contract: sorted GT frame names correspond to sorted render indices.",
+        "full": "COLMAP held-out image names checked; sorted index pairing",
+        "w4a4": "COLMAP held-out image names checked; sorted index pairing",
         "w3a3": "COLMAP held-out image names checked; sorted index pairing"
       },
       "inputs": [
@@ -683,5 +683,5 @@
     }
   ],
   "metric_policy": "Imported raw foreground primary; content secondary; no live scoring.",
-  "packaged_at": "2026-09-13T10:12:46.419445+00:00"
+  "packaged_at": "2026-09-13T17:31:16.111347+00:00"
 }

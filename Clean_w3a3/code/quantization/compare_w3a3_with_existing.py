@@ -26,10 +26,16 @@ import common  # noqa: E402
 dv = common.dv
 
 
-ARCHIVE = Path("/var/tmp/poli22wo/renders7k_8scenes")
-DOWNSTREAM = Path("/var/tmp/poli22wo/quantsplat/downstream_validation_v1")
-OUT = Path("/var/tmp/poli22wo/quantsplat/oracle_sweep/results")
+ARCHIVE = Path("/var/tmp/poli22wo/renders7k_8scenes_rotation_fixed")
 
+DOWNSTREAM = Path(
+    "/var/tmp/poli22wo/quantsplat/downstream_validation_v1"
+)
+
+OUT = Path(
+    "/var/tmp/poli22wo/quantsplat/oracle_sweep/results/"
+    "w3a3_vs_existing_8scenes_9views_rotation_fixed.json"
+)
 
 SCENES = [
     "apple/110_13051_23361",

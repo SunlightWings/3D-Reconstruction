@@ -75,3 +75,33 @@ dist/
 Thumbs.db
 .vscode/
 .idea/
+
+# Local Python environments
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Large model/checkpoint files
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Third-party/local heavyweight repos
+Clean_w3a3/QuantVGGT/
+Clean_w3a3/gaussian-splatting/
+
+# Local/intermediate data
+Clean_w3a3/prepared/
+Clean_w3a3/quantsplat_demo/data_before_rotation_fix/
+Clean_w3a3/quantsplat_demo/data/turntable_neutral/
+
+# Large reconstruction artifacts
+*.ply
+*.npz
+
+# Archives
+*.zip
+*.tar
+*.tar.gz

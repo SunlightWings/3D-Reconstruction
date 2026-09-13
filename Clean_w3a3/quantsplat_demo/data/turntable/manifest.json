@@ -1,0 +1,230 @@
+{
+  "frames": 36,
+  "size": 518,
+  "scenes": {
+    "apple/110_13051_23361": {
+      "center": [
+        0.029152212650000002,
+        -0.17008017,
+        0.88646543
+      ],
+      "radius": 0.5394625137368076,
+      "height": -0.5991618552381094,
+      "normal": [
+        0.20129273684776025,
+        0.6290350248003266,
+        0.7508636172213905
+      ],
+      "arms": {
+        "full": {
+          "dir": "quantsplat_demo/data/turntable/apple/110_13051_23361/full",
+          "frames": 36
+        },
+        "w4a4": {
+          "dir": "quantsplat_demo/data/turntable/apple/110_13051_23361/w4a4",
+          "frames": 36
+        },
+        "w3a3": {
+          "dir": "quantsplat_demo/data/turntable/apple/110_13051_23361/w3a3",
+          "frames": 36
+        }
+      }
+    },
+    "ball/123_14363_28981": {
+      "center": [
+        -0.0133037637,
+        -0.07537255435,
+        0.976377517
+      ],
+      "radius": 0.9128785921717031,
+      "height": -0.6519049887973816,
+      "normal": [
+        -0.052282557900107135,
+        0.6574217534097678,
+        0.7517068393217187
+      ],
+      "arms": {
+        "full": {
+          "dir": "quantsplat_demo/data/turntable/ball/123_14363_28981/full",
+          "frames": 36
+        },
+        "w4a4": {
+          "dir": "quantsplat_demo/data/turntable/ball/123_14363_28981/w4a4",
+          "frames": 36
+        },
+        "w3a3": {
+          "dir": "quantsplat_demo/data/turntable/ball/123_14363_28981/w3a3",
+          "frames": 36
+        }
+      }
+    },
+    "bowl/70_5792_13401": {
+      "center": [
+        -0.11359343350000001,
+        -0.0435833801,
+        0.945055872
+      ],
+      "radius": 0.48428820786759086,
+      "height": -0.7831793699337684,
+      "normal": [
+        0.022254347714491494,
+        0.5341779493533192,
+        0.8450790864957461
+      ],
+      "arms": {
+        "full": {
+          "dir": "quantsplat_demo/data/turntable/bowl/70_5792_13401/full",
+          "frames": 36
+        },
+        "w4a4": {
+          "dir": "quantsplat_demo/data/turntable/bowl/70_5792_13401/w4a4",
+          "frames": 36
+        },
+        "w3a3": {
+          "dir": "quantsplat_demo/data/turntable/bowl/70_5792_13401/w3a3",
+          "frames": 36
+        }
+      }
+    },
+    "broccoli/412_56288_108844": {
+      "center": [
+        -0.0278626848,
+        -0.09440090505000001,
+        0.9172473845
+      ],
+      "radius": 0.688813716028849,
+      "height": -0.5860270537576634,
+      "normal": [
+        -0.07175822430490886,
+        0.6947487601918908,
+        0.7156639696508668
+      ],
+      "arms": {
+        "full": {
+          "dir": "quantsplat_demo/data/turntable/broccoli/412_56288_108844/full",
+          "frames": 36
+        },
+        "w4a4": {
+          "dir": "quantsplat_demo/data/turntable/broccoli/412_56288_108844/w4a4",
+          "frames": 36
+        },
+        "w3a3": {
+          "dir": "quantsplat_demo/data/turntable/broccoli/412_56288_108844/w3a3",
+          "frames": 36
+        }
+      }
+    },
+    "hydrant/167_18184_34441": {
+      "center": [
+        0.0137371095,
+        -0.03576138055,
+        0.8749851289999999
+      ],
+      "radius": 0.5509146235604998,
+      "height": -0.45737815038460544,
+      "normal": [
+        -0.022264682993540775,
+        0.8294097421762554,
+        0.5581968859410754
+      ],
+      "arms": {
+        "full": {
+          "dir": "quantsplat_demo/data/turntable/hydrant/167_18184_34441/full",
+          "frames": 36
+        },
+        "w4a4": {
+          "dir": "quantsplat_demo/data/turntable/hydrant/167_18184_34441/w4a4",
+          "frames": 36
+        },
+        "w3a3": {
+          "dir": "quantsplat_demo/data/turntable/hydrant/167_18184_34441/w3a3",
+          "frames": 36
+        }
+      }
+    },
+    "remote/350_36761_68623": {
+      "center": [
+        -0.04280366005,
+        -0.1257245915,
+        0.942902386
+      ],
+      "radius": 0.630081632066384,
+      "height": -0.6614484592800397,
+      "normal": [
+        0.08986323403027943,
+        0.5571357020021156,
+        0.8255449162366814
+      ],
+      "arms": {
+        "full": {
+          "dir": "quantsplat_demo/data/turntable/remote/350_36761_68623/full",
+          "frames": 36
+        },
+        "w4a4": {
+          "dir": "quantsplat_demo/data/turntable/remote/350_36761_68623/w4a4",
+          "frames": 36
+        },
+        "w3a3": {
+          "dir": "quantsplat_demo/data/turntable/remote/350_36761_68623/w3a3",
+          "frames": 36
+        }
+      }
+    },
+    "teddybear/187_20215_38541": {
+      "center": [
+        -0.07453206185,
+        0.03557705505,
+        0.914752126
+      ],
+      "radius": 0.5377941882337038,
+      "height": -0.7330628486455584,
+      "normal": [
+        -0.11949860676732652,
+        0.6805918353248387,
+        0.7228518774063157
+      ],
+      "arms": {
+        "full": {
+          "dir": "quantsplat_demo/data/turntable/teddybear/187_20215_38541/full",
+          "frames": 36
+        },
+        "w4a4": {
+          "dir": "quantsplat_demo/data/turntable/teddybear/187_20215_38541/w4a4",
+          "frames": 36
+        },
+        "w3a3": {
+          "dir": "quantsplat_demo/data/turntable/teddybear/187_20215_38541/w3a3",
+          "frames": 36
+        }
+      }
+    },
+    "toaster/372_41229_82130": {
+      "center": [
+        0.0264543286,
+        0.05633038095,
+        0.9606578349999999
+      ],
+      "radius": 0.8068707444866563,
+      "height": -0.6058204367902973,
+      "normal": [
+        -0.01721937629670961,
+        0.8283498410776436,
+        0.5599464562496977
+      ],
+      "arms": {
+        "full": {
+          "dir": "quantsplat_demo/data/turntable/toaster/372_41229_82130/full",
+          "frames": 36
+        },
+        "w4a4": {
+          "dir": "quantsplat_demo/data/turntable/toaster/372_41229_82130/w4a4",
+          "frames": 36
+        },
+        "w3a3": {
+          "dir": "quantsplat_demo/data/turntable/toaster/372_41229_82130/w3a3",
+          "frames": 36
+        }
+      }
+    }
+  }
+}

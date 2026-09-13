@@ -404,21 +404,64 @@ def transform_camera_to_variant(E_gt: np.ndarray, s: float, A: np.ndarray, b: np
 
 
 def rotmat2qvec(R: np.ndarray) -> np.ndarray:
-    """COLMAP quaternion order: qw qx qy qz."""
+    """Convert a 3x3 rotation matrix to COLMAP qvec order: qw qx qy qz.
+
+    This matches COLMAP's world-to-camera rotation convention.
+
+    Important:
+    The antisymmetric terms in the final row must have the signs below.
+    Reversing them produces the quaternion for R.T, i.e. the inverse
+    camera rotation.
+    """
+
     R = np.asarray(R, dtype=np.float64)
+
+    if R.shape != (3, 3):
+        raise ValueError(
+            f"rotmat2qvec expected shape (3, 3), got {R.shape}"
+        )
+
     K = np.array(
         [
-            [R[0, 0] - R[1, 1] - R[2, 2], 0, 0, 0],
-            [R[1, 0] + R[0, 1], R[1, 1] - R[0, 0] - R[2, 2], 0, 0],
-            [R[2, 0] + R[0, 2], R[2, 1] + R[1, 2], R[2, 2] - R[0, 0] - R[1, 1], 0],
-            [R[1, 2] - R[2, 1], R[2, 0] - R[0, 2], R[0, 1] - R[1, 0], R[0, 0] + R[1, 1] + R[2, 2]],
+            [
+                R[0, 0] - R[1, 1] - R[2, 2],
+                0.0,
+                0.0,
+                0.0,
+            ],
+            [
+                R[0, 1] + R[1, 0],
+                R[1, 1] - R[0, 0] - R[2, 2],
+                0.0,
+                0.0,
+            ],
+            [
+                R[0, 2] + R[2, 0],
+                R[1, 2] + R[2, 1],
+                R[2, 2] - R[0, 0] - R[1, 1],
+                0.0,
+            ],
+            [
+                # These signs matter.
+                R[2, 1] - R[1, 2],
+                R[0, 2] - R[2, 0],
+                R[1, 0] - R[0, 1],
+                R[0, 0] + R[1, 1] + R[2, 2],
+            ],
         ],
         dtype=np.float64,
     ) / 3.0
+
     eigvals, eigvecs = np.linalg.eigh(K)
-    q = eigvecs[[3, 0, 1, 2], np.argmax(eigvals)]
+
+    q = eigvecs[
+        [3, 0, 1, 2],
+        np.argmax(eigvals),
+    ]
+
     if q[0] < 0:
         q = -q
+
     return q
 
 

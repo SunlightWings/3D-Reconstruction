@@ -342,11 +342,5 @@
       "w3a3_content_ssim": 0.2221358385350969,
       "w3a3_content_lpips": 0.7290670408142937
     }
-  ],
-  "_provenance": {
-    "kind": "imported_results_json",
-    "filename": "w3a3_vs_existing_8scenes_9views.json",
-    "sha256": "30d8096a72a461f3e44b92bb212e37c5e5b2157888c67f42d6f15de12794dab7",
-    "description": "Imported from the user-supplied results JSON. This app does not recalculate evaluation metrics."
-  }
+  ]
 }
