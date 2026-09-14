@@ -19,9 +19,9 @@
       "description": "Locally calibrated 3-bit weight / activation configuration."
     },
     {
-      "id": "w3a3_conf",
-      "label": "W3A3 + confidence",
-      "description": "Proposed lightweight confidence predictor; pending until results are supplied."
+      "id": "w3a3_qfix_focal",
+      "label": "W3A3 + focal calibration",
+      "description": "W3A3 with corrected camera rotation and focal calibration; corrected 40-scene metrics are in focal_calibration_metrics.json."
     }
   ],
   "scenes": [
