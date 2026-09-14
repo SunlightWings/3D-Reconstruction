@@ -120,9 +120,8 @@ function CreateReconstruction() {
   return <>
     <section className="hero">
       <span className={`service-pill ${online ? "online" : online === false ? "offline" : ""}`}>{online === null ? "Checking backend" : online ? "Backend online" : "Backend unavailable"}</span>
-      <p className="eyebrow">CONFIDENCE-WEIGHTED 3D RECONSTRUCTION</p>
-      <h1>Six photos.<br /><em>One explorable scene.</em></h1>
-      <p>Upload six overlapping views of one object. QuantSplat estimates its geometry, trains a Gaussian Splat, and returns an interactive 3D reconstruction.</p>
+      <p className="eyebrow">INTERACTIVE RECONSTRUCTION</p>
+      <p className="hero-instruction">Upload six overlapping views of one object. QuantSplat estimates its geometry, trains a Gaussian Splat, and returns an interactive 3D reconstruction.</p>
     </section>
 
     {(state === "selecting" || state === "uploading") && <section className="card">
@@ -141,9 +140,9 @@ function CreateReconstruction() {
 }
 
 export default function App() {
-  const [page, setPage] = useState("create");
+  const [page, setPage] = useState("research");
   return <main>
-    <header><a className="brand" href="/">QUANTSPLAT <i>/</i> VISION LAB</a><nav className="app-nav" aria-label="Main navigation"><button className={page === "create" ? "active" : ""} onClick={() => setPage("create")}>Create reconstruction</button><button className={page === "research" ? "active" : ""} onClick={() => setPage("research")}>Research explorer</button></nav></header>
-    {page === "create" ? <CreateReconstruction /> : <ResearchExplorer />}
+    <header><a className="brand" href="/">QUANTSPLAT <i>/</i> VISION LAB</a><nav className="app-nav" aria-label="Main navigation"><button className={page === "research" ? "active" : ""} onClick={() => setPage("research")}>Research explorer</button><button className={page === "create" ? "active action" : ""} onClick={() => setPage("create")}>Create reconstruction</button></nav></header>
+    {page === "research" ? <ResearchExplorer /> : <CreateReconstruction />}
   </main>;
 }
