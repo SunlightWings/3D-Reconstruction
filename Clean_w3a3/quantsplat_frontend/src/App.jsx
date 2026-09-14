@@ -142,7 +142,7 @@ function CreateReconstruction() {
 export default function App() {
   const [page, setPage] = useState("research");
   return <main>
-    <header><a className="brand" href="/">QUANTSPLAT <i>/</i> VISION LAB</a><nav className="app-nav" aria-label="Main navigation"><button className={page === "research" ? "active" : ""} onClick={() => setPage("research")}>Research explorer</button><button className={page === "create" ? "active action" : ""} onClick={() => setPage("create")}>Create reconstruction</button></nav></header>
+    <header><a className="brand" href="/"><span>QUANTSPLAT</span><small>Arham Shahzad · Prabin Sharma Poudel · Mohan Manideep Danda</small></a><nav className="app-nav" aria-label="Main navigation"><button className={page === "research" ? "active" : ""} onClick={() => setPage("research")}>Research explorer</button><button className={page === "create" ? "active action" : ""} onClick={() => setPage("create")}>Create reconstruction</button></nav></header>
     {page === "research" ? <ResearchExplorer /> : <CreateReconstruction />}
   </main>;
 }
