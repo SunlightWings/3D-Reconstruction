@@ -1,0 +1,182 @@
+{
+  "protocol": "Untouched book/cake/donut test split; drop one frame per scene.",
+  "rows": 36,
+  "scenes": 6,
+  "results": {
+    "baseline_all_6": {
+      "n": 36,
+      "rotation_mean_deg": 2.6430214941501617,
+      "center_mean_pct": 4.476303027735816,
+      "focal_mean_pct": 13.452861070632935,
+      "failure_rate": 0.4166666666666667
+    },
+    "learned_drop_lowest_confidence": {
+      "n": 30,
+      "rotation_mean_deg": 2.5594595392545063,
+      "center_mean_pct": 4.390599918365479,
+      "focal_mean_pct": 13.226523701349894,
+      "failure_rate": 0.4
+    },
+    "random_drop_expected": {
+      "rotation_mean_deg": 2.6430214941501617,
+      "center_mean_pct": 4.476303027735816,
+      "focal_mean_pct": 13.452861070632935,
+      "failure_rate": 0.4166666666666667
+    },
+    "oracle_drop_worst": {
+      "n": 30,
+      "rotation_mean_deg": 2.5635637640953064,
+      "center_mean_pct": 3.952392840385437,
+      "focal_mean_pct": 13.454151233037313,
+      "failure_rate": 0.3
+    }
+  },
+  "learned_dropped": [
+    {
+      "category": "book",
+      "sequence": "119_13962_28926",
+      "frame_number": "137",
+      "rotation": 3.1921966075897217,
+      "center": 1.9151344299316406,
+      "focal": 20.614055633544922,
+      "confidence": 0.4148947596549988,
+      "failure_probability": 0.5851052403450012,
+      "failure": 0.0,
+      "severity": 0.6384393215179444
+    },
+    {
+      "category": "book",
+      "sequence": "247_26469_51778",
+      "frame_number": "35",
+      "rotation": 2.691777229309082,
+      "center": 5.484426021575928,
+      "focal": 17.609285354614258,
+      "confidence": 0.44019460678100586,
+      "failure_probability": 0.5598053932189941,
+      "failure": 1.0,
+      "severity": 1.0968852043151855
+    },
+    {
+      "category": "cake",
+      "sequence": "374_42274_84517",
+      "frame_number": "1",
+      "rotation": 2.716343641281128,
+      "center": 4.792689800262451,
+      "focal": 13.446239471435547,
+      "confidence": 0.5360800623893738,
+      "failure_probability": 0.4639199376106262,
+      "failure": 0.0,
+      "severity": 0.9585379600524903
+    },
+    {
+      "category": "cake",
+      "sequence": "403_53094_103680",
+      "frame_number": "137",
+      "rotation": 6.073769569396973,
+      "center": 9.152502059936523,
+      "focal": 7.3408989906311035,
+      "confidence": 0.3889349699020386,
+      "failure_probability": 0.6110650300979614,
+      "failure": 1.0,
+      "severity": 1.8305004119873047
+    },
+    {
+      "category": "donut",
+      "sequence": "391_47032_93657",
+      "frame_number": "1",
+      "rotation": 1.900927186012268,
+      "center": 6.361366271972656,
+      "focal": 8.990296363830566,
+      "confidence": 0.47858762741088867,
+      "failure_probability": 0.5214123725891113,
+      "failure": 1.0,
+      "severity": 1.2722732543945312
+    },
+    {
+      "category": "donut",
+      "sequence": "403_52964_103416",
+      "frame_number": "137",
+      "rotation": 1.7899733781814575,
+      "center": 1.7227928638458252,
+      "focal": 19.506511688232422,
+      "confidence": 0.39635521173477173,
+      "failure_probability": 0.6036447882652283,
+      "failure": 0.0,
+      "severity": 0.3579946756362915
+    }
+  ],
+  "oracle_dropped": [
+    {
+      "category": "book",
+      "sequence": "119_13962_28926",
+      "frame_number": "170",
+      "rotation": 4.01678466796875,
+      "center": 5.88679313659668,
+      "focal": 24.724365234375,
+      "confidence": 0.44896167516708374,
+      "failure_probability": 0.5510383248329163,
+      "failure": 1.0,
+      "severity": 1.177358627319336
+    },
+    {
+      "category": "book",
+      "sequence": "247_26469_51778",
+      "frame_number": "1",
+      "rotation": 2.1590192317962646,
+      "center": 5.700852394104004,
+      "focal": 8.025064468383789,
+      "confidence": 0.5088540315628052,
+      "failure_probability": 0.4911459684371948,
+      "failure": 1.0,
+      "severity": 1.1401704788208007
+    },
+    {
+      "category": "cake",
+      "sequence": "374_42274_84517",
+      "frame_number": "69",
+      "rotation": 1.9325838088989258,
+      "center": 5.71063232421875,
+      "focal": 12.211766242980957,
+      "confidence": 0.5912356078624725,
+      "failure_probability": 0.40876439213752747,
+      "failure": 1.0,
+      "severity": 1.14212646484375
+    },
+    {
+      "category": "cake",
+      "sequence": "403_53094_103680",
+      "frame_number": "35",
+      "rotation": 6.3168182373046875,
+      "center": 10.544608116149902,
+      "focal": 1.346327304840088,
+      "confidence": 0.4182734489440918,
+      "failure_probability": 0.5817265510559082,
+      "failure": 1.0,
+      "severity": 2.1089216232299806
+    },
+    {
+      "category": "donut",
+      "sequence": "391_47032_93657",
+      "frame_number": "1",
+      "rotation": 1.900927186012268,
+      "center": 6.361366271972656,
+      "focal": 8.990296363830566,
+      "confidence": 0.47858762741088867,
+      "failure_probability": 0.5214123725891113,
+      "failure": 1.0,
+      "severity": 1.2722732543945312
+    },
+    {
+      "category": "donut",
+      "sequence": "403_52964_103416",
+      "frame_number": "36",
+      "rotation": 1.9157277345657349,
+      "center": 8.370871543884277,
+      "focal": 25.38064193725586,
+      "confidence": 0.42475688457489014,
+      "failure_probability": 0.5752431154251099,
+      "failure": 1.0,
+      "severity": 1.6741743087768555
+    }
+  ]
+}

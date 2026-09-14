@@ -1,0 +1,60 @@
+/var/tmp/atep12oh/quantsplat-env/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/var/tmp/atep12oh/quantsplat-env/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Downloading: "https://download.pytorch.org/models/alexnet-owt-7be5be79.pth" to /home/utn/atep12oh/.cache/torch/hub/checkpoints/alexnet-owt-7be5be79.pth
+LPIPS device: cuda
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+  0%|          | 0.00/233M [00:00<?, ?B/s]  4%|▍         | 9.12M/233M [00:00<00:02, 95.0MB/s]  9%|▊         | 20.4M/233M [00:00<00:02, 108MB/s]  14%|█▎        | 31.6M/233M [00:00<00:01, 112MB/s] 18%|█▊        | 42.9M/233M [00:00<00:01, 114MB/s] 23%|██▎       | 54.1M/233M [00:00<00:01, 116MB/s] 28%|██▊       | 65.4M/233M [00:00<00:01, 116MB/s] 33%|███▎      | 76.6M/233M [00:00<00:01, 117MB/s] 38%|███▊      | 87.9M/233M [00:00<00:01, 117MB/s] 43%|████▎     | 99.1M/233M [00:00<00:01, 117MB/s] 47%|████▋     | 110M/233M [00:01<00:01, 117MB/s]  52%|█████▏    | 122M/233M [00:01<00:00, 117MB/s] 57%|█████▋    | 133M/233M [00:01<00:00, 117MB/s] 62%|██████▏   | 144M/233M [00:01<00:00, 117MB/s] 67%|██████▋   | 155M/233M [00:01<00:00, 117MB/s] 71%|███████▏  | 167M/233M [00:01<00:00, 117MB/s] 76%|███████▋  | 178M/233M [00:01<00:00, 117MB/s] 81%|████████  | 189M/233M [00:01<00:00, 117MB/s] 86%|████████▌ | 200M/233M [00:01<00:00, 117MB/s] 91%|█████████ | 212M/233M [00:01<00:00, 117MB/s] 96%|█████████▌| 223M/233M [00:02<00:00, 117MB/s]100%|██████████| 233M/233M [00:02<00:00, 116MB/s]
+/var/tmp/atep12oh/quantsplat-env/lib/python3.10/site-packages/lpips/lpips.py:107: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.load_state_dict(torch.load(model_path, map_location='cpu'), strict=False)
+Loading model from: /var/tmp/atep12oh/quantsplat-env/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+
+==============================================================================
+CUSTOM CUP: 24-RUN METRIC RECOVERY
+==============================================================================
+N= 3 Full VGGT                   PSNR=13.772 SSIM=0.6313 LPIPS=0.4721 MAE=0.15018
+N= 3 W4A4                        PSNR=13.854 SSIM=0.5891 LPIPS=0.4915 MAE=0.15211
+N= 3 W3A3 raw                    PSNR=13.948 SSIM=0.5519 LPIPS=0.5018 MAE=0.14938
+N= 3 W3A3 + corrector            PSNR=13.958 SSIM=0.5611 LPIPS=0.5057 MAE=0.14936
+N= 3 W3A3 + confidence           PSNR=11.880 SSIM=0.4362 LPIPS=0.6683 MAE=0.20462
+N= 3 W3A3 + corr. + conf.        PSNR=12.331 SSIM=0.4521 LPIPS=0.6716 MAE=0.19433
+N= 6 Full VGGT                   PSNR=16.631 SSIM=0.7018 LPIPS=0.3690 MAE=0.09844
+N= 6 W4A4                        PSNR=15.441 SSIM=0.5952 LPIPS=0.4001 MAE=0.11207
+N= 6 W3A3 raw                    PSNR=15.374 SSIM=0.5243 LPIPS=0.4540 MAE=0.11731
+N= 6 W3A3 + corrector            PSNR=15.380 SSIM=0.5326 LPIPS=0.4232 MAE=0.11539
+N= 6 W3A3 + confidence           PSNR=15.681 SSIM=0.5468 LPIPS=0.4370 MAE=0.11380
+N= 6 W3A3 + corr. + conf.        PSNR=15.511 SSIM=0.5456 LPIPS=0.4077 MAE=0.11390
+N= 9 Full VGGT                   PSNR=12.770 SSIM=0.6368 LPIPS=0.4536 MAE=0.15428
+N= 9 W4A4                        PSNR=12.317 SSIM=0.5438 LPIPS=0.5033 MAE=0.16982
+N= 9 W3A3 raw                    PSNR=13.122 SSIM=0.4792 LPIPS=0.5633 MAE=0.15797
+N= 9 W3A3 + corrector            PSNR=12.759 SSIM=0.4823 LPIPS=0.5358 MAE=0.16223
+N= 9 W3A3 + confidence           PSNR=14.485 SSIM=0.5230 LPIPS=0.4867 MAE=0.12380
+N= 9 W3A3 + corr. + conf.        PSNR=14.223 SSIM=0.5273 LPIPS=0.4651 MAE=0.12471
+N=12 Full VGGT                   PSNR=15.885 SSIM=0.7172 LPIPS=0.3396 MAE=0.08764
+N=12 W4A4                        PSNR=15.074 SSIM=0.6217 LPIPS=0.3877 MAE=0.10279
+N=12 W3A3 raw                    PSNR=15.233 SSIM=0.5266 LPIPS=0.5083 MAE=0.10797
+N=12 W3A3 + corrector            PSNR=15.176 SSIM=0.5325 LPIPS=0.4984 MAE=0.10805
+N=12 W3A3 + confidence           PSNR=15.173 SSIM=0.5216 LPIPS=0.5131 MAE=0.10890
+N=12 W3A3 + corr. + conf.        PSNR=15.407 SSIM=0.5354 LPIPS=0.4880 MAE=0.10617
+
+==============================================================================
+BOTTLE REPLICATION: FULL METRICS
+==============================================================================
+W3A3 raw                    PSNR=13.978 SSIM=0.6203 LPIPS=0.6451 MAE=0.16113
+W3A3 + corrector            PSNR=13.409 SSIM=0.6154 LPIPS=0.6291 MAE=0.17639
+W3A3 + confidence           PSNR=12.521 SSIM=0.6150 LPIPS=0.6738 MAE=0.19818
+W3A3 + corr. + conf.        PSNR=12.233 SSIM=0.6146 LPIPS=0.6390 MAE=0.20804
+
+==============================================================================
+REPORT METRIC CONTRACT
+==============================================================================
+PSNR : PASS
+SSIM : PASS
+LPIPS: PASS
+MAE  : PASS
+
+CSV : /var/tmp/atep12oh/QuantSplat_Integrated/outputs/final_quality_metrics_20260914/all_quality_metrics.csv
+JSON: /var/tmp/atep12oh/QuantSplat_Integrated/outputs/final_quality_metrics_20260914/all_quality_metrics.json
+
+FINAL QUALITY METRICS: PASS

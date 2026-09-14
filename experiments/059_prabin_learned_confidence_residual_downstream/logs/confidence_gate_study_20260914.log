@@ -1,0 +1,32 @@
+=== CONTRACT ===
+rows: 36
+columns: ['category', 'sequence', 'frame_number', 'true_rotation_deg', 'true_center_pct', 'true_focal_pct', 'pred_rotation_deg', 'pred_center_pct', 'pred_focal_pct', 'pose_failure_probability', 'confidence']
+
+scenes: 6
+frames/scene: [6, 6, 6, 6, 6, 6]
+
+============================================================================
+CONFIDENCE GATING ON UNTOUCHED CATEGORY-DISJOINT TEST
+============================================================================
+Policy                            Rot mean     Center      Focal    Failure
+All 6 / scene                        2.643      4.476     13.453      41.7%
+Drop lowest learned conf.            2.559      4.391     13.227      40.0%
+Random drop expected                 2.643      4.476     13.453      41.7%
+Oracle drop worst                    2.564      3.952     13.454      30.0%
+
+=== LEARNED-DROPPED FRAMES ===
+book     119_13962_28926    frame= 137 conf=0.415 failP=0.585 rot=3.192 center=1.915 focal=20.614 bad=0
+book     247_26469_51778    frame=  35 conf=0.440 failP=0.560 rot=2.692 center=5.484 focal=17.609 bad=1
+cake     374_42274_84517    frame=   1 conf=0.536 failP=0.464 rot=2.716 center=4.793 focal=13.446 bad=0
+cake     403_53094_103680   frame= 137 conf=0.389 failP=0.611 rot=6.074 center=9.153 focal=7.341 bad=1
+donut    391_47032_93657    frame=   1 conf=0.479 failP=0.521 rot=1.901 center=6.361 focal=8.990 bad=1
+donut    403_52964_103416   frame= 137 conf=0.396 failP=0.604 rot=1.790 center=1.723 focal=19.507 bad=0
+
+=== LEARNED GATE RELATIVE CHANGE ===
+rotation     : 2.64302 -> 2.55946 (+3.16% improvement)
+center       : 4.47630 -> 4.39060 (+1.91% improvement)
+focal        : 13.45286 -> 13.22652 (+1.68% improvement)
+failure rate : 0.41667 -> 0.40000 (+4.00% improvement)
+
+SAVED: /var/tmp/atep12oh/QuantSplat_Integrated/outputs/final_confidence_gate_20260914/confidence_gate_summary.json
+CONFIDENCE GATE STUDY: PASS

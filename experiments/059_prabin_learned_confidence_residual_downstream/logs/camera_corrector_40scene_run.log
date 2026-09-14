@@ -1,0 +1,128 @@
+==============================================
+BUILD 40-SCENE SIGNED TARGET DATASET
+==============================================
+01/40 train apple/110_13051_23361              scale=0.97876
+02/40 train apple/189_20393_38136              scale=0.94393
+03/40 train ball/123_14363_28981               scale=1.03752
+04/40 train ball/375_42693_85518               scale=0.97827
+05/40 train bench/415_57112_110099             scale=1.03870
+06/40 train bench/415_57121_110109             scale=0.98943
+07/40 train bowl/69_5465_12831                 scale=1.04412
+08/40 train bowl/70_5792_13401                 scale=1.04687
+09/40 train broccoli/372_41112_81867           scale=0.97667
+10/40 train broccoli/412_56288_108844          scale=1.02259
+11/40 train hydrant/167_18184_34441            scale=0.97579
+12/40 train hydrant/411_56064_108483           scale=0.99656
+13/40 train mouse/107_12753_23606              scale=1.03414
+14/40 train mouse/377_43416_86289              scale=1.03754
+15/40 train orange/374_42196_84367             scale=0.92049
+16/40 train orange/385_45386_90752             scale=0.94315
+17/40 train skateboard/245_26182_52130         scale=0.96664
+18/40 train skateboard/366_39266_76077         scale=0.98858
+19/40 train suitcase/410_55734_107452          scale=1.01734
+20/40 train suitcase/50_2928_8645              scale=0.93172
+21/40 train teddybear/187_20215_38541          scale=1.00878
+22/40 train teddybear/34_1479_4753             scale=0.97009
+23/40 train toaster/372_41229_82130            scale=1.06361
+24/40 train toaster/416_57389_110765           scale=1.06791
+25/40 train toytrain/240_25394_51994           scale=1.00778
+26/40 train toytrain/399_51323_100753          scale=1.01352
+27/40 train vase/374_41862_83720               scale=1.00937
+28/40 train vase/380_44863_89631               scale=0.92575
+29/40 val   plant/247_26441_50907              scale=0.99609
+30/40 val   plant/374_42005_84358              scale=0.93023
+31/40 val   remote/195_20989_41543             scale=1.08312
+32/40 val   remote/350_36761_68623             scale=0.97784
+33/40 val   toytruck/190_20494_39385           scale=0.96947
+34/40 val   toytruck/346_36113_66551           scale=1.02307
+35/40 test  book/119_13962_28926               scale=0.95667
+36/40 test  book/247_26469_51778               scale=0.97158
+37/40 test  cake/374_42274_84517               scale=1.03630
+38/40 test  cake/403_53094_103680              scale=1.03784
+39/40 test  donut/391_47032_93657              scale=0.97702
+40/40 test  donut/403_52964_103416             scale=0.97015
+
+==============================================
+ALIGNMENT CONTRACT SANITY CHECK
+==============================================
+rotation label MAE: 0.000125 deg
+rotation label max diff: 0.001211 deg
+Sim3 scale mean relative diff: 0.0000%
+
+train: (168, 27) (168, 8)
+val:   (36, 27) (36, 8)
+test scenes: 6
+
+==============================================
+VALIDATION HYPERPARAMETER SEARCH
+==============================================
+alpha=    0.01 shrink=0.00 score=1.00000
+alpha=    0.01 shrink=0.25 score=0.91597
+alpha=    0.01 shrink=0.50 score=0.88451
+alpha=    0.01 shrink=0.75 score=0.91157
+alpha=    0.01 shrink=1.00 score=0.98336
+alpha=     0.1 shrink=0.00 score=1.00000
+alpha=     0.1 shrink=0.25 score=0.91755
+alpha=     0.1 shrink=0.50 score=0.88239
+alpha=     0.1 shrink=0.75 score=0.90558
+alpha=     0.1 shrink=1.00 score=0.97008
+alpha=       1 shrink=0.00 score=1.00000
+alpha=       1 shrink=0.25 score=0.91924
+alpha=       1 shrink=0.50 score=0.87496
+alpha=       1 shrink=0.75 score=0.88823
+alpha=       1 shrink=1.00 score=0.93745
+alpha=      10 shrink=0.00 score=1.00000
+alpha=      10 shrink=0.25 score=0.91418
+alpha=      10 shrink=0.50 score=0.85300
+alpha=      10 shrink=0.75 score=0.84526
+alpha=      10 shrink=1.00 score=0.86775
+alpha=     100 shrink=0.00 score=1.00000
+alpha=     100 shrink=0.25 score=0.91402
+alpha=     100 shrink=0.50 score=0.83770
+alpha=     100 shrink=0.75 score=0.79660
+alpha=     100 shrink=1.00 score=0.79006
+alpha=    1000 shrink=0.00 score=1.00000
+alpha=    1000 shrink=0.25 score=0.91592
+alpha=    1000 shrink=0.50 score=0.83501
+alpha=    1000 shrink=0.75 score=0.77903
+alpha=    1000 shrink=1.00 score=0.76081
+
+SELECTED: alpha=1000.0 shrink=1.0 val_score=0.760807
+
+====================================================
+FINAL CATEGORY-DISJOINT TEST RESULT
+====================================================
+
+rotation_deg
+  W3A3 raw median : 2.19183
+  corrected median: 2.11631
+  W3A3 raw mean   : 2.64302
+  corrected mean  : 2.56242
+  frames improved : 23/36
+
+center_pct
+  W3A3 raw median : 3.48310
+  corrected median: 3.35354
+  W3A3 raw mean   : 4.10043
+  corrected mean  : 3.98427
+  frames improved : 24/36
+
+focal_pct
+  W3A3 raw median : 13.47519
+  corrected median: 4.01326
+  W3A3 raw mean   : 13.45286
+  corrected mean  : 4.89627
+  frames improved : 35/36
+
+====================================================
+W4A4 ON SAME UNTOUCHED TEST
+====================================================
+rotation: median=1.18896 mean=1.38681
+center:   median=1.71023 mean=1.94548
+focal:    median=2.31715 mean=2.30541
+
+MODEL : /var/tmp/atep12oh/QuantSplat_Integrated/outputs/camera_corrector_40scene/camera_residual_corrector.npz
+CSV   : /var/tmp/atep12oh/QuantSplat_Integrated/outputs/camera_corrector_40scene/test_predictions.csv
+JSON  : /var/tmp/atep12oh/QuantSplat_Integrated/outputs/camera_corrector_40scene/summary.json
+
+CAMERA RESIDUAL 40-SCENE STUDY: COMPLETE

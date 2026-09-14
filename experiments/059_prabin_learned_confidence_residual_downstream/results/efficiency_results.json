@@ -1,0 +1,62 @@
+[
+  {
+    "variant": "full_vggt",
+    "load_seconds": 7.9275473809993855,
+    "median_forward_seconds": 1.1231448930011538,
+    "mean_forward_seconds": 1.123081570333549,
+    "min_forward_seconds": 1.1216750130006403,
+    "loaded_allocated_mib": 4798.52783203125,
+    "loaded_reserved_mib": 4828.0,
+    "peak_allocated_mib": 9892.95361328125,
+    "peak_reserved_mib": 12896.0,
+    "repetitions": 3,
+    "input_frames": 6,
+    "input_shape": [
+      6,
+      3,
+      518,
+      518
+    ],
+    "gpu": "NVIDIA RTX 4000 Ada Generation"
+  },
+  {
+    "variant": "w4a4",
+    "load_seconds": 19.965890270999807,
+    "median_forward_seconds": 2.192860011000448,
+    "mean_forward_seconds": 2.194275275000109,
+    "min_forward_seconds": 2.191206098999828,
+    "loaded_allocated_mib": 8461.12158203125,
+    "loaded_reserved_mib": 8582.0,
+    "peak_allocated_mib": 15381.40966796875,
+    "peak_reserved_mib": 18116.0,
+    "repetitions": 3,
+    "input_frames": 6,
+    "input_shape": [
+      6,
+      3,
+      518,
+      518
+    ],
+    "gpu": "NVIDIA RTX 4000 Ada Generation"
+  },
+  {
+    "variant": "w3a3",
+    "load_seconds": 18.24174619599944,
+    "median_forward_seconds": 2.1902004550011043,
+    "mean_forward_seconds": 2.1904770960002984,
+    "min_forward_seconds": 2.189593742999932,
+    "loaded_allocated_mib": 8461.12158203125,
+    "loaded_reserved_mib": 8582.0,
+    "peak_allocated_mib": 15381.40966796875,
+    "peak_reserved_mib": 18116.0,
+    "repetitions": 3,
+    "input_frames": 6,
+    "input_shape": [
+      6,
+      3,
+      518,
+      518
+    ],
+    "gpu": "NVIDIA RTX 4000 Ada Generation"
+  }
+]
