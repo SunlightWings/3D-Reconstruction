@@ -19,6 +19,10 @@ in `localStorage`. The **Research explorer** section reads the existing active d
 
 The viewer activates only when a completed job supplies `result.model_url`. Until then, a completed geometry-only job presents an honest integration-pending state.
 
+To test Spark without starting a new GPU job, optionally set `VITE_TEST_MODEL_URL` to the
+backend's already-completed public `.ply` or `.spz` URL. This adds an **Open completed test
+model** button and is safe to omit in production.
+
 ## Cloudflare Pages
 
 Use this directory as the Pages root directory. Configure `npm run build` as the build command
