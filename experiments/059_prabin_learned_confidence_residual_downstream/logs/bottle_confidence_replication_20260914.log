@@ -1,0 +1,102 @@
+/tmp/run_bottle_replication.py:171: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  obj = torch.load(src, map_location="cpu")
+PROVEN split_scene helper: PASS
+
+$ /var/tmp/atep12oh/quantsplat-env/bin/python /var/tmp/atep12oh/QuantSplat_Integrated/scripts/infer_camera_confidence.py --npz /var/tmp/atep12oh/QuantSplat_Integrated/outputs/custom_bottle_e2e/w3a3.npz --checkpoint /var/tmp/atep12oh/QuantSplat_Integrated/outputs/confidence_camera_40scene_v2/best_model.pt --out /var/tmp/atep12oh/QuantSplat_Integrated/outputs/bottle_confidence_replication_20260914/confidence
+
+=== BOTTLE CONFIDENCE ===
+frame=1 confidence=0.999770
+frame=2 confidence=0.983266
+frame=3 confidence=0.964238
+frame=4 confidence=0.964167
+frame=5 confidence=0.904569
+frame=6 confidence=0.998838
+
+FIXED 3DGS HOLDOUT FRAME: 6
+LOWEST-CONFIDENCE TRAIN FRAME: 5 confidence= 0.9045687913894653
+FULL FRAMES : [1, 2, 3, 4, 5, 6]
+GATED FRAMES: [1, 2, 3, 4, 6]
+GATED HOLDOUT LOCAL INDEX: 5
+
+########################################################################
+W3A3 raw
+########################################################################
+
+$ /var/tmp/atep12oh/quantsplat-env/bin/python /tmp/vggt_to_3dgs_variable_views.py --raw /var/tmp/atep12oh/QuantSplat_Integrated/outputs/bottle_confidence_replication_20260914/w3a3_raw.pt --input_tensor /var/tmp/atep12oh/QuantSplat_Integrated/outputs/custom_bottle_e2e/input_tensor.pt --output /var/tmp/atep12oh/QuantSplat_Integrated/outputs/bottle_confidence_replication_20260914/w3a3_raw_scene --stride 4
+adapter: PASS
+split: PASS; local held-out camera = 6
+
+$ /var/tmp/atep12oh/quantsplat-env/bin/python /var/tmp/atep12oh/QuantSplat_Integrated/external/gaussian-splatting/train.py -s /var/tmp/atep12oh/QuantSplat_Integrated/outputs/bottle_confidence_replication_20260914/w3a3_raw_scene -m /var/tmp/atep12oh/QuantSplat_Integrated/outputs/bottle_confidence_replication_20260914/w3a3_raw_model --eval --iterations 3000 --save_iterations 3000 --test_iterations 3000
+3DGS train: PASS
+
+$ /var/tmp/atep12oh/quantsplat-env/bin/python /var/tmp/atep12oh/QuantSplat_Integrated/external/gaussian-splatting/render.py -m /var/tmp/atep12oh/QuantSplat_Integrated/outputs/bottle_confidence_replication_20260914/w3a3_raw_model --iteration 3000
+render: PASS
+GT count: 1
+render count: 1
+
+########################################################################
+W3A3 + corrector
+########################################################################
+
+$ /var/tmp/atep12oh/quantsplat-env/bin/python /tmp/vggt_to_3dgs_variable_views.py --raw /var/tmp/atep12oh/QuantSplat_Integrated/outputs/bottle_confidence_replication_20260914/w3a3_corrected.pt --input_tensor /var/tmp/atep12oh/QuantSplat_Integrated/outputs/custom_bottle_e2e/input_tensor.pt --output /var/tmp/atep12oh/QuantSplat_Integrated/outputs/bottle_confidence_replication_20260914/w3a3_corrector_scene --stride 4
+adapter: PASS
+split: PASS; local held-out camera = 6
+
+$ /var/tmp/atep12oh/quantsplat-env/bin/python /var/tmp/atep12oh/QuantSplat_Integrated/external/gaussian-splatting/train.py -s /var/tmp/atep12oh/QuantSplat_Integrated/outputs/bottle_confidence_replication_20260914/w3a3_corrector_scene -m /var/tmp/atep12oh/QuantSplat_Integrated/outputs/bottle_confidence_replication_20260914/w3a3_corrector_model --eval --iterations 3000 --save_iterations 3000 --test_iterations 3000
+3DGS train: PASS
+
+$ /var/tmp/atep12oh/quantsplat-env/bin/python /var/tmp/atep12oh/QuantSplat_Integrated/external/gaussian-splatting/render.py -m /var/tmp/atep12oh/QuantSplat_Integrated/outputs/bottle_confidence_replication_20260914/w3a3_corrector_model --iteration 3000
+render: PASS
+GT count: 1
+render count: 1
+
+########################################################################
+W3A3 + confidence
+########################################################################
+
+$ /var/tmp/atep12oh/quantsplat-env/bin/python /tmp/vggt_to_3dgs_variable_views.py --raw /var/tmp/atep12oh/QuantSplat_Integrated/outputs/bottle_confidence_replication_20260914/w3a3_raw_gate.pt --input_tensor /var/tmp/atep12oh/QuantSplat_Integrated/outputs/bottle_confidence_replication_20260914/input_tensor_gate.pt --output /var/tmp/atep12oh/QuantSplat_Integrated/outputs/bottle_confidence_replication_20260914/w3a3_confidence_scene --stride 4
+adapter: PASS
+split: PASS; local held-out camera = 5
+
+$ /var/tmp/atep12oh/quantsplat-env/bin/python /var/tmp/atep12oh/QuantSplat_Integrated/external/gaussian-splatting/train.py -s /var/tmp/atep12oh/QuantSplat_Integrated/outputs/bottle_confidence_replication_20260914/w3a3_confidence_scene -m /var/tmp/atep12oh/QuantSplat_Integrated/outputs/bottle_confidence_replication_20260914/w3a3_confidence_model --eval --iterations 3000 --save_iterations 3000 --test_iterations 3000
+3DGS train: PASS
+
+$ /var/tmp/atep12oh/quantsplat-env/bin/python /var/tmp/atep12oh/QuantSplat_Integrated/external/gaussian-splatting/render.py -m /var/tmp/atep12oh/QuantSplat_Integrated/outputs/bottle_confidence_replication_20260914/w3a3_confidence_model --iteration 3000
+render: PASS
+GT count: 1
+render count: 1
+
+########################################################################
+W3A3 + corr. + conf.
+########################################################################
+
+$ /var/tmp/atep12oh/quantsplat-env/bin/python /tmp/vggt_to_3dgs_variable_views.py --raw /var/tmp/atep12oh/QuantSplat_Integrated/outputs/bottle_confidence_replication_20260914/w3a3_corrected_gate.pt --input_tensor /var/tmp/atep12oh/QuantSplat_Integrated/outputs/bottle_confidence_replication_20260914/input_tensor_gate.pt --output /var/tmp/atep12oh/QuantSplat_Integrated/outputs/bottle_confidence_replication_20260914/w3a3_corrector_confidence_scene --stride 4
+adapter: PASS
+split: PASS; local held-out camera = 5
+
+$ /var/tmp/atep12oh/quantsplat-env/bin/python /var/tmp/atep12oh/QuantSplat_Integrated/external/gaussian-splatting/train.py -s /var/tmp/atep12oh/QuantSplat_Integrated/outputs/bottle_confidence_replication_20260914/w3a3_corrector_confidence_scene -m /var/tmp/atep12oh/QuantSplat_Integrated/outputs/bottle_confidence_replication_20260914/w3a3_corrector_confidence_model --eval --iterations 3000 --save_iterations 3000 --test_iterations 3000
+3DGS train: PASS
+
+$ /var/tmp/atep12oh/quantsplat-env/bin/python /var/tmp/atep12oh/QuantSplat_Integrated/external/gaussian-splatting/render.py -m /var/tmp/atep12oh/QuantSplat_Integrated/outputs/bottle_confidence_replication_20260914/w3a3_corrector_confidence_model --iteration 3000
+render: PASS
+GT count: 1
+render count: 1
+
+======================================================================
+BOTTLE FIXED-HOLDOUT REPLICATION
+======================================================================
+Method                           PSNR(dB)         MAE
+W3A3 raw                           13.978     0.16113
+W3A3 + corrector                   13.409     0.17639
+W3A3 + confidence                  12.521     0.19818
+W3A3 + corr. + conf.               12.233     0.20804
+
+DELTA vs W3A3 RAW
+  corrector  : -0.569 dB
+  confidence : -1.458 dB
+  both       : -1.745 dB
+
+CSV : /var/tmp/atep12oh/QuantSplat_Integrated/outputs/bottle_confidence_replication_20260914/bottle_replication_metrics.csv
+JSON: /var/tmp/atep12oh/QuantSplat_Integrated/outputs/bottle_confidence_replication_20260914/bottle_replication_metrics.json
+
+BOTTLE REPLICATION: PASS

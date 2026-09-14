@@ -1,0 +1,15 @@
+=== INPUT ===
+/var/tmp/atep12oh/team_repo/Clean_w3a3/quantsplat_demo/data/images/ball/123_14363_28981/inputs/image_1.png
+/var/tmp/atep12oh/team_repo/Clean_w3a3/quantsplat_demo/data/images/ball/123_14363_28981/inputs/image_2.png
+/var/tmp/atep12oh/team_repo/Clean_w3a3/quantsplat_demo/data/images/ball/123_14363_28981/inputs/image_3.png
+/var/tmp/atep12oh/team_repo/Clean_w3a3/quantsplat_demo/data/images/ball/123_14363_28981/inputs/image_4.png
+/var/tmp/atep12oh/team_repo/Clean_w3a3/quantsplat_demo/data/images/ball/123_14363_28981/inputs/image_5.png
+/var/tmp/atep12oh/team_repo/Clean_w3a3/quantsplat_demo/data/images/ball/123_14363_28981/inputs/image_6.png
+
+=== MODEL FILES ===
+base: /var/tmp/atep12oh/team_repo/Clean_w3a3/QuantVGGT/VGGT-1B/model_tracker_fixed_e20.pt False
+qs dir: /var/tmp/atep12oh/team_repo/Clean_w3a3/QuantVGGT/evaluation/outputs/w3a3/a33_model_tracker_fixed_e20.pt_sym False
+Traceback (most recent call last):
+  File "/tmp/smoke_w3a3_arbitrary.py", line 55, in <module>
+    raise FileNotFoundError(base)
+FileNotFoundError: /var/tmp/atep12oh/team_repo/Clean_w3a3/QuantVGGT/VGGT-1B/model_tracker_fixed_e20.pt

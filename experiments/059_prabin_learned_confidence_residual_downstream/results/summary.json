@@ -1,0 +1,67 @@
+{
+  "protocol": "Frozen category-disjoint 28 train / 6 validation / 6 test scenes",
+  "train_categories": [
+    "apple",
+    "ball",
+    "bench",
+    "bowl",
+    "broccoli",
+    "hydrant",
+    "mouse",
+    "orange",
+    "skateboard",
+    "suitcase",
+    "teddybear",
+    "toaster",
+    "toytrain",
+    "vase"
+  ],
+  "validation_categories": [
+    "plant",
+    "remote",
+    "toytruck"
+  ],
+  "test_categories": [
+    "book",
+    "cake",
+    "donut"
+  ],
+  "selected_alpha": 1000.0,
+  "selected_shrink": 1.0,
+  "validation_selection_score": 0.7608066581466244,
+  "test_corrector": {
+    "rotation_deg": {
+      "raw_median": 2.19182598319797,
+      "corrected_median": 2.1163071233662265,
+      "raw_mean": 2.6430170361083962,
+      "corrected_mean": 2.5624170860748148,
+      "improved_frames": 23,
+      "n_frames": 36
+    },
+    "center_pct": {
+      "raw_median": 3.483101420240609,
+      "corrected_median": 3.3535416740940116,
+      "raw_mean": 4.100428880933681,
+      "corrected_mean": 3.9842722031719293,
+      "improved_frames": 24,
+      "n_frames": 36
+    },
+    "focal_pct": {
+      "raw_median": 13.475185317708396,
+      "corrected_median": 4.013262625461211,
+      "raw_mean": 13.452861173643994,
+      "corrected_mean": 4.896269020398954,
+      "improved_frames": 35,
+      "n_frames": 36
+    }
+  },
+  "test_w4a4": {
+    "rotation_deg_median": 1.1889565983397672,
+    "rotation_deg_mean": 1.3868114978066162,
+    "center_pct_median": 1.7102319213420056,
+    "center_pct_mean": 1.9454820930172692,
+    "focal_pct_median": 2.3171476014851278,
+    "focal_pct_mean": 2.3054100396184714
+  },
+  "note": "Hyperparameters selected on validation only. Final model refit on train+validation. Untouched book/cake/donut test evaluated once."
+}

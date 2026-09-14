@@ -1,0 +1,186 @@
+/tmp/run_wcup_downstream_study.py:169: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  X = torch.load(
+========================================================================
+PHASE A: DERIVE CORRECTED / CONFIDENCE VARIANTS
+========================================================================
+
+--- N03 ---
+corrector: PASS
+confidence: PASS
+gate: drop frame 1 confidence 0.441204 remaining 2
+
+--- N06 ---
+corrector: PASS
+confidence: PASS
+gate: drop frame 8 confidence 0.37351 remaining 5
+
+--- N09 ---
+corrector: PASS
+confidence: PASS
+gate: drop frame 8 confidence 0.375128 remaining 8
+
+--- N12 ---
+corrector: PASS
+confidence: PASS
+gate: drop frame 8 confidence 0.370649 remaining 11
+
+========================================================================
+PHASE B: VARIABLE-VIEW ADAPTER PREFLIGHT
+========================================================================
+N03  full                          views= 3 adapter=PASS holdout_id=3
+N03  w4a4                          views= 3 adapter=PASS holdout_id=3
+N03  w3a3_raw                      views= 3 adapter=PASS holdout_id=3
+N03  w3a3_corrected                views= 3 adapter=PASS holdout_id=3
+N03  w3a3_confidence               views= 2 adapter=PASS holdout_id=2
+N03  w3a3_corrected_confidence     views= 2 adapter=PASS holdout_id=2
+N06  full                          views= 6 adapter=PASS holdout_id=6
+N06  w4a4                          views= 6 adapter=PASS holdout_id=6
+N06  w3a3_raw                      views= 6 adapter=PASS holdout_id=6
+N06  w3a3_corrected                views= 6 adapter=PASS holdout_id=6
+N06  w3a3_confidence               views= 5 adapter=PASS holdout_id=5
+N06  w3a3_corrected_confidence     views= 5 adapter=PASS holdout_id=5
+N09  full                          views= 9 adapter=PASS holdout_id=9
+N09  w4a4                          views= 9 adapter=PASS holdout_id=9
+N09  w3a3_raw                      views= 9 adapter=PASS holdout_id=9
+N09  w3a3_corrected                views= 9 adapter=PASS holdout_id=9
+N09  w3a3_confidence               views= 8 adapter=PASS holdout_id=8
+N09  w3a3_corrected_confidence     views= 8 adapter=PASS holdout_id=8
+N12  full                          views=12 adapter=PASS holdout_id=12
+N12  w4a4                          views=12 adapter=PASS holdout_id=12
+N12  w3a3_raw                      views=12 adapter=PASS holdout_id=12
+N12  w3a3_corrected                views=12 adapter=PASS holdout_id=12
+N12  w3a3_confidence               views=11 adapter=PASS holdout_id=11
+N12  w3a3_corrected_confidence     views=11 adapter=PASS holdout_id=11
+
+ALL 24 ADAPTER PREFLIGHTS: PASS
+
+========================================================================
+PHASE C: 3DGS TRAIN + TRUE HELD-OUT RENDER
+========================================================================
+
+[N03] full: train 3000 iterations
+N03  full                          GT=1 render=1 PASS
+
+[N03] w4a4: train 3000 iterations
+N03  w4a4                          GT=1 render=1 PASS
+
+[N03] w3a3_raw: train 3000 iterations
+N03  w3a3_raw                      GT=1 render=1 PASS
+
+[N03] w3a3_corrected: train 3000 iterations
+N03  w3a3_corrected                GT=1 render=1 PASS
+
+[N03] w3a3_confidence: train 3000 iterations
+N03  w3a3_confidence               GT=1 render=1 PASS
+
+[N03] w3a3_corrected_confidence: train 3000 iterations
+N03  w3a3_corrected_confidence     GT=1 render=1 PASS
+
+[N06] full: train 3000 iterations
+N06  full                          GT=1 render=1 PASS
+
+[N06] w4a4: train 3000 iterations
+N06  w4a4                          GT=1 render=1 PASS
+
+[N06] w3a3_raw: train 3000 iterations
+N06  w3a3_raw                      GT=1 render=1 PASS
+
+[N06] w3a3_corrected: train 3000 iterations
+N06  w3a3_corrected                GT=1 render=1 PASS
+
+[N06] w3a3_confidence: train 3000 iterations
+N06  w3a3_confidence               GT=1 render=1 PASS
+
+[N06] w3a3_corrected_confidence: train 3000 iterations
+N06  w3a3_corrected_confidence     GT=1 render=1 PASS
+
+[N09] full: train 3000 iterations
+N09  full                          GT=2 render=2 COUNT_ERROR_gt2_render2
+
+[N09] w4a4: train 3000 iterations
+N09  w4a4                          GT=2 render=2 COUNT_ERROR_gt2_render2
+
+[N09] w3a3_raw: train 3000 iterations
+N09  w3a3_raw                      GT=2 render=2 COUNT_ERROR_gt2_render2
+
+[N09] w3a3_corrected: train 3000 iterations
+N09  w3a3_corrected                GT=2 render=2 COUNT_ERROR_gt2_render2
+
+[N09] w3a3_confidence: train 3000 iterations
+N09  w3a3_confidence               GT=1 render=1 PASS
+
+[N09] w3a3_corrected_confidence: train 3000 iterations
+N09  w3a3_corrected_confidence     GT=1 render=1 PASS
+
+[N12] full: train 3000 iterations
+N12  full                          GT=2 render=2 COUNT_ERROR_gt2_render2
+
+[N12] w4a4: train 3000 iterations
+N12  w4a4                          GT=2 render=2 COUNT_ERROR_gt2_render2
+
+[N12] w3a3_raw: train 3000 iterations
+N12  w3a3_raw                      GT=2 render=2 COUNT_ERROR_gt2_render2
+
+[N12] w3a3_corrected: train 3000 iterations
+N12  w3a3_corrected                GT=2 render=2 COUNT_ERROR_gt2_render2
+
+[N12] w3a3_confidence: train 3000 iterations
+N12  w3a3_confidence               GT=2 render=2 COUNT_ERROR_gt2_render2
+
+[N12] w3a3_corrected_confidence: train 3000 iterations
+N12  w3a3_corrected_confidence     GT=2 render=2 COUNT_ERROR_gt2_render2
+
+========================================================================
+PHASE D: HELD-OUT WCUP12 METRICS
+========================================================================
+
+==========================================================================================
+FINAL VIEW-COUNT STUDY — FIXED WCUP12 HELD OUT FROM 3DGS
+==========================================================================================
+Method                              N=3           N=6           N=9          N=12
+Full VGGT                         13.77         16.63        FAILED        FAILED
+W4A4                              13.85         15.44        FAILED        FAILED
+W3A3 raw                          13.95         15.37        FAILED        FAILED
+W3A3 + corrector                  13.96         15.38        FAILED        FAILED
+W3A3 + confidence                 11.88         15.68         14.49        FAILED
+W3A3 + corr. + conf.              12.33         15.51         14.22        FAILED
+
+Detailed PSNR / MAE
+------------------------------------------------------------------------------------------
+
+N=3
+  Full VGGT                 PSNR=13.772 MAE=0.15018
+  W4A4                      PSNR=13.854 MAE=0.15211
+  W3A3 raw                  PSNR=13.948 MAE=0.14938
+  W3A3 + corrector          PSNR=13.958 MAE=0.14936
+  W3A3 + confidence         PSNR=11.880 MAE=0.20462
+  W3A3 + corr. + conf.      PSNR=12.331 MAE=0.19433
+
+N=6
+  Full VGGT                 PSNR=16.631 MAE=0.09844
+  W4A4                      PSNR=15.441 MAE=0.11207
+  W3A3 raw                  PSNR=15.374 MAE=0.11731
+  W3A3 + corrector          PSNR=15.380 MAE=0.11539
+  W3A3 + confidence         PSNR=15.681 MAE=0.11380
+  W3A3 + corr. + conf.      PSNR=15.511 MAE=0.11390
+
+N=9
+  Full VGGT                 gt=2,render=2
+  W4A4                      gt=2,render=2
+  W3A3 raw                  gt=2,render=2
+  W3A3 + corrector          gt=2,render=2
+  W3A3 + confidence         PSNR=14.485 MAE=0.12380
+  W3A3 + corr. + conf.      PSNR=14.223 MAE=0.12471
+
+N=12
+  Full VGGT                 gt=2,render=2
+  W4A4                      gt=2,render=2
+  W3A3 raw                  gt=2,render=2
+  W3A3 + corrector          gt=2,render=2
+  W3A3 + confidence         gt=2,render=2
+  W3A3 + corr. + conf.      gt=2,render=2
+
+CSV : /var/tmp/atep12oh/QuantSplat_Integrated/outputs/wcup_viewcount_20260914/viewcount_final_metrics.csv
+JSON: /var/tmp/atep12oh/QuantSplat_Integrated/outputs/wcup_viewcount_20260914/viewcount_final_metrics.json
+
+VIEW-COUNT DOWNSTREAM STUDY: COMPLETE

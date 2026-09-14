@@ -1,0 +1,42 @@
+[
+  {
+    "method": "W3A3 raw",
+    "psnr_db": 13.978377694400951,
+    "mae": 0.16112569693082984,
+    "fixed_holdout_frame": 6,
+    "dropped_frame": null,
+    "dropped_frame_confidence": null,
+    "gt": "/var/tmp/atep12oh/QuantSplat_Integrated/outputs/bottle_confidence_replication_20260914/w3a3_raw_model/test/ours_3000/gt/00000.png",
+    "render": "/var/tmp/atep12oh/QuantSplat_Integrated/outputs/bottle_confidence_replication_20260914/w3a3_raw_model/test/ours_3000/renders/00000.png"
+  },
+  {
+    "method": "W3A3 + corrector",
+    "psnr_db": 13.409497422663135,
+    "mae": 0.17639296283402575,
+    "fixed_holdout_frame": 6,
+    "dropped_frame": null,
+    "dropped_frame_confidence": null,
+    "gt": "/var/tmp/atep12oh/QuantSplat_Integrated/outputs/bottle_confidence_replication_20260914/w3a3_corrector_model/test/ours_3000/gt/00000.png",
+    "render": "/var/tmp/atep12oh/QuantSplat_Integrated/outputs/bottle_confidence_replication_20260914/w3a3_corrector_model/test/ours_3000/renders/00000.png"
+  },
+  {
+    "method": "W3A3 + confidence",
+    "psnr_db": 12.520765565066906,
+    "mae": 0.19818236522756172,
+    "fixed_holdout_frame": 6,
+    "dropped_frame": 5,
+    "dropped_frame_confidence": 0.9045687913894653,
+    "gt": "/var/tmp/atep12oh/QuantSplat_Integrated/outputs/bottle_confidence_replication_20260914/w3a3_confidence_model/test/ours_3000/gt/00000.png",
+    "render": "/var/tmp/atep12oh/QuantSplat_Integrated/outputs/bottle_confidence_replication_20260914/w3a3_confidence_model/test/ours_3000/renders/00000.png"
+  },
+  {
+    "method": "W3A3 + corr. + conf.",
+    "psnr_db": 12.233385828719573,
+    "mae": 0.2080413027153885,
+    "fixed_holdout_frame": 6,
+    "dropped_frame": 5,
+    "dropped_frame_confidence": 0.9045687913894653,
+    "gt": "/var/tmp/atep12oh/QuantSplat_Integrated/outputs/bottle_confidence_replication_20260914/w3a3_corrector_confidence_model/test/ours_3000/gt/00000.png",
+    "render": "/var/tmp/atep12oh/QuantSplat_Integrated/outputs/bottle_confidence_replication_20260914/w3a3_corrector_confidence_model/test/ours_3000/renders/00000.png"
+  }
+]

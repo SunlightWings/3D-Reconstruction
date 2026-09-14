@@ -1,0 +1,177 @@
+========================================================================
+1. RECOVER SUCCESSFUL N12 SCENES
+========================================================================
+N12 metric rows: 6
+Full VGGT                  
+  model: /var/tmp/atep12oh/QuantSplat_Integrated/outputs/wcup_viewcount_20260914/N12/models/full
+  scene: /var/tmp/atep12oh/QuantSplat_Integrated/outputs/wcup_viewcount_20260914/N12/scenes/full
+W4A4                       
+  model: /var/tmp/atep12oh/QuantSplat_Integrated/outputs/wcup_viewcount_20260914/N12/models/w4a4
+  scene: /var/tmp/atep12oh/QuantSplat_Integrated/outputs/wcup_viewcount_20260914/N12/scenes/w4a4
+W3A3 raw                   
+  model: /var/tmp/atep12oh/QuantSplat_Integrated/outputs/wcup_viewcount_20260914/N12/models/w3a3_raw
+  scene: /var/tmp/atep12oh/QuantSplat_Integrated/outputs/wcup_viewcount_20260914/N12/scenes/w3a3_raw
+W3A3 + corrector           
+  model: /var/tmp/atep12oh/QuantSplat_Integrated/outputs/wcup_viewcount_20260914/N12/models/w3a3_corrected
+  scene: /var/tmp/atep12oh/QuantSplat_Integrated/outputs/wcup_viewcount_20260914/N12/scenes/w3a3_corrected
+W3A3 + confidence          
+  model: /var/tmp/atep12oh/QuantSplat_Integrated/outputs/wcup_viewcount_20260914/N12/models/w3a3_confidence
+  scene: /var/tmp/atep12oh/QuantSplat_Integrated/outputs/wcup_viewcount_20260914/N12/scenes/w3a3_confidence
+W3A3 + corr. + conf.       
+  model: /var/tmp/atep12oh/QuantSplat_Integrated/outputs/wcup_viewcount_20260914/N12/models/w3a3_corrected_confidence
+  scene: /var/tmp/atep12oh/QuantSplat_Integrated/outputs/wcup_viewcount_20260914/N12/scenes/w3a3_corrected_confidence
+
+========================================================================
+2. PREPARE FIXED THREE-HOLDOUT SCENES
+========================================================================
+
+--- Full VGGT ---
+  sorted test positions:
+    000_TEST_frame04.png
+    004_TEST_frame07.png
+    008_TEST_frame12.png
+frames: [4, 1, 2, 3, 7, 5, 6, 8, 12, 9, 10, 11]
+
+--- W4A4 ---
+  sorted test positions:
+    000_TEST_frame04.png
+    004_TEST_frame07.png
+    008_TEST_frame12.png
+frames: [4, 1, 2, 3, 7, 5, 6, 8, 12, 9, 10, 11]
+
+--- W3A3 raw ---
+  sorted test positions:
+    000_TEST_frame04.png
+    004_TEST_frame07.png
+    008_TEST_frame12.png
+frames: [4, 1, 2, 3, 7, 5, 6, 8, 12, 9, 10, 11]
+
+--- W3A3 + corrector ---
+  sorted test positions:
+    000_TEST_frame04.png
+    004_TEST_frame07.png
+    008_TEST_frame12.png
+frames: [4, 1, 2, 3, 7, 5, 6, 8, 12, 9, 10, 11]
+
+--- W3A3 + confidence ---
+  sorted test positions:
+    000_TEST_frame04.png
+    004_TEST_frame07.png
+    008_TEST_frame12.png
+frames: [4, 1, 2, 3, 7, 5, 6, 9, 12, 10, 11]
+
+--- W3A3 + corr. + conf. ---
+  sorted test positions:
+    000_TEST_frame04.png
+    004_TEST_frame07.png
+    008_TEST_frame12.png
+frames: [4, 1, 2, 3, 7, 5, 6, 9, 12, 10, 11]
+
+SCENE PREPARATION: PASS
+
+========================================================================
+3. SIX 3DGS STABILITY RUNS
+========================================================================
+
+########################################################################
+Full VGGT
+########################################################################
+
+$ /var/tmp/atep12oh/quantsplat-env/bin/python /var/tmp/atep12oh/QuantSplat_Integrated/external/gaussian-splatting/train.py -s /var/tmp/atep12oh/QuantSplat_Integrated/outputs/final_visual_stability_20260914/full_scene -m /var/tmp/atep12oh/QuantSplat_Integrated/outputs/final_visual_stability_20260914/full_model --eval --iterations 3000 --save_iterations 3000 --test_iterations 3000
+3DGS TRAIN: PASS
+
+$ /var/tmp/atep12oh/quantsplat-env/bin/python /var/tmp/atep12oh/QuantSplat_Integrated/external/gaussian-splatting/render.py -m /var/tmp/atep12oh/QuantSplat_Integrated/outputs/final_visual_stability_20260914/full_model --iteration 3000
+GT count    : 3
+render count: 3
+RENDER: PASS
+
+########################################################################
+W4A4
+########################################################################
+
+$ /var/tmp/atep12oh/quantsplat-env/bin/python /var/tmp/atep12oh/QuantSplat_Integrated/external/gaussian-splatting/train.py -s /var/tmp/atep12oh/QuantSplat_Integrated/outputs/final_visual_stability_20260914/w4a4_scene -m /var/tmp/atep12oh/QuantSplat_Integrated/outputs/final_visual_stability_20260914/w4a4_model --eval --iterations 3000 --save_iterations 3000 --test_iterations 3000
+3DGS TRAIN: PASS
+
+$ /var/tmp/atep12oh/quantsplat-env/bin/python /var/tmp/atep12oh/QuantSplat_Integrated/external/gaussian-splatting/render.py -m /var/tmp/atep12oh/QuantSplat_Integrated/outputs/final_visual_stability_20260914/w4a4_model --iteration 3000
+GT count    : 3
+render count: 3
+RENDER: PASS
+
+########################################################################
+W3A3 raw
+########################################################################
+
+$ /var/tmp/atep12oh/quantsplat-env/bin/python /var/tmp/atep12oh/QuantSplat_Integrated/external/gaussian-splatting/train.py -s /var/tmp/atep12oh/QuantSplat_Integrated/outputs/final_visual_stability_20260914/w3a3_raw_scene -m /var/tmp/atep12oh/QuantSplat_Integrated/outputs/final_visual_stability_20260914/w3a3_raw_model --eval --iterations 3000 --save_iterations 3000 --test_iterations 3000
+3DGS TRAIN: PASS
+
+$ /var/tmp/atep12oh/quantsplat-env/bin/python /var/tmp/atep12oh/QuantSplat_Integrated/external/gaussian-splatting/render.py -m /var/tmp/atep12oh/QuantSplat_Integrated/outputs/final_visual_stability_20260914/w3a3_raw_model --iteration 3000
+GT count    : 3
+render count: 3
+RENDER: PASS
+
+########################################################################
+W3A3 + corrector
+########################################################################
+
+$ /var/tmp/atep12oh/quantsplat-env/bin/python /var/tmp/atep12oh/QuantSplat_Integrated/external/gaussian-splatting/train.py -s /var/tmp/atep12oh/QuantSplat_Integrated/outputs/final_visual_stability_20260914/w3a3_corrector_scene -m /var/tmp/atep12oh/QuantSplat_Integrated/outputs/final_visual_stability_20260914/w3a3_corrector_model --eval --iterations 3000 --save_iterations 3000 --test_iterations 3000
+3DGS TRAIN: PASS
+
+$ /var/tmp/atep12oh/quantsplat-env/bin/python /var/tmp/atep12oh/QuantSplat_Integrated/external/gaussian-splatting/render.py -m /var/tmp/atep12oh/QuantSplat_Integrated/outputs/final_visual_stability_20260914/w3a3_corrector_model --iteration 3000
+GT count    : 3
+render count: 3
+RENDER: PASS
+
+########################################################################
+W3A3 + confidence
+########################################################################
+
+$ /var/tmp/atep12oh/quantsplat-env/bin/python /var/tmp/atep12oh/QuantSplat_Integrated/external/gaussian-splatting/train.py -s /var/tmp/atep12oh/QuantSplat_Integrated/outputs/final_visual_stability_20260914/w3a3_confidence_scene -m /var/tmp/atep12oh/QuantSplat_Integrated/outputs/final_visual_stability_20260914/w3a3_confidence_model --eval --iterations 3000 --save_iterations 3000 --test_iterations 3000
+3DGS TRAIN: PASS
+
+$ /var/tmp/atep12oh/quantsplat-env/bin/python /var/tmp/atep12oh/QuantSplat_Integrated/external/gaussian-splatting/render.py -m /var/tmp/atep12oh/QuantSplat_Integrated/outputs/final_visual_stability_20260914/w3a3_confidence_model --iteration 3000
+GT count    : 3
+render count: 3
+RENDER: PASS
+
+########################################################################
+W3A3 + corr. + conf.
+########################################################################
+
+$ /var/tmp/atep12oh/quantsplat-env/bin/python /var/tmp/atep12oh/QuantSplat_Integrated/external/gaussian-splatting/train.py -s /var/tmp/atep12oh/QuantSplat_Integrated/outputs/final_visual_stability_20260914/w3a3_corrector_confidence_scene -m /var/tmp/atep12oh/QuantSplat_Integrated/outputs/final_visual_stability_20260914/w3a3_corrector_confidence_model --eval --iterations 3000 --save_iterations 3000 --test_iterations 3000
+3DGS TRAIN: PASS
+
+$ /var/tmp/atep12oh/quantsplat-env/bin/python /var/tmp/atep12oh/QuantSplat_Integrated/external/gaussian-splatting/render.py -m /var/tmp/atep12oh/QuantSplat_Integrated/outputs/final_visual_stability_20260914/w3a3_corrector_confidence_model --iteration 3000
+/var/tmp/atep12oh/quantsplat-env/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/var/tmp/atep12oh/quantsplat-env/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/var/tmp/atep12oh/quantsplat-env/lib/python3.10/site-packages/lpips/lpips.py:107: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.load_state_dict(torch.load(model_path, map_location='cpu'), strict=False)
+GT count    : 3
+render count: 3
+RENDER: PASS
+
+GAUSSIAN-SPLATTING SOURCE RESTORED: PASS
+
+========================================================================
+4. PSNR / SSIM / LPIPS VIEW-STABILITY EVALUATION
+========================================================================
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /var/tmp/atep12oh/quantsplat-env/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+
+==============================================================================================================
+FINAL VISUAL STABILITY — THREE FIXED HELD-OUT VIEWS
+==============================================================================================================
+Method                          PSNR mean±std     SSIM mean±std      LPIPS mean±std   Worst PSNR   Worst LPIPS
+Full VGGT                   21.288±3.440   0.7206±0.0076   0.3198±0.0228         16.662        0.3442
+W4A4                        19.230±2.751   0.6021±0.0169   0.3868±0.0134         15.344        0.3975
+W3A3 raw                    18.045±1.945   0.5116±0.0359   0.5141±0.0358         15.295        0.5528
+W3A3 + corrector            18.013±2.468   0.5164±0.0140   0.4858±0.0251         14.574        0.5105
+W3A3 + confidence           17.624±1.923   0.4982±0.0274   0.5018±0.0330         14.911        0.5346
+W3A3 + corr. + conf.        18.161±2.342   0.5225±0.0218   0.4874±0.0275         14.850        0.5194
+
+PER VIEW: /var/tmp/atep12oh/QuantSplat_Integrated/outputs/final_visual_stability_20260914/stability_per_view.csv
+SUMMARY : /var/tmp/atep12oh/QuantSplat_Integrated/outputs/final_visual_stability_20260914/stability_summary.csv
+JSON    : /var/tmp/atep12oh/QuantSplat_Integrated/outputs/final_visual_stability_20260914/stability_results.json
+
+VISUAL STABILITY STUDY: PASS
