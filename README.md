@@ -27,19 +27,11 @@
 | **Changed** | low-bit VGGT variants; learned reliability predictor; learned camera residual corrector; confidence-based view selection |
 | **Evaluated** | camera error, confidence AUROC/AP, PSNR, SSIM, LPIPS, MAE, view-count sensitivity, failure cases, runtime/memory |
 
-```text
-RGB views
-   ↓
-Full / W4A4 / W3A3 VGGT
-   ↓
-intrinsics + extrinsics + depth + point maps
-   ├── reliability predictor → confidence / failure risk
-   └── residual corrector    → corrected camera geometry
-   ↓
-VGGT → COLMAP adapter → 3DGS
-   ↓
-held-out renders → PSNR / SSIM / LPIPS / MAE
-```
+## Pipeline
+
+![QuantSplat final pipeline](assets/QuantSplat_Final_Pipeline.png)
+
+*Final training and deployment pipeline for reliability-aware low-bit VGGT reconstruction.*
 
 ## Data and protocol
 

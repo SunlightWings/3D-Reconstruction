@@ -105,3 +105,9 @@ Clean_w3a3/quantsplat_demo/data/turntable_neutral/
 *.zip
 *.tar
 *.tar.gz
+
+# Final frozen Experiment 059 learned modules.
+# These small reproducibility artifacts are intentionally versioned.
+!experiments/059_prabin_learned_confidence_residual_downstream/models/
+!experiments/059_prabin_learned_confidence_residual_downstream/models/confidence_predictor_best_model.pt
+!experiments/059_prabin_learned_confidence_residual_downstream/models/camera_residual_corrector.npz
