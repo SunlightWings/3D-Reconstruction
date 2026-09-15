@@ -1,15 +1,20 @@
 # Experiments
 
-Every experiment of the QuantVGGT → 3DGS project, one folder each: `README.md` (what was run, why, config, results, interpretation), `code/`, `results/`, `logs/`.
+This directory is the research log for the QuantVGGT → 3DGS project.
 
-- `000` is the disagreement-dataset stage that preceded the experiment log.
-- `001`–`053` are the entries of [ongoing_logs.md](ongoing_logs.md); each README reproduces its entry verbatim.
-- `054`–`058` are the 2026-09-13 work that is not yet in the log; their READMEs are generated from the result files.
-- `_shared/` holds modules many experiments import, plus the frozen 40-scene manifest.
+Experiments `000`–`058` document the quantization, geometry, ablation, oracle, debugging, and downstream studies leading to the final system. Experiment `059` contains the final learned W3A3 reliability / residual-correction study, including code, frozen models, logs, figures, and machine-readable evaluation results.
 
-> **⚠ Camera bug.** Until 2026-09-13 every 3DGS training/render used the conjugate camera rotation (054). Rendering metrics (PSNR / SSIM / LPIPS) in folders marked below are therefore invalid. Geometry results are unaffected. Valid rendering results: 054, 055 (and the 057 outputs, which are not scored yet).
+- `000` is the disagreement-dataset stage that preceded the numbered experiment log.
+- `001`–`053` are the entries of [ongoing_logs.md](ongoing_logs.md); their READMEs reproduce the original experiment entries.
+- `054`–`058` are the 2026-09-13 post-debugging experiments and follow-up studies.
+- `059` is the 2026-09-14 learned reliability + camera residual correction study and downstream evaluation.
+- `_shared/` holds modules imported by multiple experiments plus the frozen 40-scene manifest.
 
-Supporting documents: [PAPER_EVIDENCE.md](PAPER_EVIDENCE.md), [HANDOFF.md](HANDOFF.md), [explanation.md](explanation.md), [CLAUDE.md](CLAUDE.md) (logging rules). All were written before the camera bug was found.
+> **⚠ Camera-conversion bug.** A quaternion-conjugation bug was discovered in Experiment 054.  
+> Pre-fix **3DGS rendering metrics** (PSNR / SSIM / LPIPS) from affected experiments `001`–`053` should not be used as final quantitative evidence. Geometry-only analyses remain useful.  
+> Post-fix downstream evidence includes Experiments `054`, `055`, and `059`; Experiment `057` also uses corrected cameras but its archived outputs were not scored in the original log.
+
+Supporting documents: [PAPER_EVIDENCE.md](PAPER_EVIDENCE.md), [HANDOFF.md](HANDOFF.md), [explanation.md](explanation.md), and [CLAUDE.md](CLAUDE.md).
 
 | # | experiment | note |
 |---|---|---|
@@ -67,8 +72,33 @@ Supporting documents: [PAPER_EVIDENCE.md](PAPER_EVIDENCE.md), [HANDOFF.md](HANDO
 | 051 | [W3A3 measurably degrades rendering: the first arm to separate from W4A4](051_w3a3_measurably_degrades_rendering_the_first_arm/README.md) | contains pre-fix rendering numbers (invalid, camera bug) |
 | 052 | [Perfect point confidence recovers −1.4 % of W3A3's gap: the proposal's mechanism fails on a second arm](052_perfect_point_confidence_recovers_1_4_of/README.md) | contains pre-fix rendering numbers (invalid, camera bug) |
 | 053 | [W3A3 swap probe: the damage is in the cameras (robust on LPIPS, not on PSNR at n = 8); points are null](053_w3a3_swap_probe_the_damage_is_in/README.md) | contains pre-fix rendering numbers (invalid, camera bug) |
-| 054 | [Camera rotation bug: quaternion conjugate in rotmat2qvec, fixed; corrected baselines](054_camera_rotation_bug_quaternion_conjugate_in_rotmat2qvec/README.md) |  |
-| 055 | [Point confidence on corrected cameras: oracle and learned predictor, W3A3, 8 scenes](055_point_confidence_on_corrected_cameras_oracle_and/README.md) |  |
+| 054 | [Camera rotation bug: quaternion conjugate in rotmat2qvec, fixed; corrected baselines](054_camera_rotation_bug_quaternion_conjugate_in_rotmat2qvec/README.md) | corrected-camera rendering baseline |
+| 055 | [Point confidence on corrected cameras: oracle and learned predictor, W3A3, 8 scenes](055_point_confidence_on_corrected_cameras_oracle_and/README.md) | post-fix rendering |
 | 056 | [Focal-length corrector and gsplat pose refinement: ABANDONED](056_focal_length_corrector_and_gsplat_pose_refinement/README.md) |  |
-| 057 | [Old 40 scenes re-trained with corrected cameras (full and W4A4, 80 runs)](057_old_40_scenes_re_trained_with_corrected/README.md) |  |
+| 057 | [Old 40 scenes re-trained with corrected cameras (full and W4A4, 80 runs)](057_old_40_scenes_re_trained_with_corrected/README.md) | corrected-camera outputs; archived log notes they were not yet scored |
 | 058 | [Extension to 48 more CO3D scenes: manifest built, run CANCELLED](058_extension_to_48_more_co3d_scenes_manifest/README.md) |  |
+| **059** | **[Learned W3A3 reliability prediction + camera residual correction + downstream 3DGS evaluation](059_prabin_learned_confidence_residual_downstream/docs/EXPERIMENTS.md)** | **final learned-recovery study: confidence AUROC/AP, residual camera correction, custom cup ablation, N={3,6,9,12} view-count study, bottle replication, PSNR/SSIM/LPIPS/MAE, multi-view stability, and efficiency evaluation** |
+
+## Experiment 059 at a glance
+
+Experiment 059 is the final learned-recovery extension of the earlier quantization studies.
+
+| Component | Result |
+|---|---|
+| Learned reliability vs analytic consistency | **AUROC 0.730 vs 0.371**, AP **0.706 vs 0.388** |
+| W3A3 focal error | **13.48% → 4.01%** with residual correction |
+| Captured cup, raw W3A3 → corrected W3A3 | **15.763 → 16.466 dB** PSNR |
+| Confidence gating at N=9 | **13.122 → 14.485 dB** PSNR |
+| Three-view W3A3 stability | combined method gives best W3A3 mean PSNR / SSIM |
+| Independent bottle replication | recovery methods **do not improve** raw W3A3, retained as a negative result |
+
+Detailed artifacts:
+
+- [Scientific summary](059_prabin_learned_confidence_residual_downstream/docs/EXPERIMENTS.md)
+- [Model / deployment pipeline](059_prabin_learned_confidence_residual_downstream/docs/MODEL_PIPELINE.md)
+- [Results](059_prabin_learned_confidence_residual_downstream/results/)
+- [Figures](059_prabin_learned_confidence_residual_downstream/figures/)
+- [Logs](059_prabin_learned_confidence_residual_downstream/logs/)
+- [Frozen models](059_prabin_learned_confidence_residual_downstream/models/)
+- [Provenance](059_prabin_learned_confidence_residual_downstream/PROVENANCE.md)
+- [SHA-256 checksums](059_prabin_learned_confidence_residual_downstream/SHA256SUMS.txt)
